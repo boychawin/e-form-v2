@@ -1,15 +1,14 @@
 <?php
 require_once 'vendor/autoload.php';
 
-
 use Spipu\Html2Pdf\Exception\ExceptionFormatter;
 use Spipu\Html2Pdf\Exception\Html2PdfException;
 use Spipu\Html2Pdf\Html2Pdf;
 
-
 try {
     ob_start();
-    include('แบบฟอร์ม_คำสั่ง/index.html');
+    include 'v1-html-form/แบบฟอร์ม_หนังสือภายใน/index.html';
+
     $content = ob_get_clean();
     $html2pdf = new Html2Pdf('P', 'A4', 'en', true, 'UTF-8');
     $html2pdf->pdf->SetDisplayMode('fullpage');
@@ -22,11 +21,22 @@ try {
     }
 
     // สร้างเนื้อหาจาก  HTML code
+
+
+
+
+
+
+
     $html2pdf->writeHTML($content);
     $html2pdf->pdf->setAuthor('Nicola Asuni');
     $html2pdf->pdf->setTitle('TCPDF Example 004');
     $html2pdf->pdf->setSubject('TCPDF Tutorial');
     $html2pdf->pdf->setKeywords('TCPDF, PDF, example, test, guide');
+    $html2pdf->pdf->setPrintHeader(false);
+    $html2pdf->pdf->setPrintFooter(false);
+
+
     $html2pdf->output('test.pdf');
 
 } catch (Html2PdfException $e) {

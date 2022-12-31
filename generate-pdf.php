@@ -7,7 +7,7 @@ use Spipu\Html2Pdf\Html2Pdf;
 
 try {
     ob_start();
-    include 'v1-html-form/แบบฟอร์ม_หนังสือภายใน/index.html';
+    include 'v1-html-form-pdf/แบบฟอร์ม_คำสั่ง/index.html';
 
     $content = ob_get_clean();
     $html2pdf = new Html2Pdf('P', 'A4', 'en', true, 'UTF-8');
@@ -21,12 +21,6 @@ try {
     }
 
     // สร้างเนื้อหาจาก  HTML code
-
-
-
-
-
-
 
     $html2pdf->writeHTML($content);
     $html2pdf->pdf->setAuthor('Nicola Asuni');

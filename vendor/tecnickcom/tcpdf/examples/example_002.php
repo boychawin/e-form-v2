@@ -66,7 +66,7 @@ if (@file_exists(dirname(__FILE__).'/lang/eng.php')) {
 // ---------------------------------------------------------
 
 // set font
-$pdf->setFont('times', 'BI', 20);
+$pdf->setFont('times', 'BI', 15);
 
 // add a page
 $pdf->AddPage();

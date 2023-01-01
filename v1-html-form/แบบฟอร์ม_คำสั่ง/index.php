@@ -1,87 +1,48 @@
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="ProgId" content="Word.Document" />
-    <meta name="Generator" content="Microsoft Word 15" />
-    <meta name="Originator" content="Microsoft Word 15" />
-    <!-- <link href="./_.css" rel="stylesheet" /> -->
-  </head>
 
-  <body class="c50 doc-content">
-    <div class="WordSection1">
-      <table
-        class="MsoTableGrid"
-        border="0"
-        cellspacing="0"
-        cellpadding="0"
-        style="
-          border-collapse: collapse;
-          border: none;
-          mso-yfti-tbllook: 1184;
-          mso-padding-alt: 0cm 5.4pt 0cm 5.4pt;
-          mso-border-insideh: none;
-          mso-border-insidev: none;
-        "
+
+<?php 
+
+$html = <<<EOD
+
+<div class="WordSection1">
+<table
+  class="MsoTableGrid"
+  border="0"
+  cellspacing="0"
+  cellpadding="0"
+  style="
+    border-collapse: collapse;
+    border: none;
+    mso-yfti-tbllook: 1184;
+    mso-padding-alt: 0cm 5.4pt 0cm 5.4pt;
+    mso-border-insideh: none;
+    mso-border-insidev: none;
+  "
+>
+  <tr
+    style="
+      mso-yfti-irow: 0;
+      mso-yfti-firstrow: yes;
+      mso-yfti-lastrow: yes;
+    "
+  >
+    <td
+      width="201"
+      valign="top"
+      style="width: 151pt; padding: 0cm 5.4pt 0cm 5.4pt"
+    >
+      <p
+        class="MsoNormal"
+        style="margin-bottom: 0cm; line-height: normal"
       >
-        <tr
-          style="
-            mso-yfti-irow: 0;
-            mso-yfti-firstrow: yes;
-            mso-yfti-lastrow: yes;
-          "
-        >
-          <td
-            width="201"
-            valign="top"
-            style="width: 151pt; padding: 0cm 5.4pt 0cm 5.4pt"
-          >
-            <p
-              class="MsoNormal"
-              style="margin-bottom: 0cm; line-height: normal"
-            >
-              <span class="c16">&nbsp;</span>
-            </p>
-          </td>
-          <td
-            width="201"
-            valign="top"
-            style="width: 151pt; padding: 0cm 5.4pt 0cm 5.4pt"
-          >
-            <p
-              class="MsoNormal"
-              align="center"
-              style="
-                margin-bottom: 0cm;
-                text-align: center;
-                line-height: normal;
-              "
-            >
-              <div class="span_image">
-       
-                  <img
-                    src="images/image1.jpg"
-                    class="image_logo"
-                    title="ตราครุฑ"
-                  />
-               </div
-              ><span class="c16"></span>
-            </p>
-          </td>
-          <td
-            width="201"
-            valign="top"
-            style="width: 151.05pt; padding: 0cm 5.4pt 0cm 5.4pt"
-          >
-            <p
-              class="MsoNormal"
-              style="margin-bottom: 0cm; line-height: normal"
-            >
-              <span class="c16">&nbsp;</span>
-            </p>
-          </td>
-        </tr>
-      </table>
-
+        <span class="c16">&nbsp;</span>
+      </p>
+    </td>
+    <td
+      width="201"
+      valign="top"
+      style="width: 151pt; padding: 0cm 5.4pt 0cm 5.4pt"
+    >
       <p
         class="MsoNormal"
         align="center"
@@ -89,220 +50,250 @@
           margin-bottom: 0cm;
           text-align: center;
           line-height: normal;
-          tab-stops: 12cm;
         "
       >
-        <b><span class="c16b">คำสั่งสำนักงานสาธารณสุขอำเภอดำเนินสะดวก</span></b
-        ><b><span class="c16b"></span></b>
-      </p>
-
-      <p
-        class="MsoNormal"
-        align="center"
-        style="margin-bottom: 0cm; text-align: center; line-height: normal"
-      >
-        <b
-          ><span class="c16b"
-            >ที่ <span style="mso-spacerun: yes"> </span>00 / ๒๕60</span
-          ></b
-        >
-      </p>
-
-      <p
-        class="MsoNormal"
-        align="center"
-        style="margin-bottom: 0cm; text-align: center; line-height: normal"
-      >
-        <b
-          ><span class="c16b"
-            >เรื่อง<span style="mso-spacerun: yes">  </span
-            >กกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกก</span
-          ></b
-        ><b><span class="c16"></span></b>
-      </p>
-
-      <p
-        class="MsoNormal"
-        align="center"
-        style="margin-bottom: 0cm; text-align: center; line-height: normal"
-      >
-        <span class="c16"
-          >---------------------------------------------------------</span
+        <span class="span_image">
+ 
+            <img
+              src="images/image1.jpg"
+              class="image_logo"
+              title="ตราครุฑ"
+            />
+         </span
         ><span class="c16"></span>
       </p>
-
-      <p
-        class="MsoNormal"
-        style="
-          margin-top: 12pt;
-          margin-right: 0cm;
-          margin-bottom: 0cm;
-          margin-left: 0cm;
-          text-align: justify;
-          text-justify: inter-cluster;
-          text-indent: 70.9pt;
-          line-height: normal;
- 
-        "
-      >
-        <span  class="c16"
-          >กกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกก</span
-        >
-      </p>
-
-      <p
-        class="MsoNormal"
-        style="
-          margin-top: 6pt;
-          margin-right: 0cm;
-          margin-bottom: 0cm;
-          margin-left: 0cm;
-          text-align: justify;
-          text-justify: inter-cluster;
-          text-indent: 70.9pt;
-          line-height: normal;
-        "
-      >
-        <span  class="c16"
-          >กกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกก</span
-        ><span lang="EN-US" class="c16"></span>
-      </p>
-
-      <p
-        class="MsoNormal"
-        style="
-          margin-top: 6pt;
-          margin-right: 0cm;
-          margin-bottom: 0cm;
-          margin-left: 0cm;
-          text-align: justify;
-          text-justify: inter-cluster;
-          text-indent: 70.9pt;
-          line-height: normal;
-        "
-      >
-        <span  class="c16"
-          >ทั้งนี้<span style="mso-spacerun: yes">  </span>ตั้งแต่<span
-            style="mso-spacerun: yes"
-            >  </span
-          >กกกกกกกกกกกกกกกกกกกกกกก</span
-        ><span lang="EN-US" class="c16"></span>
-      </p>
-
-      <p
-        class="MsoNormal"
-        style="
-          margin-top: 12pt;
-          margin-right: 0cm;
-          margin-bottom: 0cm;
-          margin-left: 0cm;
-          text-indent: 127.6pt;
-          line-height: normal;
-          tab-stops: center 339.05pt;
-        "
-      >
-        <span  class="c16"
-          >สั่ง<span style="mso-spacerun: yes">  </span>ณ<span
-            style="mso-spacerun: yes"
-            >  </span
-          >วันที่<span style="mso-spacerun: yes">  </span>00<span
-            style="mso-spacerun: yes"
-            >  </span
-          >ตุลาคม<span style="mso-spacerun: yes">  </span>พ.ศ. 2560<span
-            style="mso-spacerun: yes"
-            >  </span
-          ><span style="color: red"
-            >(ปรับบรรทัดให้ตรงกับคำสั่งด้านบน)</span
-          ></span
-        >
-      </p>
-
-      <p
-        class="MsoNormal"
-        style="
-          margin-top: 0cm;
-          margin-right: 54.4pt;
-          margin-bottom: 0cm;
-          margin-left: 0cm;
-          text-indent: 4cm;
-          line-height: normal;
-        "
-      >
-        <span lang="EN-US" class="c16">&nbsp; </span>
-      </p>
-
-      <p
-        class="MsoNormal"
-        style="
-          margin-top: 0cm;
-          margin-right: 54.4pt;
-          margin-bottom: 0cm;
-          margin-left: 0cm;
-          text-indent: 4cm;
-          line-height: normal;
-        "
-      >
-        <span lang="EN-US" class="c16">&nbsp; </span>
-      </p>
-
-      <p
-        class="MsoNormal"
-        style="
-          margin-top: 0cm;
-          margin-right: 54.4pt;
-          margin-bottom: 0cm;
-          margin-left: 0cm;
-          text-indent: 4cm;
-          line-height: normal;
-        "
-      >
-        <span lang="EN-US" class="c16">&nbsp; </span>
-      </p>
-
-      <p
-      class="MsoNormal"
-      align="center"
-      style="
-        margin-top: 0cm;
-        margin-right: -0.05pt;
-        margin-bottom: 0cm;
-        margin-left: 0cm;
-        text-align: center;
-        text-indent: 35.45pt;
-        line-height: normal;
-      "
+    </td>
+    <td
+      width="201"
+      valign="top"
+      style="width: 151.05pt; padding: 0cm 5.4pt 0cm 5.4pt"
     >
-      <span  class="c16"></span
-      ><span lang="EN-US" class="c16"
-        ><span style="mso-spacerun: yes"> (ชื่อเต็ม)</span></span
-      ><span class="c16"></span
-      ><span  class="c16"></span>
-    </p>
       <p
         class="MsoNormal"
-        align="center"
-        style="
-          margin-top: 0cm;
-          margin-right: -0.05pt;
-          margin-bottom: 0cm;
-          margin-left: 0cm;
-          text-align: center;
-          text-indent: 35.45pt;
-          line-height: normal;
-        "
+        style="margin-bottom: 0cm; line-height: normal"
       >
-        <span  class="c16">ตำแหน่ง</span
-        ><span lang="EN-US" class="c16"
-          ><span style="mso-spacerun: yes"> </span></span
-        ><span class="c16">(ปรับให้กึ่งกลางกับชื่อเต็ม)</span
-        ><span  class="c16"></span>
+        <span class="c16">&nbsp;</span>
       </p>
-    </div>
-  </body>
-</html>
+    </td>
+  </tr>
+</table>
+
+<p
+  class="MsoNormal"
+  align="center"
+  style="
+    margin-bottom: 0cm;
+    text-align: center;
+    line-height: normal;
+    tab-stops: 12cm;
+  "
+>
+  <b><span class="c16b">คำสั่งสำนักงานสาธารณสุขอำเภอดำเนินสะดวก</span></b
+  ><b><span class="c16b"></span></b>
+</p>
+
+<p
+  class="MsoNormal"
+  align="center"
+  style="margin-bottom: 0cm; text-align: center; line-height: normal"
+>
+  <b
+    ><span class="c16b"
+      >ที่ <span style="mso-spacerun: yes"> </span>00 / ๒๕60</span
+    ></b
+  >
+</p>
+
+<p
+  class="MsoNormal"
+  align="center"
+  style="margin-bottom: 0cm; text-align: center; line-height: normal"
+>
+  <b
+    ><span class="c16b"
+      >เรื่อง<span style="mso-spacerun: yes">  </span
+      >กกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกก</span
+    ></b
+  ><b><span class="c16"></span></b>
+</p>
+
+<p
+  class="MsoNormal"
+  align="center"
+  style="margin-bottom: 0cm; text-align: center; line-height: normal"
+>
+  <span class="c16"
+    >---------------------------------------------------------</span
+  ><span class="c16"></span>
+</p>
+
+<p
+  class="MsoNormal"
+  style="
+    margin-top: 12pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-align: justify;
+    text-justify: inter-cluster;
+    text-indent: 70.9pt;
+    line-height: normal;
+    tab-stops: 0cm;
+  "
+>
+  <span  class="c16"
+    >กกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกก
+    </span>
+</p>
+
+<p
+  class="MsoNormal"
+  style="
+    margin-top: 6pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-align: justify;
+    text-justify: inter-cluster;
+    text-indent: 70.9pt;
+    line-height: normal;
+  "
+>
+  <span  class="c16"
+    >กกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกก</span
+  ><span lang="EN-US" class="c16"></span>
+</p>
+
+<p
+  class="MsoNormal"
+  style="
+    margin-top: 6pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-align: justify;
+    text-justify: inter-cluster;
+    text-indent: 70.9pt;
+    line-height: normal;
+  "
+>
+  <span  class="c16"
+    >ทั้งนี้<span style="mso-spacerun: yes">  </span>ตั้งแต่<span
+      style="mso-spacerun: yes"
+      >  </span
+    >กกกกกกกกกกกกกกกกกกกกกกก</span
+  ><span lang="EN-US" class="c16"></span>
+</p>
+
+<p
+  class="MsoNormal"
+  style="
+    margin-top: 12pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 127.6pt;
+    line-height: normal;
+    tab-stops: center 339.05pt;
+  "
+>
+  <span  class="c16"
+    >สั่ง<span style="mso-spacerun: yes">  </span>ณ<span
+      style="mso-spacerun: yes"
+      >  </span
+    >วันที่<span style="mso-spacerun: yes">  </span>00<span
+      style="mso-spacerun: yes"
+      >  </span
+    >ตุลาคม<span style="mso-spacerun: yes">  </span>พ.ศ. 2560<span
+      style="mso-spacerun: yes"
+      >  </span
+    ><span style="color: red"
+      >(ปรับบรรทัดให้ตรงกับคำสั่งด้านบน)</span
+    ></span
+  >
+</p>
+
+<p
+  class="MsoNormal"
+  style="
+    margin-top: 0cm;
+    margin-right: 54.4pt;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 4cm;
+    line-height: normal;
+  "
+>
+  <span lang="EN-US" class="c16">&nbsp; </span>
+</p>
+
+<p
+  class="MsoNormal"
+  style="
+    margin-top: 0cm;
+    margin-right: 54.4pt;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 4cm;
+    line-height: normal;
+  "
+>
+  <span lang="EN-US" class="c16">&nbsp; </span>
+</p>
+
+<p
+  class="MsoNormal"
+  style="
+    margin-top: 0cm;
+    margin-right: 54.4pt;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 4cm;
+    line-height: normal;
+  "
+>
+  <span lang="EN-US" class="c16">&nbsp; </span>
+</p>
+
+<p
+  class="MsoNormal"
+  style="
+    margin-top: 0cm;
+    margin-right: 54.4pt;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 8cm;
+    line-height: normal;
+  "
+>
+  <span  class="c16">(ชื่อเต็ม)</span
+  ><span lang="EN-US" class="c16"></span>
+</p>
+
+<p
+  class="MsoNormal"
+  align="center"
+  style="
+    margin-top: 0cm;
+    margin-right: -0.05pt;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-align: center;
+    text-indent: 35.45pt;
+    line-height: normal;
+  "
+>
+  <span  class="c16">ตำแหน่ง</span
+  ><span lang="EN-US" class="c16"
+    ><span style="mso-spacerun: yes">  </span></span
+  ><span class="c16">(ปรับให้กึ่งกลางกับชื่อเต็ม)</span
+  ><span  class="c16"></span>
+</p>
+</div>
+
+
 
 <style>
-
 
 @font-face {
     font-family: 'Sarabun';
@@ -351,7 +342,6 @@
   -webkit-transform: rotate(0rad) translateZ(0px);
   width: 103.18px;
   height: 113.39px;
-  text-align: center;
 }
 .image_logo{
   width: 103.18px;
@@ -803,3 +793,10 @@ ul
 
 
 </style>
+  
+EOD;
+
+
+
+?>
+

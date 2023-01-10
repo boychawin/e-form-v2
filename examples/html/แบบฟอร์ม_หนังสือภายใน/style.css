@@ -1,13 +1,7 @@
 
-/* @import url("https://themes.googleusercontent.com/fonts/css?kit=fpjTOVmNbO4Lz34iLyptLVhBiQK9Lw5Ur-flbqGetmlohjVfmhrlD5xCX-n68ixJ_kmCvy597kDopqFAXvpeaA"); */
-
 @font-face {
   font-family: 'Sarabun';
   src: url('../../../fonts/thsarabun-new/THSarabunNew001.ttf');
-  /* src: url('../fonts/icomoon.eot') format('embedded-opentype'); */
-  /* src: url('../fonts/thsarabun-new/THSarabunNew001.ttf') format('truetype'); */
-  /* src: url('../fonts/icomoon.woff') format('woff');
-  src: url('../fonts/icomoon.svg') format('svg'); */
   font-weight: normal;
   font-style: normal;
 }

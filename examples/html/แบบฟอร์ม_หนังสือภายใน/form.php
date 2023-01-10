@@ -10,8 +10,10 @@
 </head>
 
 <body class="c50 doc-content">
-  <form action="./pdf.php" method="POST">
+
+<form action="./pdf.php" method="POST">
     <button type="submit">export pdf</button>
+    <div  style="margin-top: 5pt;"></div>
     <div class="WordSection1">
       <table class="MsoTableGrid" border="0" cellspacing="0" cellpadding="0" width="100%" style="
           width: 100.24%;

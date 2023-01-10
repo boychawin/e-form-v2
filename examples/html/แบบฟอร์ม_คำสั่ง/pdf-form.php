@@ -11,7 +11,8 @@ $data7 = $_GET['name7'];
 $data8 = $_GET['name8'];
 $html = <<<EOD
 
-<div class="WordSection1">
+<>
+<div  style="margin-top: 1pt;"></div>
 
 <table
   class="MsoTableGrid"
@@ -281,7 +282,7 @@ $html = <<<EOD
   ><span class="c16">$data8</span
   ><span  class="c16"></span>
 </p>
-</div>
+</>
 
 
 

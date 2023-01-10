@@ -18,9 +18,7 @@ $namefile = $_POST['namefile'] ?? '../../../images/image31.png';
 $html = <<<EOD
 
 <>
-
-    <p class="c17 c5"><span class="c18"></span></p><a id="t.38c25885569c2cef59537e936d618a4f9fd8e77d"></a><a
-        id="t.0"></a>
+<div  style="margin-top: 1pt;"></div>
     <table class="c19">
         <tr class="c15">
             <td class="" colspan="1" rowspan="1">

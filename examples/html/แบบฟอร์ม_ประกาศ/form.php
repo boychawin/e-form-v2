@@ -73,15 +73,17 @@
       <p class="c2"><span class="c8"></span></p>
       <p class="c13">
         <span class="c8"
-          >(<input type="text" id="id" name="name4" value="ชื่อ-นามสกุล" />)</span
+          ><input type="text" id="id" name="name4" value="ชื่อ-นามสกุล" /></span
         >
       </p>
+
       <p class="c13">
-        <span class="c9">ตำแหน่ง &nbsp;</span
-        ><span class="c9 c16">
-          <input type="text" id="id" name="name5" value="ตำแหน่ง"
-        /></span>
+        <span class="c8"
+          > <input type="text" id="id" name="name5" value="ตำแหน่ง" /> </span
+        >
       </p>
+
+
       </form>
   </body>
 </html>

@@ -1,13 +1,77 @@
 
-/* @import url("https://themes.googleusercontent.com/fonts/css?kit=fpjTOVmNbO4Lz34iLyptLVhBiQK9Lw5Ur-flbqGetmlohjVfmhrlD5xCX-n68ixJ_kmCvy597kDopqFAXvpeaA"); */
+
+<?php 
+$data1 = $_GET['name1'];
+$data2 = $_GET['name2'];
+$data3 = $_GET['name3'];
+$data4 = $_GET['name4'];
+$data5 = $_GET['name5'];
+
+
+
+$html = <<<EOD
+<>
+
+
+<table class="c5">
+    <tr class="c17">
+        <td class="" colspan="1" rowspan="1">
+            <p class="c14"><span class="c8"></span></p>
+        </td>
+        <td class="" colspan="1" rowspan="1">
+            <p class="c0">
+                <span
+                    class="span_image"><img
+                        alt=""
+                        src="../../../images/image1.jpg"
+                        class="image_logo"
+                        title=""
+                        /></span>
+            </p>
+        </td>
+        <td class="" colspan="1" rowspan="1">
+            <p class="c14"><span class="c8"></span></p>
+        </td>
+    </tr>
+</table>
+<p class="c0">
+    <span class="c4"> ประกาศสำนักงานสาธารณสุขอำเภอดำเนินสะดวก</span>
+</p>
+<p class="c0">
+    <span class="c4">เรื่อง
+        &nbsp;$data1</span>
+</p>
+<p class="c0">
+    <span class="c8">---------------------------------------------------------</span>
+</p>
+<p class="c7" id="h.gjdgxs">
+    <span class="c8">$data2</span>
+</p>
+<p class="c1">
+    <span class="c9">ประกาศ
+        &nbsp;ณ
+        &nbsp;วันที่ 
+        &nbsp;$data3
+       
+         &nbsp;</span><span class="c9 c16"></span>
+</p>
+<p class="c2"><span class="c8"></span></p>
+<p class="c2"><span class="c8"></span></p>
+<p class="c2"><span class="c8"></span></p>
+<p class="c13">
+    <span class="c8">($data4)</span>
+</p>
+<p class="c0 c11">
+    <span class="c9">&#3605;&#3635;&#3649;&#3627;&#3609;&#3656;&#3591;
+        &nbsp;</span><span class="c9 c16">$data5</span>
+</p>
+</>
+  
+<style>
 
 @font-face {
     font-family: 'Sarabun';
     src: url('/fonts/thsarabun-new/THSarabunNew001.ttf');
-    /* src: url('../fonts/icomoon.eot') format('embedded-opentype'); */
-    /* src: url('../fonts/thsarabun-new/THSarabunNew001.ttf') format('truetype'); */
-    /* src: url('../fonts/icomoon.woff') format('woff');
-    src: url('../fonts/icomoon.svg') format('svg'); */
     font-weight: normal;
     font-style: normal;
 }
@@ -33,7 +97,7 @@
                   -webkit-transform: rotate(0rad) translateZ(0px);
 }
 
-/* @import url("https://themes.googleusercontent.com/fonts/css?kit=fpjTOVmNbO4Lz34iLyptLVhBiQK9Lw5Ur-flbqGetmlohjVfmhrlD5xCX-n68ixJ_kmCvy597kDopqFAXvpeaA"); */
+
 ol.lst-kix_list_1-3 {
   list-style-type: none;
 }
@@ -258,40 +322,8 @@ table td,
 table th {
   padding: 0;
 }
-.c15 {
-  border-right-style: solid;
-  padding: 0pt 5.4pt 0pt 5.4pt;
-  border-bottom-color: #000000;
-  border-top-width: 0pt;
-  border-right-width: 0pt;
-  border-left-color: #000000;
-  vertical-align: top;
-  border-right-color: #000000;
-  border-left-width: 0pt;
-  border-top-style: solid;
-  border-left-style: solid;
-  border-bottom-width: 0pt;
-  width: 151.1pt;
-  border-top-color: #000000;
-  border-bottom-style: solid;
-}
-.c12 {
-  border-right-style: solid;
-  padding: 0pt 5.4pt 0pt 5.4pt;
-  border-bottom-color: #000000;
-  border-top-width: 0pt;
-  border-right-width: 0pt;
-  border-left-color: #000000;
-  vertical-align: top;
-  border-right-color: #000000;
-  border-left-width: 0pt;
-  border-top-style: solid;
-  border-left-style: solid;
-  border-bottom-width: 0pt;
-  width: 151pt;
-  border-top-color: #000000;
-  border-bottom-style: solid;
-}
+
+
 .c2 {
   padding-top: 0pt;
   text-indent: 113.4pt;
@@ -521,3 +553,10 @@ h6 {
   widows: 2;
   text-align: left;
 }
+</style>
+EOD;
+
+
+
+?>
+

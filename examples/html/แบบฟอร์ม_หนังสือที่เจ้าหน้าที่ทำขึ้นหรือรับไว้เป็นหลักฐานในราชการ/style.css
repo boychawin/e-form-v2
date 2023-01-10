@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'Sarabun';
-    src: url('/fonts/thsarabun-new/THSarabunNew001.ttf');
+    src: url('../../../fonts/thsarabun-new/THSarabunNew001.ttf');
     /* src: url('../fonts/icomoon.eot') format('embedded-opentype'); */
     /* src: url('../fonts/thsarabun-new/THSarabunNew001.ttf') format('truetype'); */
     /* src: url('../fonts/icomoon.woff') format('woff');
@@ -167,6 +167,23 @@ table th {
   font-family: "Sarabun";
   font-style: normal;
 }
+
+.c15pt {
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 15pt;
+    font-family: "Sarabun";
+    font-style: normal;
+  }
+
+  .c14pt {
+    font-size: 14pt;
+    line-height: 115%;
+    font-family: "Sarabun";
+  }
+
 .c12 {
   padding-top: 6pt;
   text-indent: 70.9pt;
@@ -406,20 +423,20 @@ h6 {
 
 .span_image {
     overflow: hidden;
-    display: inline-block;
-    margin: 0px 0px;
-    border: 0px solid #000000;
-    transform: rotate(0rad) translateZ(0px);
-    -webkit-transform: rotate(0rad) translateZ(0px);
-    width: 103.18px;
-    height: 113.39px;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 102.4px;
+          height: 113.27px;
 }
 
 .image_logo {
-    width: 103.18px;
-    height: 113.39px;
-    margin-left: -0px;
-    margin-top: -0px;
+    width: 189.25px;
+    height: 149.04px;
+    margin-left: -37.24px;
+    margin-top: -24.42px;
     transform: rotate(0rad) translateZ(0px);
     -webkit-transform: rotate(0rad) translateZ(0px);
 }

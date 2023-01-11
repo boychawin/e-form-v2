@@ -14,7 +14,7 @@ $data9 = $_POST['name9'];
 $html = <<<EOD
 <>
 
-<table class="c24">
+<table class="c24" border='0'>
   <tr class="c26">
     <td class="" colspan="1" rowspan="1">
       <p class="c2"><span class="c5"></span></p>
@@ -36,8 +36,10 @@ $html = <<<EOD
       <p class="c2"><span class="c5"></span></p>
     </td>
   </tr>
-  <tr class="c7">
-    <td class="" colspan="1" rowspan="1">
+  <tr class="c7" >
+    <td class="" colspan="1" rowspan="1" valign="bottom" >
+    <p class="c0"><span class="c1"> &nbsp;</span></p>
+    <p class="c0"><span class="c1">&nbsp;</span></p>
     <p class="c0"><span class="c1">ที่&nbsp;$data1 </span></p>
     </td>
   </tr>

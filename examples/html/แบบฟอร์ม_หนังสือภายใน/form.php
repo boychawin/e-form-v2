@@ -100,8 +100,7 @@
           <td width="84%" colspan="4" valign="bottom" style="
               width: 84.3%;
               border: none;
-              border-bottom: dotted windowtext 1pt;
-              mso-border-bottom-alt: dotted windowtext 0.5pt;
+              border-bottom: dotted windowtext 0.5pt;
               padding: 0cm 5.4pt 0cm 5.4pt;
             ">
             <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal">
@@ -120,16 +119,14 @@
                 margin-left: -5.15pt;
                 line-height: normal;
               ">
-              <b><span class="c29">ที่</span></b><b><span class="c27">
-                  <o:p></o:p>
-                </span></b>
+              <b><span class="c29">ที่</span></b>
             </p>
           </td>
           <td width="45%" colspan="4" valign="bottom" style="
               width: 45.96%;
               border: none;
-              border-bottom: dotted windowtext 1pt;
-              mso-border-bottom-alt: dotted windowtext 0.5pt;
+              border-bottom: dotted windowtext 0.5pt;
+     
               padding: 0cm 5.4pt 0cm 5.4pt;
             ">
             <p class="MsoNormal" style="
@@ -162,8 +159,8 @@
           <td width="44%" colspan="2" valign="bottom" style="
               width: 44.16%;
               border: none;
-              border-bottom: dotted windowtext 1pt;
-              mso-border-bottom-alt: dotted windowtext 0.5pt;
+              border-bottom: dotted windowtext 0.5pt;
+    
               padding: 0cm 5.4pt 0cm 5.4pt;
             ">
             <p class="MsoNormal" style="
@@ -200,16 +197,13 @@
                 margin-left: -5.65pt;
                 line-height: normal;
               ">
-              <b><span class="c29">เรื่อง</span></b><b><span class="c27">
-                  <o:p></o:p>
-                </span></b>
+              <b><span class="c29">เรื่อง</span></b>
             </p>
           </td>
           <td width="93%" colspan="5" valign="bottom" style="
               width: 93.12%;
               border: none;
-              border-bottom: dotted windowtext 1pt;
-              mso-border-bottom-alt: dotted windowtext 0.5pt;
+              border-bottom: dotted windowtext 0.5pt;
               padding: 0cm 5.4pt 0cm 5.4pt;
             ">
             <p class="MsoNormal" style="

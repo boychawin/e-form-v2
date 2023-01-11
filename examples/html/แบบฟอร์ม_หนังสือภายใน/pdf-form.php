@@ -14,593 +14,295 @@ $data10 = $_POST['name10'];
 $data11 = $_POST['name11'];
 
 $html = <<<EOD
+<>
 
 
-  <body class="c50 doc-content">
-    <div class="WordSection1">
- 
+  <body class="c4 doc-content">
+    
+  <div  style="margin-top: 1pt;"></div>
+
+
+
+
+  <table width="100%" border="0">
+  <tr class="c26">
+    <td class="" colspan="1" rowspan="1">
+    <p class="c2">
+    <img width="42" height="43" src="../../../images/image1.png" alt="krut_s"/>
+    </p>
+    </td>
+
+    <td class="c29pt" colspan="1" rowspan="1" valign="center" >
+    <b>บันทึกข้อความ</b>
+    </td>
+
+    
+    <td class="" colspan="1" rowspan="1">
+      <p class="c2"><span class="c5"></span></p>
+    </td>
+
+  </tr>
+</table>
+
+
   
 
-  <table class="c24" >
-
- 
-
-  <tr class="c26">
-  <td width="70%" colspan="2" rowspan="1">
-      <p class="c0"><span class="c1"><b>ส่วนราชการ</b>&nbsp;&nbsp;</span> <span class="c11">$data1</span>  </p>
-      </td>
-
-      <td width="30%" valign="bottom" colspan="1" >
-      <p class="c0"><span class="c11"><b>โทร</b>&nbsp;&nbsp;</span> <span class="c11">$data2</span>  </p>
-      </td>
-
-    </tr>
-    
-
-<tr >
-
-<td width="50%" colspan="1" valign="bottom">
-<p class="c0"><span class="c1"><b>ที่</b>&nbsp;&nbsp;</span> <span class="c11">$data3</span>  </p>
-</td>
-
-<td width="50%" valign="bottom" colspan="1" >
-<p class="c0"><span class="c1"><b>วันที่</b>&nbsp;&nbsp;</span> <span class="c11">$data4</span>  </p>
-</td>
-</tr>
-
-  </table>
-
-
-    
- 
-          <p class="c0"><span class="c1"><b>เรื่อง</b>&nbsp; $data5 </span></p>
-          <p class="c0 "><span class="c1"><b>เรียน</b>&nbsp; $data6</span></p>
-
-          <p class="c12"><span class="c1">ภาคเหตุ&nbsp;$data7</span></p>
-        <p class="c12"><span class="c1">ภาคความประสงค์&nbsp;$data8</span></p>
-        <p class="c12"><span class="c1">ภาคสรุป&nbsp;$data9</span></p>
 
 
 
-        
-      <p
-        class="MsoNormal"
-        style="
-          margin-bottom: 0cm;
-          text-align: justify;
-          text-justify: inter-cluster;
-          text-indent: 70.9pt;
-          line-height: normal;
-        "
-      >
-        <span
-        class="c1"
-          >&nbsp;</span
+
+
+    <p class="c0"><span class="c1">ส่วนราชการ&nbsp; $data1 โทร. $data2</span></p>
+
+    <p class="c0"><span class="c1">ที่&nbsp; $data3 </span>
+    <span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;วันที่ &nbsp; $data4</span><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>
+    </p>
+
+
+    <p class="c0"><span class="c1">เรื่อง&nbsp; $data5 </span></p>
+    <p class="c0"><span class="c1">เรียน&nbsp; $data6</span></p>
+
+
+    <p class="c12"><span class="c1 ">ภาคเหตุ&nbsp;$data7</span></p>
+    <p class="c12"><span class="c1">ภาคความประสงค์&nbsp;$data8</span></p>
+    <p class="c12"><span class="c1">ภาคสรุป&nbsp;$data9</span></p>
+
+
+    <p class="c2"><span class="c1"></span></p>
+    <p class="c2"><span class="c1"></span></p>
+    <p class="c2"><span class="c1"></span></p>
+    <p class="c2"><span class="c1"></span></p>
+    <p class="c2"><span class="c1"></span></p>
+    <p class="c6">
+        <span class="c1"
+        >($data10)</span
         >
-      </p>
-
-      <p
-        class="MsoNormal"
-        style="
-          margin-bottom: 0cm;
-          text-align: justify;
-          text-justify: inter-cluster;
-          text-indent: 70.9pt;
-          line-height: normal;
-        "
-      >
-        <span
-        class="c1"
-          >&nbsp;</span
+        </p>
+        <p class="c6">
+        <span class="c1"
+        >ตำแหน่ง $data11</span
         >
-      </p>
+    </p>
 
-      <p
-        class="MsoNormal"
-        style="
-          margin-bottom: 0cm;
-          text-align: justify;
-          text-justify: inter-cluster;
-          text-indent: 70.9pt;
-          line-height: normal;
-        "
-      >
-        <span
-        class="c1"
-          >&nbsp;</span
-        >
-      </p>
 
-      <p
-        class="MsoNormal"
-        style="margin-bottom: 0cm; text-indent: 8cm; line-height: normal"
-      >
-        <span
-        class="c1"
-          >($data10)</span
-        ><span
-        class="c1"
-          ></span>
-      </p>
-
-      <p
-        class="MsoNormal"
-        style="margin-bottom: 0cm; text-indent: 8cm; line-height: normal"
-      >
-        <span
-        class="c1"
-          >ตำแหน่ง<span > $data11 </span
-          ><span style="color: red"
-            ></span
-        ></span>
-      </p>
-    </div>
   </body>
+</>
 
+<style type="text/css">
+@import url("https://themes.googleusercontent.com/fonts/css?kit=jzvs0bNm7gEwY0gW5BeKeVU41WY7kekJRfc-lNa4V-8");
 
-
-
-<style>
-
-
-@font-face {
-  font-family: 'Sarabun';
-  src: url('/fonts/thsarabun-new/THSarabunNew001.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-.doc-content{
-width: 453.5pt;
-}
 ol {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 table td,
 table th {
-padding: 0;
-}
-.c50 {
-  background-color: #ffffff;
-  max-width: 453.5pt;
-  padding: 42.5pt 56.7pt 56.7pt 85pt;
-}
-.c24 {
-  margin-left: -5.4pt;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-right: auto;
-}
-.c13 {
-
-padding: 0pt 5.4pt 0pt 5.4pt;
-
-
-
-
-vertical-align: top;
-
-
-
-
-
-width: 42.5pt;
-
-
-}
-.c51 {
-  font-size: 29pt;
-  font-family: "Sarabun";
-  font-weight: 700;
-}
-.c15 {
-
-padding: 0pt 5.4pt 0pt 5.4pt;
-
-
-
-
-vertical-align: top;
-
-
-
-
-
-width: 259.9pt;
-
-
+  padding: 0;
 }
 
-.c29 {
-  font-size: 20pt;
-  font-family: "Sarabun";
-  font-weight: 700;
-}
-.c216 {
-  font-size: 16pt;
-  font-family: "Sarabun";
-  font-weight: 400;
-}
-
-
-.c3 {
-
-padding: 0pt 5.4pt 0pt 5.4pt;
-
-
-
-
-vertical-align: top;
-
-
-
-
-
-width: 187.3pt;
-
-
-}
-.c20 {
-
-padding: 0pt 5.4pt 0pt 5.4pt;
-
-
-
-
-vertical-align: top;
-
-
-
-
-
-width: 120.8pt;
-
-
-}
-.c18 {
-
-padding: 0pt 5.4pt 0pt 5.4pt;
-
-
-
-
-vertical-align: top;
-
-
-
-
-
-width: 154pt;
-
-
-}
-.c10 {
-
-padding: 0pt 5.4pt 0pt 5.4pt;
-
-
-
-
-vertical-align: top;
-
-
-
-
-
-width: 232.2pt;
-
-
-}
-.c14 {
-
-padding: 0pt 5.4pt 0pt 5.4pt;
-
-
-
-
-vertical-align: top;
-
-
-
-
-
-width: 78.2pt;
-
-
-}
-.c17 {
-
-padding: 0pt 5.4pt 0pt 5.4pt;
-
-
-
-
-vertical-align: top;
-
-
-
-
-
-width: 301.2pt;
-
-
-}
-
-.c12 {
-padding-top: 6pt;
-text-indent: 70.9pt;
-padding-bottom: 0pt;
-line-height: 1;
-orphans: 2;
-widows: 2;
-text-align: justify;
-}
-.c5 {
-color: #000000;
-font-weight: 700;
-text-decoration: none;
-vertical-align: baseline;
-font-size: 16pt;
-font-family: "Sarabun";
-font-style: normal;
-}
-.c22 {
-color: #000000;
-font-weight: 400;
-text-decoration: none;
-vertical-align: baseline;
-font-size: 11pt;
-font-family: "Arial";
-font-style: normal;
-}
-.c2 {
-padding-top: 0pt;
-padding-bottom: 0pt;
-line-height: 1;
-orphans: 2;
-widows: 2;
-text-align: center;
-height: 11pt;
-}
 .c0 {
-padding-top: 6pt;
-padding-bottom: 0pt;
-line-height: 1;
-orphans: 2;
-widows: 2;
-text-align: left;
+  padding-top: 6pt;
+  padding-bottom: 0pt;
+  line-height: 1;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
 }
 
-.c66 {
+.c2 {
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+  line-height: 1;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+  left: 0;
+
+}
+
+.c6 {
   padding-top: 0pt;
   padding-bottom: 0pt;
   line-height: 1;
   orphans: 2;
   widows: 2;
   text-align: center;
-  }
-.c6 {
-padding-top: 0pt;
-padding-bottom: 0pt;
-line-height: 1;
-orphans: 2;
-widows: 2;
-text-align: center;
 }
-.c25 {
-padding-top: 12pt;
-padding-bottom: 0pt;
-line-height: 1;
-orphans: 2;
-widows: 2;
-text-align: center;
+
+.c7 {
+  color: #ff0000;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-style: normal;
 }
-.c8 {
-padding-top: 0pt;
-padding-bottom: 0pt;
-line-height: 1;
-orphans: 2;
-widows: 2;
-text-align: left;
-}
+
 .c4 {
-padding-top: 0pt;
-padding-bottom: 0pt;
-line-height: 1.15;
-text-align: left;
-height: 11pt;
+  background-color: #ffffff;
+  max-width: 453.5pt;
+  padding: 51pt 56.7pt 42.5pt 85pt;
 }
-.c19 {
-margin-left: 120.5pt;
-border-spacing: 0;
-border-collapse: collapse;
-margin-right: auto;
+
+.c5 {
+  font-size: 16pt;
+  font-family: "Sarabun";
+  font-weight: 400;
 }
 
 .c1 {
-  color: #000000;
-  font-weight: 400;
-  text-decoration: none;
-  vertical-align: baseline;
   font-size: 16pt;
   font-family: "Sarabun";
-  font-style: normal;
-  }
+  font-weight: 700;
+}
 
+.c3 {
+  height: 12pt;
+}
 
-
-.c11 {
-font-size: 16pt;
-font-family: "Sarabun";
-font-weight: 400;
-}
-.c28 {
-background-color: #ffffff;
-max-width: 459.5pt;
-min-width: 459.5pt;
-padding: 42.5pt 56.7pt 56.7pt 85pt;
-}
-.c16 {
-margin-left: -154pt;
-margin-right: -189.7pt;
-}
-.c9 {
-height: 11pt;
-}
-.c27 {
-margin-left: -5.4pt;
-}
-.c23 {
-height: 3.1pt;
-}
-.c7 {
-height: 0pt;
-}
-.c26 {
-height: 63.2pt;
-}
-.c21 {
-color: #ff0000;
-}
 .title {
-padding-top: 24pt;
-color: #000000;
-font-weight: 700;
-font-size: 36pt;
-padding-bottom: 6pt;
-font-family: "Calibri";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-orphans: 2;
-widows: 2;
-text-align: left;
+  padding-top: 24pt;
+  color: #000000;
+  font-weight: 700;
+  font-size: 36pt;
+  padding-bottom: 6pt;
+  font-family: "Times New Roman";
+  line-height: 1;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
 }
+
 .subtitle {
-padding-top: 18pt;
-color: #666666;
-font-size: 24pt;
-padding-bottom: 4pt;
-font-family: "Georgia";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-font-style: italic;
-orphans: 2;
-widows: 2;
-text-align: left;
+  padding-top: 18pt;
+  color: #666666;
+  font-size: 24pt;
+  padding-bottom: 4pt;
+  font-family: "Georgia";
+  line-height: 1;
+  page-break-after: avoid;
+  font-style: italic;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
 }
+
 li {
-color: #000000;
-font-size: 11pt;
-font-family: "Calibri";
+  color: #000000;
+  font-size: 12pt;
+  font-family: "Times New Roman";
 }
+
 p {
-margin: 0;
-color: #000000;
-font-size: 11pt;
-font-family: "Calibri";
+  margin: 0;
+  color: #000000;
+  font-size: 12pt;
+  font-family: "Times New Roman";
 }
+
 h1 {
-padding-top: 24pt;
-color: #000000;
-font-weight: 700;
-font-size: 24pt;
-padding-bottom: 6pt;
-font-family: "Calibri";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-orphans: 2;
-widows: 2;
-text-align: left;
+  padding-top: 24pt;
+  color: #000000;
+  font-weight: 700;
+  font-size: 24pt;
+  padding-bottom: 6pt;
+  font-family: "Times New Roman";
+  line-height: 1;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
 }
+
 h2 {
-padding-top: 18pt;
-color: #000000;
-font-weight: 700;
-font-size: 18pt;
-padding-bottom: 4pt;
-font-family: "Calibri";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-orphans: 2;
-widows: 2;
-text-align: left;
+  padding-top: 18pt;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18pt;
+  padding-bottom: 4pt;
+  font-family: "Times New Roman";
+  line-height: 1;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
 }
+
 h3 {
-padding-top: 14pt;
-color: #000000;
-font-weight: 700;
-font-size: 14pt;
-padding-bottom: 4pt;
-font-family: "Calibri";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-orphans: 2;
-widows: 2;
-text-align: left;
+  padding-top: 14pt;
+  color: #000000;
+  font-weight: 700;
+  font-size: 14pt;
+  padding-bottom: 4pt;
+  font-family: "Times New Roman";
+  line-height: 1;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
 }
+
 h4 {
-padding-top: 12pt;
-color: #000000;
-font-weight: 700;
-font-size: 12pt;
-padding-bottom: 2pt;
-font-family: "Calibri";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-orphans: 2;
-widows: 2;
-text-align: left;
+  padding-top: 12pt;
+  color: #000000;
+  font-weight: 700;
+  font-size: 12pt;
+  padding-bottom: 2pt;
+  font-family: "Times New Roman";
+  line-height: 1;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
 }
+
 h5 {
-padding-top: 11pt;
-color: #000000;
-font-weight: 700;
-font-size: 11pt;
-padding-bottom: 2pt;
-font-family: "Calibri";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-orphans: 2;
-widows: 2;
-text-align: left;
+  padding-top: 11pt;
+  color: #000000;
+  font-weight: 700;
+  font-size: 11pt;
+  padding-bottom: 2pt;
+  font-family: "Times New Roman";
+  line-height: 1;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
 }
+
 h6 {
-padding-top: 10pt;
-color: #000000;
-font-weight: 700;
-font-size: 10pt;
-padding-bottom: 2pt;
-font-family: "Calibri";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-orphans: 2;
-widows: 2;
-text-align: left;
+  padding-top: 10pt;
+  color: #000000;
+  font-weight: 700;
+  font-size: 10pt;
+  padding-bottom: 2pt;
+  font-family: "Times New Roman";
+  line-height: 1;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+}
+
+.c29pt {
+  font-size: 29pt;
+  font-family: "Sarabun";
+  font-weight: 700;
+
 }
 
 
-.span_image {
-  overflow: hidden;
-  display: inline-block;
-  margin: 0px 0px;
-  border: 0px solid #000000;
-  transform: rotate(0rad) translateZ(0px);
-  -webkit-transform: rotate(0rad) translateZ(0px);
-  width: 103.18px;
-  height: 113.39px;
-}
-
-.image_logo {
-  width: 103.18px;
-  height: 113.39px;
-  margin-left: -0px;
-  margin-top: -0px;
-  transform: rotate(0rad) translateZ(0px);
-  -webkit-transform: rotate(0rad) translateZ(0px);
-}
-
-
+  .c12 {
+  padding-top: 6pt;
+  text-indent: 70.9pt;
+  padding-bottom: 0pt;
+  line-height: 1;
+  orphans: 2;
+  widows: 2;
+  text-align: justify;
+  }
 </style>
+
 EOD;
 
 

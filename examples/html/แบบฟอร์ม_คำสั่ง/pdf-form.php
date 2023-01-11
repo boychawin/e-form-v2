@@ -45,31 +45,28 @@ $html = <<<EOD
         <span class="c16">&nbsp;</span>
       </p>
     </td>
-    <td
-      width="201"
-      valign="top"
-      style="width: 151pt; padding: 0cm 5.4pt 0cm 5.4pt"
-    >
-      <p
-        class="MsoNormal"
-        align="center"
-        style="
-          margin-bottom: 0cm;
-          text-align: center;
-          line-height: normal;
-        "
-      >
-        <span class="">
- 
-            <img
-              src="../../../images/image1.jpg"
-              class="image_logo"
-              title="ตราครุฑ"
-            />
-         </span
-        ><span class="c16"></span>
-      </p>
-    </td>
+    <td width="201" valign="top" style="width: 151pt; padding: 0cm 5.4pt 0cm 5.4pt">
+    <p class="MsoNormal" align="center" style="
+        margin-bottom: 0cm;
+        text-align: center;
+        line-height: normal;
+      ">
+      <span lang="EN-US" style="mso-no-proof: yes">
+       
+        <v:shape  o:spid="_x0000_i1025" type="#_x0000_t75" style="
+            width: 77pt;
+            height: 85pt;
+            visibility: visible;
+            mso-wrap-style: square;
+          ">
+          <img src="../../../images/image1.jpg" class="image_logo" title="ตราครุฑ" />
+          <o:lock v:ext="edit" aspectratio="f" />
+        </v:shape>
+      </span><span class="c16">
+        <o:p></o:p>
+      </span>
+    </p>
+  </td>
     <td
       width="201"
       valign="top"
@@ -345,7 +342,6 @@ $html = <<<EOD
   -webkit-transform: rotate(0rad) translateZ(0px);
   
 }
-
 
 /* @font-face
  {font-family:"Angsana New";

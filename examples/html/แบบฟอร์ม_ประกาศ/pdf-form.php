@@ -61,9 +61,11 @@ $html = <<<EOD
 <p class="c13">
     <span class="c8">($data4)</span>
 </p>
+
+
 <p class="c0 c11">
-    <span class="c9">&#3605;&#3635;&#3649;&#3627;&#3609;&#3656;&#3591;
-        &nbsp;</span><span class="c9 c16">$data5</span>
+    <span class="c9">ตำแหน่ง
+        &nbsp; $data5</span>
 </p>
 </>
   

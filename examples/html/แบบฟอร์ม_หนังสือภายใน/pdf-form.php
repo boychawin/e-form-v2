@@ -89,12 +89,7 @@ $html = <<<EOD
 </>
 
 <style type="text/css">
-@import url("https://themes.googleusercontent.com/fonts/css?kit=jzvs0bNm7gEwY0gW5BeKeVU41WY7kekJRfc-lNa4V-8");
 
-ol {
-  margin: 0;
-  padding: 0;
-}
 
 table td,
 table th {
@@ -130,13 +125,6 @@ table th {
   text-align: center;
 }
 
-.c7 {
-  color: #ff0000;
-  text-decoration: none;
-  vertical-align: baseline;
-  font-style: normal;
-}
-
 .c4 {
   background-color: #ffffff;
   max-width: 453.5pt;
@@ -155,133 +143,14 @@ table th {
   font-weight: 700;
 }
 
-.c3 {
-  height: 12pt;
-}
 
-.title {
-  padding-top: 24pt;
-  color: #000000;
-  font-weight: 700;
-  font-size: 36pt;
-  padding-bottom: 6pt;
-  font-family: "Times New Roman";
-  line-height: 1;
-  page-break-after: avoid;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
 
-.subtitle {
-  padding-top: 18pt;
-  color: #666666;
-  font-size: 24pt;
-  padding-bottom: 4pt;
-  font-family: "Georgia";
-  line-height: 1;
-  page-break-after: avoid;
-  font-style: italic;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
-
-li {
-  color: #000000;
-  font-size: 12pt;
-  font-family: "Times New Roman";
-}
 
 p {
   margin: 0;
   color: #000000;
   font-size: 12pt;
   font-family: "Times New Roman";
-}
-
-h1 {
-  padding-top: 24pt;
-  color: #000000;
-  font-weight: 700;
-  font-size: 24pt;
-  padding-bottom: 6pt;
-  font-family: "Times New Roman";
-  line-height: 1;
-  page-break-after: avoid;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
-
-h2 {
-  padding-top: 18pt;
-  color: #000000;
-  font-weight: 700;
-  font-size: 18pt;
-  padding-bottom: 4pt;
-  font-family: "Times New Roman";
-  line-height: 1;
-  page-break-after: avoid;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
-
-h3 {
-  padding-top: 14pt;
-  color: #000000;
-  font-weight: 700;
-  font-size: 14pt;
-  padding-bottom: 4pt;
-  font-family: "Times New Roman";
-  line-height: 1;
-  page-break-after: avoid;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
-
-h4 {
-  padding-top: 12pt;
-  color: #000000;
-  font-weight: 700;
-  font-size: 12pt;
-  padding-bottom: 2pt;
-  font-family: "Times New Roman";
-  line-height: 1;
-  page-break-after: avoid;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
-
-h5 {
-  padding-top: 11pt;
-  color: #000000;
-  font-weight: 700;
-  font-size: 11pt;
-  padding-bottom: 2pt;
-  font-family: "Times New Roman";
-  line-height: 1;
-  page-break-after: avoid;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
-
-h6 {
-  padding-top: 10pt;
-  color: #000000;
-  font-weight: 700;
-  font-size: 10pt;
-  padding-bottom: 2pt;
-  font-family: "Times New Roman";
-  line-height: 1;
-  page-break-after: avoid;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
 }
 
 .c29pt {

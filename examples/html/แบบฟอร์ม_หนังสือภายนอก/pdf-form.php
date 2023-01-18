@@ -33,7 +33,7 @@ $html = <<<EOD
         </td>
         <td class="c20" colspan="2" rowspan="2">
           <p class="c6 c16">
-            <span class="span_image"><img alt="logo" src="../../../images/image1.jpg" class="image_logo" title="" /></span>
+            <span class="span_image"><img alt="logo" src="../../../images/image1.jpg" class="image_logo" /></span>
           </p>
         </td>
         <td class="c3" colspan="1" rowspan="1">
@@ -133,107 +133,31 @@ $html = <<<EOD
 <style>
 
 
-@font-face {
-  font-family: 'thsarabun';
-  src: url('/fonts/thsarabun-new/THSarabunNew001.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-.doc-content{
-width: 453.5pt;
-}
-ol {
-margin: 0;
-padding: 0;
-}
 table td,
 table th {
 padding: 0;
 }
-.c13 {
 
-padding: 0pt 5.4pt 0pt 5.4pt;
-
-
-
-
-vertical-align: top;
-
-
-
-
-
-width: 42.5pt;
-
-
-}
 .c15 {
 
 padding: 0pt 5.4pt 0pt 5.4pt;
-
-
-
-
 vertical-align: top;
-
-
-
-
-
 width: 259.9pt;
-
-
 }
 .c3 {
-
 padding: 0pt 5.4pt 0pt 5.4pt;
-
-
-
-
 vertical-align: top;
-
-
-
-
-
 width: 187.3pt;
-
-
 }
 .c20 {
-
 padding: 0pt 5.4pt 0pt 5.4pt;
-
-
-
-
 vertical-align: top;
-
-
-
-
-
 width: 120.8pt;
-
-
 }
 .c18 {
-
 padding: 0pt 5.4pt 0pt 5.4pt;
-
-
-
-
 vertical-align: top;
-
-
-
-
-
 width: 154pt;
-
-
 }
 .c10 {
 
@@ -252,40 +176,8 @@ width: 232.2pt;
 
 
 }
-.c14 {
-
-padding: 0pt 5.4pt 0pt 5.4pt;
 
 
-
-
-vertical-align: top;
-
-
-
-
-
-width: 78.2pt;
-
-
-}
-.c17 {
-
-padding: 0pt 5.4pt 0pt 5.4pt;
-
-
-
-
-vertical-align: top;
-
-
-
-
-
-width: 301.2pt;
-
-
-}
 .c1 {
 color: #000000;
 font-weight: 400;
@@ -313,15 +205,7 @@ font-size: 16pt;
 font-family: "thsarabun";
 font-style: normal;
 }
-.c22 {
-color: #000000;
-font-weight: 400;
-text-decoration: none;
-vertical-align: baseline;
-font-size: 11pt;
-font-family: "Arial";
-font-style: normal;
-}
+
 .c2 {
 padding-top: 0pt;
 padding-bottom: 0pt;
@@ -340,14 +224,7 @@ widows: 2;
 text-align: left;
 }
 
-.c66 {
-  padding-top: 0pt;
-  padding-bottom: 0pt;
-  line-height: 1;
-  orphans: 2;
-  widows: 2;
-  text-align: center;
-  }
+
 .c6 {
 padding-top: 0pt;
 padding-bottom: 0pt;
@@ -356,14 +233,7 @@ orphans: 2;
 widows: 2;
 text-align: center;
 }
-.c25 {
-padding-top: 12pt;
-padding-bottom: 0pt;
-line-height: 1;
-orphans: 2;
-widows: 2;
-text-align: center;
-}
+
 .c8 {
 padding-top: 0pt;
 padding-bottom: 0pt;
@@ -372,31 +242,8 @@ orphans: 2;
 widows: 2;
 text-align: left;
 }
-.c4 {
-padding-top: 0pt;
-padding-bottom: 0pt;
-line-height: 1.15;
-text-align: left;
-height: 11pt;
-}
-.c19 {
-margin-left: 120.5pt;
-border-spacing: 0;
-border-collapse: collapse;
-margin-right: auto;
-}
 
-.c11 {
-font-size: 16pt;
-font-family: "thsarabun";
-font-weight: 400;
-}
-.c28 {
-background-color: #ffffff;
-max-width: 459.5pt;
-min-width: 459.5pt;
-padding: 42.5pt 56.7pt 56.7pt 85pt;
-}
+
 .c16 {
 margin-left: -154pt;
 margin-right: -189.7pt;
@@ -416,124 +263,15 @@ height: 0pt;
 .c26 {
 height: 63.2pt;
 }
-.c21 {
-color: #ff0000;
-}
-.title {
-padding-top: 24pt;
-color: #000000;
-font-weight: 700;
-font-size: 36pt;
-padding-bottom: 6pt;
-font-family: "Calibri";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-orphans: 2;
-widows: 2;
-text-align: left;
-}
-.subtitle {
-padding-top: 18pt;
-color: #666666;
-font-size: 24pt;
-padding-bottom: 4pt;
-font-family: "Georgia";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-font-style: italic;
-orphans: 2;
-widows: 2;
-text-align: left;
-}
-li {
-color: #000000;
-font-size: 11pt;
-font-family: "Calibri";
-}
+
+
 p {
 margin: 0;
 color: #000000;
 font-size: 11pt;
 font-family: "Calibri";
 }
-h1 {
-padding-top: 24pt;
-color: #000000;
-font-weight: 700;
-font-size: 24pt;
-padding-bottom: 6pt;
-font-family: "Calibri";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-orphans: 2;
-widows: 2;
-text-align: left;
-}
-h2 {
-padding-top: 18pt;
-color: #000000;
-font-weight: 700;
-font-size: 18pt;
-padding-bottom: 4pt;
-font-family: "Calibri";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-orphans: 2;
-widows: 2;
-text-align: left;
-}
-h3 {
-padding-top: 14pt;
-color: #000000;
-font-weight: 700;
-font-size: 14pt;
-padding-bottom: 4pt;
-font-family: "Calibri";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-orphans: 2;
-widows: 2;
-text-align: left;
-}
-h4 {
-padding-top: 12pt;
-color: #000000;
-font-weight: 700;
-font-size: 12pt;
-padding-bottom: 2pt;
-font-family: "Calibri";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-orphans: 2;
-widows: 2;
-text-align: left;
-}
-h5 {
-padding-top: 11pt;
-color: #000000;
-font-weight: 700;
-font-size: 11pt;
-padding-bottom: 2pt;
-font-family: "Calibri";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-orphans: 2;
-widows: 2;
-text-align: left;
-}
-h6 {
-padding-top: 10pt;
-color: #000000;
-font-weight: 700;
-font-size: 10pt;
-padding-bottom: 2pt;
-font-family: "Calibri";
-line-height: 1.1500000000000001;
-page-break-after: avoid;
-orphans: 2;
-widows: 2;
-text-align: left;
-}
+
 
 
 .span_image {

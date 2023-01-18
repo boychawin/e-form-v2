@@ -168,111 +168,13 @@ $html = <<<EOD
 <style>
 
 
-@font-face {
-    font-family: 'thsarabun';
-    src: url('/fonts/thsarabun-new/THSarabunNew001.ttf');
-
-    font-weight: normal;
-    font-style: normal;
-}
-.doc-content{
-  width: 453.5pt;
-}
-ol {
-  margin: 0;
-  padding: 0;
-}
 table td,
 table th {
   padding: 0;
 }
-.c13 {
-  border-right-style: solid;
-  padding: 0pt 5.4pt 0pt 5.4pt;
-  border-bottom-color: #000000;
-  border-top-width: 0pt;
-  border-right-width: 0pt;
-  border-left-color: #000000;
-  vertical-align: top;
-  border-right-color: #000000;
-  border-left-width: 0pt;
-  border-top-style: solid;
-  border-left-style: solid;
-  border-bottom-width: 0pt;
-  width: 42.5pt;
-  border-top-color: #000000;
-  border-bottom-style: solid;
-}
-.c15 {
-  border-right-style: solid;
-  padding: 0pt 5.4pt 0pt 5.4pt;
-  border-bottom-color: #000000;
-  border-top-width: 0pt;
-  border-right-width: 0pt;
-  border-left-color: #000000;
-  vertical-align: top;
-  border-right-color: #000000;
-  border-left-width: 0pt;
-  border-top-style: solid;
-  border-left-style: solid;
-  border-bottom-width: 0pt;
-  width: 259.9pt;
-  border-top-color: #000000;
-  border-bottom-style: solid;
-}
 
 
-.c10 {
-  border-right-style: solid;
-  padding: 0pt 5.4pt 0pt 5.4pt;
-  border-bottom-color: #000000;
-  border-top-width: 0pt;
-  border-right-width: 0pt;
-  border-left-color: #000000;
-  vertical-align: top;
-  border-right-color: #000000;
-  border-left-width: 0pt;
-  border-top-style: solid;
-  border-left-style: solid;
-  border-bottom-width: 0pt;
-  width: 232.2pt;
-  border-top-color: #000000;
-  border-bottom-style: solid;
-}
-.c14 {
-  border-right-style: solid;
-  padding: 0pt 5.4pt 0pt 5.4pt;
-  border-bottom-color: #000000;
-  border-top-width: 0pt;
-  border-right-width: 0pt;
-  border-left-color: #000000;
-  vertical-align: top;
-  border-right-color: #000000;
-  border-left-width: 0pt;
-  border-top-style: solid;
-  border-left-style: solid;
-  border-bottom-width: 0pt;
-  width: 78.2pt;
-  border-top-color: #000000;
-  border-bottom-style: solid;
-}
-.c17 {
-  border-right-style: solid;
-  padding: 0pt 5.4pt 0pt 5.4pt;
-  border-bottom-color: #000000;
-  border-top-width: 0pt;
-  border-right-width: 0pt;
-  border-left-color: #000000;
-  vertical-align: top;
-  border-right-color: #000000;
-  border-left-width: 0pt;
-  border-top-style: solid;
-  border-left-style: solid;
-  border-bottom-width: 0pt;
-  width: 301.2pt;
-  border-top-color: #000000;
-  border-bottom-style: solid;
-}
+
 .c1 {
   color: #000000;
   font-weight: 400;
@@ -282,15 +184,7 @@ table th {
   font-family: "thsarabun";
   font-style: normal;
 }
-.c12 {
-  padding-top: 6pt;
-  text-indent: 70.9pt;
-  padding-bottom: 0pt;
-  line-height: 1;
-  orphans: 2;
-  widows: 2;
-  text-align: justify;
-}
+
 .c5 {
   color: #000000;
   font-weight: 700;
@@ -300,15 +194,7 @@ table th {
   font-family: "thsarabun";
   font-style: normal;
 }
-.c22 {
-  color: #000000;
-  font-weight: 400;
-  text-decoration: none;
-  vertical-align: baseline;
-  font-size: 11pt;
-  font-family: "Arial";
-  font-style: normal;
-}
+
 .c2 {
   padding-top: 0pt;
   padding-bottom: 0pt;
@@ -326,196 +212,23 @@ table th {
   widows: 2;
   text-align: left;
 }
-.c6 {
-  padding-top: 0pt;
-  padding-bottom: 0pt;
-  line-height: 1;
-  orphans: 2;
-  widows: 2;
-  text-align: center;
-}
-.c25 {
-  padding-top: 12pt;
-  padding-bottom: 0pt;
-  line-height: 1;
-  orphans: 2;
-  widows: 2;
-  text-align: center;
-}
-.c8 {
-  padding-top: 0pt;
-  padding-bottom: 0pt;
-  line-height: 1;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
-.c4 {
-  padding-top: 0pt;
-  padding-bottom: 0pt;
-  line-height: 1.15;
-  text-align: left;
-  height: 11pt;
-}
-.c19 {
-  margin-left: 120.5pt;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-right: auto;
-}
-.c24 {
-  margin-left: -5.4pt;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-right: auto;
-}
+
 .c11 {
   font-size: 16pt;
   font-family: "thsarabun";
   font-weight: 400;
 }
-.c28 {
-  background-color: #ffffff;
-  max-width: 459.5pt;
-  min-width: 459.5pt;
-  padding: 42.5pt 56.7pt 56.7pt 85pt;
-}
-.c16 {
-  margin-left: -154pt;
-  margin-right: -189.7pt;
-}
-.c9 {
-  height: 11pt;
-}
-.c27 {
-  margin-left: -5.4pt;
-}
-.c23 {
-  height: 3.1pt;
-}
+
 .c7 {
   height: 0pt;
 }
-.c26 {
-  height: 63.2pt;
-}
-.c21 {
-  color: #ff0000;
-}
-.title {
-  padding-top: 24pt;
-  color: #000000;
-  font-weight: 700;
-  font-size: 36pt;
-  padding-bottom: 6pt;
-  font-family: "Calibri";
-  line-height: 1.1500000000000001;
-  page-break-after: avoid;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
-.subtitle {
-  padding-top: 18pt;
-  color: #666666;
-  font-size: 24pt;
-  padding-bottom: 4pt;
-  font-family: "Georgia";
-  line-height: 1.1500000000000001;
-  page-break-after: avoid;
-  font-style: italic;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
-li {
-  color: #000000;
-  font-size: 11pt;
-  font-family: "Calibri";
-}
+
+
 p {
   margin: 0;
   color: #000000;
   font-size: 11pt;
   font-family: "Calibri";
-}
-h1 {
-  padding-top: 24pt;
-  color: #000000;
-  font-weight: 700;
-  font-size: 24pt;
-  padding-bottom: 6pt;
-  font-family: "Calibri";
-  line-height: 1.1500000000000001;
-  page-break-after: avoid;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
-h2 {
-  padding-top: 18pt;
-  color: #000000;
-  font-weight: 700;
-  font-size: 18pt;
-  padding-bottom: 4pt;
-  font-family: "Calibri";
-  line-height: 1.1500000000000001;
-  page-break-after: avoid;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
-h3 {
-  padding-top: 14pt;
-  color: #000000;
-  font-weight: 700;
-  font-size: 14pt;
-  padding-bottom: 4pt;
-  font-family: "Calibri";
-  line-height: 1.1500000000000001;
-  page-break-after: avoid;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
-h4 {
-  padding-top: 12pt;
-  color: #000000;
-  font-weight: 700;
-  font-size: 12pt;
-  padding-bottom: 2pt;
-  font-family: "Calibri";
-  line-height: 1.1500000000000001;
-  page-break-after: avoid;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
-h5 {
-  padding-top: 11pt;
-  color: #000000;
-  font-weight: 700;
-  font-size: 11pt;
-  padding-bottom: 2pt;
-  font-family: "Calibri";
-  line-height: 1.1500000000000001;
-  page-break-after: avoid;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
-h6 {
-  padding-top: 10pt;
-  color: #000000;
-  font-weight: 700;
-  font-size: 10pt;
-  padding-bottom: 2pt;
-  font-family: "Calibri";
-  line-height: 1.1500000000000001;
-  page-break-after: avoid;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
 }
 
 

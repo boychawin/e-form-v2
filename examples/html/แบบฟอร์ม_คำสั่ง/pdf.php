@@ -16,36 +16,19 @@ $fontDirs = $defaultConfig['fontDir'];
 $defaultFontConfig = (new Mpdf\Config\FontVariables())->getDefaults();
 $fontData = $defaultFontConfig['fontdata'];
 
-// $mpdf = new \Mpdf\Mpdf([
-//     'fontDir' => array_merge($fontDirs, [
-//         __DIR__ . '/../../../fonts',
-//     ]),
-//     'fontdata' => $fontData + [
-//         'thsarabun' => [
-//             'R' => 'THSarabunNew001.ttf',
-//             //'I' => 'THSarabunNew Italic.ttf',
-//             //'B' => 'THSarabunNew Bold.ttf',
-//         ],
-//     ],
-//     'default_font' => 'thsarabun',
-// ]);
-
-
 $mpdfConfig = array(
-    'mode' => 'utf-8', 
-    'format' => 'A4',    // format - A4, for example, default ''
-    'default_font_size' => 0,     // font size - default 0
-    'margin_left' => 30,    	// 15 margin_left
-    'margin_right' => 20,    	// 15 margin right
+    'mode' => 'utf-8',
+    'format' => 'A4',
+    'default_font_size' => 0, 
+    'margin_left' => 30,
+    'margin_right' => 20,
     'margin_top' => 25,
-    'margin_bottom' => 20,  
-    // 'mgt' => $headerTopMargin,     // 16 margin top
-    // 'mgb' => $footerTopMargin,    	// margin bottom
-    'margin_header' => 0,     // 9 margin header
-    'margin_footer' => 0,     // 9 margin footer
-    'orientation' => 'P' , 	// L - landscape, P - portrait
+    'margin_bottom' => 20,
+    'margin_header' => 0,
+    'margin_footer' => 0,
+    'orientation' => 'P',
     'fontDir' => array_merge($fontDirs, [
-        __DIR__ . '/../../../fonts',
+        __DIR__ . '/../../../fonts/thsarabun',
     ]),
     'fontdata' => $fontData + [
         'thsarabun' => [
@@ -56,9 +39,7 @@ $mpdfConfig = array(
     ],
     'default_font' => 'thsarabun',
 );
-$mpdf = new \Mpdf\Mpdf($mpdfConfig);	
-
-
+$mpdf = new \Mpdf\Mpdf($mpdfConfig);
 
 $mpdf->WriteHTML($html);
 $mpdf->Output();

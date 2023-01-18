@@ -1,6 +1,6 @@
 
 
-<?php 
+<?php
 $data1 = $_POST['name1'];
 $data2 = $_POST['name2'];
 $data3 = $_POST['name3'];
@@ -12,37 +12,47 @@ $data8 = $_POST['name8'];
 $data9 = $_POST['name9'];
 
 $html = <<<EOD
-<>
 
-<table class="c24" border='0'>
-  <tr class="c26">
-    <td class="" colspan="1" rowspan="1">
-      <p class="c2"><span class="c5"></span></p>
-    </td>
-    <td class="" colspan="2" rowspan="2">
-      <p class="c6 c16">
-        <span class="span_image"
-          >
-           <img
+<table  border="1" width="100%">
+
+
+  <tr>
+
+  <td class="" colspan="1" rowspan="1">
+
+  </td>
+
+
+    <td class="" colspan="1" rowspan="2" style="text-align:center">
+
+        <span class="span_image" >
+          <img
             alt="logo"
             src="../../../images/image.jpg"
             class="image_logo"
-            title=""
-        /> 
+        />
       </span>
-      </p>
+
     </td>
+
     <td class="" colspan="1" rowspan="1">
-      <p class="c2"><span class="c5"></span></p>
+
     </td>
+
   </tr>
+
+
+ 
   <tr class="c7" >
-    <td class="" colspan="1" rowspan="1" valign="bottom" >
-    <p class="c0"><span class="c1"> &nbsp;</span></p>
-    <p class="c0"><span class="c1">&nbsp;</span></p>
+    <td width="250" class="" colspan="1" rowspan="1" valign="bottom" >
     <p class="c0"><span class="c1">ที่&nbsp;$data1 </span></p>
     </td>
+    <td  width="250" class="" colspan="1" rowspan="1">
+    <p class="c2"><span class="c5"></span></p>
+  </td>
   </tr>
+
+
 </table>
 
 <p class="MsoNormal" style="margin-top: 6pt">
@@ -59,7 +69,7 @@ $html = <<<EOD
   <span
     lang="EN-US"
     style="
-      font-family: 'TH SarabunPSK', sans-serif;
+      font-family: 'thsarabun', sans-serif;
       mso-fareast-font-family: 'Times New Roman';
     "
   >
@@ -154,14 +164,12 @@ $html = <<<EOD
 </p>
 <p class="c0 c2"><span class="c1"></span></p>
 
-</>
-
 
 <style>
 
 
 @font-face {
-    font-family: 'Sarabun';
+    font-family: 'thsarabun';
     src: url('/fonts/thsarabun-new/THSarabunNew001.ttf');
 
     font-weight: normal;
@@ -271,7 +279,7 @@ table th {
   text-decoration: none;
   vertical-align: baseline;
   font-size: 16pt;
-  font-family: "Sarabun";
+  font-family: "thsarabun";
   font-style: normal;
 }
 .c12 {
@@ -289,7 +297,7 @@ table th {
   text-decoration: none;
   vertical-align: baseline;
   font-size: 16pt;
-  font-family: "Sarabun";
+  font-family: "thsarabun";
   font-style: normal;
 }
 .c22 {
@@ -363,7 +371,7 @@ table th {
 }
 .c11 {
   font-size: 16pt;
-  font-family: "Sarabun";
+  font-family: "thsarabun";
   font-weight: 400;
 }
 .c28 {
@@ -523,19 +531,17 @@ h6 {
 }
 
 .image_logo {
-    width: 189.25px;
-    height: 149.04px;
-    margin-left: -37.24px;
-    margin-top: -24.42px;
-    transform: rotate(0rad) translateZ(0px);
-    -webkit-transform: rotate(0rad) translateZ(0px);
+
+                  height: 113.39px;
+                  margin-left: -0px;
+                  margin-top: -0px;
+                  transform: rotate(0rad) translateZ(0px);
+                  -webkit-transform: rotate(0rad) translateZ(0px);
 }
 
 
 </style>
 EOD;
-
-
 
 ?>
 

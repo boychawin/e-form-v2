@@ -1,99 +1,57 @@
 
 
-<?php 
-$data1 = $_GET['name1'];
-$data2 = $_GET['name2'];
-$data3 = $_GET['name3'];
-$data4 = $_GET['name4'];
-$data5 = $_GET['name5'];
-$data6 = $_GET['name6'];
-$data7 = $_GET['name7'];
-$data8 = $_GET['name8'];
+<?php
+$data1 = $_POST['name1'];
+$data2 = $_POST['name2'];
+$data3 = $_POST['name3'];
+$data4 = $_POST['name4'];
+$data5 = $_POST['name5'];
+$data6 = $_POST['name6'];
+$data7 = $_POST['name7'];
+$data8 = $_POST['name8'];
 $html = <<<EOD
 
-<>
+
 <div  style="margin-top: 1pt;"></div>
 
 <table
-  class="MsoTableGrid"
   border="0"
   cellspacing="0"
   cellpadding="0"
-  style="
-    border-collapse: collapse;
-    border: none;
-    mso-yfti-tbllook: 1184;
-    mso-padding-alt: 0cm 5.4pt 0cm 5.4pt;
-    mso-border-insideh: none;
-    mso-border-insidev: none;
-  "
+width="100%"
 >
-  <tr
-    style="
-      mso-yfti-irow: 0;
-      mso-yfti-firstrow: yes;
-      mso-yfti-lastrow: yes;
-    "
-  >
-    <td
-     
-    >
-      <p
-        class="MsoNormal"
-        style="margin-bottom: 0cm; line-height: normal"
-      >
-        <span class="c16">&nbsp;</span>
-      </p>
-    </td>
-    <td width="201" valign="top" style="width: 151pt; padding: 0cm 5.4pt 0cm 5.4pt">
-    <p class="MsoNormal" align="center" style="
-        margin-bottom: 0cm;
-        text-align: center;
-        line-height: normal;
-      ">
-      <span lang="EN-US" style="mso-no-proof: yes">
-       
-        <v:shape  o:spid="_x0000_i1025" type="#_x0000_t75" style="
-            width: 77pt;
-            height: 85pt;
-            visibility: visible;
-            mso-wrap-style: square;
-          ">
-          <img src="../../../images/image1.jpg" class="image_logo" title="ตราครุฑ" />
-          <o:lock v:ext="edit" aspectratio="f" />
-        </v:shape>
-      </span><span class="c16">
-        <o:p></o:p>
-      </span>
+  <tr >
+    <td colspan="2" ></td>
+    <td colspan="2" style="text-align:center">
+      <span class="span_image" style="width="50px"">
+          <img  src="../../../images/image1.jpg" class="image_logo" title="ตราครุฑ" />
     </p>
   </td>
-    <td
-      width="201"
-      valign="top"
-      style="width: 151.05pt; padding: 0cm 5.4pt 0cm 5.4pt"
-    >
-      <p
-        class="MsoNormal"
-        style="margin-bottom: 0cm; line-height: normal"
-      >
-        <span class="c16">&nbsp;</span>
-      </p>
-    </td>
+  <td colspan="2" ></td>
   </tr>
+
 </table>
 
-<p
-  class="MsoNormal"
-  align="center"
-  style="
-    margin-bottom: 0cm;
-    text-align: center;
-    line-height: normal;
-    tab-stops: 12cm;
-  "
->
-  <b><span class="c16b">คำสั่งสำนักงานสาธารณสุขอำเภอดำเนินสะดวก</span></b
-  ><b><span class="c16b"></span></b>
+
+
+<p  style="margin-bottom: 0cm; text-align: center; line-height: normal">
+<span class="c16" ></span>
+  <span class="c16" >คำสั่งสำนักงานสาธารณสุขอำเภอดำเนินสะดวก</span>
+</p>
+
+
+
+<p  class="MsoNormal"
+align="center"
+style="margin-bottom: 0cm; text-align: center; line-height: normal" >
+<span class="c16" >ที่ $data1</span>
+</p>
+
+
+<p  class="MsoNormal"
+align="center"
+style="margin-bottom: 0cm; text-align: center; line-height: normal" >
+<span class="c16" >เรื่อง  $data2</span>
 </p>
 
 <p
@@ -101,149 +59,80 @@ $html = <<<EOD
   align="center"
   style="margin-bottom: 0cm; text-align: center; line-height: normal"
 >
-  <b
-    ><span class="c16b"
-      >ที่ <span style="mso-spacerun: yes"> </span>$data1</span
-    ></b
-  >
-</p>
-
-<p
-  class="MsoNormal"
-  align="center"
-  style="margin-bottom: 0cm; text-align: center; line-height: normal"
->
-  <b
-    ><span class="c16b"
-      >เรื่อง<span style="mso-spacerun: yes">  </span
-      >$data2</span
-    ></b
-  ><b><span class="c16"></span></b>
-</p>
-
-<p
-  class="MsoNormal"
-  align="center"
-  style="margin-bottom: 0cm; text-align: center; line-height: normal"
->
-  <span class="c16"
-    >---------------------------------------------------------</span
-  ><span class="c16"></span>
+  <span class="c16" >---------------------------------------------------------</span> 
 </p>
 
 <p
   class="MsoNormal"
   style="
-    margin-top: 12pt;
+    margin-top: 16pt;
     margin-right: 0cm;
     margin-bottom: 0cm;
     margin-left: 0cm;
     text-align: justify;
     text-justify: inter-cluster;
-    text-indent: 70.9pt;
+    text-indent: 2.5cm;
     line-height: normal;
     tab-stops: 0cm;
-  "
->
-  <span  class="c16"
-    >$data3
-    </span>
+  " >
+  <span  class="c16" > $data3 </span>
 </p>
 
 <p
   class="MsoNormal"
   style="
-    margin-top: 6pt;
+    margin-top: 0pt;
     margin-right: 0cm;
     margin-bottom: 0cm;
     margin-left: 0cm;
     text-align: justify;
     text-justify: inter-cluster;
-    text-indent: 70.9pt;
+    text-indent: 2.5cm;
     line-height: normal;
   "
 >
-  <span  class="c16"
-    >$data4</span
-  ><span lang="EN-US" class="c16"></span>
+  <span  class="c16" >$data4</span>
 </p>
 
 <p
   class="MsoNormal"
   style="
-    margin-top: 6pt;
-    margin-right: 0cm;
-    margin-bottom: 0cm;
-    margin-left: 0cm;
-    text-align: justify;
-    text-justify: inter-cluster;
-    text-indent: 70.9pt;
-    line-height: normal;
+  margin-top: 6pt;
+  margin-right: 0cm;
+  margin-bottom: 0cm;
+  margin-left: 0cm;
+  text-align: justify;
+  text-justify: inter-cluster;
+  text-indent: 2.5cm;
+  line-height: normal;
   "
 >
-  <span  class="c16"
-    >ทั้งนี้<span style="mso-spacerun: yes">  </span>ตั้งแต่<span
-      style="mso-spacerun: yes"
-      >  </span
-    >$data5</span
-  ><span lang="EN-US" class="c16"></span>
+  <span  class="c16" >ทั้งนี้&nbsp;&nbsp;ตั้งแต่&nbsp;$data5</span>
 </p>
 
 <p
   class="MsoNormal"
   style="
-    margin-top: 12pt;
+    margin-top: 16pt;
     margin-right: 0cm;
     margin-bottom: 0cm;
     margin-left: 0cm;
-    text-indent: 127.6pt;
+    text-indent: 5cm;
     line-height: normal;
     tab-stops: center 339.05pt;
   "
 >
   <span  class="c16"
-    >สั่ง<span style="mso-spacerun: yes">  </span>ณ<span
-      style="mso-spacerun: yes"
-      >  </span
-    >วันที่<span style="mso-spacerun: yes">  </span>$data6<span
-      style="mso-spacerun: yes"
-      >  </span>
-    
-    <span style="color: red"
-      ></span
-    ></span
-  >
+    >สั่ง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ณ
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;$data6
+</span>
 </p>
 
-<p
-  class="MsoNormal"
-  style="
-    margin-top: 0cm;
-    margin-right: 54.4pt;
-    margin-bottom: 0cm;
-    margin-left: 0cm;
-    text-indent: 4cm;
-    line-height: normal;
-  "
->
-  <span lang="EN-US" class="c16">&nbsp; </span>
-</p>
-
-
-
-<p
-  class="MsoNormal"
-  style="
-    margin-top: 0cm;
-    margin-right: 54.4pt;
-    margin-bottom: 0cm;
-    margin-left: 0cm;
-    text-indent: 4cm;
-    line-height: normal;
-  "
->
-  <span lang="EN-US" class="c16">&nbsp; </span>
-</p>
+<p class="c16"></p>
+<p class="c16"></p>
 
 <p
   class="MsoNormal"
@@ -256,48 +145,45 @@ $html = <<<EOD
     line-height: normal;
   "
 >
-  <span  class="c16">($data7)</span
-  ><span lang="EN-US" class="c16"></span>
+  <span  class="c16">ยศ&nbsp;$data7</span>
 </p>
-
 <p
   class="MsoNormal"
-  align="center"
   style="
     margin-top: 0cm;
-    margin-right: -0.05pt;
+    margin-right: 54.4pt;
     margin-bottom: 0cm;
     margin-left: 0cm;
-    text-align: center;
-    text-indent: 35.45pt;
+    text-indent: 8cm;
     line-height: normal;
   "
 >
-  <span  class="c16">ตำแหน่ง</span
-  ><span lang="EN-US" class="c16"
-    ><span style="mso-spacerun: yes">  </span></span
-  ><span class="c16">$data8</span
-  ><span  class="c16"></span>
+  <span  class="c16">&nbsp;&nbsp;&nbsp;($data7)</span>
 </p>
-</>
+
+
+<p
+  class="MsoNormal"
+  style="
+    margin-top: 0cm;
+    margin-right: 54.4pt;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 8cm;
+    line-height: normal;
+  "
+>
+  <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;($data8)</span>
+</p>
+
 
 
 
 <style>
 
-@font-face {
-    font-family: 'Sarabun';
-    src: url('/fonts/thsarabun-new/THSarabunNew001.ttf');
-    /* src: url('../fonts/icomoon.eot') format('embedded-opentype'); */
-    /* src: url('../fonts/thsarabun-new/THSarabunNew001.ttf') format('truetype'); */
-    /* src: url('../fonts/icomoon.woff') format('woff');
-    src: url('../fonts/icomoon.svg') format('svg'); */
-    font-weight: normal;
-    font-style: normal;
-}
 .c51 {
   font-size: 29pt;
-  font-family: "Sarabun";
+  font-family: "thsarabun";
   font-weight: 700;
 }
 .c50 {
@@ -310,17 +196,17 @@ $html = <<<EOD
 }
 .c0 {
   font-size: 20pt;
-  font-family: "Sarabun";
+  font-family: "thsarabun";
   font-weight: 700;
 }
 .c16 {
   font-size: 16pt;
-  font-family: "Sarabun";
+  font-family: "thsarabun";
   font-weight: 400;
 }
 .c16b {
   font-size: 16pt;
-  font-family: "Sarabun";
+  font-family: "thsarabun";
   font-weight: 500;
 }
 .span_image{
@@ -334,13 +220,13 @@ $html = <<<EOD
   height: 113.39px;
 }
 .image_logo{
-  width: 103.18px;
+
   height: 113.39px;
   margin-left: -0px;
   margin-top: -0px;
   transform: rotate(0rad) translateZ(0px);
   -webkit-transform: rotate(0rad) translateZ(0px);
-  
+
 }
 
 /* @font-face
@@ -782,10 +668,8 @@ ul
 
 
 </style>
-  
+
 EOD;
-
-
 
 ?>
 

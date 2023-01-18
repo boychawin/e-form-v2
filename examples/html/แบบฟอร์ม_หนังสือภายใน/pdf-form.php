@@ -145,13 +145,13 @@ table th {
 
 .c5 {
   font-size: 16pt;
-  font-family: "Sarabun";
+  font-family: "thsarabun";
   font-weight: 400;
 }
 
 .c1 {
   font-size: 16pt;
-  font-family: "Sarabun";
+  font-family: "thsarabun";
   font-weight: 700;
 }
 
@@ -286,7 +286,7 @@ h6 {
 
 .c29pt {
   font-size: 29pt;
-  font-family: "Sarabun";
+  font-family: "thsarabun";
   font-weight: 700;
 
 }

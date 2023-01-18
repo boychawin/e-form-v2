@@ -1,24 +1,24 @@
 
 
 <?php 
-$data1 = $_GET['name1'];
-$data2 = $_GET['name2'];
-$data3 = $_GET['name3'];
-$data4 = $_GET['name4'];
-$data5 = $_GET['name5'];
+$data1 = $_POST['name1'];
+$data2 = $_POST['name2'];
+$data3 = $_POST['name3'];
+$data4 = $_POST['name4'];
+$data5 = $_POST['name5'];
 
 
 
 $html = <<<EOD
-<>
+
 
 <div  style="margin-top: 1pt;"></div>
-<table class="c5">
-    <tr class="c17">
+<table class="c5" border="0" width="100%">
+    <tr class="c17" colspan="2">
         <td class="" colspan="1" rowspan="1">
             <p class="c14"><span class="c8"></span></p>
         </td>
-        <td class="" colspan="1" rowspan="1">
+        <td class=""  colspan="1" rowspan="1" style="text-align:center">
             <p class="c0">
                 <span
                     class="span_image"><img
@@ -29,7 +29,7 @@ $html = <<<EOD
                         /></span>
             </p>
         </td>
-        <td class="" colspan="1" rowspan="1">
+        <td class="" colspan="2" rowspan="1">
             <p class="c14"><span class="c8"></span></p>
         </td>
     </tr>
@@ -67,12 +67,12 @@ $html = <<<EOD
     <span class="c9">ตำแหน่ง
         &nbsp; $data5</span>
 </p>
-</>
+
   
 <style>
 
 @font-face {
-    font-family: 'Sarabun';
+    font-family: 'thsarabun';
     src: url('/fonts/thsarabun-new/THSarabunNew001.ttf');
     font-weight: normal;
     font-style: normal;
@@ -353,7 +353,7 @@ table th {
   text-decoration: none;
   vertical-align: baseline;
   font-size: 16pt;
-  font-family: "Sarabun";
+  font-family: "thsarabun";
   font-style: normal;
 }
 .c1 {
@@ -371,7 +371,7 @@ table th {
   text-decoration: none;
   vertical-align: baseline;
   font-size: 16pt;
-  font-family: "Sarabun";
+  font-family: "thsarabun";
   font-style: normal;
 }
 .c4 {
@@ -380,7 +380,7 @@ table th {
   text-decoration: none;
   vertical-align: baseline;
   font-size: 16pt;
-  font-family: "Sarabun";
+  font-family: "thsarabun";
   font-style: normal;
 }
 .c7 {
@@ -428,7 +428,7 @@ table th {
 }
 .c9 {
   font-size: 16pt;
-  font-family: "Sarabun";
+  font-family: "thsarabun";
   font-weight: 400;
 }
 .c11 {

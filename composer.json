@@ -1,6 +1,7 @@
 {
     "require": {
         "spipu/html2pdf": "^5.2",
-        "mikehaertl/phpwkhtmltopdf": "^2.5"
+        "mikehaertl/phpwkhtmltopdf": "^2.5",
+        "mpdf/mpdf": "^8.1"
     }
 }

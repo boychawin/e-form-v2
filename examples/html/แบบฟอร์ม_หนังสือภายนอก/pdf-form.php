@@ -134,7 +134,7 @@ $html = <<<EOD
 
 
 @font-face {
-  font-family: 'Sarabun';
+  font-family: 'thsarabun';
   src: url('/fonts/thsarabun-new/THSarabunNew001.ttf');
   font-weight: normal;
   font-style: normal;
@@ -292,7 +292,7 @@ font-weight: 400;
 text-decoration: none;
 vertical-align: baseline;
 font-size: 16pt;
-font-family: "Sarabun";
+font-family: "thsarabun";
 font-style: normal;
 }
 .c12 {
@@ -310,7 +310,7 @@ font-weight: 700;
 text-decoration: none;
 vertical-align: baseline;
 font-size: 16pt;
-font-family: "Sarabun";
+font-family: "thsarabun";
 font-style: normal;
 }
 .c22 {
@@ -388,7 +388,7 @@ margin-right: auto;
 
 .c11 {
 font-size: 16pt;
-font-family: "Sarabun";
+font-family: "thsarabun";
 font-weight: 400;
 }
 .c28 {

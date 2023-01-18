@@ -4,7 +4,7 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body class="c6 doc-content">
-  <form action="./pdf.php" method="GET">
+  <form action="./pdf.php" method="POST">
     <button type="submit">export pdf</button>
       <p class="c3"><span class="c10"></span></p>
       <a id="t.d5d499981acfaa13f917d923492285e42fa84458"></a><a id="t.0"></a>

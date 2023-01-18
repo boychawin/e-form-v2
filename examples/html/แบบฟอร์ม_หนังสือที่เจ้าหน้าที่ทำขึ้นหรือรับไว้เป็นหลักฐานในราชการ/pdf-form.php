@@ -17,14 +17,13 @@ $namefile = $_POST['namefile'] ?? '../../../images/image31.png';
 
 $html = <<<EOD
 
-<>
 <div  style="margin-top: 1pt;"></div>
-    <table class="c19">
+    <table class="c19" border="1" width="100%">
         <tr class="c15">
             <td class="" colspan="1" rowspan="1">
                 <p class="c5 c11"><span class="c10"></span></p>
             </td>
-            <td class="" colspan="1" rowspan="2">
+            <td class="" colspan="1" rowspan="2" style="text-align:center">
                 <p class="c9"><span
                         style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 103.18px; height: 113.39px;"><img
                             alt="D:\&#3591;&#3634;&#3609;&#3648;&#3629;&#3585;&#3626;&#3634;&#3619;\&#3627;&#3609;&#3633;&#3591;&#3626;&#3639;&#3629;&#3619;&#3634;&#3594;&#3585;&#3634;&#3619;\&#3605;&#3619;&#3634;&#3588;&#3619;&#3640;&#3601;&#3612;&#3656;&#3634;&#3627;&#3660;\&#3605;&#3619;&#3634;&#3588;&#3619;&#3640;&#3601;.jpg"
@@ -33,19 +32,19 @@ $html = <<<EOD
                             title=""></span></p>
             </td>
             <td class="" colspan="1" rowspan="1">
-                <p class="c11 c5"><span class="c10"></span></p>
+                <p class="c5 c11"><span class="c10"></span></p>
             </td>
         </tr>
         <tr class="c4">
-            <td class="" colspan="1" rowspan="1">
+        
+            <td class="" width="250px" colspan="1" rowspan="1">
                 <p class="c7"><span class="c3">เลขที่ &nbsp;$data1</span></p>
             </td>
-            <td class="" colspan="1" rowspan="1">
+            <td width="250px" class="" colspan="1" rowspan="1">
                 <p class="c24"><span
                         class="c3">($data2)</span>
                 </p>
-                <p class="c0"><span class="c10"></span></p>
-                <p class="c0"><span class="c10"></span></p>
+                
             </td>
         </tr>
     </table>
@@ -93,9 +92,22 @@ $html = <<<EOD
             ($data8)</span></p>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 <style type="text/css">
 @font-face {
-    font-family: 'Sarabun';
+    font-family: 'thsarabun';
     src: url('/fonts/thsarabun-new/THSarabunNew001.ttf');
 
     font-weight: normal;
@@ -150,7 +162,7 @@ $html = <<<EOD
         text-decoration: none;
         vertical-align: baseline;
         font-size: 15pt;
-        font-family: "Sarabun";
+        font-family: "thsarabun";
         font-style: italic
     }
 
@@ -180,7 +192,7 @@ $html = <<<EOD
         text-decoration: none;
         vertical-align: baseline;
         font-size: 16pt;
-        font-family: "Sarabun";
+        font-family: "thsarabun";
         font-style: normal
     }
 
@@ -200,7 +212,7 @@ $html = <<<EOD
         text-decoration: none;
         vertical-align: baseline;
         font-size: 16pt;
-        font-family: "Sarabun";
+        font-family: "thsarabun";
         font-style: normal
     }
 
@@ -210,7 +222,7 @@ $html = <<<EOD
         text-decoration: none;
         vertical-align: baseline;
         font-size: 15pt;
-        font-family: "Sarabun";
+        font-family: "thsarabun";
         font-style: normal
     }
 
@@ -220,7 +232,7 @@ $html = <<<EOD
         text-decoration: none;
         vertical-align: baseline;
         font-size: 8pt;
-        font-family: "Sarabun";
+        font-family: "thsarabun";
         font-style: normal
     }
 
@@ -300,7 +312,7 @@ $html = <<<EOD
 
     .c22 {
         font-size: 16pt;
-        font-family: "Sarabun";
+        font-family: "thsarabun";
         font-weight: 400
     }
 

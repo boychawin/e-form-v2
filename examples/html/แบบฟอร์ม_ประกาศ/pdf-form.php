@@ -21,7 +21,7 @@ $html = <<<EOD
             <p class="center">
                 <span
                     class="span_image"><img
-                        alt=""
+                        alt="logo"
                         src="../../../images/image1.jpg"
                         class="image_logo"
                       
@@ -87,7 +87,7 @@ $html = <<<EOD
 
 <style>
 
-html{
+html,body{
   font-size: 16pt;
   font-family: "thsarabun";
   line-height: 1.1;
@@ -195,11 +195,6 @@ table th {
   text-indent: 35.5pt;
 }
 
-.c16 {
-  font-size: 16pt;
-  font-family: "thsarabun";
-  font-weight: 400;
-}
 
 
 .c17 {
@@ -208,34 +203,23 @@ table th {
 
 
 
-div {
-  line-height: 1.1;
+
+.c16 {
   font-size: 16pt;
+  font-family: "thsarabun";
+  font-weight: 400;
 }
-div2 {
-  line-height: 2.2;
-  font-size: 16pt;
-}
-
-
-
 p{
   padding-top: 0pt;
   padding-bottom: 0pt;
   margin-bottom: 0pt;
-
 }
-
-
 span{
   padding-top: 0pt;
   padding-bottom: 0pt;
   margin-bottom: 0pt;
 
 }
-
-
-
 .setMarginTop0{
   margin-top: 0pt;
 }
@@ -246,12 +230,6 @@ span{
   
 }
 
-
-
-.setMarginTop1{
-  line-height: 1.1;
-  font-size: 16pt;
-}
 .setMarginTop2{
   line-height: 2.2;
   font-size: 16pt;
@@ -265,8 +243,7 @@ span{
 
 
 
-p.MsoNormal, li.MsoNormal, div.MsoNormal
- {mso-style-unhide:no;
+p.MsoNormal{mso-style-unhide:no;
  mso-style-qformat:yes;
  mso-style-parent:"";
  margin-top:0cm;

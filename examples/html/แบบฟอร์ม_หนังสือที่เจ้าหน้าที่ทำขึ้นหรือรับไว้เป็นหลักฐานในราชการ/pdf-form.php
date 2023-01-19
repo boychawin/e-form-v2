@@ -14,40 +14,37 @@ $data8 = $_POST['name8'];
 $namefile = $_POST['namefile'] ?? '../../../images/image31.png';
 // print_r($namefile);
 
-
 $html = <<<EOD
 
-<div  style="margin-top: 1pt;"></div>
-    <table class="c19" border="1" width="100%">
-        <tr class="c15">
-            <td class="" colspan="1" rowspan="1">
-                <p class="c5 c11"><span class="c10"></span></p>
-            </td>
-            <td class="" colspan="1" rowspan="2" style="text-align:center">
+
+    <table border="0" width="100%">
+        <tr>
+        <td  colspan="1" rowspan="1"></td>
+            <td  colspan="1" rowspan="2" style="text-align:center">
                 <p class="c9"><span
-                        style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 103.18px; height: 113.39px;"><img
-                            alt="D:\&#3591;&#3634;&#3609;&#3648;&#3629;&#3585;&#3626;&#3634;&#3619;\&#3627;&#3609;&#3633;&#3591;&#3626;&#3639;&#3629;&#3619;&#3634;&#3594;&#3585;&#3634;&#3619;\&#3605;&#3619;&#3634;&#3588;&#3619;&#3640;&#3601;&#3612;&#3656;&#3634;&#3627;&#3660;\&#3605;&#3619;&#3634;&#3588;&#3619;&#3640;&#3601;.jpg"
+                       class="span_image">
+                       <img alt="logo"
                             src="../../../images/image32.jpg"
-                            style="width: 103.18px; height: 113.39px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                            ></span></p>
+                            class="image_logo" >
+                            </span></p>
             </td>
-            <td class="" colspan="1" rowspan="1">
-                <p class="c5 c11"><span class="c10"></span></p>
-            </td>
+            <td  colspan="1" rowspan="1"></td>
         </tr>
         <tr class="c4">
-        
-            <td class="" width="250px" colspan="1" rowspan="1">
-                <p class="c7"><span class="c3">เลขที่ &nbsp;$data1</span></p>
+
+            <td  width="250px" colspan="1" rowspan="1">
+                <p class="c7_text_left"><span class="c3">เลขที่ &nbsp;$data1</span></p>
             </td>
-            <td width="250px" class="" colspan="1" rowspan="1">
-                <p class="c24"><span
-                        class="c3">($data2)</span>
-                </p>
-                
-            </td>
+            <td    valign="bottom"  style="text-align:right" width="250px" colspan="1" rowspan="1">
+            <p ><span >ส่วนราชการเจ้าของหนังสือ</span></p>
+            <p ><span >ส่วนราชการเจ้าของหนังสือ</span></p>
+        </td>
+     
         </tr>
     </table>
+
+    <p class="setMarginTop2"></p>
+
     <p class="c23"><span
             class="c3">หนังสือฉบับนี้ให้ไว้เพื่อรับรองว่า
             &nbsp;$data3</span>
@@ -55,7 +52,7 @@ $html = <<<EOD
     <p class="c20"><span
             class="c22">ให้ไว้ ณ วันที่ $data4 </span></p>
     <p class="c5 c16"><span class="c6"></span></p>
-   
+
     <p class="c16"><span class="c6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (ลงชื่อ)</span>
@@ -88,7 +85,7 @@ $html = <<<EOD
     <p class="c1"><span class="c6">&nbsp;
             ($data7)</span>
     </p>
-    <p class="c1"><span class="c6">&nbsp; 
+    <p class="c1"><span class="c6">&nbsp;
             ($data8)</span></p>
 </div>
 
@@ -107,16 +104,10 @@ $html = <<<EOD
 
 <style type="text/css">
 
-
-
     table td,
     table th {
         padding: 0
     }
-
-
-
-
 
     .c9 {
         margin-left: -154pt;
@@ -191,7 +182,16 @@ $html = <<<EOD
         text-align: right
     }
 
-    .c7 {
+    .c7_text_right {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        orphans: 2;
+        widows: 2;
+        text-align: right
+    }
+
+    .c7_text_left {
         padding-top: 0pt;
         padding-bottom: 0pt;
         line-height: 1.0;
@@ -227,21 +227,6 @@ $html = <<<EOD
         text-align: center
     }
 
-    .c16 {
-        padding-top: 0pt;
-        padding-bottom: 10pt;
-        line-height: 1.0;
-        orphans: 2;
-        widows: 2;
-        text-align: center
-    }
-
-    .c19 {
-        margin-left: -5.4pt;
-        border-spacing: 0;
-        border-collapse: collapse;
-        margin-right: auto
-    }
 
 
     .c22 {
@@ -254,26 +239,129 @@ $html = <<<EOD
         height: 0pt
     }
 
-    .c15 {
-        height: 63.2pt
-    }
+
 
     .c5 {
         height: 11pt
     }
 
-    p {
-        margin: 0;
-        color: #000000;
-        font-size: 11pt;
-        font-family: "Calibri"
-    }
+
+    html,body{
+        font-size: 16pt;
+        font-family: "thsarabun";
+        line-height: 1.1;
+      }
+
+    .center {
+        text-align: center;
+      }
+
+.c16 {
+    font-size: 16pt;
+    font-family: "thsarabun";
+    font-weight: 400;
+  }
+  p{
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    margin-bottom: 0pt;
+  }
+  span{
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    margin-bottom: 0pt;
+
+  }
+  .setMarginTop0{
+    margin-top: 0pt;
+  }
+
+  .setMarginBottom0{
+    margin-bottom: 0pt;
+    padding-bottom: 0pt;
+
+  }
+
+  .setMarginTop2{
+    line-height: 2.2;
+    font-size: 16pt;
+    margin-bottom: 0pt;
+  }
+  .setMarginTop26pt{
+    line-height: 2.8pt;
+    font-size: 16pt;
+    margin-bottom: 0pt;
+  }
+
+
+
+  p.MsoNormal{mso-style-unhide:no;
+   mso-style-qformat:yes;
+   mso-style-parent:"";
+   margin-top:0cm;
+   margin-right:0cm;
+   margin-bottom:10.0pt;
+   margin-left:0cm;
+   line-height:115%;
+   mso-pagination:widow-orphan;
+   font-size:11.0pt;
+   mso-bidi-font-size:14.0pt;
+   font-family:"Calibri",sans-serif;
+   mso-ascii-font-family:Calibri;
+   mso-ascii-theme-font:minor-latin;
+   mso-fareast-font-family:Calibri;
+   mso-fareast-theme-font:minor-latin;
+   mso-hansi-font-family:Calibri;
+   mso-hansi-theme-font:minor-latin;
+   mso-bidi-font-family:"Cordia New";
+   mso-bidi-theme-font:minor-bidi;
+   mso-ansi-language:EN-US;}
+
+
+
+   .indent8{
+    margin-top: 0cm;
+    margin-right: 54.4pt;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 8cm;
+    line-height: normal;
+   }
+
+
+   .indent5{
+    margin-top: 16pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 5cm;
+    line-height: normal;
+    tab-stops: center 339.05pt;
+   }
+
+   .span_image{
+    overflow: hidden;
+    display: inline-block;
+    margin: 0px 0px;
+    border: 0px solid #000000;
+    transform: rotate(0rad) translateZ(0px);
+    -webkit-transform: rotate(0rad) translateZ(0px);
+    width: 103.18px;
+    height: 113.39px;
+  }
+  .image_logo{
+    width: 103.18px;
+    height: 113.39px;
+                    margin-left: -0px;
+                    margin-top: -0px;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+  }
+
 
 </style>
 
 EOD;
-
-
 
 ?>
 

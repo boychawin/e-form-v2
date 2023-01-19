@@ -15,63 +15,59 @@ $data11 = $_POST['name11'];
 
 $html = <<<EOD
 
-
-
-
   <table width="100%" border="0">
-  <tr class="c26">
-    <td class="" width="250" colspan="1" rowspan="1">
+  <tr >
+    <td  width="250" colspan="1" rowspan="1">
     <img  width="57" class="image_logo" src="../../../images/image1.png" alt="Logo"/>
     </td>
 
     <td class="c29pt"  style="text-align:center;padding-bottom:-10px;" colspan="1" rowspan="1" valign="bottom"  >
     <b>บันทึกข้อความ</b>
     </td>
-
-    <td class="" width="250" colspan="1" rowspan="1"></td>
-
+    <td  width="250" colspan="1" rowspan="1"></td>
   </tr>
+
+    <tr>
+    <td  colspan="3" rowspan="1">ส่วนราชการ&nbsp;&nbsp; $data1 โทร. $data2</td>
+    </tr>
+
+      <tr>
+    <td colspan="1"rowspan="1">ที่&nbsp;&nbsp;$data3</td>
+   <td colspan="2" style="text-align:center;padding-left:-110px;" rowspan="1">วันที่&nbsp;&nbsp;$data4</td>
+    </tr>
+
+
+        <tr>
+    <td  colspan="3" rowspan="1">เรื่อง&nbsp;&nbsp; $data5 </td>
+    </tr>
+
+   <tr>
+    <td  colspan="3" rowspan="1">เรียน&nbsp;&nbsp; $data6 </td>
+    </tr>
+
+
 </table>
 
 
-  
 
 
 
+<p class="setMarginTop16pt "></p>
+<p class="indent25 setMarginBottom0"><span class="c8">ภาคเหตุ&nbsp;$data7</span></p>
+<p class="setMarginTop16pt "></p>
+<p class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคความประสงค์&nbsp;$data8</span></p>
+<p class="setMarginTop16pt "></p>
+<p class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคสรุป&nbsp;$data9</span></p>
 
 
 
-    <p class="c0"><span class="c1">ส่วนราชการ&nbsp; $data1 โทร. $data2</span></p>
-
-    <p class="c0"><span class="c1">ที่&nbsp; $data3 </span>
-    <span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;วันที่ &nbsp; $data4</span><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>
-    </p>
-
-
-    <p class="c0"><span class="c1">เรื่อง&nbsp; $data5 </span></p>
-    <p class="c0"><span class="c1">เรียน&nbsp; $data6</span></p>
+<p class="setMarginTop112pt "></p>
+<p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;$data10</span></p>
+<p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data11)</span></p>
+<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;($data11)</span></p>
 
 
-    <p class="c12"><span class="c1 ">ภาคเหตุ&nbsp;$data7</span></p>
-    <p class="c12"><span class="c1">ภาคความประสงค์&nbsp;$data8</span></p>
-    <p class="c12"><span class="c1">ภาคสรุป&nbsp;$data9</span></p>
 
-
-    <p class="c2"><span class="c1"></span></p>
-    <p class="c2"><span class="c1"></span></p>
-    <p class="c2"><span class="c1"></span></p>
-    <p class="c2"><span class="c1"></span></p>
-    <p class="c2"><span class="c1"></span></p>
-    <p class="c6">
-        <span class="c1"
-        >($data10)</span
-        >
-        </p>
-        <p class="c6">
-        <span class="c1"
-        >ตำแหน่ง $data11</span
-        >
-    </p>
 
 
 

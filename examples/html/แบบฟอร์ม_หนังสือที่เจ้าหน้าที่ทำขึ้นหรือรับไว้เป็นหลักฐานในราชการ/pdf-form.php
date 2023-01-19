@@ -18,14 +18,9 @@ $html = <<<EOD
 
     <table border="0" width="100%">
         <tr>
-        <td  colspan="1" rowspan="1"></td>
+            <td  colspan="1" rowspan="1"></td>
             <td  colspan="1" rowspan="2" style="text-align:center">
-                <p class="c9"><span
-                    class="span_image">
-                    <img alt="logo"
-                            src="../../../images/image32.jpg"
-                            class="image_logo" >
-                            </span></p>
+                <p class="c9"><span class="span_image"> <img alt="logo" src="../../../images/image32.jpg" class="image_logo" > </span></p>
             </td>
             <td  colspan="1" rowspan="1"></td>
         </tr>
@@ -333,7 +328,7 @@ $html = <<<EOD
   }
   .image_logo{
     width: 103.18px;
-    height: 113.39px;
+    height: .39px;
                     margin-left: -0px;
                     margin-top: -0px;
                     transform: rotate(0rad) translateZ(0px);

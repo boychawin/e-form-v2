@@ -23,276 +23,336 @@ $data16 = $_POST['name16'];
 
 $html = <<<EOD
 
-
-  
-  <div  style="margin-top: 1pt;"></div>
-    <table class="c24">
-      <tr class="c26">
-        <td class="c18" colspan="1" rowspan="1">
-          <p class="c2"><span class="c5"></span></p>
+<table border="0" width="100%">
+  <tr>
+  <td  colspan="1" rowspan="1"></td>
+      <td  colspan="1" rowspan="2" style="text-align:center">
+          <p class="c9"><span
+              class="span_image">
+              <img alt="logo"
+                      src="../../../images/image32.jpg"
+                      class="image_logo" >
+                      </span></p>
+      </td>
+      <td  colspan="1" rowspan="1"></td>
+  </tr>
+  <tr >
+        <td  width="250px" colspan="1" rowspan="1">
+            <p class="c7_text_left"><span class="c3">ที่ &nbsp;$data1</span></p>
         </td>
-        <td class="c20" colspan="2" rowspan="2">
-          <p class="c6 c16">
-            <span class="span_image"><img alt="logo" src="../../../images/image1.jpg" class="image_logo" /></span>
-          </p>
-        </td>
-        <td class="c3" colspan="1" rowspan="1">
-          <p class="c2"><span class="c5"></span></p>
-        </td>
-      </tr>
-      <tr class="c7">
-        <td class="c18" colspan="1" rowspan="1">
-        <p class="c0"><span class="c1">ที่&nbsp;$data1 </span></p>
-         
-        </td>
-        <td class="c3" colspan="1" rowspan="1">
-          <p class="c8">
-            <span class="c1">
-            $data2
-            </span>
-          </p>
-     
-        </td>
-      </tr>
-      <tr class="c23">
-        <td class="c10" colspan="2" rowspan="1">
-          <p class="c2"><span class="c5"></span></p>
-        </td>
-        <td class="c15" colspan="2" rowspan="1">
-          <p class="c0 c27">
-            <span class="c1">$data3 </span>
-          </p>
-        </td>
-      </tr>
-  
-    </table>
+        <td  valign="bottom"  style="text-align:right" width="250px" colspan="1" rowspan="1">
+        <p ><span >ส่วนราชการเจ้าของหนังสือ</span></p>
+        <p ><span >ที่ตั้ง และรหัสไปรษณีย์</span></p>
+        <p class="setMarginTop16pt"></p>
+    </td>
+
+  </tr>
+
+<tr >
+<td  colspan="1" rowspan="1"></td>
+
+<td  valign="bottom"  style="padding-left:90px;" colspan="2" rowspan="1">
+<p ><span >เดือน&nbsp;ปี</span></p>
+</td>
+</tr>
+</table>
+
+  <p class="setMarginTop16pt ">เรื่อง&nbsp;&nbsp;$data4</p>
+  <p class="setMarginTop16pt ">เรียน&nbsp;&nbsp;$data5</p>
+  <p class="setMarginTop16pt ">อ้างถึง&nbsp;&nbsp;$data6</p>
+  <p class="setMarginTop16pt setMarginBottom0">สิ่งที่ส่งมาด้วย&nbsp;&nbsp;$data7</p>
 
 
-    <p class="c0"><span class="c1">เรื่อง&nbsp; $data4 </span></p>
-  <p class="c0"><span class="c1">เรียน&nbsp; $data5</span></p>
-
-  <p class="c0"><span class="c1">อ้างถึง&nbsp; $data6</span></p>
-  <p class="c0"><span class="c1">สิ่งที่ส่งมาด้วย&nbsp; $data7</span></p>
-
-  <p class="c12"><span class="c1">ภาคเหตุ&nbsp;$data8</span></p>
-<p class="c12"><span class="c1">ภาคความประสงค์&nbsp;$data9</span></p>
-<p class="c12"><span class="c1">ภาคสรุป&nbsp;$data10</span></p>
-
-
-<a id="t.eb09631887509051a89025ae5bf20ea4189f1f0e"></a><a id="t.1"></a>
+<p class="setMarginTop16pt "></p>
+<p class="indent25 setMarginBottom0"><span class="c8">ภาคเหตุ&nbsp;$data8</span></p>
+<p class="setMarginTop16pt "></p>
+<p class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคความประสงค์&nbsp;$data9</span></p>
+<p class="setMarginTop16pt "></p>
+<p class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคสรุป&nbsp;$data10</span></p>
 
 
 
-<p class="c0 c2"><span class="c1"></span></p>
-<p class="c0 c2"><span class="c1"></span></p>
-<p class="c0 c2"><span class="c1"></span></p>
-
-<p
-  class="MsoNormal"
-  align="center"
-  style="text-align: center; text-indent: 70.9pt"
->
-<p class="c6">
-<span class="c1">ขอแสดงความนับถือ </span>
-</p>
-<p class="c2"><span class="c1"></span></p>
-<p class="c2"><span class="c1"></span></p>
-<p class="c6">
-<span class="c1"
-  >($data11)</span
->
-</p>
-<p class="c6">
-<span class="c1"
-  >ตำแหน่ง $data12</span
->
-</p>
-
-</p>
+<p class="setMarginTop112pt "></p>
+<p class="MsoNormal indent8"><span  class="c16">คำลงท้าย</span></p>
+<p class="setMarginTop26pt "></p>
+<p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;$data5</span></p>
+<p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data6)</span></p>
+<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;($data7)</span></p>
 
 
+
+<p class="setMarginTop16pt"></p>
+    <p class="setMarginTop0"><span class="c6">$data13</span> </p>
+    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data14</span></p>
+    <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;$data14</span></p>
+    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data14</span></p>
+<p class="setMarginTop16pt"></p>
+
+
+
+<style type="text/css">
+
+    table td,
+    table th {
+        padding: 0
+    }
+
+    .c9 {
+        margin-left: -154pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        orphans: 2;
+        widows: 2;
+        text-align: center;
+        margin-right: -189.7pt
+    }
+
+    .c8 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 16pt;
+        font-family: "thsarabun";
+        font-style: normal;
+      }
 
 
 
 
-<p class="c8 c9"><span class="c1"></span></p>
-<p class="c8 c9"><span class="c1"></span></p>
-<p class="c8 c9"><span class="c1"></span></p>
-
-<p class="c8"><span class="c1">$data13</span></p>
-
-<p class="c8"><span class="c1">โทร. &nbsp;$data14</span></p>
-<p class="c8"><span class="c1">โทรสาร &nbsp;$data15</span></p>
-<p class="c8"><span class="c1">E-mail &nbsp;$data16</span></p>
-
-</>
-    
+    .c10 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 16pt;
+        font-family: "thsarabun";
+        font-style: normal
+    }
 
 
+    .c3 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 16pt;
+        font-family: "thsarabun";
+        font-style: normal
+    }
 
-<style>
-
-
-table td,
-table th {
-padding: 0;
-}
-
-.c15 {
-
-padding: 0pt 5.4pt 0pt 5.4pt;
-vertical-align: top;
-width: 259.9pt;
-}
-.c3 {
-padding: 0pt 5.4pt 0pt 5.4pt;
-vertical-align: top;
-width: 187.3pt;
-}
-.c20 {
-padding: 0pt 5.4pt 0pt 5.4pt;
-vertical-align: top;
-width: 120.8pt;
-}
-.c18 {
-padding: 0pt 5.4pt 0pt 5.4pt;
-vertical-align: top;
-width: 154pt;
-}
-.c10 {
-
-padding: 0pt 5.4pt 0pt 5.4pt;
+    .c6 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 15pt;
+        font-family: "thsarabun";
+        font-style: normal
+    }
 
 
+    .c24 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        orphans: 2;
+        widows: 2;
+        text-align: right
+    }
 
 
-vertical-align: top;
+    .c7_text_left {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+
+    .c1 {
+        padding-top: 0pt;
+        padding-bottom: 10pt;
+        line-height: 1.0;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .c11 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        orphans: 2;
+        widows: 2;
+        text-align: center
+    }
 
 
 
+    .c22 {
+        font-size: 16pt;
+        font-family: "thsarabun";
+        font-weight: 400
+    }
+
+    .c4 {
+        height: 0pt
+    }
 
 
-width: 232.2pt;
+
+    .c5 {
+        height: 11pt
+    }
 
 
-}
+    html,body{
+        font-size: 16pt;
+        font-family: "thsarabun";
+        line-height: 1.1;
+      }
 
-
-.c1 {
-color: #000000;
-font-weight: 400;
-text-decoration: none;
-vertical-align: baseline;
-font-size: 16pt;
-font-family: "thsarabun";
-font-style: normal;
-}
-.c12 {
-padding-top: 6pt;
-text-indent: 70.9pt;
-padding-bottom: 0pt;
-line-height: 1;
-orphans: 2;
-widows: 2;
-text-align: justify;
-}
-.c5 {
-color: #000000;
-font-weight: 700;
-text-decoration: none;
-vertical-align: baseline;
-font-size: 16pt;
-font-family: "thsarabun";
-font-style: normal;
-}
-
-.c2 {
-padding-top: 0pt;
-padding-bottom: 0pt;
-line-height: 1;
-orphans: 2;
-widows: 2;
-text-align: center;
-height: 11pt;
-}
-.c0 {
-padding-top: 6pt;
-padding-bottom: 0pt;
-line-height: 1;
-orphans: 2;
-widows: 2;
-text-align: left;
-}
-
-
-.c6 {
-padding-top: 0pt;
-padding-bottom: 0pt;
-line-height: 1;
-orphans: 2;
-widows: 2;
-text-align: center;
-}
-
-.c8 {
-padding-top: 0pt;
-padding-bottom: 0pt;
-line-height: 1;
-orphans: 2;
-widows: 2;
-text-align: left;
-}
-
+    .center {
+        text-align: center;
+      }
 
 .c16 {
-margin-left: -154pt;
-margin-right: -189.7pt;
-}
-.c9 {
-height: 11pt;
-}
-.c27 {
-margin-left: -5.4pt;
-}
-.c23 {
-height: 3.1pt;
-}
-.c7 {
-height: 0pt;
-}
-.c26 {
-height: 63.2pt;
-}
+    font-size: 16pt;
+    font-family: "thsarabun";
+    font-weight: 400;
+  }
+  p{
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    margin-bottom: 0pt;
+  }
+  span{
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    margin-bottom: 0pt;
+    margin-top: 0pt;
+
+  }
+  .setMarginTop0{
+    margin-top: 0pt;
+  }
+
+  .setMarginBottom0{
+    margin-bottom: 0pt;
+    padding-bottom: 0pt;
+
+  }
+
+  .setMarginTop2{
+    line-height: 2.2;
+    font-size: 16pt;
+    margin-bottom: 0pt;
+  }
+  .setMarginTop26pt{
+    line-height: 2.8pt;
+    font-size: 16pt;
+    margin-bottom: 0pt;
+  }
+
+  .setMarginTop16pt{
+    line-height: 1.8pt;
+    font-size: 16pt;
+    margin-bottom: 0pt;
+  }
+  .setMarginTop112pt{
+    line-height: 2.3pt;
+    font-size: 16pt;
+    margin-bottom: 0pt;
+  }
 
 
-p {
-margin: 0;
-color: #000000;
-font-size: 11pt;
-font-family: "Calibri";
-}
 
 
+  p.MsoNormal{mso-style-unhide:no;
+   mso-style-qformat:yes;
+   mso-style-parent:"";
+   margin-top:0cm;
+   margin-right:0cm;
+   margin-bottom:10.0pt;
+   margin-left:0cm;
+   line-height:115%;
+   mso-pagination:widow-orphan;
+   font-size:11.0pt;
+   mso-bidi-font-size:14.0pt;
+   font-family:"Calibri",sans-serif;
+   mso-ascii-font-family:Calibri;
+   mso-ascii-theme-font:minor-latin;
+   mso-fareast-font-family:Calibri;
+   mso-fareast-theme-font:minor-latin;
+   mso-hansi-font-family:Calibri;
+   mso-hansi-theme-font:minor-latin;
+   mso-bidi-font-family:"Cordia New";
+   mso-bidi-theme-font:minor-bidi;
+   mso-ansi-language:EN-US;}
 
-.span_image {
-  overflow: hidden;
-  display: inline-block;
-  margin: 0px 0px;
-  border: 0px solid #000000;
-  transform: rotate(0rad) translateZ(0px);
-  -webkit-transform: rotate(0rad) translateZ(0px);
-  width: 103.18px;
-  height: 113.39px;
-}
 
-.image_logo {
-  width: 103.18px;
-  height: 113.39px;
-  margin-left: -0px;
-  margin-top: -0px;
-  transform: rotate(0rad) translateZ(0px);
-  -webkit-transform: rotate(0rad) translateZ(0px);
-}
+   .indent1{
+    margin-top: 0cm;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 1cm;
+    line-height: normal;
+   }
+
+
+   .indent8{
+    margin-top: 0cm;
+    margin-right: 54.4pt;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 8cm;
+    line-height: normal;
+   }
+
+
+   .indent5{
+    margin-top: 16pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 5cm;
+    line-height: normal;
+    tab-stops: center 339.05pt;
+   }
+
+   .span_image{
+    overflow: hidden;
+    display: inline-block;
+    margin: 0px 0px;
+    border: 0px solid #000000;
+    transform: rotate(0rad) translateZ(0px);
+    -webkit-transform: rotate(0rad) translateZ(0px);
+    width: 103.18px;
+    height: 113.39px;
+  }
+  .image_logo{
+    width: 103.18px;
+    height: 113.39px;
+                    margin-left: -0px;
+                    margin-top: -0px;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+  }
+
+  .indent25 {
+    text-indent: 2.5cm;
+    padding-bottom: 0pt;
+    
+    orphans: 2;
+    widows: 2;
+
+  }
+
 
 
 </style>

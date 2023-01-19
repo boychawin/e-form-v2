@@ -36,7 +36,7 @@ $html = <<<EOD
             </td>
             <td    valign="bottom"  style="text-align:right" width="250px" colspan="1" rowspan="1">
             <p ><span >ส่วนราชการเจ้าของหนังสือ</span></p>
-            <p ><span >ส่วนราชการเจ้าของหนังสือ</span></p>
+            <p ><span >ที่ตั้ง และรหัสไปรษณีย์</span></p>
         </td>
      
         </tr>
@@ -80,26 +80,14 @@ $html = <<<EOD
 
 
     <p class="indent1"><span >
-            <img alt="" src="$namefile" style="width: 113.00px; height: 169.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" >
+            <img alt="" src="$namefile" style="width: 4cm; height: 6cm; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" >
             </span>
             </p>
 
 <p class="setMarginTop16pt"></p>
     <p class="setMarginTop0"><span class="c6">&nbsp; ($data7)</span> </p>
     <p class="setMarginTop0"><span class="c6">&nbsp; ($data8)</span></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
+<p class="setMarginTop16pt"></p>
 
 
 <style type="text/css">
@@ -184,14 +172,6 @@ $html = <<<EOD
         text-align: left
     }
 
-    .c20 {
-        padding-top: 0pt;
-        padding-bottom: 10pt;
-        line-height: 1.0;
-        orphans: 2;
-        widows: 2;
-        text-align: justify
-    }
 
     .c1 {
         padding-top: 0pt;
@@ -254,6 +234,7 @@ $html = <<<EOD
     padding-top: 0pt;
     padding-bottom: 0pt;
     margin-bottom: 0pt;
+    margin-top: 0pt;
 
   }
   .setMarginTop0{
@@ -365,7 +346,7 @@ $html = <<<EOD
     
     orphans: 2;
     widows: 2;
-    text-align: justify;
+
   }
 
 

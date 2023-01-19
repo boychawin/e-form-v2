@@ -17,14 +17,8 @@ $html = <<<EOD
 
 
   <tr>
-
-  <td class="" colspan="1" rowspan="1">
-
-  </td>
-
-
+  <td class="" colspan="1" rowspan="1"></td>
     <td class="" colspan="1" rowspan="2" style="text-align:center">
-
         <span class="span_image" >
           <img
             alt="logo"
@@ -32,17 +26,12 @@ $html = <<<EOD
             class="image_logo"
         />
       </span>
-
     </td>
 
-    <td class="" colspan="1" rowspan="1">
-
-    </td>
-
+    <td class="" colspan="1" rowspan="1"></td>
   </tr>
 
 
- 
   <tr class="c7" >
     <td width="250" class="" colspan="1" rowspan="1" valign="bottom" >
     <p class="c0"><span class="c1">ที่&nbsp;$data1 </span></p>

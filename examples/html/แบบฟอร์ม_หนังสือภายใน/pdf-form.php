@@ -160,7 +160,6 @@ p {
 
 }
 
-
   .c12 {
   padding-top: 6pt;
   text-indent: 70.9pt;
@@ -170,6 +169,7 @@ p {
   widows: 2;
   text-align: justify;
   }
+
 </style>
 
 EOD;

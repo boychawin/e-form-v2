@@ -111,16 +111,7 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
 </p>
 
 <p
-  class="MsoNormal"
-  style="
-    margin-top: 16pt;
-    margin-right: 0cm;
-    margin-bottom: 0cm;
-    margin-left: 0cm;
-    text-indent: 5cm;
-    line-height: normal;
-    tab-stops: center 339.05pt;
-  "
+  class="MsoNormal indent5"
 >
   <span  class="c16"
     >สั่ง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ณ
@@ -134,47 +125,9 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
 <p class="c16"></p>
 <p class="c16"></p>
 
-<p
-  class="MsoNormal"
-  style="
-    margin-top: 0cm;
-    margin-right: 54.4pt;
-    margin-bottom: 0cm;
-    margin-left: 0cm;
-    text-indent: 8cm;
-    line-height: normal;
-  "
->
-  <span  class="c16">ยศ&nbsp;$data7</span>
-</p>
-<p
-  class="MsoNormal"
-  style="
-    margin-top: 0cm;
-    margin-right: 54.4pt;
-    margin-bottom: 0cm;
-    margin-left: 0cm;
-    text-indent: 8cm;
-    line-height: normal;
-  "
->
-  <span  class="c16">&nbsp;&nbsp;&nbsp;($data7)</span>
-</p>
-
-
-<p
-  class="MsoNormal"
-  style="
-    margin-top: 0cm;
-    margin-right: 54.4pt;
-    margin-bottom: 0cm;
-    margin-left: 0cm;
-    text-indent: 8cm;
-    line-height: normal;
-  "
->
-  <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;($data8)</span>
-</p>
+<p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;$data7</span></p>
+<p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data7)</span></p>
+<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;($data8)</span></p>
 
 
 
@@ -187,11 +140,6 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
   font-weight: 400;
 }
 
-.c16b {
-  font-size: 16pt;
-  font-family: "thsarabun";
-  font-weight: 500;
-}
 .span_image{
   overflow: hidden;
   display: inline-block;
@@ -211,6 +159,8 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
   -webkit-transform: rotate(0rad) translateZ(0px);
 
 }
+
+
 p.MsoNormal, li.MsoNormal, div.MsoNormal
  {mso-style-unhide:no;
  mso-style-qformat:yes;
@@ -233,6 +183,27 @@ p.MsoNormal, li.MsoNormal, div.MsoNormal
  mso-bidi-font-family:"Cordia New";
  mso-bidi-theme-font:minor-bidi;
  mso-ansi-language:EN-US;}
+
+
+
+ .indent8{
+  margin-top: 0cm;
+  margin-right: 54.4pt;
+  margin-bottom: 0cm;
+  margin-left: 0cm;
+  text-indent: 8cm;
+  line-height: normal;
+ }
+
+ .indent5{
+  margin-top: 16pt;
+  margin-right: 0cm;
+  margin-bottom: 0cm;
+  margin-left: 0cm;
+  text-indent: 5cm;
+  line-height: normal;
+  tab-stops: center 339.05pt;
+ }
 </style>
 
 EOD;

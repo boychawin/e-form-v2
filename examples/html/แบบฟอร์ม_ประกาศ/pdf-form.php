@@ -18,7 +18,7 @@ $html = <<<EOD
             <p class="c14"><span class="c8"></span></p>
         </td>
         <td class=""  colspan="1" rowspan="1" style="text-align:center">
-            <p class="c0">
+            <p class="center">
                 <span
                     class="span_image"><img
                         alt=""
@@ -33,44 +33,65 @@ $html = <<<EOD
         </td>
     </tr>
 </table>
-<p class="c0">
+
+<p class="setMarginTop2"></p>
+<p class="center setMarginTop0">
     <span class="c4"> ประกาศสำนักงานสาธารณสุขอำเภอดำเนินสะดวก</span>
 </p>
-<p class="c0">
-    <span class="c4">เรื่อง
-        &nbsp;$data1</span>
+<p class="center setMarginTop0">
+    <span class="c4">เรื่อง&nbsp;&nbsp;$data1</span>
 </p>
-<p class="c0">
-    <span class="c8">---------------------------------------------------------</span>
+<p class="center setMarginTop0 setMarginBottom0">
+    <span class="">---------------------------------------------------------</span>
 </p>
-<p class="c7" id="h.gjdgxs">
+<p class="setMarginTop2"></p>
+<p class="indent25 setMarginTop0">
     <span class="c8">$data2</span>
 </p>
-<p class="c1">
-    <span class="c9">ประกาศ
-        &nbsp;ณ
-        &nbsp;วันที่ 
-        &nbsp;$data3
-       
-         &nbsp;</span><span class="c9 c16"></span>
-</p>
-<p class="c2"><span class="c8"></span></p>
-<p class="c2"><span class="c8"></span></p>
-<p class="c2"><span class="c8"></span></p>
-<p class="c13">
-    <span class="c8">($data4)</span>
+<p class="indent25 setMarginTop0">
+    <span class="c8">ทั้งนี้&nbsp;&nbsp;ตั้งแต่</span>
 </p>
 
 
-<p class="c0 c11">
-    <span class="c9">ตำแหน่ง
-        &nbsp; $data5</span>
+<p class="setMarginTop2"></p>
+
+
+<p
+  class="MsoNormal indent5"
+>
+  <span  class="c16"
+    >ประกาศ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ณ
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;$data3
+</span>
 </p>
 
-  
+
+</p>
+<p class="setMarginTop2"></p>
+
+<p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;$data4</span></p>
+<p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data5)</span></p>
+<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;($data5)</span></p>
+
+
+
+
+
+
+
+
+
+
 <style>
 
-
+html{
+  font-size: 16pt;
+  font-family: "thsarabun";
+  line-height: 1.1;
+}
 
 .span_image{
   overflow: hidden;
@@ -84,7 +105,7 @@ $html = <<<EOD
 }
 .image_logo{
   width: 103.18px;
-                  height: 113.39px;
+  height: 113.39px;
                   margin-left: -0px;
                   margin-top: -0px;
                   transform: rotate(0rad) translateZ(0px);
@@ -102,7 +123,7 @@ table th {
   padding-top: 0pt;
   text-indent: 113.4pt;
   padding-bottom: 0pt;
-  line-height: 1;
+  
   orphans: 2;
   widows: 2;
   text-align: left;
@@ -113,7 +134,7 @@ table th {
   padding-top: 0pt;
   text-indent: 226.8pt;
   padding-bottom: 0pt;
-  line-height: 1;
+  
   orphans: 2;
   widows: 2;
   text-align: left;
@@ -128,15 +149,6 @@ table th {
   font-family: "thsarabun";
   font-style: normal;
 }
-.c1 {
-  padding-top: 12pt;
-  text-indent: 120.5pt;
-  padding-bottom: 0pt;
-  line-height: 1;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
-}
 
 .c4 {
   color: #000000;
@@ -147,11 +159,10 @@ table th {
   font-family: "thsarabun";
   font-style: normal;
 }
-.c7 {
-  padding-top: 12pt;
-  text-indent: 70.9pt;
+.indent25 {
+  text-indent: 2.5cm;
   padding-bottom: 0pt;
-  line-height: 1;
+  
   orphans: 2;
   widows: 2;
   text-align: justify;
@@ -159,18 +170,13 @@ table th {
 .c14 {
   padding-top: 0pt;
   padding-bottom: 0pt;
-  line-height: 1;
+  
   orphans: 2;
   widows: 2;
   text-align: left;
   height: 11pt;
 }
-.c0 {
-  padding-top: 0pt;
-  padding-bottom: 0pt;
-  line-height: 1;
-  orphans: 2;
-  widows: 2;
+.center {
   text-align: center;
 }
 
@@ -188,22 +194,121 @@ table th {
 .c11 {
   text-indent: 35.5pt;
 }
+
 .c16 {
-  color: #ff0000;
+  font-size: 16pt;
+  font-family: "thsarabun";
+  font-weight: 400;
 }
+
+
 .c17 {
   height: 0pt;
 }
 
 
-p {
-  margin: 0;
-  color: #000000;
-  font-size: 11pt;
-  font-family: "Calibri";
+
+div {
+  line-height: 1.1;
+  font-size: 16pt;
+}
+div2 {
+  line-height: 2.2;
+  font-size: 16pt;
 }
 
 
+
+p{
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+  margin-bottom: 0pt;
+
+}
+
+
+span{
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+  margin-bottom: 0pt;
+
+}
+
+
+
+.setMarginTop0{
+  margin-top: 0pt;
+}
+
+.setMarginBottom0{
+  margin-bottom: 0pt;
+  padding-bottom: 0pt;
+  
+}
+
+
+
+.setMarginTop1{
+  line-height: 1.1;
+  font-size: 16pt;
+}
+.setMarginTop2{
+  line-height: 2.2;
+  font-size: 16pt;
+  margin-bottom: 0pt;
+}
+.setMarginTop26pt{
+  line-height: 2.8pt;
+  font-size: 16pt;
+  margin-bottom: 0pt;
+}
+
+
+
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+ {mso-style-unhide:no;
+ mso-style-qformat:yes;
+ mso-style-parent:"";
+ margin-top:0cm;
+ margin-right:0cm;
+ margin-bottom:10.0pt;
+ margin-left:0cm;
+ line-height:115%;
+ mso-pagination:widow-orphan;
+ font-size:11.0pt;
+ mso-bidi-font-size:14.0pt;
+ font-family:"Calibri",sans-serif;
+ mso-ascii-font-family:Calibri;
+ mso-ascii-theme-font:minor-latin;
+ mso-fareast-font-family:Calibri;
+ mso-fareast-theme-font:minor-latin;
+ mso-hansi-font-family:Calibri;
+ mso-hansi-theme-font:minor-latin;
+ mso-bidi-font-family:"Cordia New";
+ mso-bidi-theme-font:minor-bidi;
+ mso-ansi-language:EN-US;}
+
+
+
+ .indent8{
+  margin-top: 0cm;
+  margin-right: 54.4pt;
+  margin-bottom: 0cm;
+  margin-left: 0cm;
+  text-indent: 8cm;
+  line-height: normal;
+ }
+
+
+ .indent5{
+  margin-top: 16pt;
+  margin-right: 0cm;
+  margin-bottom: 0cm;
+  margin-left: 0cm;
+  text-indent: 5cm;
+  line-height: normal;
+  tab-stops: center 339.05pt;
+ }
 
 </style>
 EOD;

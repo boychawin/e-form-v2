@@ -16,14 +16,13 @@ $namefile = $_POST['namefile'] ?? '../../../images/image31.png';
 
 $html = <<<EOD
 
-
     <table border="0" width="100%">
         <tr>
         <td  colspan="1" rowspan="1"></td>
             <td  colspan="1" rowspan="2" style="text-align:center">
                 <p class="c9"><span
-                       class="span_image">
-                       <img alt="logo"
+                    class="span_image">
+                    <img alt="logo"
                             src="../../../images/image32.jpg"
                             class="image_logo" >
                             </span></p>
@@ -45,49 +44,50 @@ $html = <<<EOD
 
     <p class="setMarginTop2"></p>
 
-    <p class="c23"><span
-            class="c3">หนังสือฉบับนี้ให้ไว้เพื่อรับรองว่า
-            &nbsp;$data3</span>
-    </p>
-    <p class="c20"><span
-            class="c22">ให้ไว้ ณ วันที่ $data4 </span></p>
-    <p class="c5 c16"><span class="c6"></span></p>
 
-    <p class="c16"><span class="c6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (ลงชื่อ)</span>
-    <p class="c16"><span class="c6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $data5</span>
-    </p>
-    <p class="c16"><span class="c6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            $data6</span>
-    </p>
-    <p class="c1 c5"><span class="c3"></span></p>
-    <p class="c1 c5"><span class="c3"></span></p>
-    <p class="c1 c5"><span class="c3"></span></p>
-    <p class="c1 c5"><span class="c3"></span></p>
-    <p class="c1"><span
-            class="c8">(&#3626;&#3656;&#3623;&#3609;&#3609;&#3637;&#3657;&#3651;&#3594;&#3657;&#3626;&#3635;&#3627;&#3619;&#3633;&#3610;&#3648;&#3619;&#3639;&#3656;&#3629;&#3591;&#3607;&#3637;&#3656;&#3626;&#3635;&#3588;&#3633;&#3597;&#3648;&#3607;&#3656;&#3634;&#3609;&#3633;&#3657;&#3609;
-            &#3595;&#3638;&#3656;&#3591;&#3629;&#3618;&#3641;&#3656;&#3651;&#3609;&#3604;&#3640;&#3621;&#3614;&#3636;&#3609;&#3636;&#3592;&#3586;&#3629;&#3591;&#3627;&#3633;&#3623;&#3627;&#3609;&#3657;&#3634;&#3626;&#3656;&#3623;&#3609;&#3619;&#3634;&#3594;&#3585;&#3634;&#3619;)</span>
-    </p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 113.00px; height: 169.00px;">
-            <img alt="" src="$namefile" style="width: 113.00px; height: 169.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                ></span></p>
-    <p class="c1 c5"><span class="c3"></span></p>
-    <p class="c16 c5"><span class="c3"></span></p>
-    <p class="c1 c5"><span class="c3"></span></p>
-    <p class="c1 c5"><span class="c3"></span></p>
 
-    <p class="c1"><span class="c6">&nbsp;
-            ($data7)</span>
-    </p>
-    <p class="c1"><span class="c6">&nbsp;
-            ($data8)</span></p>
-</div>
+<p class="indent25 setMarginTop0">
+    <span class="c8">หนังสือฉบับนี้ให้ไว้เพื่อรับรองว่า&nbsp;$data3</span>
+</p>
+
+
+<p class="setMarginTop2"></p>
+
+
+<p
+  class="MsoNormal indent5"
+>
+  <span  class="c16"
+    >ให้ไว้&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ณ
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;$data4
+</span>
+</p>
+
+
+</p>
+<p class="setMarginTop2"></p>
+
+<p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;$data5</span></p>
+<p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data6)</span></p>
+<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;($data7)</span></p>
+
+
+
+<p class="setMarginTop2"></p>
+
+
+    <p class="indent1"><span >
+            <img alt="" src="$namefile" style="width: 113.00px; height: 169.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" >
+            </span>
+            </p>
+
+<p class="setMarginTop16pt"></p>
+    <p class="setMarginTop0"><span class="c6">&nbsp; ($data7)</span> </p>
+    <p class="setMarginTop0"><span class="c6">&nbsp; ($data8)</span></p>
+
 
 
 
@@ -125,20 +125,12 @@ $html = <<<EOD
         font-weight: 400;
         text-decoration: none;
         vertical-align: baseline;
-        font-size: 15pt;
+        font-size: 16pt;
         font-family: "thsarabun";
-        font-style: italic
-    }
+        font-style: normal;
+      }
 
-    .c23 {
-        padding-top: 6pt;
-        text-indent: 70.9pt;
-        padding-bottom: 0pt;
-        line-height: 1.0;
-        orphans: 2;
-        widows: 2;
-        text-align: justify
-    }
+
 
 
     .c10 {
@@ -182,14 +174,6 @@ $html = <<<EOD
         text-align: right
     }
 
-    .c7_text_right {
-        padding-top: 0pt;
-        padding-bottom: 0pt;
-        line-height: 1.0;
-        orphans: 2;
-        widows: 2;
-        text-align: right
-    }
 
     .c7_text_left {
         padding-top: 0pt;
@@ -293,6 +277,14 @@ $html = <<<EOD
     margin-bottom: 0pt;
   }
 
+  .setMarginTop16pt{
+    line-height: 1.8pt;
+    font-size: 16pt;
+    margin-bottom: 0pt;
+  }
+
+
+
 
 
   p.MsoNormal{mso-style-unhide:no;
@@ -317,6 +309,15 @@ $html = <<<EOD
    mso-bidi-theme-font:minor-bidi;
    mso-ansi-language:EN-US;}
 
+
+   .indent1{
+    margin-top: 0cm;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 1cm;
+    line-height: normal;
+   }
 
 
    .indent8{
@@ -357,6 +358,16 @@ $html = <<<EOD
                     transform: rotate(0rad) translateZ(0px);
                     -webkit-transform: rotate(0rad) translateZ(0px);
   }
+
+  .indent25 {
+    text-indent: 2.5cm;
+    padding-bottom: 0pt;
+    
+    orphans: 2;
+    widows: 2;
+    text-align: justify;
+  }
+
 
 
 </style>

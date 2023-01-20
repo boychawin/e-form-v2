@@ -9,6 +9,7 @@ $data5 = $_POST['name5'];
 $data6 = $_POST['name6'];
 $data7 = $_POST['name7'];
 $data8 = $_POST['name8'];
+$data9 = $_POST['name9'];
 $html = <<<EOD
 
 
@@ -127,8 +128,8 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
 <p class="setMarginTop26pt"></p>
 
 <p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;&nbsp;$data7</span></p>
-<p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data7)</span></p>
-<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$data8</span></p>
+<p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data8)</span></p>
+<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$data9</span></p>
 
 
 

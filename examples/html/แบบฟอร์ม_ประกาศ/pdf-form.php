@@ -6,7 +6,7 @@ $data2 = $_POST['name2'];
 $data3 = $_POST['name3'];
 $data4 = $_POST['name4'];
 $data5 = $_POST['name5'];
-
+$data6 = $_POST['name6'];
 
 
 $html = <<<EOD
@@ -65,7 +65,7 @@ $html = <<<EOD
 
 <p class="MsoNormal setMarginTop0 indent8" ><span  class="c16">ยศ&nbsp;$data4</span></p>
 <p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data5)</span></p>
-<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;$data5</span></p>
+<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;$data6</span></p>
 
 
 

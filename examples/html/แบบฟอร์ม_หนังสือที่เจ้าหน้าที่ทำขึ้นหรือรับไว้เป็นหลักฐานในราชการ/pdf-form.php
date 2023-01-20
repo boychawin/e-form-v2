@@ -20,7 +20,7 @@ $html = <<<EOD
         <tr>
 
         <td  style="text-align:left;padding-top:60px;" width="250px" colspan="1" rowspan="1">
-                <p ><span >เลขที่ &nbsp;$data1</span></p>
+                <p ><span >เลขที่ &nbsp;$ </span></p>
             </td>
 
             <td  colspan="2" rowspan="1" style="text-align:center">

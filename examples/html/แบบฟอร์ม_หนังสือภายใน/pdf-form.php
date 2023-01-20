@@ -32,11 +32,11 @@ $html = <<<EOD
 
       <tr>
     <td colspan="1"rowspan="1">ที่&nbsp;&nbsp;$data3</td>
-   <td colspan="2" style="text-align:center;padding-left:-110px;" rowspan="1">วันที่&nbsp;&nbsp;$data4</td>
+   <td colspan="2" style="text-align:center;padding-left:-125px;" rowspan="1">วันที่&nbsp;&nbsp;$data4</td>
     </tr>
 
 
-        <tr>
+    <tr>
     <td  colspan="3" rowspan="1">เรื่อง&nbsp;&nbsp; $data5 </td>
     </tr>
 
@@ -51,19 +51,15 @@ $html = <<<EOD
 
 
 
-<p class="setMarginTop16pt "></p>
 <p class="indent25 setMarginBottom0"><span class="c8">ภาคเหตุ&nbsp;$data7</span></p>
-<p class="setMarginTop16pt "></p>
 <p class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคความประสงค์&nbsp;$data8</span></p>
-<p class="setMarginTop16pt "></p>
 <p class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคสรุป&nbsp;$data9</span></p>
 
 
 
 <p class="setMarginTop112pt "></p>
-<p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;$data10</span></p>
-<p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data11)</span></p>
-<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;($data11)</span></p>
+<p class="MsoNormal indent8" ><span  class="c16">($data10)</span></p>
+<p class="MsoNormal indent7" ><span  class="c16">ปลัดสำนักนายกรัฐมนตรี</span></p>
 
 
 
@@ -288,6 +284,15 @@ $html = <<<EOD
     margin-bottom: 0cm;
     margin-left: 0cm;
     text-indent: 1cm;
+    line-height: normal;
+   }
+
+   .indent7{
+    margin-top: 0cm;
+    margin-right: 54.4pt;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 7cm;
     line-height: normal;
    }
 

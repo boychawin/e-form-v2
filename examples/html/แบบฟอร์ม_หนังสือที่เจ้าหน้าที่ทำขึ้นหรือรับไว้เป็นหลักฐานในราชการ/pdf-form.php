@@ -16,29 +16,32 @@ $namefile = $_POST['namefile'] ?? '../../../images/image31.png';
 
 $html = <<<EOD
 
-    <table border="1" width="100%">
+    <table border="0" width="100%">
         <tr>
-            <td  colspan="1" rowspan="1"></td>
-            <td  colspan="1" rowspan="2" style="text-align:center">
-                <p class="c9"><span class="span_image">
-                <img alt="logo" height="113" src="../../../images/image32.jpg" class="image_logo" > </span></p>
+
+        <td  style="text-align:left;padding-top:60px;" width="250px" colspan="1" rowspan="1">
+                <p ><span >เลขที่ &nbsp;$data1</span></p>
             </td>
-            <td  colspan="1" rowspan="1"></td>
-        </tr>
-        <tr>
-            <td  width="250px" colspan="1" rowspan="1">
-                <p class="c7_text_left"><span >เลขที่ &nbsp;$data1</span></p>
-            </td>
-            <td    valign="bottom"  style="text-align:right" width="250px" colspan="1" rowspan="1">
-            <p ><span >ส่วนราชการเจ้าของหนังสือ</span></p>
-            <p ><span >ที่ตั้ง และรหัสไปรษณีย์</span></p>
+
+            <td  colspan="2" rowspan="1" style="text-align:center">
+            <p class="c9"><span class="span_image">
+            <img alt="logo" height="113" src="../../../images/image32.jpg" class="image_logo" > </span></p>
         </td>
-     
+              <td valign="bottom"  style="text-align:right;padding-bottom:10px;"  width="250px" colspan="1" rowspan="1">
+              <p ><span >ส่วนราชการเจ้าของหนังสือ</span></p>
+             </td>
         </tr>
+       
+        <tr>
+        <td colspan="4" style="text-align:right;" rowspan="1">
+        <span >ที่ตั้ง และรหัสไปรษณีย์</span>
+        </td>
+        </tr>
+
     </table>
 
-    <p class="setMarginTop2"></p>
-
+ 
+    <p class="setMarginTop1"></p>
 
 
 <p class="indent25 setMarginTop0">
@@ -61,13 +64,11 @@ $html = <<<EOD
 </span>
 </p>
 
-
-</p>
-<p class="setMarginTop2"></p>
+<p class="setMarginTop26pt"></p>
 
 <p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;$data5</span></p>
 <p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data6)</span></p>
-<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;($data7)</span></p>
+<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;($data7)</span></p>
 
 
 
@@ -230,6 +231,13 @@ $html = <<<EOD
     padding-bottom: 0pt;
 
   }
+
+  .setMarginTop1{
+    line-height: 1.1;
+    font-size: 16pt;
+
+  }
+
 
   .setMarginTop2{
     line-height: 2.2;

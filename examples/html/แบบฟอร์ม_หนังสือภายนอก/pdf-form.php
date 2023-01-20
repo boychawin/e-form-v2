@@ -23,51 +23,50 @@ $data16 = $_POST['name16'];
 
 $html = <<<EOD
 
+
 <table border="0" width="100%">
-  <tr>
-  <td  colspan="1" rowspan="1"></td>
-      <td  colspan="1" rowspan="2" style="text-align:center">
-          <p class="c9"><span
-              class="span_image">
-              <img alt="logo"
-                      src="../../../images/image32.jpg"
-                      class="image_logo" >
-                      </span></p>
-      </td>
-      <td  colspan="1" rowspan="1"></td>
-  </tr>
-  <tr >
-        <td  width="250px" colspan="1" rowspan="1">
-            <p class="c7_text_left"><span class="c3">ที่ &nbsp;$data1</span></p>
+        <tr>
+
+        <td  style="text-align:left;padding-top:60px;" width="250px" colspan="1" rowspan="1">
+                <p ><span >ที่ &nbsp;$data1</span></p>
+            </td>
+
+            <td  colspan="2" rowspan="1" style="text-align:center">
+            <p class="c9"><span class="span_image">
+            <img alt="logo" height="113" src="../../../images/image32.jpg" class="image_logo" > </span></p>
         </td>
-        <td  valign="bottom"  style="text-align:right" width="250px" colspan="1" rowspan="1">
-        <p ><span >ส่วนราชการเจ้าของหนังสือ</span></p>
-        <p ><span >ที่ตั้ง และรหัสไปรษณีย์</span></p>
-        <p class="setMarginTop16pt"></p>
-    </td>
+              <td valign="bottom"  style="text-align:right;padding-bottom:10px;"  width="250px" colspan="1" rowspan="1">
+              <p ><span >ส่วนราชการเจ้าของหนังสือ</span></p>
+             </td>
+        </tr>
+       
+        <tr>
+        <td colspan="4" style="text-align:right;" rowspan="1">
+        <span >ที่ตั้ง และรหัสไปรษณีย์</span>
+        </td>
+        </tr>
 
-  </tr>
 
-<tr >
-<td  colspan="1" rowspan="1"></td>
+        <tr >
+        <td  colspan="2" rowspan="1"></td>
+        <td  valign="bottom"  style="padding-left:40px;" colspan="2" rowspan="1">
+        <p ><span >เดือน&nbsp;ปี</span></p>
+        </td>
+        </tr>
+    </table>
 
-<td  valign="bottom"  style="padding-left:90px;" colspan="2" rowspan="1">
-<p ><span >เดือน&nbsp;ปี</span></p>
-</td>
-</tr>
-</table>
 
-  <p class="setMarginTop16pt ">เรื่อง&nbsp;&nbsp;$data4</p>
-  <p class="setMarginTop16pt ">เรียน&nbsp;&nbsp;$data5</p>
-  <p class="setMarginTop16pt ">อ้างถึง&nbsp;&nbsp;$data6</p>
+
+
+  <p class="setMarginTop16pt setMarginBottom0">เรื่อง&nbsp;&nbsp;$data4</p>
+  <p class="setMarginTop16pt setMarginBottom0">เรียน&nbsp;&nbsp;$data5</p>
+  <p class="setMarginTop16pt setMarginBottom0">อ้างถึง&nbsp;&nbsp;$data6</p>
   <p class="setMarginTop16pt setMarginBottom0">สิ่งที่ส่งมาด้วย&nbsp;&nbsp;$data7</p>
 
 
-<p class="setMarginTop16pt "></p>
-<p class="indent25 setMarginBottom0"><span class="c8">ภาคเหตุ&nbsp;$data8</span></p>
-<p class="setMarginTop16pt "></p>
+  <p class="setMarginTop16pt "></p>
+<p class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคเหตุ&nbsp;$data8</span></p>
 <p class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคความประสงค์&nbsp;$data9</span></p>
-<p class="setMarginTop16pt "></p>
 <p class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคสรุป&nbsp;$data10</span></p>
 
 
@@ -75,17 +74,22 @@ $html = <<<EOD
 <p class="setMarginTop112pt "></p>
 <p class="MsoNormal indent8"><span  class="c16">คำลงท้าย</span></p>
 <p class="setMarginTop26pt "></p>
-<p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;$data5</span></p>
-<p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data6)</span></p>
-<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;($data7)</span></p>
+
+
+
+<p class="indent8 setMarginTop0"><span class="c6">ยศ&nbsp;&nbsp;$data11</span> </p>
+<p class="indent8 setMarginTop0"><span class="c6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;($data12)</span></p>
+<p class=" indent8 setMarginTop0"><span class="c6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$data13</span></p>
+
+
 
 
 
 <p class="setMarginTop16pt"></p>
-    <p class="setMarginTop0"><span class="c6">$data13</span> </p>
-    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data14</span></p>
-    <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;$data14</span></p>
-    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data14</span></p>
+    <p class="setMarginTop0"><span class="c6">$data14</span> </p>
+    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data15</span></p>
+    <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;$data16</span></p>
+    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data16</span></p>
 <p class="setMarginTop16pt"></p>
 
 
@@ -261,7 +265,7 @@ $html = <<<EOD
   .setMarginTop16pt{
     line-height: 1.8pt;
     font-size: 16pt;
-    margin-bottom: 0pt;
+   
   }
   .setMarginTop112pt{
     line-height: 2.3pt;
@@ -332,11 +336,11 @@ $html = <<<EOD
     border: 0px solid #000000;
     transform: rotate(0rad) translateZ(0px);
     -webkit-transform: rotate(0rad) translateZ(0px);
-    width: 103.18px;
+
     height: 113.39px;
   }
   .image_logo{
-    width: 103.18px;
+\
     height: 113.39px;
                     margin-left: -0px;
                     margin-top: -0px;

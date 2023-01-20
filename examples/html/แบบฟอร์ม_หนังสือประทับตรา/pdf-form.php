@@ -19,12 +19,13 @@ $html = <<<EOD
   <td width="250" style="padding-bottom:10px;" colspan="1" rowspan="1" valign="bottom" >   <span class="c1">ที่&nbsp;$data1</span> </td>
 
       <td  colspan="1" rowspan="2" style="text-align:center">
-          <p class="c9"><span
+        <span
               class="span_image">
               <img alt="logo"
+              height="113"
                       src="../../../images/image32.jpg"
                       class="image_logo" >
-                      </span></p>
+                      </span>
       </td>
       <td width="250" colspan="1" rowspan="1"></td>
   </tr>
@@ -34,13 +35,11 @@ $html = <<<EOD
 
 
 
-<p class="MsoNormal" >
+<p class="MsoNormal setMarginBottom0" >
   <span class="c1">ถึง&nbsp;$data2</span>
 </p>
 
-
-
-<p class="setMarginTop26pt"></p>
+<p class="setMarginTop1"></p>
 <p class="indent25 setMarginTop0">
     <span class="c8">$data3</span>
 </p>
@@ -51,7 +50,7 @@ $html = <<<EOD
 <p class="setMarginTop1"></p>
 
 <p class="MsoNormal indent8" ><span  class="c16">&nbsp;ส่วนราชการที่ส่งหนังสือออก</span></p>
-<p class="MsoNormal indent10" ><span  class="c16">&nbsp;เดือน&nbsp;ปี</span></p>
+<p class="MsoNormal indent10" ><span  class="c16">&nbsp;$data4</span></p>
 
 <p class="setMarginTop1"></p>
 <p class="setMarginTop1"></p>
@@ -59,12 +58,11 @@ $html = <<<EOD
 <p class="setMarginTop1"></p>
 
 
-<p class="setMarginTop16pt"></p>
+
     <p class="setMarginTop0"><span class="c6">$data5</span> </p>
     <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data6</span></p>
     <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;$data7</span></p>
-    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data8</span></p>
-<p class="setMarginTop16pt"></p>
+
 
 
 <style>

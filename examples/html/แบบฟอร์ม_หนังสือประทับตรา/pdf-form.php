@@ -13,232 +13,352 @@ $data9 = $_POST['name9'];
 
 $html = <<<EOD
 
-<table  border="1" width="100%">
 
-
+<table border="0" width="100%">
   <tr>
-  <td class="" colspan="1" rowspan="1"></td>
-    <td class="" colspan="1" rowspan="2" style="text-align:center">
-        <span class="span_image" >
-          <img
-            alt="logo"
-            src="../../../images/image.jpg"
-            class="image_logo"
-        />
-      </span>
-    </td>
+  <td width="250" style="padding-bottom:10px;" colspan="1" rowspan="1" valign="bottom" >   <span class="c1">ที่&nbsp;$data1</span> </td>
 
-    <td class="" colspan="1" rowspan="1"></td>
-  </tr>
-
-
-  <tr class="c7" >
-    <td width="250" class="" colspan="1" rowspan="1" valign="bottom" >
-    <p class="c0"><span class="c1">ที่&nbsp;$data1 </span></p>
-    </td>
-    <td  width="250" class="" colspan="1" rowspan="1">
-    <p class="c2"><span class="c5"></span></p>
-  </td>
+      <td  colspan="1" rowspan="2" style="text-align:center">
+          <p class="c9"><span
+              class="span_image">
+              <img alt="logo"
+                      src="../../../images/image32.jpg"
+                      class="image_logo" >
+                      </span></p>
+      </td>
+      <td width="250" colspan="1" rowspan="1"></td>
   </tr>
 
 
 </table>
 
-<p class="MsoNormal" style="margin-top: 6pt">
-  <span class="c1"
-    >ถึง<span style="mso-spacerun: yes"> </span
-    >$data2</span
-  ><span class="c0"> </span>
+
+
+<p class="MsoNormal" >
+  <span class="c1">ถึง&nbsp;$data2</span>
 </p>
 
-<p
-  class="MsoBodyText3"
-  style="text-indent: 70.9pt; line-height: normal; tab-stops: 14.2pt"
->
-  <span
-    lang="EN-US"
-    style="
-      font-family: 'thsarabun', sans-serif;
-      mso-fareast-font-family: 'Times New Roman';
-    "
-  >
-    &nbsp;
-  </span>
+
+
+<p class="setMarginTop26pt"></p>
+<p class="indent25 setMarginTop0">
+    <span class="c8">$data3</span>
 </p>
 
-<p
-  class="MsoBodyText3"
-  style="
-    margin-top: 12pt;
-    text-indent: 70.9pt;
-    line-height: normal;
-    tab-stops: 14.2pt;
-  "
->
-  <span class="c11"
-    >ภาคเหตุ
-    $data3
-  </span>
-</p>
+<p class="setMarginTop1"></p>
+<p class="setMarginTop1"></p>
+<p class="setMarginTop1"></p>
+<p class="setMarginTop1"></p>
 
-<p
-  class="MsoBodyText3"
-  style="
-    margin-top: 6pt;
-    text-indent: 70.9pt;
-    line-height: normal;
-    tab-stops: 14.2pt;
-  "
->
-  <span class="c11">ภาคความประสงค์</span
-  ><span class="c11">
-  $data4</span
-  ><span class="c11"> </span>
-</p>
+<p class="MsoNormal indent8" ><span  class="c16">&nbsp;ส่วนราชการที่ส่งหนังสือออก</span></p>
+<p class="MsoNormal indent10" ><span  class="c16">&nbsp;เดือน&nbsp;ปี</span></p>
 
-<p
-  class="MsoBodyText3"
-  style="
-    margin-top: 6pt;
-    text-indent: 70.9pt;
-    line-height: normal;
-    tab-stops: 14.2pt;
-  "
->
-  <span class="c11"
-    >ภาคสรุป
-    $data5</span
-  ><span class="c11"> </span>
-</p>
+<p class="setMarginTop1"></p>
+<p class="setMarginTop1"></p>
+<p class="setMarginTop1"></p>
+<p class="setMarginTop1"></p>
 
-<p class="c0 c2"><span class="c1"></span></p>
-<p class="c0 c2"><span class="c1"></span></p>
-<p class="c0 c2"><span class="c1"></span></p>
 
-<p
-  class="MsoNormal"
-  align="center"
-  style="text-align: center; text-indent: 70.9pt"
->
-  <span class="c1">สำนักงานปลัดสำนักนายกรัฐมนตรี</span
-  ><span class="c1"> </span>
-</p>
-
-<p
-  class="MsoNormal"
-  align="center"
-  style="text-align: center; text-indent: 70.9pt"
->
-  <span class="c1"
-    >($data6)</span
-  ><span class="c0"> </span>
-</p>
-<p class="c0 c2"><span class="c1"></span></p>
-<p class="c0 c2"><span class="c1"></span></p>
-<p class="c0 c2"><span class="c1"></span></p>
-<p class="c0">
-  <span class="c1"
-    >$data7</span
-  >
-</p>
-<p class="c0">
-  <span class="c1"
-    >โทร. $data8</span
-  >
-</p>
-<p class="c0">
-  <span class="c1"
-    >โทรสาร $data9</span
-  >
-</p>
-<p class="c0 c2"><span class="c1"></span></p>
+<p class="setMarginTop16pt"></p>
+    <p class="setMarginTop0"><span class="c6">$data5</span> </p>
+    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data6</span></p>
+    <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;$data7</span></p>
+    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data8</span></p>
+<p class="setMarginTop16pt"></p>
 
 
 <style>
 
-
 table td,
 table th {
-  padding: 0;
+    padding: 0
 }
 
+.c9 {
+    margin-left: -154pt;
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.0;
+    orphans: 2;
+    widows: 2;
+    text-align: center;
+    margin-right: -189.7pt
+}
+
+.c8 {
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 16pt;
+    font-family: "thsarabun";
+    font-style: normal;
+  }
+
+
+
+
+.c10 {
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 16pt;
+    font-family: "thsarabun";
+    font-style: normal
+}
+
+
+.c3 {
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 16pt;
+    font-family: "thsarabun";
+    font-style: normal
+}
+
+.c6 {
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 15pt;
+    font-family: "thsarabun";
+    font-style: normal
+}
+
+
+.c24 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.0;
+    orphans: 2;
+    widows: 2;
+    text-align: right
+}
+
+
+.c7_text_left {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.0;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
 
 
 .c1 {
-  color: #000000;
-  font-weight: 400;
-  text-decoration: none;
-  vertical-align: baseline;
   font-size: 16pt;
   font-family: "thsarabun";
-  font-style: normal;
-}
-
-.c5 {
-  color: #000000;
-  font-weight: 700;
-  text-decoration: none;
-  vertical-align: baseline;
-  font-size: 16pt;
-  font-family: "thsarabun";
-  font-style: normal;
-}
-
-.c2 {
-  padding-top: 0pt;
-  padding-bottom: 0pt;
-  line-height: 1;
-  orphans: 2;
-  widows: 2;
-  text-align: center;
-  height: 11pt;
-}
-.c0 {
-  padding-top: 6pt;
-  padding-bottom: 0pt;
-  line-height: 1;
-  orphans: 2;
-  widows: 2;
-  text-align: left;
+    padding-top: 0pt;
+    padding-bottom: 10pt;
+    line-height: 1.0;
+    orphans: 2;
+    widows: 2;
+    text-align: left
 }
 
 .c11 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.0;
+    orphans: 2;
+    widows: 2;
+    text-align: center
+}
+
+
+
+.c22 {
+    font-size: 16pt;
+    font-family: "thsarabun";
+    font-weight: 400
+}
+
+.c4 {
+    height: 0pt
+}
+
+
+
+.c5 {
+    height: 11pt
+}
+
+
+html,body{
+    font-size: 16pt;
+    font-family: "thsarabun";
+    line-height: 1.1;
+  }
+
+.center {
+    text-align: center;
+  }
+
+.c16 {
+font-size: 16pt;
+font-family: "thsarabun";
+font-weight: 400;
+}
+.c29pt {
+font-size: 29pt;
+font-family: "thsarabun";
+font-weight: 400;
+}
+
+
+p{
+padding-top: 0pt;
+padding-bottom: 0pt;
+margin-bottom: 0pt;
+}
+span{
+padding-top: 0pt;
+padding-bottom: 0pt;
+margin-bottom: 0pt;
+margin-top: 0pt;
+
+}
+.setMarginTop0{
+margin-top: 0pt;
+}
+
+.setMarginBottom0{
+margin-bottom: 0pt;
+padding-bottom: 0pt;
+
+}
+
+.setMarginTop1{
+  line-height: 1.1;
   font-size: 16pt;
-  font-family: "thsarabun";
-  font-weight: 400;
+  }
+
+
+.setMarginTop2{
+line-height: 2.2;
+font-size: 16pt;
+margin-bottom: 0pt;
 }
 
-.c7 {
-  height: 0pt;
+.setMarginTop4{
+  line-height: 4.4;
+  font-size: 16pt;
+  margin-bottom: 0pt;
+  }
+
+
+.setMarginTop26pt{
+line-height: 2.8pt;
+font-size: 16pt;
+margin-bottom: 0pt;
+}
+
+.setMarginTop16pt{
+line-height: 1.8pt;
+font-size: 16pt;
+margin-bottom: 0pt;
+}
+.setMarginTop112pt{
+line-height: 2.3pt;
+font-size: 16pt;
+margin-bottom: 0pt;
 }
 
 
-p {
-  margin: 0;
-  color: #000000;
-  font-size: 11pt;
-  font-family: "Calibri";
+
+
+p.MsoNormal{mso-style-unhide:no;
+mso-style-qformat:yes;
+mso-style-parent:"";
+margin-top:0cm;
+margin-right:0cm;
+margin-bottom:10.0pt;
+margin-left:0cm;
+line-height:115%;
+mso-pagination:widow-orphan;
+font-size:16.0pt;
+mso-bidi-font-size:16.0pt;
+font-family:"thsarabun",sans-serif;
+mso-ascii-font-family:thsarabun;
+mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:thsarabun;
+mso-fareast-theme-font:minor-latin;
+mso-hansi-font-family:thsarabun;
+mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"thsarabun";
+mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:EN-US;}
+
+
+.indent1{
+margin-top: 0cm;
+margin-right: 0cm;
+margin-bottom: 0cm;
+margin-left: 0cm;
+text-indent: 1cm;
+line-height: normal;
 }
 
 
-.span_image {
-    overflow: hidden;
-          display: inline-block;
-          margin: 0px 0px;
-          border: 0px solid #000000;
-          transform: rotate(0rad) translateZ(0px);
-          -webkit-transform: rotate(0rad) translateZ(0px);
-          width: 102.4px;
-          height: 113.27px;
+.indent8{
+margin-top: 0cm;
+margin-right: 54.4pt;
+margin-bottom: 0cm;
+margin-left: 0cm;
+text-indent: 8cm;
+line-height: normal;
 }
 
-.image_logo {
+.indent10{
+  margin-top: 0cm;
+  margin-right: 54.4pt;
+  margin-bottom: 0cm;
+  margin-left: 0cm;
+  text-indent: 10cm;
+  line-height: normal;
+  }
 
-                  height: 113.39px;
-                  margin-left: -0px;
-                  margin-top: -0px;
-                  transform: rotate(0rad) translateZ(0px);
-                  -webkit-transform: rotate(0rad) translateZ(0px);
+
+.indent5{
+margin-top: 16pt;
+margin-right: 0cm;
+margin-bottom: 0cm;
+margin-left: 0cm;
+text-indent: 5cm;
+line-height: normal;
+tab-stops: center 339.05pt;
+}
+
+.span_image{
+overflow: hidden;
+display: inline-block;
+margin: 0px 0px;
+border: 0px solid #000000;
+transform: rotate(0rad) translateZ(0px);
+-webkit-transform: rotate(0rad) translateZ(0px);
+height: 113.38px;
+}
+.image_logo{
+
+height: 113.38px;
+margin-left: -0px;
+margin-top: -0px;
+transform: rotate(0rad) translateZ(0px);
+                -webkit-transform: rotate(0rad) translateZ(0px);
+}
+
+.indent25 {
+text-indent: 2.5cm;
+padding-bottom: 0pt;
+
+orphans: 2;
+widows: 2;
+
 }
 
 

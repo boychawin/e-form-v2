@@ -1,6 +1,5 @@
-
-
 <?php
+
 $data1 = $_POST['name1'];
 $data2 = $_POST['name2'];
 $data3 = $_POST['name3'];
@@ -269,16 +268,16 @@ $html = <<<EOD
    margin-left:0cm;
    line-height:115%;
    mso-pagination:widow-orphan;
-   font-size:11.0pt;
-   mso-bidi-font-size:14.0pt;
-   font-family:"Calibri",sans-serif;
-   mso-ascii-font-family:Calibri;
+   font-size:16.0pt;
+   mso-bidi-font-size:16.0pt;
+   font-family:"thsarabun",sans-serif;
+   mso-ascii-font-family:thsarabun;
    mso-ascii-theme-font:minor-latin;
-   mso-fareast-font-family:Calibri;
+   mso-fareast-font-family:thsarabun;
    mso-fareast-theme-font:minor-latin;
-   mso-hansi-font-family:Calibri;
+   mso-hansi-font-family:thsarabun;
    mso-hansi-theme-font:minor-latin;
-   mso-bidi-font-family:"Cordia New";
+   mso-bidi-font-family:"thsarabun";
    mso-bidi-theme-font:minor-bidi;
    mso-ansi-language:EN-US;}
 

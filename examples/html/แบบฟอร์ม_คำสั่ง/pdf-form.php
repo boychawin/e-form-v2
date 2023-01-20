@@ -24,7 +24,7 @@ width="100%"
     <td colspan="2" ></td>
     <td colspan="2" style="text-align:center">
       <span class="span_image" style="width="50px"">
-          <img  src="../../../images/image1.jpg" class="image_logo" title="ตราครุฑ" />
+          <img height="113" src="../../../images/image1.jpg" class="image_logo" title="ตราครุฑ" />
     </p>
   </td>
   <td colspan="2" ></td>
@@ -34,7 +34,7 @@ width="100%"
 
 
 
-<p  style="margin-bottom: 0cm; text-align: center; line-height: normal">
+<p class="setMarginTop2" style="margin-bottom: 0cm; text-align: center; line-height: normal">
 <span class="c16" ></span>
   <span class="c16" >คำสั่งสำนักงานสาธารณสุขอำเภอดำเนินสะดวก</span>
 </p>
@@ -99,7 +99,7 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
   style="
   margin-top: 6pt;
   margin-right: 0cm;
-  margin-bottom: 0cm;
+  
   margin-left: 0cm;
   text-align: justify;
   text-justify: inter-cluster;
@@ -110,9 +110,11 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
   <span  class="c16" >ทั้งนี้&nbsp;&nbsp;ตั้งแต่&nbsp;$data5</span>
 </p>
 
-<p
-  class="MsoNormal indent5"
->
+
+
+<p class="setMarginTop2"></p>
+
+<p  class="MsoNormal indent5 " >
   <span  class="c16"
     >สั่ง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ณ
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่
@@ -122,12 +124,11 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
 </span>
 </p>
 
-<p class="c16"></p>
-<p class="c16"></p>
+<p class="setMarginTop26pt"></p>
 
-<p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;$data7</span></p>
+<p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;&nbsp;$data7</span></p>
 <p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data7)</span></p>
-<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;($data8)</span></p>
+<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$data8</span></p>
 
 
 
@@ -147,7 +148,7 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
   border: 0px solid #000000;
   transform: rotate(0rad) translateZ(0px);
   -webkit-transform: rotate(0rad) translateZ(0px);
-  width: 103.18px;
+
   height: 113.39px;
 }
 .image_logo{
@@ -171,16 +172,16 @@ p.MsoNormal, li.MsoNormal, div.MsoNormal
  margin-left:0cm;
  line-height:115%;
  mso-pagination:widow-orphan;
- font-size:11.0pt;
- mso-bidi-font-size:14.0pt;
- font-family:"Calibri",sans-serif;
- mso-ascii-font-family:Calibri;
+ font-size:16.0pt;
+ mso-bidi-font-size:16.0pt;
+ font-family:"thsarabun",sans-serif;
+ mso-ascii-font-family:thsarabun;
  mso-ascii-theme-font:minor-latin;
- mso-fareast-font-family:Calibri;
+ mso-fareast-font-family:thsarabun;
  mso-fareast-theme-font:minor-latin;
- mso-hansi-font-family:Calibri;
+ mso-hansi-font-family:thsarabun;
  mso-hansi-theme-font:minor-latin;
- mso-bidi-font-family:"Cordia New";
+ mso-bidi-font-family:"thsarabun";
  mso-bidi-theme-font:minor-bidi;
  mso-ansi-language:EN-US;}
 
@@ -204,6 +205,26 @@ p.MsoNormal, li.MsoNormal, div.MsoNormal
   line-height: normal;
   tab-stops: center 339.05pt;
  }
+
+ .setMarginTop2{
+  line-height: 2.2;
+  font-size: 16pt;
+  margin-bottom: 0pt;
+}
+
+.setMarginTop26pt{
+  line-height: 2.8;
+  font-size: 16pt;
+}
+
+
+
+.setMarginTop1{
+  line-height: 1.1;
+  font-size: 16pt;
+  }
+
+
 </style>
 
 EOD;

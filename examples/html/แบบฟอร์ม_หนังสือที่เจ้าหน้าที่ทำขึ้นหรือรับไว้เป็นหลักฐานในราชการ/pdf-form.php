@@ -16,18 +16,18 @@ $namefile = $_POST['namefile'] ?? '../../../images/image31.png';
 
 $html = <<<EOD
 
-    <table border="0" width="100%">
+    <table border="1" width="100%">
         <tr>
             <td  colspan="1" rowspan="1"></td>
             <td  colspan="1" rowspan="2" style="text-align:center">
-                <p class="c9"><span class="span_image"> <img alt="logo" src="../../../images/image32.jpg" class="image_logo" > </span></p>
+                <p class="c9"><span class="span_image">
+                <img alt="logo" height="113" src="../../../images/image32.jpg" class="image_logo" > </span></p>
             </td>
             <td  colspan="1" rowspan="1"></td>
         </tr>
-        <tr class="c4">
-
+        <tr>
             <td  width="250px" colspan="1" rowspan="1">
-                <p class="c7_text_left"><span class="c3">เลขที่ &nbsp;$data1</span></p>
+                <p class="c7_text_left"><span >เลขที่ &nbsp;$data1</span></p>
             </td>
             <td    valign="bottom"  style="text-align:right" width="250px" colspan="1" rowspan="1">
             <p ><span >ส่วนราชการเจ้าของหนังสือ</span></p>
@@ -127,15 +127,7 @@ $html = <<<EOD
     }
 
 
-    .c3 {
-        color: #000000;
-        font-weight: 400;
-        text-decoration: none;
-        vertical-align: baseline;
-        font-size: 16pt;
-        font-family: "thsarabun";
-        font-style: normal
-    }
+
 
     .c6 {
         color: #000000;
@@ -160,11 +152,12 @@ $html = <<<EOD
 
     .c7_text_left {
         padding-top: 0pt;
-        padding-bottom: 0pt;
-        line-height: 1.0;
+        padding-bottom: 100pt;
+        line-height: 1.1;
         orphans: 2;
         widows: 2;
         text-align: left
+   
     }
 
 
@@ -192,10 +185,6 @@ $html = <<<EOD
         font-size: 16pt;
         font-family: "thsarabun";
         font-weight: 400
-    }
-
-    .c4 {
-        height: 0pt
     }
 
 
@@ -272,16 +261,16 @@ $html = <<<EOD
    margin-left:0cm;
    line-height:115%;
    mso-pagination:widow-orphan;
-   font-size:11.0pt;
-   mso-bidi-font-size:14.0pt;
-   font-family:"Calibri",sans-serif;
-   mso-ascii-font-family:Calibri;
+   font-size:16.0pt;
+   mso-bidi-font-size:16.0pt;
+   font-family:"thsarabun",sans-serif;
+   mso-ascii-font-family:thsarabun;
    mso-ascii-theme-font:minor-latin;
-   mso-fareast-font-family:Calibri;
+   mso-fareast-font-family:thsarabun;
    mso-fareast-theme-font:minor-latin;
-   mso-hansi-font-family:Calibri;
+   mso-hansi-font-family:thsarabun;
    mso-hansi-theme-font:minor-latin;
-   mso-bidi-font-family:"Cordia New";
+   mso-bidi-font-family:"thsarabun";
    mso-bidi-theme-font:minor-bidi;
    mso-ansi-language:EN-US;}
 
@@ -323,12 +312,12 @@ $html = <<<EOD
     border: 0px solid #000000;
     transform: rotate(0rad) translateZ(0px);
     -webkit-transform: rotate(0rad) translateZ(0px);
-    width: 103.18px;
+  
     height: 113.39px;
   }
   .image_logo{
-    width: 103.18px;
-    height: .39px;
+
+    height: 113.39px;
                     margin-left: -0px;
                     margin-top: -0px;
                     transform: rotate(0rad) translateZ(0px);

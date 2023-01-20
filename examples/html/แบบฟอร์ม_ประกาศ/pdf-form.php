@@ -12,49 +12,42 @@ $data5 = $_POST['name5'];
 $html = <<<EOD
 
 
-<table class="c5" border="0" width="100%">
-    <tr class="c17" colspan="2">
-        <td class="" colspan="1" rowspan="1">
-            <p class="c14"><span class="c8"></span></p>
-        </td>
+<table  border="0" width="100%">
+    <tr>
+        <td class="" colspan="1" rowspan="1"></td>
         <td class=""  colspan="1" rowspan="1" style="text-align:center">
             <p class="center">
                 <span
-                    class="span_image"><img
-                        alt="logo"
+                    class="span_image">
+                    <img alt="logo"
+                    height="113"
                         src="../../../images/image1.jpg"
-                        class="image_logo"
-                      
-                        /></span>
+                        class="image_logo" /></span>
             </p>
         </td>
-        <td class="" colspan="2" rowspan="1">
-            <p class="c14"><span class="c8"></span></p>
-        </td>
+        <td class="" colspan="1" rowspan="1"></td>
     </tr>
 </table>
-
-<p class="setMarginTop2"></p>
-<p class="center setMarginTop0">
+<p class="setMarginTop1"></p>
+<p class="center setMarginTop0 setMarginBottom0">
     <span class="c4"> ประกาศสำนักงานสาธารณสุขอำเภอดำเนินสะดวก</span>
 </p>
-<p class="center setMarginTop0">
+<p class="center setMarginTop0 setMarginBottom0">
     <span class="c4">เรื่อง&nbsp;&nbsp;$data1</span>
 </p>
 <p class="center setMarginTop0 setMarginBottom0">
     <span class="">---------------------------------------------------------</span>
 </p>
-<p class="setMarginTop2"></p>
+<p class="setMarginTop1"></p>
 <p class="indent25 setMarginTop0">
     <span class="c8">$data2</span>
 </p>
-<p class="indent25 setMarginTop0">
+<p class="indent25 setMarginTop1">
     <span class="c8">ทั้งนี้&nbsp;&nbsp;ตั้งแต่</span>
 </p>
 
 
 <p class="setMarginTop2"></p>
-
 
 <p
   class="MsoNormal indent5"
@@ -68,13 +61,11 @@ $html = <<<EOD
 </span>
 </p>
 
+<p class="setMarginTop16pt"></p>
 
-</p>
-<p class="setMarginTop2"></p>
-
-<p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;$data4</span></p>
+<p class="MsoNormal setMarginTop0 indent8" ><span  class="c16">ยศ&nbsp;$data4</span></p>
 <p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data5)</span></p>
-<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;($data5)</span></p>
+<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;$data5</span></p>
 
 
 
@@ -100,11 +91,10 @@ html,body{
   border: 0px solid #000000;
   transform: rotate(0rad) translateZ(0px);
   -webkit-transform: rotate(0rad) translateZ(0px);
-  width: 103.18px;
-  height: 113.39px;
+
 }
 .image_logo{
-  width: 103.18px;
+
   height: 113.39px;
                   margin-left: -0px;
                   margin-top: -0px;
@@ -114,7 +104,7 @@ html,body{
 
 
 table td,
-table th {
+table th.span {
   padding: 0;
 }
 
@@ -165,7 +155,6 @@ table th {
   
   orphans: 2;
   widows: 2;
-  text-align: justify;
 }
 .c14 {
   padding-top: 0pt;
@@ -222,6 +211,7 @@ span{
 }
 .setMarginTop0{
   margin-top: 0pt;
+  padding-bottom: 0pt;
 }
 
 .setMarginBottom0{
@@ -230,15 +220,29 @@ span{
   
 }
 
+.setMarginTop1{
+  line-height: 1.1;
+  font-size: 16pt;
+
+}
+
+.setMarginTop16pt{
+  line-height: 1.7;
+  font-size: 16pt;
+
+}
+
+
+
 .setMarginTop2{
   line-height: 2.2;
   font-size: 16pt;
-  margin-bottom: 0pt;
+
 }
 .setMarginTop26pt{
   line-height: 2.8pt;
   font-size: 16pt;
-  margin-bottom: 0pt;
+
 }
 
 
@@ -252,16 +256,16 @@ p.MsoNormal{mso-style-unhide:no;
  margin-left:0cm;
  line-height:115%;
  mso-pagination:widow-orphan;
- font-size:11.0pt;
- mso-bidi-font-size:14.0pt;
- font-family:"Calibri",sans-serif;
- mso-ascii-font-family:Calibri;
+ font-size:16pt;
+ mso-bidi-font-size:16.0pt;
+ font-family:"thsarabun",sans-serif;
+ mso-ascii-font-family:thsarabun;
  mso-ascii-theme-font:minor-latin;
- mso-fareast-font-family:Calibri;
+ mso-fareast-font-family:thsarabun;
  mso-fareast-theme-font:minor-latin;
- mso-hansi-font-family:Calibri;
+ mso-hansi-font-family:thsarabun;
  mso-hansi-theme-font:minor-latin;
- mso-bidi-font-family:"Cordia New";
+ mso-bidi-font-family:"thsarabun";
  mso-bidi-theme-font:minor-bidi;
  mso-ansi-language:EN-US;}
 

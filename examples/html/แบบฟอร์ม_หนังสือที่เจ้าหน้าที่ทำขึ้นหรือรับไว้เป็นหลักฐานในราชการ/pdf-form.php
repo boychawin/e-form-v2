@@ -10,6 +10,8 @@ $data5 = $_POST['name5'];
 $data6 = $_POST['name6'];
 $data7 = $_POST['name7'];
 $data8 = $_POST['name8'];
+$data9 = $_POST['name9'];
+$data10 = $_POST['name10'];
 
 $namefile = $_POST['namefile'] ?? '../../../images/image31.png';
 // print_r($namefile);
@@ -20,7 +22,7 @@ $html = <<<EOD
         <tr>
 
         <td  style="text-align:left;padding-top:60px;" width="250px" colspan="1" rowspan="1">
-                <p ><span >เลขที่ &nbsp;$ </span></p>
+                <p ><span >เลขที่ &nbsp;$data1 </span></p>
             </td>
 
             <td  colspan="2" rowspan="1" style="text-align:center">
@@ -28,13 +30,13 @@ $html = <<<EOD
             <img alt="logo" height="113" src="../../../images/image32.jpg" class="image_logo" > </span></p>
         </td>
               <td valign="bottom"  style="text-align:right;padding-bottom:10px;"  width="250px" colspan="1" rowspan="1">
-              <p ><span >ส่วนราชการเจ้าของหนังสือ</span></p>
+              <p ><span >$data2</span></p>
              </td>
         </tr>
        
         <tr>
         <td colspan="4" style="text-align:right;" rowspan="1">
-        <span >ที่ตั้ง และรหัสไปรษณีย์</span>
+        <span >$data3</span>
         </td>
         </tr>
 
@@ -45,7 +47,7 @@ $html = <<<EOD
 
 
 <p class="indent25 setMarginTop0">
-    <span class="c8">หนังสือฉบับนี้ให้ไว้เพื่อรับรองว่า&nbsp;$data3</span>
+    <span class="c8">หนังสือฉบับนี้ให้ไว้เพื่อรับรองว่า&nbsp;$data4</span>
 </p>
 
 
@@ -60,15 +62,15 @@ $html = <<<EOD
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;$data4
+    &nbsp;&nbsp;&nbsp;&nbsp;$data5
 </span>
 </p>
 
 <p class="setMarginTop26pt"></p>
 
-<p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;$data5</span></p>
-<p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data6)</span></p>
-<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;($data7)</span></p>
+<p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;$data6</span></p>
+<p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data7)</span></p>
+<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;($data8)</span></p>
 
 
 
@@ -81,8 +83,8 @@ $html = <<<EOD
             </p>
 
 <p class="setMarginTop16pt"></p>
-    <p class="setMarginTop0"><span class="c6">&nbsp; ($data7)</span> </p>
-    <p class="setMarginTop0"><span class="c6">&nbsp; ($data8)</span></p>
+    <p class="setMarginTop0"><span class="c6">&nbsp; ($data9)</span> </p>
+    <p class="setMarginTop0"><span class="c6">&nbsp; ($data10)</span></p>
 <p class="setMarginTop16pt"></p>
 
 

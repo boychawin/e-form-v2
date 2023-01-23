@@ -59,7 +59,7 @@ $html = <<<EOD
 
 <p class="setMarginTop112pt "></p>
 <p class="MsoNormal indent8" ><span  class="c16">($data10)</span></p>
-<p class="MsoNormal indent7" ><span  class="c16">ปลัดสำนักนายกรัฐมนตรี</span></p>
+<p class="MsoNormal indent7" ><span  class="c16">$data11</span></p>
 
 
 

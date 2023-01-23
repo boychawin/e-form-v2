@@ -17,12 +17,12 @@
 
 
     <ol>
-        <li>แบบฟอร์ม คำสั่ง: [<a href="examples/html/แบบฟอร์ม_คำสั่ง/form.php" title="PDF [new window]" target="_blank">HTML</a>]</li>
-        <li>แบบฟอร์ม_ประกาศ: [<a href="examples/html/แบบฟอร์ม_ประกาศ/form.php" title="PDF [new window]" target="_blank">HTML</a>]</li>
-        <li>แบบฟอร์ม_หนังสือที่เจ้าหน้าที่ทำขึ้นหรือรับไว้เป็นหลักฐานในราชการ: [<a href="examples/html/แบบฟอร์ม_หนังสือที่เจ้าหน้าที่ทำขึ้นหรือรับไว้เป็นหลักฐานในราชการ/form.php" title="PDF [new window]" target="_blank">HTML</a>]</li>
-        <li>แบบฟอร์ม_หนังสือประทับตรา: [<a href="examples/html/แบบฟอร์ม_หนังสือประทับตรา/form.php" title="PDF [new window]" target="_blank">HTML</a>]</li>
-        <li>แบบฟอร์ม_หนังสือภายนอก: [<a href="examples/html/แบบฟอร์ม_หนังสือภายนอก/form.php" title="PDF [new window]" target="_blank">HTML</a>]</li>
-        <li>แบบฟอร์ม_หนังสือภายใน: [<a href="examples/html/แบบฟอร์ม_หนังสือภายใน/form.php" title="PDF [new window]" target="_blank">HTML</a>]</li>
+        <li>แบบฟอร์ม คำสั่ง: [<a href="examples/html/แบบฟอร์ม_คำสั่ง/form.html" title="PDF [new window]" target="_blank">HTML</a>]</li>
+        <li>แบบฟอร์ม_ประกาศ: [<a href="examples/html/แบบฟอร์ม_ประกาศ/form.html" title="PDF [new window]" target="_blank">HTML</a>]</li>
+        <li>แบบฟอร์ม_หนังสือที่เจ้าหน้าที่ทำขึ้นหรือรับไว้เป็นหลักฐานในราชการ: [<a href="examples/html/แบบฟอร์ม_หนังสือที่เจ้าหน้าที่ทำขึ้นหรือรับไว้เป็นหลักฐานในราชการ/form.html" title="PDF [new window]" target="_blank">HTML</a>]</li>
+        <li>แบบฟอร์ม_หนังสือประทับตรา: [<a href="examples/html/แบบฟอร์ม_หนังสือประทับตรา/form.html" title="PDF [new window]" target="_blank">HTML</a>]</li>
+        <li>แบบฟอร์ม_หนังสือภายนอก: [<a href="examples/html/แบบฟอร์ม_หนังสือภายนอก/form.html" title="PDF [new window]" target="_blank">HTML</a>]</li>
+        <li>แบบฟอร์ม_หนังสือภายใน: [<a href="examples/html/แบบฟอร์ม_หนังสือภายใน/form.html" title="PDF [new window]" target="_blank">HTML</a>]</li>
     </ol>
 
 </body>

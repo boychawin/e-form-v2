@@ -36,13 +36,13 @@ $html = <<<EOD
             <img alt="logo" height="113" src="../../../images/image32.jpg" class="image_logo" > </span></p>
         </td>
               <td valign="bottom"  style="text-align:right;padding-bottom:10px;"  width="250px" colspan="1" rowspan="1">
-              <p ><span >ส่วนราชการเจ้าของหนังสือ</span></p>
+              <p ><span >$data2</span></p>
              </td>
         </tr>
        
         <tr>
         <td colspan="4" style="text-align:right;" rowspan="1">
-        <span >ที่ตั้ง และรหัสไปรษณีย์</span>
+        <span >$data3</span>
         </td>
         </tr>
 

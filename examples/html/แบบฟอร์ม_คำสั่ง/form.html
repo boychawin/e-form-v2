@@ -1,19 +1,21 @@
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="ProgId" content="Word.Document" />
+  <meta name="Generator" content="Microsoft Word 15" />
+  <meta name="Originator" content="Microsoft Word 15" />
+
+</head>
+
+<body class="c50 doc-content">
 
 
-<?php
-$data1 = $_POST['name1'];
-$data2 = $_POST['name2'];
-$data3 = $_POST['name3'];
-$data4 = $_POST['name4'];
-$data5 = $_POST['name5'];
-$data6 = $_POST['name6'];
-$data7 = $_POST['name7'];
-$data8 = $_POST['name8'];
-$data9 = $_POST['name9'];
-$html = <<<EOD
-
-
-
+    
+  <form action="./pdf.php" method="POST">
+    <button type="submit">export pdf</button>
+    <div >
+     
 <table
   border="0"
   cellspacing="0"
@@ -23,7 +25,7 @@ width="100%"
   <tr >
     <td colspan="2" ></td>
     <td colspan="2" style="text-align:center">
-      <span class="span_image"style="width:50px">
+      <span class="span_image">
           <img height="113" src="../../../images/image1.jpg" class="image_logo" title="ตราครุฑ" />
     </p>
   </td>
@@ -44,14 +46,14 @@ width="100%"
 <p  class="MsoNormal"
 align="center"
 style="margin-bottom: 0cm; text-align: center; line-height: normal" >
-<span class="c16" >ที่ $data1</span>
+<span class="c16" >ที่ <input name="name1" ></span>
 </p>
 
 
 <p  class="MsoNormal"
 align="center"
 style="margin-bottom: 0cm; text-align: center; line-height: normal" >
-<span class="c16" >เรื่อง  $data2</span>
+<span class="c16" >เรื่อง  <input name="name2" ></span>
 </p>
 
 <p
@@ -75,7 +77,7 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
     line-height: normal;
     tab-stops: 0cm;
   " >
-  <span  class="c16" > $data3 </span>
+  <span  class="c16" > <textarea name="name3" rows="10" cols="50"  ></textarea> </span>
 </p>
 
 <p
@@ -91,7 +93,7 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
     line-height: normal;
   "
 >
-  <span  class="c16" >$data4</span>
+  <span  class="c16" ><textarea name="name4" rows="10" cols="50"></textarea></span>
 </p>
 
 <p
@@ -107,7 +109,7 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
   line-height: normal;
   "
 >
-  <span  class="c16" >ทั้งนี้&nbsp;&nbsp;ตั้งแต่&nbsp;$data5</span>
+  <span  class="c16" >ทั้งนี้&nbsp;&nbsp;ตั้งแต่&nbsp;<input name="name5" ></span>
 </p>
 
 
@@ -120,20 +122,39 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;$data6
+    &nbsp;&nbsp;&nbsp;&nbsp;<input name="name6" >
 </span>
 </p>
 
 <p class="setMarginTop26pt"></p>
 
-<p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;&nbsp;$data7</span></p>
-<p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data8)</span></p>
-<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$data9</span></p>
+<p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;&nbsp;<input name="name7" ></span></p>
+<p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;(<input name="name8" >)</span></p>
+<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="name9" ></span></p>
 
 
 
+    </div>
+  </form>
 
-<style>
+
+  <style>
+@font-face {
+    font-family: 'thsarabun';
+    src: url('../../../fonts/thsarabun-new/THSarabunNew001.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.c50 {
+  background-color: #ffffff;
+  max-width: 453.5pt;
+  padding: 42.5pt 56.7pt 56.7pt 85pt;
+}
+.doc-content{
+  width: 453.5pt;
+}
+
 
 .c16 {
   font-size: 16pt;
@@ -227,7 +248,7 @@ p.MsoNormal, li.MsoNormal, div.MsoNormal
 
 </style>
 
-EOD;
 
-?>
+</body>
 
+</html>

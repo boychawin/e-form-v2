@@ -69,10 +69,10 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
     margin-right: 0cm;
     margin-bottom: 0cm;
     margin-left: 0cm;
-    text-align: justify;
+
     text-justify: inter-cluster;
     text-indent: 2.5cm;
-    line-height: normal;
+    
     tab-stops: 0cm;
   " >
   <span  class="c16" > $data3 </span>
@@ -85,10 +85,10 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
     margin-right: 0cm;
     margin-bottom: 0cm;
     margin-left: 0cm;
-    text-align: justify;
+    
     text-justify: inter-cluster;
     text-indent: 2.5cm;
-    line-height: normal;
+    
   "
 >
   <span  class="c16" >$data4</span>
@@ -101,10 +101,10 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
   margin-right: 0cm;
   
   margin-left: 0cm;
-  text-align: justify;
+  
   text-justify: inter-cluster;
   text-indent: 2.5cm;
-  line-height: normal;
+  
   "
 >
   <span  class="c16" >ทั้งนี้&nbsp;&nbsp;ตั้งแต่&nbsp;$data5</span>
@@ -193,7 +193,7 @@ p.MsoNormal, li.MsoNormal, div.MsoNormal
   margin-bottom: 0cm;
   margin-left: 0cm;
   text-indent: 8cm;
-  line-height: normal;
+  
  }
 
  .indent5{
@@ -202,7 +202,7 @@ p.MsoNormal, li.MsoNormal, div.MsoNormal
   margin-bottom: 0cm;
   margin-left: 0cm;
   text-indent: 5cm;
-  line-height: normal;
+  
   tab-stops: center 339.05pt;
  }
 

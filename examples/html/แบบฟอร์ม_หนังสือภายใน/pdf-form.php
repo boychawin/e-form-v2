@@ -284,7 +284,7 @@ $html = <<<EOD
     margin-bottom: 0cm;
     margin-left: 0cm;
     text-indent: 1cm;
-    line-height: normal;
+    line-height: 1.1;
    }
 
    .indent7{
@@ -293,7 +293,7 @@ $html = <<<EOD
     margin-bottom: 0cm;
     margin-left: 0cm;
     text-indent: 7cm;
-    line-height: normal;
+    line-height: 1.1;
    }
 
 
@@ -303,7 +303,7 @@ $html = <<<EOD
     margin-bottom: 0cm;
     margin-left: 0cm;
     text-indent: 8cm;
-    line-height: normal;
+    line-height: 1.1;
    }
 
 
@@ -313,7 +313,7 @@ $html = <<<EOD
     margin-bottom: 0cm;
     margin-left: 0cm;
     text-indent: 5cm;
-    line-height: normal;
+    line-height: 1.1;
     tab-stops: center 339.05pt;
    }
 

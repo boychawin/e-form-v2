@@ -277,7 +277,7 @@ p.MsoNormal{mso-style-unhide:no;
   margin-bottom: 0cm;
   margin-left: 0cm;
   text-indent: 8cm;
-  line-height: normal;
+  
  }
 
 
@@ -287,7 +287,7 @@ p.MsoNormal{mso-style-unhide:no;
   margin-bottom: 0cm;
   margin-left: 0cm;
   text-indent: 5cm;
-  line-height: normal;
+  
   tab-stops: center 339.05pt;
  }
 

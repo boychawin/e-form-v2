@@ -298,7 +298,7 @@ margin-right: 0cm;
 margin-bottom: 0cm;
 margin-left: 0cm;
 text-indent: 1cm;
-line-height: normal;
+line-height: 1.1;
 }
 
 
@@ -308,7 +308,7 @@ margin-right: 54.4pt;
 margin-bottom: 0cm;
 margin-left: 0cm;
 text-indent: 8cm;
-line-height: normal;
+line-height: 1.1;
 }
 
 .indent10{
@@ -317,7 +317,7 @@ line-height: normal;
   margin-bottom: 0cm;
   margin-left: 0cm;
   text-indent: 10cm;
-  line-height: normal;
+  line-height: 1.1;
   }
 
 
@@ -327,7 +327,7 @@ margin-right: 0cm;
 margin-bottom: 0cm;
 margin-left: 0cm;
 text-indent: 5cm;
-line-height: normal;
+line-height: 1.1;
 tab-stops: center 339.05pt;
 }
 

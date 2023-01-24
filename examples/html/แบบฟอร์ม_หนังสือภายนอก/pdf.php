@@ -1,6 +1,5 @@
 <?php
 require_once '../../../vendor/autoload.php';
-require_once('../../../vendor/tecnickcom/tcpdf/examples/tcpdf_include.php');
 include('./pdf-form.php');
 
 $content = ob_get_clean();

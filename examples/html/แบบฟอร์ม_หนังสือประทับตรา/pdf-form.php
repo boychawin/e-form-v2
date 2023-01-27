@@ -350,7 +350,7 @@ transform: rotate(0rad) translateZ(0px);
 .indent25 {
 text-indent: 2.5cm;
 padding-bottom: 0pt;
-
+text-align: justify;
 orphans: 2;
 widows: 2;
 

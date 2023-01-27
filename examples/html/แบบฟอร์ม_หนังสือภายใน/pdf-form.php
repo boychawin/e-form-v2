@@ -62,21 +62,20 @@ $html = <<<EOD
 <p class="setMarginTop112pt "></p>
 
 
-
 <table border="0"  cellspacing="0" cellpadding="0" width="100%" >
   <tr >
-  <td colspan="1" width="50%%"  > </td>
-  <td style="text-align:left;" colspan="2" width="50px">
-  
-  <p ><span class="c16">$data10&nbsp;&nbsp;$data11</span></p>
-  <p><span  class="c16">$data12</span></p>
-  <p><span  class="c16">$data13</span></p>
+  <td colspan="1" width="50%"  > </td>
+  <td valign="top"  style="text-align:left;" colspan="2"  >
+  <p ><span  class="c16">$data10</span></p>
   </td>
-  <td colspan="1" width="133px" ></td>
+  <td valign="top" style="text-align:left;" colspan="1" width="44%"  >
+  <p style="text-align:center;">
+  <span  class="c16">$data11</span>
+  <p><span  class="c16">$data12</span></p>
+  <p><span  class="c16">$data13</span></p>  
+  </p>
   </tr>
 </table>
-
-
 
 
 
@@ -357,7 +356,7 @@ $html = <<<EOD
   }
   .image_logo{
 
-    height: 57px;
+    height: 56.69293333333333px;
                     margin-left: -0px;
                     margin-top: -0px;
                     transform: rotate(0rad) translateZ(0px);
@@ -367,7 +366,7 @@ $html = <<<EOD
   .indent25 {
     text-indent: 2.5cm;
     padding-bottom: 0pt;
-    
+    text-align: justify;
     orphans: 2;
     widows: 2;
 

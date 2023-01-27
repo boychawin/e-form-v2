@@ -10,6 +10,9 @@ $data6 = $_POST['name6'];
 $data7 = $_POST['name7'];
 $data8 = $_POST['name8'];
 $data9 = $_POST['name9'];
+$data10 = $_POST['name10'];
+$data11 = $_POST['name11'];
+
 $html = <<<EOD
 <table border="0" cellspacing="0" cellpadding="0" width="100%" >
   <tr >
@@ -54,14 +57,16 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
   <span class="c16" >---------------------------------------------------------</span>
 </p>
 
+
+
 <p
   class="MsoNormal"
   style="
+  text-align: justify;
     margin-top: 16pt;
     margin-right: 0cm;
     margin-bottom: 0cm;
     margin-left: 0cm;
-
     text-justify: inter-cluster;
     text-indent: 2.5cm;
     
@@ -77,7 +82,7 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
     margin-right: 0cm;
     margin-bottom: 0cm;
     margin-left: 0cm;
-    
+    text-align: justify;
     text-justify: inter-cluster;
     text-indent: 2.5cm;
     
@@ -93,7 +98,6 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
   margin-right: 0cm;
   
   margin-left: 0cm;
-  
   text-justify: inter-cluster;
   text-indent: 2.5cm;
   
@@ -118,16 +122,21 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
 
 <p class="setMarginTop26pt"></p>
 
+
+
+
 <table border="0"  cellspacing="0" cellpadding="0" width="100%" >
   <tr >
   <td colspan="1" width="50%"  > </td>
-  <td style="text-align:left;" colspan="2" width="50px">
-  
-  <p ><span  class="c16">$data8&nbsp;&nbsp;$data9</span></p>
-  <p><span  class="c16">$data10</span></p>
-  <p><span  class="c16">$data11</span></p>
+  <td valign="top"  style="text-align:left;" colspan="2"  >
+  <p ><span  class="c16">$data8</span></p>
   </td>
-  <td colspan="1" width="133px" ></td>
+  <td valign="top" style="text-align:left;" colspan="1" width="44%"  >
+  <p style="text-align:center;">
+  <span  class="c16">$data9</span>
+  <p><span  class="c16">$data10</span></p>
+  <p><span  class="c16">$data11</span></p>  
+  </p>
   </tr>
 </table>
 

@@ -12,6 +12,9 @@ $data7 = $_POST['name7'];
 $data8 = $_POST['name8'];
 $data9 = $_POST['name9'];
 $data10 = $_POST['name10'];
+$data11 = $_POST['name11'];
+$data12 = $_POST['name12'];
+
 
 $namefile = $_POST['namefile'] ?? '../../../images/image31.png';
 // print_r($namefile);
@@ -71,18 +74,25 @@ $html = <<<EOD
 
 <p class="setMarginTop26pt"></p>
 
+
+
+
 <table border="0"  cellspacing="0" cellpadding="0" width="100%" >
   <tr >
   <td colspan="1" width="50%"  > </td>
-  <td style="text-align:left;" colspan="2" width="50px">
-  
-  <p ><span class="c16">$data7&nbsp;&nbsp;$data8</span></p>
-  <p><span  class="c16">$data9</span></p>
-  <p><span  class="c16">$data10</span></p>
+  <td valign="top"  style="text-align:left;" colspan="2"  >
+  <p ><span  class="c16">$data7</span></p>
   </td>
-  <td colspan="1" width="133px" ></td>
+  <td valign="top" style="text-align:left;" colspan="1" width="44%"  >
+  <p style="text-align:center;">
+  <span  class="c16">$data8</span>
+  <p><span  class="c16">$data9</span></p>
+  <p><span  class="c16">$data10</span></p>  
+  </p>
   </tr>
 </table>
+
+
 
 
 
@@ -352,7 +362,7 @@ $html = <<<EOD
   .indent25 {
     text-indent: 2.5cm;
     padding-bottom: 0pt;
-    
+    text-align: justify;
     orphans: 2;
     widows: 2;
 

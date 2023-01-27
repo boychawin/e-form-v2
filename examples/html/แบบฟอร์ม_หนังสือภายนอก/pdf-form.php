@@ -18,8 +18,8 @@ $data13 = $_POST['name13'];
 $data14= $_POST['name14'];
 $data15 = $_POST['name15'];
 $data16 = $_POST['name16'];
-
-
+$data17 = $_POST['name17'];
+$data18 = $_POST['name18'];
 
 $html = <<<EOD
 
@@ -27,21 +27,31 @@ $html = <<<EOD
 <table border="0" width="100%">
         <tr>
 
-        <td  style="text-align:left;padding-top:60px;" width="250px" colspan="1" rowspan="1">
-                <p ><span >ที่ &nbsp;$data1</span></p>
+            <td  style="text-align:left;padding-top:70px;" width="250px" colspan="1" rowspan="1">
+                    <p ><span >ที่ &nbsp;$data1</span></p>
+                </td>
+
+                <td  colspan="2" rowspan="1" style="text-align:center">
+                <p class="c9"><span class="span_image">
+                <img alt="logo" src="../../../images/image32.jpg" class="image_logo" > </span></p>
             </td>
 
-            <td  colspan="2" rowspan="1" style="text-align:center">
-            <p class="c9"><span class="span_image">
-            <img alt="logo" height="113" src="../../../images/image32.jpg" class="image_logo" > </span></p>
-        </td>
-              <td valign="bottom"  style="text-align:right;padding-bottom:10px;"  width="250px" colspan="1" rowspan="1">
+
+            <td valign="bottom"  style="text-align:right;padding-bottom:10px;"  width="125px" colspan="1" rowspan="1">
+            
+             </td>
+
+
+
+              <td valign="bottom"  style="text-align:left;padding-bottom:7px;"  width="125px" colspan="1" rowspan="1">
               <p ><span >$data2</span></p>
              </td>
         </tr>
        
         <tr>
-        <td colspan="4" style="text-align:right;" rowspan="1">
+        <td colspan="4" rowspan="1">
+        </td>
+        <td colspan="1" style="text-align:left;padding-top:-10px" rowspan="1">
         <span >$data3</span>
         </td>
         </tr>
@@ -49,8 +59,8 @@ $html = <<<EOD
 
         <tr >
         <td  colspan="2" rowspan="1"></td>
-        <td  valign="bottom"  style="padding-left:40px;" colspan="2" rowspan="1">
-        <p ><span >เดือน&nbsp;ปี</span></p>
+        <td  valign="bottom"  style="padding-left:40px;padding-top:6;" colspan="3" rowspan="1">
+        <p ><span >$data4</span></p>
         </td>
         </tr>
     </table>
@@ -58,16 +68,17 @@ $html = <<<EOD
 
 
 
-  <p class="setMarginTop16pt setMarginBottom0">เรื่อง&nbsp;&nbsp;$data4</p>
-  <p class="setMarginTop16pt setMarginBottom0">เรียน&nbsp;&nbsp;$data5</p>
-  <p class="setMarginTop16pt setMarginBottom0">อ้างถึง&nbsp;&nbsp;$data6</p>
-  <p class="setMarginTop16pt setMarginBottom0">สิ่งที่ส่งมาด้วย&nbsp;&nbsp;$data7</p>
+  <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรื่อง&nbsp;&nbsp;$data4</p>
+  <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรียน&nbsp;&nbsp;$data5</p>
+  <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">อ้างถึง&nbsp;&nbsp;$data6</p>
+  <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">สิ่งที่ส่งมาด้วย&nbsp;&nbsp;$data7</p>
 
 
-  <p class="setMarginTop16pt "></p>
-<p class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคเหตุ&nbsp;$data8</span></p>
-<p class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคความประสงค์&nbsp;$data9</span></p>
-<p class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคสรุป&nbsp;$data10</span></p>
+
+<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคเหตุ&nbsp;$data8</span></p>
+<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคความประสงค์&nbsp;$data9</span></p>
+
+<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคสรุป&nbsp;$data10</span></p>
 
 
 
@@ -77,19 +88,31 @@ $html = <<<EOD
 
 
 
-<p class="indent8 setMarginTop0"><span class="c6">ยศ&nbsp;&nbsp;$data11</span> </p>
-<p class="indent8 setMarginTop0"><span class="c6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;($data12)</span></p>
-<p class=" indent8 setMarginTop0"><span class="c6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$data13</span></p>
+
+<table border="0"  cellspacing="0" cellpadding="0" width="100%" >
+  <tr >
+  <td colspan="1" width="50%%"  > </td>
+  <td style="text-align:left;" colspan="2" width="50px">
+  
+  <p ><span class="c16">$data11&nbsp;&nbsp;$data12</span></p>
+  <p><span  class="c16">$data13</span></p>
+  <p><span  class="c16">$data14</span></p>
+  </td>
+  <td colspan="1" width="133px" ></td>
+  </tr>
+</table>
+
+
 
 
 
 
 
 <p class="setMarginTop16pt"></p>
-    <p class="setMarginTop0"><span class="c6">$data14</span> </p>
-    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data15</span></p>
-    <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;$data16</span></p>
+    <p class="setMarginTop0"><span class="c6">$data15</span> </p>
     <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data16</span></p>
+    <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;$data17</span></p>
+    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data18</span></p>
 <p class="setMarginTop16pt"></p>
 
 
@@ -230,15 +253,15 @@ $html = <<<EOD
     font-weight: 400;
   }
   p{
-    padding-top: 0pt;
-    padding-bottom: 0pt;
-    margin-bottom: 0pt;
+    font-size: 16pt;
+    font-family: "thsarabun";
+    line-height: 1.1;
+
   }
   span{
-    padding-top: 0pt;
-    padding-bottom: 0pt;
-    margin-bottom: 0pt;
-    margin-top: 0pt;
+    font-size: 16pt;
+        font-family: "thsarabun";
+        line-height: 1.1;
 
   }
   .setMarginTop0{
@@ -267,6 +290,14 @@ $html = <<<EOD
     font-size: 16pt;
    
   }
+
+  .setMarginBottom6pt{
+    line-height: 6pt;
+    font-size: 16pt;
+   
+  }
+
+
   .setMarginTop112pt{
     line-height: 2.3pt;
     font-size: 16pt;
@@ -337,11 +368,9 @@ $html = <<<EOD
     transform: rotate(0rad) translateZ(0px);
     -webkit-transform: rotate(0rad) translateZ(0px);
 
-    height: 113.39px;
   }
   .image_logo{
-\
-    height: 113.39px;
+height: 113.38586666666666px;
                     margin-left: -0px;
                     margin-top: -0px;
                     transform: rotate(0rad) translateZ(0px);
@@ -350,8 +379,7 @@ $html = <<<EOD
 
   .indent25 {
     text-indent: 2.5cm;
-    padding-bottom: 0pt;
-    
+
     orphans: 2;
     widows: 2;
 

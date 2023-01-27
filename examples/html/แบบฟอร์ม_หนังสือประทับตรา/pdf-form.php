@@ -8,7 +8,7 @@ $data4 = $_POST['name4'];
 $data5 = $_POST['name5'];
 $data6 = $_POST['name6'];
 $data7 = $_POST['name7'];
-
+$data8 = $_POST['name8'];
 
 $html = <<<EOD
 
@@ -21,7 +21,6 @@ $html = <<<EOD
         <span
               class="span_image">
               <img alt="logo"
-              height="113"
                       src="../../../images/image32.jpg"
                       class="image_logo" >
                       </span>
@@ -48,8 +47,8 @@ $html = <<<EOD
 <p class="setMarginTop1"></p>
 <p class="setMarginTop1"></p>
 
-<p class="MsoNormal indent8" ><span  class="c16">&nbsp;ส่วนราชการที่ส่งหนังสือออก</span></p>
-<p class="MsoNormal indent10" ><span  class="c16">&nbsp;$data4</span></p>
+<p class="MsoNormal indent8" ><span  class="c16">&nbsp;$data4</span></p>
+<p class="MsoNormal indent10" ><span  class="c16">&nbsp;$data5</span></p>
 
 <p class="setMarginTop1"></p>
 <p class="setMarginTop1"></p>
@@ -58,9 +57,9 @@ $html = <<<EOD
 
 
 
-    <p class="setMarginTop0"><span class="c6">$data5</span> </p>
-    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data6</span></p>
-    <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;$data7</span></p>
+    <p class="setMarginTop0"><span class="c6">$data6</span> </p>
+    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data7</span></p>
+    <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;$data8</span></p>
 
 
 
@@ -338,11 +337,10 @@ margin: 0px 0px;
 border: 0px solid #000000;
 transform: rotate(0rad) translateZ(0px);
 -webkit-transform: rotate(0rad) translateZ(0px);
-height: 113.38px;
+
 }
 .image_logo{
-
-height: 113.38px;
+  height: 113.38586666666666px;
 margin-left: -0px;
 margin-top: -0px;
 transform: rotate(0rad) translateZ(0px);

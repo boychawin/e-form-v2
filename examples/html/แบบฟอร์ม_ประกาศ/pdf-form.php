@@ -20,7 +20,6 @@ $html = <<<EOD
                 <span
                     class="span_image">
                     <img alt="logo"
-                    height="113"
                         src="../../../images/image1.jpg"
                         class="image_logo" /></span>
             </p>
@@ -43,29 +42,39 @@ $html = <<<EOD
     <span class="c8">$data2</span>
 </p>
 <p class="indent25 setMarginTop1">
-    <span class="c8">ทั้งนี้&nbsp;&nbsp;ตั้งแต่</span>
+    <span class="c8">ทั้งนี้&nbsp;&nbsp;ตั้งแต่&nbsp;$data3</span>
 </p>
+
+
 
 
 <p class="setMarginTop2"></p>
 
-<p
-  class="MsoNormal indent5"
->
+<p  class="MsoNormal indent5 " >
   <span  class="c16"
     >ประกาศ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ณ
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;$data3
+    &nbsp;&nbsp;&nbsp;&nbsp;$data4&nbsp;&nbsp;$data5
 </span>
 </p>
 
-<p class="setMarginTop16pt"></p>
+<p class="setMarginTop26pt"></p>
 
-<p class="MsoNormal setMarginTop0 indent8" ><span  class="c16">ยศ&nbsp;$data4</span></p>
-<p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data5)</span></p>
-<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;$data6</span></p>
+<table border="0"  cellspacing="0" cellpadding="0" width="100%" >
+  <tr >
+  <td colspan="1" width="50%%"  > </td>
+  <td style="text-align:left;" colspan="2" width="50px">
+  
+  <p ><span class="c16">$data6&nbsp;&nbsp;$data7</span></p>
+  <p><span  class="c16">$data8</span></p>
+  <p><span  class="c16">$data9</span></p>
+  </td>
+  <td colspan="1" width="133px" ></td>
+  </tr>
+</table>
+
 
 
 
@@ -95,7 +104,7 @@ html,body{
 }
 .image_logo{
 
-  height: 113.39px;
+  height: 113.38586666666666px;
                   margin-left: -0px;
                   margin-top: -0px;
                   transform: rotate(0rad) translateZ(0px);

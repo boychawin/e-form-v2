@@ -11,37 +11,39 @@ $data8 = $_POST['name8'];
 $data9 = $_POST['name9'];
 $data10 = $_POST['name10'];
 $data11 = $_POST['name11'];
+$data12 = $_POST['name12'];
+$data13 = $_POST['name13'];
 
 $html = <<<EOD
 
   <table width="100%" border="0">
   <tr >
-    <td  width="250" colspan="1" rowspan="1">
-    <img  width="57" class="image_logo" src="../../../images/image1.png" alt="Logo"/>
+    <td  class="exactly_35" width="250" colspan="1" rowspan="1">
+    <img   class="image_logo" src="../../../images/image1.png" alt="Logo"/>
     </td>
 
-    <td class="c29pt"  style="text-align:center;padding-bottom:-10px;" colspan="1" rowspan="1" valign="bottom"  >
-    <b>บันทึกข้อความ</b>
+    <td  class="exactly_35" style="text-align:center;padding-bottom:-10px;" colspan="1" rowspan="1" valign="bottom"  >
+   <span class="c29pt"> บันทึกข้อความ</span>
     </td>
     <td  width="250" colspan="1" rowspan="1"></td>
   </tr>
 
     <tr>
-    <td  colspan="3" rowspan="1">ส่วนราชการ&nbsp;&nbsp; $data1 โทร. $data2</td>
+    <td class="exactly_35" colspan="3" rowspan="1" ><span class="font20bold">ส่วนราชการ</span>&nbsp;&nbsp;<span class="font_size16">$data1</span> โทร. <span class="font_size16">$data2</span></td>
     </tr>
 
       <tr>
-    <td colspan="1"rowspan="1">ที่&nbsp;&nbsp;$data3</td>
-   <td colspan="2" style="text-align:center;padding-left:-125px;" rowspan="1">วันที่&nbsp;&nbsp;$data4</td>
+    <td class="exactly_35" colspan="1"rowspan="1"><span class="font20bold">ที่</span>&nbsp;&nbsp;<span class="font_size16">$data3</span></td>
+   <td class="exactly_35" colspan="2" style="text-align:center;padding-left:-125px;" rowspan="1"><span class="font20bold">วันที่</span>&nbsp;&nbsp;<span class="font_size16">$data4</span></td>
     </tr>
 
 
     <tr>
-    <td  colspan="3" rowspan="1">เรื่อง&nbsp;&nbsp; $data5 </td>
+    <td class="" colspan="3" rowspan="1"><span class="font20bold">เรื่อง</span>&nbsp;&nbsp; <span class="font_size16">$data5</span> </td>
     </tr>
 
-   <tr>
-    <td  colspan="3" rowspan="1">เรียน&nbsp;&nbsp; $data6 </td>
+   <tr >
+    <td  colspan="3" rowspan="1"><span  class="font_20">เรียน</span>&nbsp;&nbsp; <span class="font_size16">$data6</span> </td>
     </tr>
 
 
@@ -51,16 +53,28 @@ $html = <<<EOD
 
 
 
-<p class="indent25 setMarginBottom0"><span class="c8">ภาคเหตุ&nbsp;$data7</span></p>
-<p class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคความประสงค์&nbsp;$data8</span></p>
-<p class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคสรุป&nbsp;$data9</span></p>
+<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">$data7</span></p>
+<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">$data8</span></p>
+<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">$data9</span></p>
 
 
 
 <p class="setMarginTop112pt "></p>
-<p class="MsoNormal indent8" ><span  class="c16">($data10)</span></p>
-<p class="MsoNormal indent7" ><span  class="c16">$data11</span></p>
 
+
+
+<table border="0"  cellspacing="0" cellpadding="0" width="100%" >
+  <tr >
+  <td colspan="1" width="50%%"  > </td>
+  <td style="text-align:left;" colspan="2" width="50px">
+  
+  <p ><span class="c16">$data10&nbsp;&nbsp;$data11</span></p>
+  <p><span  class="c16">$data12</span></p>
+  <p><span  class="c16">$data13</span></p>
+  </td>
+  <td colspan="1" width="133px" ></td>
+  </tr>
+</table>
 
 
 
@@ -70,7 +84,12 @@ $html = <<<EOD
 
     table td,
     table th {
+
         padding: 0
+    }
+
+    .exactly_35{
+      line-height: 35pt;
     }
 
     .c9 {
@@ -169,7 +188,7 @@ $html = <<<EOD
 
 
 
-    .c22 {
+    .font_size16 {
         font-size: 16pt;
         font-family: "thsarabun";
         font-weight: 400
@@ -204,9 +223,19 @@ $html = <<<EOD
   .c29pt {
     font-size: 29pt;
     font-family: "thsarabun";
-    font-weight: 400;
+    font-weight: bold;
   }
 
+  .font20bold {
+    font-size: 20pt;
+    font-family: "thsarabun";
+    font-weight: bold;
+  }
+  .font_20 {
+    font-size: 20pt;
+    font-family: "thsarabun";
+    font-weight: 400;
+  }
 
   p{
     padding-top: 0pt;
@@ -324,7 +353,7 @@ $html = <<<EOD
     border: 0px solid #000000;
     transform: rotate(0rad) translateZ(0px);
     -webkit-transform: rotate(0rad) translateZ(0px);
-    height: 57px;
+
   }
   .image_logo{
 

@@ -11,21 +11,13 @@ $data7 = $_POST['name7'];
 $data8 = $_POST['name8'];
 $data9 = $_POST['name9'];
 $html = <<<EOD
-
-
-
-<table
-  border="0"
-  cellspacing="0"
-  cellpadding="0"
-width="100%"
->
+<table border="0" cellspacing="0" cellpadding="0" width="100%" >
   <tr >
     <td colspan="2" ></td>
     <td colspan="2" style="text-align:center">
-      <span class="span_image"style="width:50px">
-          <img height="113" src="../../../images/image1.jpg" class="image_logo" title="ตราครุฑ" />
-    </p>
+      <span class="span_image">
+          <img  src="../../../images/image1.jpg" class="image_logo" title="ตราครุฑ" />
+    </span>
   </td>
   <td colspan="2" ></td>
   </tr>
@@ -44,14 +36,14 @@ width="100%"
 <p  class="MsoNormal"
 align="center"
 style="margin-bottom: 0cm; text-align: center; line-height: normal" >
-<span class="c16" >ที่ $data1</span>
+<span class="c16" >ที่&nbsp;$data1</span>
 </p>
 
 
 <p  class="MsoNormal"
 align="center"
 style="margin-bottom: 0cm; text-align: center; line-height: normal" >
-<span class="c16" >เรื่อง  $data2</span>
+<span class="c16" >เรื่อง&nbsp;&nbsp;$data2</span>
 </p>
 
 <p
@@ -120,15 +112,25 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;$data6
+    &nbsp;&nbsp;&nbsp;&nbsp;$data6&nbsp;&nbsp;$data7
 </span>
 </p>
 
 <p class="setMarginTop26pt"></p>
 
-<p class="MsoNormal indent8" ><span  class="c16">ยศ&nbsp;&nbsp;$data7</span></p>
-<p class="MsoNormal indent8"><span  class="c16">&nbsp;&nbsp;&nbsp;($data8)</span></p>
-<p class="MsoNormal indent8" > <span  class="c16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$data9</span></p>
+<table border="0"  cellspacing="0" cellpadding="0" width="100%" >
+  <tr >
+  <td colspan="1" width="50%"  > </td>
+  <td style="text-align:left;" colspan="2" width="50px">
+  
+  <p ><span  class="c16">$data8&nbsp;&nbsp;$data9</span></p>
+  <p><span  class="c16">$data10</span></p>
+  <p><span  class="c16">$data11</span></p>
+  </td>
+  <td colspan="1" width="133px" ></td>
+  </tr>
+</table>
+
 
 
 
@@ -148,12 +150,10 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
   border: 0px solid #000000;
   transform: rotate(0rad) translateZ(0px);
   -webkit-transform: rotate(0rad) translateZ(0px);
-
-  height: 113.39px;
 }
 .image_logo{
 
-  height: 113.39px;
+  height: 113.38586666666666px;
   margin-left: -0px;
   margin-top: -0px;
   transform: rotate(0rad) translateZ(0px);
@@ -185,7 +185,9 @@ p.MsoNormal, li.MsoNormal, div.MsoNormal
  mso-bidi-theme-font:minor-bidi;
  mso-ansi-language:EN-US;}
 
-
+ .center {
+  text-align: center;
+}
 
  .indent8{
   margin-top: 0cm;

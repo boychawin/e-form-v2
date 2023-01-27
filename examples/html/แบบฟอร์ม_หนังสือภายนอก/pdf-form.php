@@ -20,7 +20,7 @@ $data15 = $_POST['name15'];
 $data16 = $_POST['name16'];
 $data17 = $_POST['name17'];
 $data18 = $_POST['name18'];
-
+$data19 = $_POST['name19'];
 $html = <<<EOD
 
 
@@ -89,9 +89,9 @@ $html = <<<EOD
 
 <table border="0"  cellspacing="0" cellpadding="0" width="100%" >
   <tr >
-  <td colspan="1" width="50%"  > </td>
-  <td valign="top"  style="text-align:left;" colspan="2"  >
-  <p ><span  class="c16">$data11</span></p>
+  <td colspan="1" width="51%"  > </td>
+  <td valign="top"  style="text-align:left;" colspan="1"  >
+  <p ><span  class="">$data11</span></p>
   </td>
   <td valign="top" style="text-align:left;" colspan="1" width="44%"  >
   <p style="text-align:center;">

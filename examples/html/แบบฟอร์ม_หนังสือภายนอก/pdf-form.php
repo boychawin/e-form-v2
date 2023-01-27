@@ -68,17 +68,17 @@ $html = <<<EOD
 
 
 
-  <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรื่อง&nbsp;&nbsp;$data4</p>
-  <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรียน&nbsp;&nbsp;$data5</p>
-  <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">อ้างถึง&nbsp;&nbsp;$data6</p>
-  <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">สิ่งที่ส่งมาด้วย&nbsp;&nbsp;$data7</p>
+  <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรื่อง&nbsp;&nbsp;$data5</p>
+  <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรียน&nbsp;&nbsp;$data6</p>
+  <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">อ้างถึง&nbsp;&nbsp;$data7</p>
+  <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">สิ่งที่ส่งมาด้วย&nbsp;&nbsp;$data8</p>
 
 
 
-<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคเหตุ&nbsp;$data8</span></p>
-<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคความประสงค์&nbsp;$data9</span></p>
+<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคเหตุ&nbsp;$data9</span></p>
+<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคความประสงค์&nbsp;$data10</span></p>
 
-<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคสรุป&nbsp;$data10</span></p>
+<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">ภาคสรุป&nbsp;$data11</span></p>
 
 
 
@@ -91,13 +91,13 @@ $html = <<<EOD
   <tr >
   <td colspan="1" width="51%"  > </td>
   <td valign="top"  style="text-align:left;" colspan="1"  >
-  <p ><span  class="">$data11</span></p>
+  <p ><span  class="">$data12</span></p>
   </td>
   <td valign="top" style="text-align:left;" colspan="1" width="44%"  >
   <p style="text-align:center;">
-  <span  class="c16">$data12</span>
-  <p><span  class="c16">$data13</span></p>
-  <p><span  class="c16">$data14</span></p>  
+  <span  class="c16">$data13</span>
+  <p><span  class="c16">$data14</span></p>
+  <p><span  class="c16">$data15</span></p>  
   </p>
   </tr>
 </table>
@@ -107,10 +107,10 @@ $html = <<<EOD
 
 
 <p class="setMarginTop16pt"></p>
-    <p class="setMarginTop0"><span class="c6">$data15</span> </p>
-    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data16</span></p>
-    <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;$data17</span></p>
-    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data18</span></p>
+    <p class="setMarginTop0"><span class="c6">$data16</span> </p>
+    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data17</span></p>
+    <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;$data18</span></p>
+    <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data19</span></p>
 <p class="setMarginTop16pt"></p>
 
 

@@ -17,16 +17,16 @@ $data13 = $_POST['name13'];
 $html = <<<EOD
 
   <table width="100%" border="0">
-  <tr >
-    <td  class="exactly_35" width="250" colspan="1" rowspan="1">
-    <img   class="image_logo" src="../../../images/image1.png" alt="Logo"/>
-    </td>
+  <tr>
+  <td class="exactly_35" width="250" colspan="1" rowspan="1">
+    <img class="image_logo" src="../../../images/image1.png" alt="Logo" />
+  </td>
 
-    <td  class="exactly_35" style="text-align:center;padding-bottom:-10px;" colspan="1" rowspan="1" valign="bottom"  >
-   <span class="c29pt"> บันทึกข้อความ</span>
-    </td>
-    <td  width="250" colspan="1" rowspan="1"></td>
-  </tr>
+  <td class="exactly_35" style="text-align:left;padding-bottom:-10px;padding-left:-15px;" colspan="2" rowspan="1" valign="bottom">
+    <span class="c29pt"> บันทึกข้อความ</span>
+  </td>
+
+</tr>
 
     <tr>
     <td class="exactly_35" colspan="3" rowspan="1" ><span class="font20bold">ส่วนราชการ</span>&nbsp;&nbsp;<span class="font_size16">$data1</span> โทร. <span class="font_size16">$data2</span></td>
@@ -39,11 +39,11 @@ $html = <<<EOD
 
 
     <tr>
-    <td class="" colspan="3" rowspan="1"><span class="font20bold">เรื่อง</span>&nbsp;&nbsp; <span class="font_size16">$data5</span> </td>
+    <td class="" colspan="3" rowspan="1"><span class="font20bold">เรื่อง</span>&nbsp;&nbsp; <span class="font16bold">$data5</span> </td>
     </tr>
 
    <tr >
-    <td  colspan="3" rowspan="1"><span  class="font_20">เรียน</span>&nbsp;&nbsp; <span class="font_size16">$data6</span> </td>
+    <td  colspan="3" rowspan="1"><span  class="font_20">เรียน</span>&nbsp;&nbsp; <span class="font16bold">$data6</span> </td>
     </tr>
 
 
@@ -62,19 +62,21 @@ $html = <<<EOD
 <p class="setMarginTop112pt "></p>
 
 
-<table border="0"  cellspacing="0" cellpadding="0" width="100%" >
-  <tr >
-  <td colspan="1" width="50%"  > </td>
-  <td valign="top"  style="text-align:left;" colspan="2"  >
-  <p ><span  class="c16">$data10</span></p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+  <td colspan="1" width="50%"> </td>
+  <td valign="top" style="text-align:center;padding-left:-185px" colspan="2">
+    <p><span class="c16">$data10&nbsp;&nbsp;<span class="c16">$data11</span></span></p>
+    <p><span class="c16">$data12</span></p>
+    <p><span class="c16">$data13</span></p>
   </td>
-  <td valign="top" style="text-align:left;" colspan="1" width="44%"  >
-  <p style="text-align:center;">
-  <span  class="c16">$data11</span>
-  <p><span  class="c16">$data12</span></p>
-  <p><span  class="c16">$data13</span></p>  
-  </p>
-  </tr>
+
+</tr>
+
+
+
+
+
 </table>
 
 
@@ -193,6 +195,14 @@ $html = <<<EOD
         font-weight: 400
     }
 
+    .font16bold {
+      font-size: 16pt;
+      font-family: "thsarabun";
+      font-weight: bold;
+    }
+
+
+
     .c4 {
         height: 0pt
     }
@@ -281,31 +291,6 @@ $html = <<<EOD
   }
 
 
-
-
-  p.MsoNormal{mso-style-unhide:no;
-   mso-style-qformat:yes;
-   mso-style-parent:"";
-   margin-top:0cm;
-   margin-right:0cm;
-   margin-bottom:10.0pt;
-   margin-left:0cm;
-   line-height:115%;
-   mso-pagination:widow-orphan;
-   font-size:16.0pt;
-   mso-bidi-font-size:16.0pt;
-   font-family:"thsarabun",sans-serif;
-   mso-ascii-font-family:thsarabun;
-   mso-ascii-theme-font:minor-latin;
-   mso-fareast-font-family:thsarabun;
-   mso-fareast-theme-font:minor-latin;
-   mso-hansi-font-family:thsarabun;
-   mso-hansi-theme-font:minor-latin;
-   mso-bidi-font-family:"thsarabun";
-   mso-bidi-theme-font:minor-bidi;
-   mso-ansi-language:EN-US;}
-
-
    .indent1{
     margin-top: 0cm;
     margin-right: 0cm;
@@ -356,7 +341,7 @@ $html = <<<EOD
   }
   .image_logo{
 
-    height: 56.69293333333333px;
+    height: 1.5cm;
                     margin-left: -0px;
                     margin-top: -0px;
                     transform: rotate(0rad) translateZ(0px);

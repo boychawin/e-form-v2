@@ -17,33 +17,34 @@ $data13 = $_POST['name13'];
 $html = <<<EOD
 
   <table width="100%" border="0">
+
   <tr>
-  <td class="exactly_35" width="250" colspan="1" rowspan="1">
+  <td class="exactly_1" width="250" colspan="1" rowspan="1">
     <img class="image_logo" src="../../../images/image1.png" alt="Logo" />
   </td>
 
-  <td class="exactly_35" style="text-align:left;padding-bottom:-10px;padding-left:-15px;" colspan="2" rowspan="1" valign="bottom">
+  <td  style="text-align:left;padding-bottom:-10px;padding-left:-15px;" colspan="2" rowspan="1" valign="bottom">
     <span class="c29pt"> บันทึกข้อความ</span>
   </td>
 
 </tr>
 
     <tr>
-    <td class="exactly_35" colspan="3" rowspan="1" ><span class="font20bold">ส่วนราชการ</span>&nbsp;&nbsp;<span class="font_size16">$data1</span> โทร. <span class="font_size16">$data2</span></td>
+    <td  style="padding-top:18px;" class="exactly_1" colspan="3" rowspan="1" ><span class="font20bold">ส่วนราชการ</span>&nbsp;&nbsp;<span class="font_size16">$data1</span> โทร. <span class="font_size16">$data2</span></td>
     </tr>
 
       <tr>
-    <td class="exactly_35" colspan="1"rowspan="1"><span class="font20bold">ที่</span>&nbsp;&nbsp;<span class="font_size16">$data3</span></td>
-   <td class="exactly_35" colspan="2" style="text-align:center;padding-left:-125px;" rowspan="1"><span class="font20bold">วันที่</span>&nbsp;&nbsp;<span class="font_size16">$data4</span></td>
+    <td class="exactly_1" colspan="1"rowspan="1"><span class="font20bold">ที่</span>&nbsp;&nbsp;<span class="font_size16">$data3</span></td>
+   <td class="exactly_1" colspan="2" style="text-align:center;padding-left:-125px;" rowspan="1"><span class="font20bold">วันที่</span>&nbsp;&nbsp;<span class="font_size16">$data4</span></td>
     </tr>
 
 
     <tr>
-    <td class="" colspan="3" rowspan="1"><span class="font20bold">เรื่อง</span>&nbsp;&nbsp; <span class="font16bold">$data5</span> </td>
+    <td class="" colspan="3" rowspan="1"><span class="font20bold">เรื่อง</span>&nbsp;&nbsp; <span class="">$data5</span> </td>
     </tr>
 
    <tr >
-    <td  colspan="3" rowspan="1"><span  class="font_20">เรียน</span>&nbsp;&nbsp; <span class="font16bold">$data6</span> </td>
+    <td  colspan="3" rowspan="1"><span  class="">เรียน</span>&nbsp;&nbsp; <span class="">$data6</span> </td>
     </tr>
 
 
@@ -65,16 +66,26 @@ $html = <<<EOD
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
 <tr>
   <td colspan="1" width="50%"> </td>
+  <td valign="top" style="text-align:left" colspan="1">
+    <p ><span class="c16" style="text-align:left;">$data10</span>&nbsp;&nbsp;<span class="c16">$data11</span></p>
+
+  </td>
+  <td valign="top" style="text-align:center;padding-left:-185px" colspan="1">
+    <p >&nbsp;&nbsp;<span class="c16"></span></p>
+
+  </td>
+</tr>
+
+
+<tr>
+  <td colspan="1" width="50%"> </td>
   <td valign="top" style="text-align:center;padding-left:-185px" colspan="2">
-    <p><span class="c16">$data10&nbsp;&nbsp;<span class="c16">$data11</span></span></p>
-    <p><span class="c16">$data12</span></p>
+
+    <p><span class="c16">($data12)</span></p>
     <p><span class="c16">$data13</span></p>
   </td>
 
 </tr>
-
-
-
 
 
 </table>
@@ -89,9 +100,11 @@ $html = <<<EOD
         padding: 0
     }
 
-    .exactly_35{
-      line-height: 35pt;
+
+    .exactly_1{
+      line-height: 1.1;
     }
+
 
     .c9 {
         margin-left: -154pt;

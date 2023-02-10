@@ -16,6 +16,12 @@ $data13 = $_POST['name13'];
 
 $html = <<<EOD
 
+
+
+
+
+
+
   <table width="100%" border="0">
 
   <tr>
@@ -48,19 +54,16 @@ $html = <<<EOD
     </tr>
 
 
+
 </table>
 
-
-
-
-
-<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">$data7</span></p>
+$data7
 <p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">$data8</span></p>
 <p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">$data9</span></p>
 
 
 
-<p class="setMarginTop112pt "></p>
+<p class="setMarginTop112pt"></p>
 
 
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -93,7 +96,9 @@ $html = <<<EOD
 
 
 <style type="text/css">
-
+p{
+  padding: 0;
+}
     table td,
     table th {
 
@@ -260,9 +265,9 @@ $html = <<<EOD
   }
 
   p{
-    padding-top: 0pt;
+    padding: 0pt;
     padding-bottom: 0pt;
-    margin-bottom: 0pt;
+    margin: 0pt;
   }
   span{
     padding-top: 0pt;
@@ -364,7 +369,7 @@ $html = <<<EOD
   .indent25 {
     text-indent: 2.5cm;
     padding-bottom: 0pt;
-    text-align: justify;
+    text-align:justify;
     orphans: 2;
     widows: 2;
 
@@ -374,8 +379,3 @@ $html = <<<EOD
 
 </style>
 EOD;
-
-
-
-?>
-

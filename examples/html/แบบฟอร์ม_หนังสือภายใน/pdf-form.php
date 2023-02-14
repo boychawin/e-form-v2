@@ -53,9 +53,9 @@ $html = <<<EOD
 
 
 
-<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">$data7</span></p>
-<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">$data8</span></p>
-<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">$data9</span></p>
+<p style="margin-top:10px" class=" setMarginTop0 setMarginBottom0"><span class="c8">$data7</span></p>
+<p style="margin-top:10px" class=" setMarginTop0 setMarginBottom0"><span class="c8">$data8</span></p>
+<p style="margin-top:10px" class=" setMarginTop0 setMarginBottom0"><span class="c8">$data9</span></p>
 
 
 
@@ -370,7 +370,7 @@ html,body{
   }
 
   .indent25 {
-    text-indent: 2.5cm;
+
     padding-bottom: 0pt;
     text-align:justify;
     orphans: 2;

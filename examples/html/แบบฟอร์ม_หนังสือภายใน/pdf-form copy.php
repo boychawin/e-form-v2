@@ -13,8 +13,14 @@ $data10 = $_POST['name10'];
 $data11 = $_POST['name11'];
 $data12 = $_POST['name12'];
 $data13 = $_POST['name13'];
-$data14 = $_POST['name14'];
+
 $html = <<<EOD
+
+
+
+
+
+
 
   <table width="100%" border="0">
 
@@ -48,80 +54,54 @@ $html = <<<EOD
     </tr>
 
 
+
 </table>
 
 
-
-
 <p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">$data7</span></p>
-<p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">$data8</span></p>
 <p style="margin-top:10px" class="indent25 setMarginTop0 setMarginBottom0"><span class="c8">$data9</span></p>
 
 
 
-<p class="setMarginTop112pt "></p>
+<p class="setMarginTop112pt"></p>
 
 
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
-<tr >
+<tr>
   <td colspan="1" width="50%"> </td>
+  <td valign="top" style="text-align:left" colspan="1">
+    <p ><span class="c16" style="text-align:left;">$data10</span>&nbsp;&nbsp;<span class="c16">$data11</span></p>
 
-  <td valign="top"  align="left"   colspan="2">
-    <p ><span class="c16" >$data10</span></p>
+  </td>
+  <td valign="top" style="text-align:center;padding-left:-185px" colspan="1">
+    <p >&nbsp;&nbsp;<span class="c16"></span></p>
+
   </td>
 </tr>
 
 
-
-<tr >
+<tr>
   <td colspan="1" width="50%"> </td>
+  <td valign="top" style="text-align:center;padding-left:-185px" colspan="2">
 
-  <td valign="top"  align="center"   colspan="2">
     <p><span class="c16">($data12)</span></p>
     <p><span class="c16">$data13</span></p>
-    <p><span class="c16">$data14</span></p>
   </td>
-
 </tr>
-
-
-
-
-
 </table>
 
-
-
-
-
-
-
 <style type="text/css">
-
-
-html,body{
-
-  font-family: "thsarabun";
-  line-height: 1.1;
+p{
+  padding: 0;
 }
-
-.center {
-  text-align: center;
-}
-
-
-
     table td,
     table th {
-
         padding: 0
     }
-
 
     .exactly_1{
       line-height: 1.1;
     }
-
 
     .c9 {
         margin-left: -154pt;
@@ -143,9 +123,6 @@ html,body{
         font-family: "thsarabun";
         font-style: normal;
       }
-
-
-
 
     .c10 {
         color: #000000;
@@ -244,6 +221,16 @@ html,body{
     }
 
 
+    html,body{
+        font-size: 16pt;
+        font-family: "thsarabun";
+        line-height: 1.1;
+      }
+
+    .center {
+        text-align: center;
+      }
+
 .c16 {
     font-size: 16pt;
     font-family: "thsarabun";
@@ -267,7 +254,6 @@ html,body{
   }
 
   p{
-
     padding: 0pt;
     padding-bottom: 0pt;
     margin: 0pt;
@@ -382,8 +368,3 @@ html,body{
 
 </style>
 EOD;
-
-
-
-?>
-

@@ -46,7 +46,7 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
 <p  class="MsoNormal"
 align="center"
 style="margin-bottom: 0cm; text-align: center; line-height: normal" >
-<span class="c16" >เรื่อง&nbsp;&nbsp;$data2</span>
+<span class="c16" >เรื่อง&nbsp;$data2</span>
 </p>
 
 <p
@@ -103,7 +103,7 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
   
   "
 >
-  <span  class="c16" >ทั้งนี้&nbsp;&nbsp;ตั้งแต่&nbsp;$data5</span>
+  <span  class="c16" >ทั้งนี้&nbsp;ตั้งแต่&nbsp;$data5</span>
 </p>
 
 
@@ -114,9 +114,7 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
   <span  class="c16"
     >สั่ง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ณ
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;$data6&nbsp;&nbsp;$data7
+    &nbsp;&nbsp;$data6&nbsp;&nbsp;$data7
 </span>
 </p>
 

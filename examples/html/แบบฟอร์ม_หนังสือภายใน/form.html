@@ -96,9 +96,21 @@
       <script>
         $("#summernote").summernote({
           fontSize:16,
+          // styleTags:'p',
+          fontSizeUnit: 'pt',
+          fontSizes: ['8', '9', '10', '11', '12', '13', '14', '15', '16', '18', '20','21', '22' , '24', '28', '32', '36', '40', '48'],
+          // lineHeights: ['0.2'],
           height: 250,
           width:1000,
-          toolbar: false,
+          toolbar: [
+          ['style', ['bold', 'italic', 'underline', 'clear']],
+          ['fontsize', ['fontsize']],
+    ['font', ['strikethrough', 'superscript', 'subscript']],
+    ['color', ['color']],
+    ['para', ['ul', 'ol', 'paragraph']],
+    ['height', ['height']]
+
+          ],
           placeholder: "type with apple, orange, watermelon and lemon",
           codemirror: {
             // codemirror options

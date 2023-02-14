@@ -1,458 +1,355 @@
-<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"
-  xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
-  xmlns="http://www.w3.org/TR/REC-html40">
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="ProgId" content="Word.Document" />
-  <meta name="Generator" content="Microsoft Word 15" />
-  <meta name="Originator" content="Microsoft Word 15" />
-
-  <link
-  href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-  rel="stylesheet"
-/>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link
-  href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css"
-  rel="stylesheet"
-/>
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-</head>
-
-<body class="c50 doc-content">
-
-  <form action="./pdf.php" method="post">
-    <button type="submit">export pdf</button>
-    <div>
-
-      <table width="100%" border="0">
-        <tr>
-          <td class="exactly_35" width="250" colspan="1" rowspan="1">
-            <img class="image_logo" src="../../../images/image1.png" alt="Logo" />
-          </td>
-
-          <td class="exactly_35"  style="text-align:center;padding-bottom:-10px;" colspan="1" rowspan="1"
-            valign="bottom">
-            <span class="font_size16"> บันทึกข้อความ</span>
-          </td>
-          <td width="250" colspan="1" rowspan="1"></td>
-        </tr>
-
-        <tr>
-          <td class="exactly_35" colspan="3" rowspan="1"><span class="fs-6 fw-bold" >ส่วนราชการ</span>&nbsp;&nbsp;<span
-              class="font_size16"><input style="width: 120;"  name="name1"></span> โทร. <span class="fs-6 fw-bold"><input name="name2"></span>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="exactly_35" colspan="1" rowspan="1"><span class="fs-6 fw-bold">ที่</span>&nbsp;&nbsp;<span
-              class="font_size16"><input style="width: 120;" name="name3"></span></td>
-          <td class="exactly_35" colspan="2" style="text-align:center;padding-left:-125px;" rowspan="1"><span
-              class="fs-6 fw-bold">วันที่</span>&nbsp;&nbsp;<span class="font_size16"><input name="name4"></span></td>
-        </tr>
-
-
-        <tr>
-          <td class="" colspan="3" rowspan="1"><span class="fs-6 fw-bold">เรื่อง</span>&nbsp;&nbsp; <span
-              class="font_size16"><input name="name5"></span> </td>
-        </tr>
-
-        <tr>
-          <td colspan="3" rowspan="1"><span class="fs-6 fw-bold">เรียน</span>&nbsp;&nbsp; <span class="font_size16"><input
-                name="name6"></span> </td>
-        </tr>
-
-
-      </table>
-
-
-
-      <div style="font-size: 16pt;" id="summernote"></div>
-      <textarea hidden name="name7" id="idtest"></textarea>
-
-
-
-
-      <p class="setMarginTop112pt "></p>
-
-
-      <table border="0" cellspacing="0" cellpadding="0" width="100%">
-        <tr>
-          <td colspan="1" width="50%"> </td>
-          <td valign="top" style="text-align:left;" colspan="2">
-            <p><span class="c16"><input style="width: 120;" name="name10" placeholder=""></span></p>
-          </td>
-          <td valign="top" style="text-align:left;" colspan="1" width="44%">
-            <p>
-              <span class="c16"><input name="name11" value="" placeholder=""></span>
-            <p><span class="c16"><input name="name12" placeholder=""></span></p>
-            <p><span class="c16"><input name="name13" placeholder=""></span></p>
-            </p>
-        </tr>
-      </table>
-
-      <script>
-        $("#summernote").summernote({
-          fontSize:16,
-          height: 250,
-          width:1000,
-          toolbar: false,
-          placeholder: "type with apple, orange, watermelon and lemon",
-          codemirror: {
-            // codemirror options
-            theme: "monokai",
-          },
-          callbacks: {
-            onInit: function (e) {
-              $("#summernote").summernote("code",sessionStorage.getItem("summernote")
-              );
-            },
-            onChange: function (contents, $editable) {
-              var markup = $("#summernote").summernote("code");
-              sessionStorage.setItem("summernote",markup)
-              $("#idtest").val(markup);
-            },
-          },
-        });
-      </script>
-
-
-      <style type="text/css">
-        @font-face {
-          font-family: 'thsarabun';
-          src: url('../../../fonts/thsarabun-new/THSarabunNew001.ttf');
-          font-weight: normal;
-          font-style: normal;
-        }
-
-        .c50 {
-          
-          background-color: #ffffff;
-          max-width: 453.5pt;
-          padding: 42.5pt 56.7pt 56.7pt 85pt;
-        }
-
-        .doc-content {
-          
-          width: 453.5pt;
-        }
-
-
-
-        table td,
-        table th {
-
-          padding: 0
-        }
-
-        .exactly_35 {
-          line-height: 35pt;
-        }
-
-        .c9 {
-          margin-left: -154pt;
-          padding-top: 0pt;
-          padding-bottom: 0pt;
-          line-height: 1.0;
-          orphans: 2;
-          widows: 2;
-          text-align: center;
-          margin-right: -189.7pt
-        }
-
-        .c8 {
-          color: #000000;
-          font-weight: 400;
-          text-decoration: none;
-          vertical-align: baseline;
-          font-size: 16pt;
-          font-family: "thsarabun";
-          font-style: normal;
-        }
-
-        .c10 {
-          color: #000000;
-          font-weight: 700;
-          text-decoration: none;
-          vertical-align: baseline;
-          font-size: 16pt;
-          font-family: "thsarabun";
-          font-style: normal
-        }
-
-        .c3 {
-          color: #000000;
-          font-weight: 400;
-          text-decoration: none;
-          vertical-align: baseline;
-          font-size: 16pt;
-          font-family: "thsarabun";
-          font-style: normal
-        }
-
-        .c6 {
-          color: #000000;
-          font-weight: 400;
-          text-decoration: none;
-          vertical-align: baseline;
-          font-size: 15pt;
-          font-family: "thsarabun";
-          font-style: normal
-        }
-
-
-        .c24 {
-          padding-top: 0pt;
-          padding-bottom: 0pt;
-          line-height: 1.0;
-          orphans: 2;
-          widows: 2;
-          text-align: right
-        }
-
-
-        .c7_text_left {
-          padding-top: 0pt;
-          padding-bottom: 0pt;
-          line-height: 1.0;
-          orphans: 2;
-          widows: 2;
-          text-align: left
-        }
-
-
-        .c1 {
-          padding-top: 0pt;
-          padding-bottom: 10pt;
-          line-height: 1.0;
-          orphans: 2;
-          widows: 2;
-          text-align: left
-        }
-
-        .c11 {
-          padding-top: 0pt;
-          padding-bottom: 0pt;
-          line-height: 1.0;
-          orphans: 2;
-          widows: 2;
-          text-align: center
-        }
-
-
-
-        .font_size16 {
-          font-size: 16pt;
-          font-family: "thsarabun";
-          font-weight: 400
-        }
-
-        .c4 {
-          height: 0pt
-        }
-
-
-
-        .c5 {
-          height: 11pt
-        }
-
-
-        html,
-        body {
-          font-size: 16pt;
-          font-family: "thsarabun";
-          line-height: 1.1;
-        }
-
-        .center {
-          text-align: center;
-        }
-
-        .c16 {
-          font-size: 16pt;
-          font-family: "thsarabun";
-          font-weight: 400;
-        }
-
-        .c29pt {
-          font-size: 29pt;
-          font-family: "thsarabun";
-          font-weight: bold;
-        }
-
-        .font20bold {
-          font-size: 20pt;
-          font-family: "thsarabun";
-          font-weight: bold;
-        }
-
-        .font_20 {
-          font-size: 20pt;
-          font-family: "thsarabun";
-          font-weight: 400;
-        }
-
-        p {
-          padding-top: 0pt;
-          padding-bottom: 0pt;
-          margin-bottom: 0pt;
-        }
-
-
-        span {
-          padding-top: 0pt;
-          padding-bottom: 0pt;
-          margin-bottom: 0pt;
-          margin-top: 0pt;
-
-        }
-
-        .setMarginTop0 {
-          margin-top: 0pt;
-        }
-
-        .setMarginBottom0 {
-          margin-bottom: 0pt;
-          padding-bottom: 0pt;
-
-        }
-
-        .setMarginTop2 {
-          line-height: 2.2;
-          font-size: 16pt;
-          margin-bottom: 0pt;
-        }
-
-        .setMarginTop26pt {
-          line-height: 2.8pt;
-          font-size: 16pt;
-          margin-bottom: 0pt;
-        }
-
-        .setMarginTop16pt {
-          line-height: 1.8pt;
-          font-size: 16pt;
-          margin-bottom: 0pt;
-        }
-
-        .setMarginTop112pt {
-          line-height: 2.3pt;
-          font-size: 16pt;
-          margin-bottom: 0pt;
-        }
-
-
-
-
-        p.MsoNormal {
-          mso-style-unhide: no;
-          mso-style-qformat: yes;
-          mso-style-parent: "";
-          margin-top: 0cm;
-          margin-right: 0cm;
-          margin-bottom: 10.0pt;
-          margin-left: 0cm;
-          line-height: 115%;
-          mso-pagination: widow-orphan;
-          font-size: 16.0pt;
-          mso-bidi-font-size: 16.0pt;
-          font-family: "thsarabun", sans-serif;
-          mso-ascii-font-family: thsarabun;
-          mso-ascii-theme-font: minor-latin;
-          mso-fareast-font-family: thsarabun;
-          mso-fareast-theme-font: minor-latin;
-          mso-hansi-font-family: thsarabun;
-          mso-hansi-theme-font: minor-latin;
-          mso-bidi-font-family: "thsarabun";
-          mso-bidi-theme-font: minor-bidi;
-          mso-ansi-language: EN-US;
-        }
-
-
-        .indent1 {
-          margin-top: 0cm;
-          margin-right: 0cm;
-          margin-bottom: 0cm;
-          margin-left: 0cm;
-          text-indent: 1cm;
-          line-height: 1.1;
-        }
-
-        .indent7 {
-          margin-top: 0cm;
-          margin-right: 54.4pt;
-          margin-bottom: 0cm;
-          margin-left: 0cm;
-          text-indent: 7cm;
-          line-height: 1.1;
-        }
-
-
-        .indent8 {
-          margin-top: 0cm;
-          margin-right: 54.4pt;
-          margin-bottom: 0cm;
-          margin-left: 0cm;
-          text-indent: 8cm;
-          line-height: 1.1;
-        }
-
-        input {
-          padding: 0;
-          width: '100%';
-          height: 20;
-          margin: 0%;
-        }
-
-        div{
-          font-size: 16pt;
-        }
-        .indent5 {
-          margin-top: 16pt;
-          margin-right: 0cm;
-          margin-bottom: 0cm;
-          margin-left: 0cm;
-          text-indent: 5cm;
-          line-height: 1.1;
-          tab-stops: center 339.05pt;
-        }
-
-        .span_image {
-          overflow: hidden;
-          display: inline-block;
-          margin: 0px 0px;
-          border: 0px solid #000000;
-          transform: rotate(0rad) translateZ(0px);
-          -webkit-transform: rotate(0rad) translateZ(0px);
-
-        }
-
-        .image_logo {
-
-          height: 56.69293333333333px;
-          margin-left: -0px;
-          margin-top: -0px;
-          transform: rotate(0rad) translateZ(0px);
-          -webkit-transform: rotate(0rad) translateZ(0px);
-        }
-
-        .indent25 {
-          text-indent: 2.5cm;
-          padding-bottom: 0pt;
-          text-align: justify;
-          orphans: 2;
-          widows: 2;
-
-        }
-      </style>
-    </div>
-
-
-
-  </form>
-</body>
-
-</html>
+<table width="100%" border="0">
+  <tr>
+    <td class="exactly_1" width="250" colspan="1" rowspan="1">
+      <img class="image_logo" src="../../../images/image1.png" alt="Logo" />
+    </td>
+
+    <td
+      style="text-align: left; padding-bottom: -10px; padding-left: -15px"
+      colspan="2"
+      rowspan="1"
+      valign="bottom"
+    >
+      <span class="c29pt"> บันทึกข้อความ</span>
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 18px" class="exactly_1" colspan="3" rowspan="1">
+      <span class="font20bold">ส่วนราชการ</span>&nbsp;&nbsp;<span
+        class="font_size16"
+        >$data1</span
+      >
+      โทร. <span class="font_size16">$data2</span>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="exactly_1" colspan="1" rowspan="1">
+      <span class="font20bold">ที่</span>&nbsp;&nbsp;<span class="font_size16"
+        >$data3</span
+      >
+    </td>
+    <td
+      class="exactly_1"
+      colspan="2"
+      style="text-align: center; padding-left: -125px"
+      rowspan="1"
+    >
+      <span class="font20bold">วันที่</span>&nbsp;&nbsp;<span
+        class="font_size16"
+        >$data4</span
+      >
+    </td>
+  </tr>
+
+  <tr>
+    <td class="" colspan="3" rowspan="1">
+      <span class="font20bold">เรื่อง</span>&nbsp;&nbsp;
+      <span class="">$data5</span>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="3" rowspan="1">
+      <span class="">เรียน</span>&nbsp;&nbsp; <span class="">$data6</span>
+    </td>
+  </tr>
+</table>
+
+<p style="margin-top: 10px" class="indent25 setMarginTop0 setMarginBottom0">
+  <span class="c8">$data8</span>
+</p>
+<p style="margin-top: 10px" class="indent25 setMarginTop0 setMarginBottom0">
+  <span class="c8">$data9</span>
+</p>
+
+<p class="setMarginTop112pt"></p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td colspan="1" width="50%"></td>
+    <td valign="top" style="text-align: left" colspan="1">
+      <p>
+        <span class="c16" style="text-align: left">$data10</span
+        >&nbsp;&nbsp;<span class="c16">$data11</span>
+      </p>
+    </td>
+    <td
+      valign="top"
+      style="text-align: center; padding-left: -185px"
+      colspan="1"
+    >
+      <p>&nbsp;&nbsp;<span class="c16"></span></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="1" width="50%"></td>
+    <td
+      valign="top"
+      style="text-align: center; padding-left: -185px"
+      colspan="2"
+    >
+      <p><span class="c16">($data12)</span></p>
+      <p><span class="c16">$data13</span></p>
+    </td>
+  </tr>
+</table>
+
+<style type="text/css">
+  p {
+    padding: 0;
+  }
+  table td,
+  table th {
+    padding: 0;
+  }
+
+  .exactly_1 {
+    line-height: 1.1;
+  }
+
+  .c9 {
+    margin-left: -154pt;
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1;
+    orphans: 2;
+    widows: 2;
+    text-align: center;
+    margin-right: -189.7pt;
+  }
+
+  .c8 {
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 16pt;
+    font-family: "thsarabun";
+    font-style: normal;
+  }
+
+  .c10 {
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 16pt;
+    font-family: "thsarabun";
+    font-style: normal;
+  }
+
+  .c3 {
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 16pt;
+    font-family: "thsarabun";
+    font-style: normal;
+  }
+
+  .c6 {
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 15pt;
+    font-family: "thsarabun";
+    font-style: normal;
+  }
+
+  .c24 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1;
+    orphans: 2;
+    widows: 2;
+    text-align: right;
+  }
+
+  .c7_text_left {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+  }
+
+  .c1 {
+    padding-top: 0pt;
+    padding-bottom: 10pt;
+    line-height: 1;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+  }
+
+  .c11 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1;
+    orphans: 2;
+    widows: 2;
+    text-align: center;
+  }
+
+  .font_size16 {
+    font-size: 16pt;
+    font-family: "thsarabun";
+    font-weight: 400;
+  }
+
+  .font16bold {
+    font-size: 16pt;
+    font-family: "thsarabun";
+    font-weight: bold;
+  }
+
+  .c4 {
+    height: 0pt;
+  }
+
+  .c5 {
+    height: 11pt;
+  }
+
+  html,
+  body {
+    font-size: 16pt;
+    font-family: "thsarabun";
+    line-height: 1.1;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .c16 {
+    font-size: 16pt;
+    font-family: "thsarabun";
+    font-weight: 400;
+  }
+  .c29pt {
+    font-size: 29pt;
+    font-family: "thsarabun";
+    font-weight: bold;
+  }
+
+  .font20bold {
+    font-size: 20pt;
+    font-family: "thsarabun";
+    font-weight: bold;
+  }
+  .font_20 {
+    font-size: 20pt;
+    font-family: "thsarabun";
+    font-weight: 400;
+  }
+
+  p {
+    padding: 0pt;
+    padding-bottom: 0pt;
+    margin: 0pt;
+  }
+  span {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    margin-bottom: 0pt;
+    margin-top: 0pt;
+  }
+  .setMarginTop0 {
+    margin-top: 0pt;
+  }
+
+  .setMarginBottom0 {
+    margin-bottom: 0pt;
+    padding-bottom: 0pt;
+  }
+
+  .setMarginTop2 {
+    line-height: 2.2;
+    font-size: 16pt;
+    margin-bottom: 0pt;
+  }
+  .setMarginTop26pt {
+    line-height: 2.8pt;
+    font-size: 16pt;
+    margin-bottom: 0pt;
+  }
+
+  .setMarginTop16pt {
+    line-height: 1.8pt;
+    font-size: 16pt;
+    margin-bottom: 0pt;
+  }
+  .setMarginTop112pt {
+    line-height: 2.3pt;
+    font-size: 16pt;
+    margin-bottom: 0pt;
+  }
+
+  .indent1 {
+    margin-top: 0cm;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 1cm;
+    line-height: 1.1;
+  }
+
+  .indent7 {
+    margin-top: 0cm;
+    margin-right: 54.4pt;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 7cm;
+    line-height: 1.1;
+  }
+
+  .indent8 {
+    margin-top: 0cm;
+    margin-right: 54.4pt;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 8cm;
+    line-height: 1.1;
+  }
+
+  .indent5 {
+    margin-top: 16pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 5cm;
+    line-height: 1.1;
+    tab-stops: center 339.05pt;
+  }
+
+  .span_image {
+    overflow: hidden;
+    display: inline-block;
+    margin: 0px 0px;
+    border: 0px solid #000000;
+    transform: rotate(0rad) translateZ(0px);
+    -webkit-transform: rotate(0rad) translateZ(0px);
+  }
+  .image_logo {
+    height: 1.5cm;
+    margin-left: -0px;
+    margin-top: -0px;
+    transform: rotate(0rad) translateZ(0px);
+    -webkit-transform: rotate(0rad) translateZ(0px);
+  }
+
+  .indent25 {
+    text-indent: 2.5cm;
+    padding-bottom: 0pt;
+    text-align: justify;
+    orphans: 2;
+    widows: 2;
+  }
+</style>

@@ -7,19 +7,27 @@
   <meta name="ProgId" content="Word.Document" />
   <meta name="Generator" content="Microsoft Word 15" />
   <meta name="Originator" content="Microsoft Word 15" />
-
+  <link
+  href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link
+  href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css"
+  rel="stylesheet"
+/>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
   <title> </title>
 </head>
 
-<body class="c50 doc-content">
+<body class="c50 ">
   <form action="./pdf.php" method="POST">
     <button type="submit">export pdf</button>
 
 
 
     <div>
-
-
       <table border="0" width="100%">
         <tr>
           <td width="250" style="padding-bottom:10px;" colspan="1" rowspan="1" valign="bottom"> <span
@@ -32,8 +40,6 @@
           </td>
           <td width="250" colspan="1" rowspan="1"></td>
         </tr>
-
-
       </table>
 
 
@@ -43,16 +49,39 @@
       </p>
 
       <p class="setMarginTop1"></p>
-      <p class="indent25 setMarginTop0">
+      <!-- <p class="indent25 setMarginTop0">
         <span class="c8"><textarea name="name3" rows="10" cols="60"  ></textarea></span>
-      </p>
+      </p> -->
+
+      <div  style="padding-top: 10px;"></div>
+      <div id="summernote"></div>
+      <textarea hidden name="name3" id="name3"></textarea>
+
+      <script>
+        $("#summernote").summernote({
+          height: 250,
+          width:880,
+          callbacks: {
+            onInit: function (e) {
+              $("#summernote").summernote("code",sessionStorage.getItem("summernote")
+              );
+            },
+            onChange: function (contents, $editable) {
+              var markup = $("#summernote").summernote("code");
+              sessionStorage.setItem("summernote",markup)
+            },
+          },
+        });
+      </script>
+
+
 
       <p class="setMarginTop1"></p>
       <p class="setMarginTop1"></p>
       <p class="setMarginTop1"></p>
       <p class="setMarginTop1"></p>
 
-      <p class="MsoNormal indent8"><span class="c16">&nbsp;<input name="name4" placeholder="ส่วนราชการที่ส่งหนังสือออก"></span></p>
+      <p class="MsoNormal indent8"><span class="c16">&nbsp;<input type="text" style="width: 250px;" name="name4" placeholder="ส่วนราชการที่ส่งหนังสือออก"></span></p>
       <p class="MsoNormal indent10"><span class="c16">&nbsp;<input name="name5" placeholder="ส่วนระบบบำรุงรักษา"></span></p>
 
       <p class="setMarginTop1"></p>
@@ -78,14 +107,24 @@
 
         .c50 {
           background-color: #ffffff;
-          max-width: 453.5pt;
+          max-width: 800pt;
           padding: 42.5pt 56.7pt 56.7pt 85pt;
         }
 
-        .doc-content {
-          width: 453.5pt;
-        }
-
+        input {
+          padding: 0;
+          width: '100%';
+          height: 20;
+          margin: 0%;
+          
+          color: #000000;
+          font-weight: 400;
+          text-decoration: none;
+          vertical-align: baseline;
+          font-size: 14px;
+          font-family: "thsarabun";
+          font-style: normal;
+}
         table td,
         table th {
           padding: 0
@@ -334,7 +373,7 @@
           margin-right: 54.4pt;
           margin-bottom: 0cm;
           margin-left: 0cm;
-          text-indent: 8cm;
+          text-indent: 16cm;
           line-height: 1.1;
         }
 
@@ -343,7 +382,7 @@
           margin-right: 54.4pt;
           margin-bottom: 0cm;
           margin-left: 0cm;
-          text-indent: 10cm;
+          text-indent: 16cm;
           line-height: 1.1;
         }
 

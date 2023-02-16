@@ -45,7 +45,7 @@
 
       <p class="setMarginTop2" style="margin-bottom: 0cm; text-align: center; line-height: normal">
         <span class="c16"></span>
-        <span class="c16">คำสั่งสำนักงานสาธารณสุขอำเภอดำเนินสะดวก</span>
+        <span class="c16">คำสั่ง&nbsp;&nbsp;<input name="name0" style="min-width: 250px;"  placeholder="สำนักงานสาธารณสุขอำเภอดำเนินสะดวก"> </span>
       </p>
 
 
@@ -81,6 +81,7 @@
             onChange: function (contents, $editable) {
               var markup = $("#summernote").summernote("code");
               sessionStorage.setItem("summernote",markup)
+              $("#name3").val(markup);
             },
           },
         });
@@ -132,7 +133,7 @@
       <p class="setMarginTop2"></p>
 
       <p class="MsoNormal indent5 ">
-        <span class="c16">สั่ง&nbsp;&nbsp;<input placeholder="วันที่ เดือน ปี" name="name6" >&nbsp;&nbsp;
+        <span class="c16">สั่ง&nbsp;&nbsp;วันที่&nbsp;&nbsp;<input placeholder="วันที่ เดือน ปี" name="name6" >&nbsp;&nbsp;
         </span>
       </p>
 

@@ -1,13 +1,14 @@
 
 
 <?php 
+$data0 = $_POST['name0'];
 $data1 = $_POST['name1'];
 $data2 = $_POST['name2'];
 $data3 = $_POST['name3'];
 $data4 = $_POST['name4'];
 $data5 = $_POST['name5'];
 $data6 = $_POST['name6'];
-$data7 = $_POST['name7'];
+$data7 = isset($_POST['name7']) ? '('.$_POST['name7'].')' : '';
 $data8 = $_POST['name8'];
 $data9 = $_POST['name9'];
 
@@ -29,9 +30,9 @@ $html = <<<EOD
         <td class="" colspan="1" rowspan="1"></td>
     </tr>
 </table>
-<p class="setMarginTop1"></p>
+<p style="margin-top:24px" class="setMarginTop1"></p>
 <p class="center setMarginTop0 setMarginBottom0">
-    <span class="c4"> ประกาศสำนักงานสาธารณสุขอำเภอดำเนินสะดวก</span>
+    <span class="c4"> $data0</span>
 </p>
 <p class="center setMarginTop0 setMarginBottom0">
     <span class="c4">เรื่อง&nbsp;&nbsp;$data1</span>
@@ -39,57 +40,51 @@ $html = <<<EOD
 <p class="center setMarginTop0 setMarginBottom0">
     <span class="">---------------------------------------------------------</span>
 </p>
-<p class="setMarginTop1"></p>
-<p class="indent25 setMarginTop0">
-    <span class="c8">$data2</span>
-</p>
-<p class="indent25 setMarginTop1">
+<p style="margin-top:16px" class="setMarginTop1"></p>
+
+$data2
+
+
+<p style="margin-top:6px" class="indent25 setMarginTop1">
     <span class="c8">ทั้งนี้&nbsp;&nbsp;ตั้งแต่&nbsp;$data3</span>
 </p>
 
 
-
-
-<p class="setMarginTop2"></p>
-
-<p  class="MsoNormal indent5 " >
+<p style="margin-top:16px" class="MsoNormal indent5 " >
   <span  class="c16"
-    >ประกาศ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ณ
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;$data4&nbsp;&nbsp;$data5
+    >ประกาศ&nbsp;&nbsp;ณ
+    &nbsp;&nbsp;วันที่
+    &nbsp;&nbsp;$data4
 </span>
 </p>
 
-<p class="setMarginTop26pt"></p>
+<p style="margin-top:40px" ></p>
 
-<table border="0"  cellspacing="0" cellpadding="0" width="100%" >
-  <tr >
-  <td colspan="1" width="50%"  > </td>
-  <td valign="top"  style="text-align:left;" colspan="2"  >
-  <p ><span  class="c16">$data6</span></p>
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr >
+  <td colspan="1" width="50%"> </td>
+
+  <td valign="top"  align="left"   colspan="2">
+    <p ><span class="c16" >$data6</span></p>
   </td>
-  <td valign="top" style="text-align:left;" colspan="1" width="44%"  >
-  <p style="text-align:center;">
-  <span  class="c16">$data7</span>
-  <p><span  class="c16">$data8</span></p>
-  <p><span  class="c16">$data9</span></p>  
-  </p>
-  </tr>
+</tr>
+
+<tr >
+  <td colspan="1" width="50%"> </td>
+
+  <td valign="top"  align="center"   colspan="2">
+    <p><span class="c16">$data7</span></p>
+    <p><span class="c16">$data8</span></p>
+    <p><span class="c16">$data9</span></p>
+  </td>
+
+</tr>
 </table>
 
-
-
-
-
-
-
-
-
-
-
 <style>
+
 
 html,body{
   font-size: 16pt;
@@ -120,6 +115,25 @@ table td,
 table th.span {
   padding: 0;
 }
+
+
+br {
+  display: block;
+  margin-bottom: 0px;
+  font-size:16px;
+  line-height: 1.1px;
+}
+br:before {
+  display: block;
+  margin-top: 0px;
+  content: "";
+}
+br:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+}
+
 
 
 .c2 {
@@ -211,11 +225,14 @@ table th.span {
   font-family: "thsarabun";
   font-weight: 400;
 }
-p{
-  padding-top: 0pt;
-  padding-bottom: 0pt;
-  margin-bottom: 0pt;
+
+p {
+  padding: 0pt;
+  margin:0;
+
 }
+
+
 span{
   padding-top: 0pt;
   padding-bottom: 0pt;
@@ -240,6 +257,7 @@ span{
 }
 
 .setMarginTop16pt{
+  margin-top:50pt;
   line-height: 1.7;
   font-size: 16pt;
 

@@ -18,6 +18,10 @@
   rel="stylesheet"
 />
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+
+
+
 </head>
 
 <body class="c50 ">
@@ -38,13 +42,20 @@
                 <img alt="logo" src="../../../images/image32.jpg" class="image_logo"> </span></p>
           </td>
           <td valign="bottom" style="text-align:right;padding-bottom:10px;" width="250px" colspan="1" rowspan="1">
-            <p><span><input name="name2" placeholder="ส่วนราชการเจ้าของหนังสือ"></span></p>
+            <p><span>
+              
+              <input name="name2" style="min-width: 250px;"  placeholder="ส่วนราชการเจ้าของหนังสือ">
+            </span></p>
           </td>
         </tr>
 
         <tr>
           <td colspan="4" style="text-align:right;" rowspan="1">
-            <span><input name="name3" placeholder="ที่ตั้ง"></span>
+            <span>
+              <div id="summernote2"></div>
+              <input hidden name="name3" id="name3">
+              <!-- <input name="name3" placeholder="ที่ตั้ง"> -->
+            </span>
           </td>
         </tr>
 
@@ -58,22 +69,7 @@
       <div id="summernote"></div>
       <textarea hidden name="name4" id="name4"></textarea>
 
-      <script>
-        $("#summernote").summernote({
-          height: 250,
-          width:880,
-          callbacks: {
-            onInit: function (e) {
-              $("#summernote").summernote("code",sessionStorage.getItem("summernote")
-              );
-            },
-            onChange: function (contents, $editable) {
-              var markup = $("#summernote").summernote("code");
-              sessionStorage.setItem("summernote",markup)
-            },
-          },
-        });
-      </script>
+
 
       <!-- <p class="indent25 setMarginTop0">
         <span class="c8">หนังสือฉบับนี้ให้ไว้เพื่อรับรองว่า&nbsp;<textarea name="name4" rows="10" cols="80"  ></textarea></span>
@@ -82,7 +78,7 @@
       <p class="setMarginTop2"></p>
 
       <p class="MsoNormal indent5 ">
-        <span class="c16">ให้ไว้&nbsp;&nbsp;<input placeholder="วันที่ เดือน ปี" name="name5" >&nbsp;&nbsp;
+        <span class="c16">ให้ไว้&nbsp;&nbsp;วันที่&nbsp;&nbsp;<input placeholder="วันที่ เดือน ปี" name="name5" >&nbsp;&nbsp;
         </span>
       </p>
 
@@ -139,9 +135,49 @@
       </p>
 
       <p class="setMarginTop16pt"></p>
-      <p class="setMarginTop0"><span class="c6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name="name11" placeholder="ลงชื่อ"></span> </p>
-      <p class="setMarginTop0"><span class="c6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (<input name="name12" placeholder="ชื่อ นามสกุล">)</span></p>
+      <p class="setMarginTop0"><span class="c6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name="name12" placeholder="ลงชื่อ"></span> </p>
+      <p class="setMarginTop0"><span class="c6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (<input name="name13" placeholder="ชื่อ นามสกุล">)</span></p>
       <p class="setMarginTop2"></p>
+
+
+      <script>
+        $("#summernote").summernote({
+          height: 250,
+          width:880,
+          callbacks: {
+            onInit: function (e) {
+              $("#summernote").summernote("code",sessionStorage.getItem("summernote")
+              );
+            },
+            onChange: function (contents, $editable) {
+              var markup = $("#summernote").summernote("code");
+              sessionStorage.setItem("summernote",markup)
+              $("#name4").val(markup);
+            },
+          },
+        });
+
+        $("#summernote2").summernote({
+          toolbar:false,
+          
+          // height: 250,
+          // width:880,
+          callbacks: {
+            onInit: function (e) {
+              $("#summernote2").summernote("code",sessionStorage.getItem("summernote2")
+              );
+            },
+            onChange: function (contents, $editable) {
+              var markup = $("#summernote2").summernote("code");
+              sessionStorage.setItem("summernote2",markup)
+              $("#name3").val(markup);
+            },
+          },
+        });
+
+
+      </script>
+
 
 
       <style type="text/css">

@@ -69,6 +69,7 @@
             onChange: function (contents, $editable) {
               var markup = $("#summernote").summernote("code");
               sessionStorage.setItem("summernote",markup)
+              $("#name3").val(markup);
             },
           },
         });
@@ -82,7 +83,7 @@
       <p class="setMarginTop1"></p>
 
       <p class="MsoNormal indent8"><span class="c16">&nbsp;<input type="text" style="width: 250px;" name="name4" placeholder="ส่วนราชการที่ส่งหนังสือออก"></span></p>
-      <p class="MsoNormal indent10"><span class="c16">&nbsp;<input name="name5" placeholder="ส่วนระบบบำรุงรักษา"></span></p>
+      <p class="MsoNormal indent10"><span class="c16">&nbsp;<input name="name5" placeholder="เดือน ปี"></span></p>
 
       <p class="setMarginTop1"></p>
       <p class="setMarginTop1"></p>
@@ -91,7 +92,7 @@
 
 
 
-      <p class="setMarginTop0"><span class="c6"><input name="name6" placeholder="ศูนย์บริหาร"></span> </p>
+      <p class="setMarginTop0"><span class="c6"><input name="name6" placeholder="ส่วนราชการเจ้าของเรื่อง"></span> </p>
       <p class="setMarginTop0"><span class="c6">โทร.&nbsp;<input name="name7" ></span></p>
       <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;<input name="name8" ></span></p>
 

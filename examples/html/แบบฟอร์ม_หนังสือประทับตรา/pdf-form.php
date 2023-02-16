@@ -42,28 +42,24 @@ $html = <<<EOD
     <span class="c8">$data3</span>
 </p>
 
-<p class="setMarginTop1"></p>
-<p class="setMarginTop1"></p>
-<p class="setMarginTop1"></p>
-<p class="setMarginTop1"></p>
 
-<p class="MsoNormal indent8" ><span  class="c16">&nbsp;$data4</span></p>
+<p style="padding-top:64px" class="MsoNormal indent8" ><span  class="c16">&nbsp;$data4</span></p>
 <p class="MsoNormal indent10" ><span  class="c16">&nbsp;$data5</span></p>
 
-<p class="setMarginTop1"></p>
-<p class="setMarginTop1"></p>
-<p class="setMarginTop1"></p>
-<p class="setMarginTop1"></p>
 
 
-
-    <p class="setMarginTop0"><span class="c6">$data6</span> </p>
+    <p style="padding-top:64px" class="setMarginTop0"><span class="c6">$data6</span> </p>
     <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data7</span></p>
     <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;$data8</span></p>
 
 
 
 <style>
+p {
+  padding: 0pt;
+  margin:0;
+
+}
 
 table td,
 table th {

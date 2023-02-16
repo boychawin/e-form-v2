@@ -10,21 +10,21 @@ $data5 = $_POST['name5'];
 $data6 = $_POST['name6'];
 $data7 = $_POST['name7'];
 $data8 = $_POST['name8'];
-$data9 = $_POST['name9'];
+$data9 = isset($_POST['name9']) ? '('.$_POST['name9'].')' : '';
 $data10 = $_POST['name10'];
 $data11 = $_POST['name11'];
 $data12 = $_POST['name12'];
-
+$data13 = isset($_POST['name13']) ? '('.$_POST['name13'].')' : '';
 
 $namefile = $_POST['namefile'] ?? '../../../images/image31.png';
-// print_r($namefile);
+
 
 $html = <<<EOD
 
     <table border="0" width="100%">
         <tr>
 
-        <td  style="text-align:left;padding-top:60px;" width="250px" colspan="1" rowspan="1">
+        <td  style="text-align:left;padding-top:60px;" width="40%" colspan="1" rowspan="1">
                 <p ><span >เลขที่ &nbsp;$data1 </span></p>
             </td>
 
@@ -32,37 +32,28 @@ $html = <<<EOD
             <p class="c9"><span class="span_image">
             <img alt="logo" src="../../../images/image32.jpg" class="image_logo" > </span></p>
         </td>
-              <td valign="bottom"  style="text-align:right;padding-bottom:10px;"  width="250px" colspan="1" rowspan="1">
+
+<td colspan="1" width="15%" rowspan="1"></td>
+
+              <td valign="bottom"  style="text-align:right;padding-bottom:10px;"  width="25%" colspan="1" rowspan="1">
               <p ><span >$data2</span></p>
              </td>
         </tr>
        
         <tr>
-        <td colspan="4" style="text-align:right;" rowspan="1">
+        <td colspan="5" style="text-align:right;padding-top:-11px;"  rowspan="1">
         <span >$data3</span>
         </td>
         </tr>
 
     </table>
 
- 
-    <p class="setMarginTop1"></p>
+    <p style="margin-top:18px" class="setMarginTop1"></p>
+<p class="indent25 setMarginTop0"></p>
+$data4
 
 
-<p class="indent25 setMarginTop0">
-    <span class="c8">หนังสือฉบับนี้ให้ไว้เพื่อรับรองว่า&nbsp;$data4</span>
-</p>
-
-
-
-
-
-
-
-
-<p class="setMarginTop2"></p>
-
-<p  class="MsoNormal indent5 " >
+<p  style="margin-top:26px" class="MsoNormal indent5 " >
   <span  class="c16"
     >ให้ไว้&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ณ
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่
@@ -72,50 +63,83 @@ $html = <<<EOD
 </span>
 </p>
 
-<p class="setMarginTop26pt"></p>
+<p style="margin-top:32px" class="setMarginTop26pt"></p>
 
 
 
 
-<table border="0"  cellspacing="0" cellpadding="0" width="100%" >
-  <tr >
-  <td colspan="1" width="50%"  > </td>
-  <td valign="top"  style="text-align:left;" colspan="2"  >
-  <p ><span  class="c16">$data7</span></p>
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr >
+  <td colspan="1" width="50%"> </td>
+
+  <td valign="top"  align="left"   colspan="2">
+    <p ><span class="c16" >$data7</span></p>
   </td>
-  <td valign="top" style="text-align:left;" colspan="1" width="44%"  >
-  <p style="text-align:center;">
-  <span  class="c16">$data8</span>
-  <p><span  class="c16">$data9</span></p>
-  <p><span  class="c16">$data10</span></p>  
-  </p>
-  </tr>
+</tr>
+
+<tr >
+  <td colspan="1" width="50%"> </td>
+
+  <td valign="top"  align="center"   colspan="2">
+    <p><span class="c16">$data9</span></p>
+    <p><span class="c16">$data10</span></p>
+    <p><span class="c16">$data11</span></p>
+  </td>
+
+</tr>
 </table>
 
 
 
 
 
+<p style="margin-top:32px" class="setMarginTop2"></p>
+
+
+  
 
 
 
 
-<p class="setMarginTop2"></p>
 
-
-    <p class="indent1"><span >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr >
+  <td align="center"   colspan="1" width="30%">
+  <p style="margin-button:24px" class="indent1"><span >
             <img alt="" src="$namefile" style="width: 4cm; height: 6cm; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" >
             </span>
             </p>
+  </td>
+  
 
-<p class="setMarginTop16pt"></p>
-    <p class="setMarginTop0"><span class="c6">&nbsp; ($data11)</span> </p>
-    <p class="setMarginTop0"><span class="c6">&nbsp; ($data12)</span></p>
-<p class="setMarginTop2"></p>
+  <td valign="top"  align="left"   colspan="1">
+    <p ><span class="c16" ></span></p>
+  </td>
+</tr>
+
+<tr>
+<td align="center" style="padding-top:24px" >
+<p class="setMarginTop0"><span class="c6">&nbsp; $data12</span> </p>
+<p class="setMarginTop0"><span class="c6">&nbsp; $data13</span></p>
+</td>
+<td>
+</td>
+</tr>
+
+
+</table>
+
+
 
 
 <style type="text/css">
+p {
+  padding: 0pt;
+  margin:0;
 
+}
     table td,
     table th {
         padding: 0

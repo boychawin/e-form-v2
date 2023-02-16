@@ -1,6 +1,7 @@
 
 
 <?php
+$data0 = $_POST['name0'];
 $data1 = $_POST['name1'];
 $data2 = $_POST['name2'];
 $data3 = $_POST['name3'];
@@ -10,8 +11,9 @@ $data6 = $_POST['name6'];
 $data7 = $_POST['name7'];
 $data8 = $_POST['name8'];
 $data9 = $_POST['name9'];
-$data10 = $_POST['name10'];
+$data10 = isset($_POST['name10']) ? '('.$_POST['name10'].')' : '';
 $data11 = $_POST['name11'];
+$data12 = $_POST['name12'];
 
 $html = <<<EOD
 <table border="0" cellspacing="0" cellpadding="0" width="100%" >
@@ -29,9 +31,9 @@ $html = <<<EOD
 
 
 
-<p class="setMarginTop2" style="margin-bottom: 0cm; text-align: center; line-height: normal">
+<p class="setMarginTop2" style="margin-top:24px;margin-bottom: 0cm; text-align: center; line-height: normal">
 <span class="c16" ></span>
-  <span class="c16" >คำสั่งสำนักงานสาธารณสุขอำเภอดำเนินสะดวก</span>
+  <span class="c16" >$data0</span>
 </p>
 
 
@@ -58,38 +60,11 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
 </p>
 
 
+<p style="margin-top:16px" ></p>
 
-<p
-  class="MsoNormal"
-  style="
-  text-align: justify;
-    margin-top: 16pt;
-    margin-right: 0cm;
-    margin-bottom: 0cm;
-    margin-left: 0cm;
-    text-justify: inter-cluster;
-    text-indent: 2.5cm;
-    
-    tab-stops: 0cm;
-  " >
-  <span  class="c16" > $data3 </span>
-</p>
+$data3
 
-<p
-  class="MsoNormal"
-  style="
-    margin-top: 0pt;
-    margin-right: 0cm;
-    margin-bottom: 0cm;
-    margin-left: 0cm;
-    text-align: justify;
-    text-justify: inter-cluster;
-    text-indent: 2.5cm;
-    
-  "
->
-  <span  class="c16" >$data4</span>
-</p>
+
 
 <p
   class="MsoNormal"
@@ -108,41 +83,52 @@ style="margin-bottom: 0cm; text-align: center; line-height: normal" >
 
 
 
-<p class="setMarginTop2"></p>
+<p style="margin-top:26px" ></p>
 
 <p  class="MsoNormal indent5 " >
   <span  class="c16"
-    >สั่ง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ณ
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่
-    &nbsp;&nbsp;$data6&nbsp;&nbsp;$data7
+    >สั่ง&nbsp;&nbsp;ณ
+    &nbsp;&nbsp;วันที่
+    &nbsp;&nbsp;$data6
 </span>
 </p>
 
-<p class="setMarginTop26pt"></p>
+<p style="margin-top:26px" class="setMarginTop26pt"></p>
 
 
 
 
-<table border="0"  cellspacing="0" cellpadding="0" width="100%" >
-  <tr >
-  <td colspan="1" width="50%"  > </td>
-  <td valign="top"  style="text-align:left;" colspan="2"  >
-  <p ><span  class="c16">$data8</span></p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr >
+  <td colspan="1" width="50%"> </td>
+
+  <td valign="top"  align="left"   colspan="2">
+    <p ><span class="c16" >$data8</span></p>
   </td>
-  <td valign="top" style="text-align:left;" colspan="1" width="44%"  >
-  <p style="text-align:center;">
-  <span  class="c16">$data9</span>
-  <p><span  class="c16">$data10</span></p>
-  <p><span  class="c16">$data11</span></p>  
-  </p>
-  </tr>
+</tr>
+
+<tr >
+  <td colspan="1" width="50%"> </td>
+
+  <td valign="top"  align="center"   colspan="2">
+    <p><span class="c16">$data10</span></p>
+    <p><span class="c16">$data11</span></p>
+    <p><span class="c16">$data12</span></p>
+  </td>
+
+</tr>
 </table>
 
 
 
 
-
 <style>
+p {
+  padding: 0pt;
+  margin:0;
+
+}
 
 .c16 {
   font-size: 16pt;

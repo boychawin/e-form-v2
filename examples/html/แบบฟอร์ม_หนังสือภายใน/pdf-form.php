@@ -11,7 +11,7 @@ $data8 = $_POST['name8'];
 $data9 = $_POST['name9'];
 $data10 = $_POST['name10'];
 $data11 = $_POST['name11'];
-$data12 = $_POST['name12'];
+$data12 = isset($_POST['name12']) ? '('.$_POST['name12'].')' : '';
 $data13 = $_POST['name13'];
 $data14 = $_POST['name14'];
 $html = <<<EOD
@@ -76,23 +76,16 @@ $html = <<<EOD
   </td>
 </tr>
 
-
-
 <tr >
   <td colspan="1" width="50%"> </td>
 
   <td valign="top"  align="center"   colspan="2">
-    <p><span class="c16">($data12)</span></p>
+    <p><span class="c16">$data12</span></p>
     <p><span class="c16">$data13</span></p>
     <p><span class="c16">$data14</span></p>
   </td>
 
 </tr>
-
-
-
-
-
 </table>
 
 

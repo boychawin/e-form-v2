@@ -36,10 +36,10 @@
       </table>
       <p class="setMarginTop1"></p>
       <p class="center setMarginTop0 setMarginBottom0">
-        <span class="c4"> ประกาศสำนักงานสาธารณสุขอำเภอดำเนินสะดวก</span>
+        <span class="c4">ประกาศ&nbsp;&nbsp;<input name="name0" style="min-width: 300px;"  placeholder="สำนักงานสาธารณสุขอำเภอดำเนินสะดวก"> </span>
       </p>
       <p class="center setMarginTop0 setMarginBottom0">
-        <span class="c4">เรื่อง&nbsp;&nbsp;<input name="name1" style="width: 300px;"></span>
+        <span class="c4">เรื่อง&nbsp;&nbsp;<input name="name1" style="min-width: 300px;"></span>
       </p>
       <p class="center setMarginTop0 setMarginBottom0">
         <span class="">---------------------------------------------------------</span>
@@ -61,6 +61,7 @@
             onChange: function (contents, $editable) {
               var markup = $("#summernote").summernote("code");
               sessionStorage.setItem("summernote",markup)
+              $("#name2").val(markup);
             },
           },
         });
@@ -79,7 +80,7 @@
       <p class="setMarginTop2"></p>
 
       <p class="MsoNormal indent5 ">
-        <span class="c16">ประกาศ &nbsp;&nbsp;<input placeholder="วันที่ เดือน ปี" name="name4" >&nbsp;&nbsp;
+        <span class="c16">ประกาศ &nbsp;&nbsp;วันที่&nbsp;&nbsp;<input placeholder="วันที่ เดือน ปี" name="name4" >&nbsp;&nbsp;
         </span>
       </p>
 

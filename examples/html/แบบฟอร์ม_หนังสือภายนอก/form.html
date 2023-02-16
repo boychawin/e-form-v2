@@ -70,7 +70,7 @@
       <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรื่อง&nbsp;&nbsp;<input name="name5" ></p>
       <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรียน&nbsp;&nbsp;<input name="name6" ></p>
       <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">อ้างถึง&nbsp;&nbsp;<input name="name7" ></p>
-      <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">สิ่งที่ส่งมาด้วย&nbsp;&nbsp;<input name="name8" ></p>
+      <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">สิ่งที่ส่งมาด้วย&nbsp;&nbsp;<textarea style="min-width: 500px;"  name="name8" ></textarea></p>
 
 
       <div  style="padding-top: 10px;"></div>
@@ -88,6 +88,7 @@
             onChange: function (contents, $editable) {
               var markup = $("#summernote").summernote("code");
               sessionStorage.setItem("summernote",markup)
+              $("#name9").val(markup);
             },
           },
         });
@@ -147,10 +148,10 @@
 
 
       <p class="setMarginTop16pt"></p>
-      <p class="setMarginTop0"><span class="c6"><input name="name16" placeholder="ส่วนราชการเจ้าของเรื่อง"></span> </p>
-      <p class="setMarginTop0"><span class="c6">โทร.&nbsp;<input name="name17" ></span></p>
-      <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;<input name="name18" ></span></p>
-      <p class="setMarginTop0"><span class="c6">โทร.&nbsp;<input name="name19" ></span></p>
+      <p class="setMarginTop0"><span class="c6"><input name="name17" placeholder="ส่วนราชการเจ้าของเรื่อง"></span> </p>
+      <p class="setMarginTop0"><span class="c6">โทร.&nbsp;<input name="name18" ></span></p>
+      <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;<input name="name19" ></span></p>
+      <p class="setMarginTop0"><span class="c6">โทร.&nbsp;<input name="name20" ></span></p>
       <p class="setMarginTop16pt"></p>
 
 
@@ -169,7 +170,7 @@
           padding: 42.5pt 56.7pt 56.7pt 85pt;
         }
 
-        input {
+        input , textarea {
           padding: 0;
           width: '100%';
           height: 20;

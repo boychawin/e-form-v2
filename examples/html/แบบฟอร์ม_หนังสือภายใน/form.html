@@ -34,22 +34,16 @@
                 </tr>
 
                 <tr>
-                  <td  class="mt-5" colspan="1" rowspan="1"><input type="text" class="mb-5 border-2 border-gray-300 p-2 w-full" name="name1" placeholder="ส่วนราชการ*"></span></td>
-                  <td  class="mt-5" colspan="1" rowspan="1"><input type="text" class="mb-5 border-2 border-gray-300 p-2 w-full" name="name2" placeholder="โทร*"></span></td>
+                  <td  class="mt-5" colspan="1" rowspan="1"><input required type="text" class="mb-5 border-2 border-gray-300 p-2 w-full" name="name1" placeholder="ส่วนราชการ*"></span></td>
+                  <td  class="mt-5" colspan="1" rowspan="1"><input required type="text" class="mb-5 border-2 border-gray-300 p-2 w-full" name="name2" placeholder="โทร*"></span></td>
                 </tr>
 
                 <tr>
-                  <td  class="mt-5" colspan="1" rowspan="1"><input type="text" class="border-2 border-gray-300 p-2 w-full"
+                  <td  class="mt-5" colspan="1" rowspan="1"><input type="text" class="border-2 border-gray-300 p-2 w-full" required
                       name="name3" placeholder="ที่*"></span></td>
-                  <td class="" colspan="1" rowspan="1"><input type="text" class="border-2 border-gray-300 p-2 w-full"
+                  <td class="" colspan="1" rowspan="1"><input type="text" class="border-2 border-gray-300 p-2 w-full" required
                       name="name4" placeholder="วันที่*"></td>
                 </tr>
-
-
-
-
-          
-
 
               </table>
 
@@ -62,12 +56,12 @@
 
             <div class="mb-4">
               <label class="text-xl text-gray-600">เรียน<span class="text-red-500">*</span></label></br>
-              <input type="text" class="border-2 border-gray-300 p-2 w-full" name="name6" id="description" >
+              <input type="text" class="border-2 border-gray-300 p-2 w-full" name="name6" id="description" required>
             </div>
 
-            <div class="mb-8">
-              <label class="text-xl text-gray-600">เนื้อหา <span class="text-red-500">*</span></label></br>
-              <textarea name="name7" id="editor" class="editor border-2 border-gray-500"></textarea>
+            <div class="mb-8 flex justify-center">
+              <!-- <label class="text-xl text-gray-600">เนื้อหา <span class="text-red-500">*</span></label></br> -->
+              <textarea name="name7" id="editor" class="editor border-2 border-gray-500 "></textarea>
             </div>
 
             <div class="flex p-1">
@@ -90,12 +84,16 @@
   <script>
     $("#editor").summernote({
       //       // fontSize:8,
-      //       // styleTags:'p',
+      styleTags: [
+    'div',
+        { title: 'Blockquote', tag: 'blockquote', className: 'blockquote', value: 'blockquote' },
+        'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'
+	],
       //       fontSizeUnit: 'pt',
       //       fontSizes: ['8', '9', '10', '11', '12', '13', '14', '15', '16', '18', '20','21', '22' , '24', '28', '32', '36', '40', '48'],
       //       // lineHeights: ['0.2'],
       // height: 250,
-      // width: 880,
+      width: 610,
       toolbar: [
         ['style', ['bold', 'italic', 'underline', 'clear']],
         ['fontsize', ['fontsize']],

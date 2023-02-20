@@ -31,8 +31,14 @@ $html = <<<EOD
 
 
     <tr>
-    <td style="padding-top:18px;" class="exactly_1" colspan="1"rowspan="1"><span class="font20bold">ส่วนราชการ</span>&nbsp;&nbsp;<span class="font_size16">$data1</span></td>
-   <td class="exactly_1" colspan="2" style="text-align:center;padding-left:-125px;" rowspan="1"><span class="font20bold">โทร. </span>&nbsp;&nbsp;<span class="font_size16">$data2</span></td>
+
+    <td style="padding-top:18px;" class="exactly_1" colspan="3" rowspan="1">
+    
+    <span class="font20bold">ส่วนราชการ</span>&nbsp;&nbsp;
+    <span class="font_size16">$data1&nbsp;&nbsp;โทร.&nbsp;$data2</span>
+    
+    </td>
+  
     </tr>
 
 

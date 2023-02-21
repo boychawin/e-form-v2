@@ -3,3 +3,6 @@
 
 
 ### https://wkhtmltopdf.org/downloads.html
+
+
+# ไม่อนุญาตให้เผยแพร่

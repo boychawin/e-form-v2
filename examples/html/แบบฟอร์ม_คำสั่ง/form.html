@@ -7,17 +7,11 @@
   <meta name="ProgId" content="Word.Document" />
   <meta name="Generator" content="Microsoft Word 15" />
   <meta name="Originator" content="Microsoft Word 15" />
-  <link
-  href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-  rel="stylesheet"
-/>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link
-  href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css"
-  rel="stylesheet"
-/>
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 </head>
 
 <body class="c50 ">
@@ -45,18 +39,19 @@
 
       <p class="setMarginTop2" style="margin-bottom: 0cm; text-align: center; line-height: normal">
         <span class="c16"></span>
-        <span class="c16">คำสั่ง&nbsp;&nbsp;<input name="name0" style="min-width: 250px;"  placeholder="สำนักงานสาธารณสุขอำเภอดำเนินสะดวก"> </span>
+        <span class="c16">คำสั่ง&nbsp;&nbsp;<input name="name0" style="min-width: 250px;"
+            placeholder="สำนักงานสาธารณสุขอำเภอดำเนินสะดวก"> </span>
       </p>
 
 
 
       <p class="MsoNormal" align="center" style="margin-bottom: 0cm; text-align: center; line-height: normal">
-        <span class="c16">ที่&nbsp;<input name="name1" ></span>
+        <span class="c16">ที่&nbsp;<input name="name1"></span>
       </p>
 
 
       <p class="MsoNormal" align="center" style="margin-bottom: 0cm; text-align: center; line-height: normal">
-        <span class="c16">เรื่อง&nbsp;&nbsp;<input name="name2" ></span>
+        <span class="c16">เรื่อง&nbsp;&nbsp;<input name="name2"></span>
       </p>
 
       <p class="MsoNormal" align="center" style="margin-bottom: 0cm; text-align: center; line-height: normal">
@@ -65,27 +60,9 @@
 
 
 
-      <div  style="padding-top: 10px;"></div>
+      <div style="padding-top: 10px;"></div>
       <div id="summernote"></div>
       <textarea hidden name="name3" id="name3"></textarea>
-
-      <script>
-        $("#summernote").summernote({
-          height: 250,
-          width:880,
-          callbacks: {
-            onInit: function (e) {
-              $("#summernote").summernote("code",sessionStorage.getItem("summernote")
-              );
-            },
-            onChange: function (contents, $editable) {
-              var markup = $("#summernote").summernote("code");
-              sessionStorage.setItem("summernote",markup)
-              $("#name3").val(markup);
-            },
-          },
-        });
-      </script>
 
 
 
@@ -125,7 +102,8 @@
         text-indent: 2.5cm;
         
         ">
-        <span class="c16">ทั้งนี้&nbsp;&nbsp;ตั้งแต่&nbsp;<input type="text"   name="name5" style="min-width: 450px;"></span>
+        <span class="c16">ทั้งนี้&nbsp;&nbsp;ตั้งแต่&nbsp;<input type="text" name="name5"
+            style="min-width: 450px;"></span>
       </p>
 
 
@@ -133,7 +111,8 @@
       <p class="setMarginTop2"></p>
 
       <p class="MsoNormal indent5 ">
-        <span class="c16">สั่ง&nbsp;&nbsp;วันที่&nbsp;&nbsp;<input placeholder="วันที่ เดือน ปี" name="name6" >&nbsp;&nbsp;
+        <span class="c16">สั่ง&nbsp;&nbsp;วันที่&nbsp;&nbsp;<input placeholder="วันที่ เดือน ปี"
+            name="name6">&nbsp;&nbsp;
         </span>
       </p>
 
@@ -147,14 +126,14 @@
         <tr>
           <td colspan="1" width="50%"> </td>
           <td valign="top" style="text-align:left;" colspan="2">
-            <p><span class="c16"><input type="text"  style="width: 120;" name="name8" placeholder="ยศ"></span></p>
+            <p><span class="c16"><input type="text" style="width: 120;" name="name8" placeholder="ยศ"></span></p>
           </td>
           <td valign="top" style="text-align:left;" colspan="1" width="44%">
             <p>
-              <span class="c16"><input type="text"   name="name9" value="" placeholder="ลายเซ็นต์"></span>
-            <p><span class="c16"><input type="text"   name="name10" placeholder="ชื่อ-นามสกุล"></span></p>
-            <p><span class="c16"><input type="text"   name="name11" placeholder="ตำแหน่ง"></span></p>
-            <p><span class="c16"><input type="text"   name="name12" placeholder="อื่นๆ(ถ้ามี)"></span></p>
+              <span class="c16"><input type="text" name="name9" value="" placeholder="ลายเซ็นต์"></span>
+            <p><span class="c16"><input type="text" name="name10" placeholder="ชื่อ-นามสกุล"></span></p>
+            <p><span class="c16"><input type="text" name="name11" placeholder="ตำแหน่ง"></span></p>
+            <p><span class="c16"><input type="text" name="name12" placeholder="อื่นๆ(ถ้ามี)"></span></p>
             </p>
         </tr>
       </table>
@@ -167,129 +146,147 @@
   </form>
 
 
-  <style>
-    @font-face {
-      font-family: 'thsarabun';
-      src: url('../../../fonts/thsarabun-new/THSarabunNew001.ttf');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    .c50 {
-          background-color: #ffffff;
-          max-width: 800pt;
-          padding: 42.5pt 56.7pt 56.7pt 85pt;
-        }
-
-        input {
-          padding: 0;
-          width: '100%';
-          height: 20;
-          margin: 0%;
-          color: #000000;
-          font-weight: 400;
-          text-decoration: none;
-          vertical-align: baseline;
-          font-size: 14px;
-          font-family: "thsarabun";
-          font-style: normal;
-}
-
-    .c16 {
-      font-size: 16pt;
-      font-family: "thsarabun";
-      font-weight: 400;
-    }
-
-    .span_image {
-      overflow: hidden;
-      display: inline-block;
-      margin: 0px 0px;
-      border: 0px solid #000000;
-      transform: rotate(0rad) translateZ(0px);
-      -webkit-transform: rotate(0rad) translateZ(0px);
-
-      height: 113.39px;
-    }
-
-    .image_logo {
-
-      height: 113.39px;
-      margin-left: -0px;
-      margin-top: -0px;
-      transform: rotate(0rad) translateZ(0px);
-      -webkit-transform: rotate(0rad) translateZ(0px);
-
-    }
-
-
-    p.MsoNormal,
-    li.MsoNormal,
-    div.MsoNormal {
-      mso-style-unhide: no;
-      mso-style-qformat: yes;
-      mso-style-parent: "";
-      margin-top: 0cm;
-      margin-right: 0cm;
-      margin-bottom: 10.0pt;
-      margin-left: 0cm;
-      line-height: 115%;
-      mso-pagination: widow-orphan;
-      font-size: 16.0pt;
-      mso-bidi-font-size: 16.0pt;
-      font-family: "thsarabun", sans-serif;
-      mso-ascii-font-family: thsarabun;
-      mso-ascii-theme-font: minor-latin;
-      mso-fareast-font-family: thsarabun;
-      mso-fareast-theme-font: minor-latin;
-      mso-hansi-font-family: thsarabun;
-      mso-hansi-theme-font: minor-latin;
-      mso-bidi-font-family: "thsarabun";
-      mso-bidi-theme-font: minor-bidi;
-      mso-ansi-language: EN-US;
-    }
-
-
-
-    .indent8 {
-      margin-top: 0cm;
-      margin-right: 54.4pt;
-      margin-bottom: 0cm;
-      margin-left: 0cm;
-      text-indent: 8cm;
-      line-height: normal;
-    }
-
-    .indent5 {
-      margin-top: 16pt;
-      margin-right: 0cm;
-      margin-bottom: 0cm;
-      margin-left: 0cm;
-      text-indent: 5cm;
-      line-height: normal;
-      tab-stops: center 339.05pt;
-    }
-
-    .setMarginTop2 {
-      line-height: 2.2;
-      font-size: 16pt;
-      margin-bottom: 0pt;
-    }
-
-    .setMarginTop26pt {
-      line-height: 2.8;
-      font-size: 16pt;
-    }
-
-
-
-    .setMarginTop1 {
-      line-height: 1.1;
-      font-size: 16pt;
-    }
-  </style>
-
 
 </body>
+
+<script>
+  $("#summernote").summernote({
+    height: 250,
+    width: 880,
+    callbacks: {
+      onInit: function (e) {
+        $("#summernote").summernote("code", sessionStorage.getItem("summernote")
+        );
+      },
+      onChange: function (contents, $editable) {
+        var markup = $("#summernote").summernote("code");
+        sessionStorage.setItem("summernote", markup)
+        $("#name3").val(markup);
+      },
+    },
+  });
+</script>
+
+<style>
+  @font-face {
+    font-family: 'thsarabun';
+    src: url('../../../fonts/thsarabun-new/THSarabunNew001.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .c50 {
+    background-color: #ffffff;
+    max-width: 800pt;
+    padding: 42.5pt 56.7pt 56.7pt 85pt;
+  }
+
+  input {
+    padding: 0;
+    width: '100%';
+    height: 20;
+    margin: 0%;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 14px;
+    font-family: "thsarabun";
+    font-style: normal;
+  }
+
+  .c16 {
+    font-size: 16pt;
+    font-family: "thsarabun";
+    font-weight: 400;
+  }
+
+  .span_image {
+    overflow: hidden;
+    display: inline-block;
+    margin: 0px 0px;
+    border: 0px solid #000000;
+    transform: rotate(0rad) translateZ(0px);
+    -webkit-transform: rotate(0rad) translateZ(0px);
+
+    height: 113.39px;
+  }
+
+  .image_logo {
+
+    height: 113.39px;
+    margin-left: -0px;
+    margin-top: -0px;
+    transform: rotate(0rad) translateZ(0px);
+    -webkit-transform: rotate(0rad) translateZ(0px);
+
+  }
+
+
+  p.MsoNormal,
+  li.MsoNormal,
+  div.MsoNormal {
+    mso-style-unhide: no;
+    mso-style-qformat: yes;
+    mso-style-parent: "";
+    margin-top: 0cm;
+    margin-right: 0cm;
+    margin-bottom: 10.0pt;
+    margin-left: 0cm;
+    line-height: 115%;
+    mso-pagination: widow-orphan;
+    font-size: 16.0pt;
+    mso-bidi-font-size: 16.0pt;
+    font-family: "thsarabun", sans-serif;
+    mso-ascii-font-family: thsarabun;
+    mso-ascii-theme-font: minor-latin;
+    mso-fareast-font-family: thsarabun;
+    mso-fareast-theme-font: minor-latin;
+    mso-hansi-font-family: thsarabun;
+    mso-hansi-theme-font: minor-latin;
+    mso-bidi-font-family: "thsarabun";
+    mso-bidi-theme-font: minor-bidi;
+    mso-ansi-language: EN-US;
+  }
+
+
+
+  .indent8 {
+    margin-top: 0cm;
+    margin-right: 54.4pt;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 8cm;
+    line-height: normal;
+  }
+
+  .indent5 {
+    margin-top: 16pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 5cm;
+    line-height: normal;
+    tab-stops: center 339.05pt;
+  }
+
+  .setMarginTop2 {
+    line-height: 2.2;
+    font-size: 16pt;
+    margin-bottom: 0pt;
+  }
+
+  .setMarginTop26pt {
+    line-height: 2.8;
+    font-size: 16pt;
+  }
+
+
+
+  .setMarginTop1 {
+    line-height: 1.1;
+    font-size: 16pt;
+  }
+</style>
 
 </html>

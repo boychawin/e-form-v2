@@ -28,37 +28,37 @@
           </td>
 
           <td class="" style="text-align:center;padding-bottom:-10px;" colspan="1" rowspan="1" valign="bottom">
-            <span class="font_size16"> บันทึกข้อความ</span>
+            <span class="c29pt"> บันทึกข้อความ</span>
           </td>
           <td width="250" colspan="1" rowspan="1"></td>
         </tr>
 
         <tr>
-          <td class="" colspan="1" rowspan="1"><span class="fs-6 fw-bold">ส่วนราชการ</span>&nbsp;&nbsp;<span
+          <td class="" colspan="1" rowspan="1"><span class="font16bold">ส่วนราชการ</span>&nbsp;&nbsp;<span
               class="font_size16"><input type="text" style="width: 160px;" name="name1" placeholder=""></span></td>
           <td class="" colspan="2" style="text-align:center;padding-left:-125px;" rowspan="1"><span
-              class="fs-6 fw-bold">โทร.</span>&nbsp;&nbsp;<span class="font_size16"><input type="text"
+              class="font_size16">โทร.</span>&nbsp;&nbsp;<span class="font_size16"><input type="text"
                 style="width: 300px;" name="name2"></span></td>
         </tr>
 
 
 
         <tr>
-          <td class="" colspan="1" rowspan="1"><span class="fs-6 fw-bold">ที่</span>&nbsp;&nbsp;<span
+          <td class="" colspan="1" rowspan="1"><span class="font16bold">ที่</span>&nbsp;&nbsp;<span
               class="font_size16"><input type="text" style="width: 230px;" name="name3"></span></td>
           <td class="" colspan="2" style="text-align:center;padding-left:-125px;" rowspan="1"><span
-              class="fs-6 fw-bold">วันที่</span>&nbsp;&nbsp;<span class="font_size16"><input type="text"
+              class="font16bold">วันที่</span>&nbsp;&nbsp;<span class="font_size16"><input type="text"
                 style="width: 300px;" name="name4"></span></td>
         </tr>
 
 
         <tr>
-          <td class="" colspan="3" rowspan="1"><span class="fs-6 fw-bold mt-2">เรื่อง</span>&nbsp;&nbsp; <span
+          <td class="" colspan="3" rowspan="1"><span class="font16bold mt-2">เรื่อง</span>&nbsp;&nbsp; <span
               class="font_size16"><input type="text" style="width: 800px;" name="name5"></span> </td>
         </tr>
 
         <tr>
-          <td colspan="3" rowspan="1"><span class="fs-6 fw-bold">เรียน</span>&nbsp;&nbsp; <span
+          <td colspan="3" rowspan="1"><span class="font16bold">เรียน</span>&nbsp;&nbsp; <span
               class="font_size16"><input type="text" style="width: 800px;" name="name6"></span> </td>
         </tr>
 
@@ -109,7 +109,7 @@
 
 
 
-let gArrayFonts = ['Roboto'];
+let gArrayFonts = ['THSarabunIT๙','thsarabun'];
   let fontSizes = ['8', '9', '10', '11', '12', '13', '14', '15', '16', '18', '20','21', '22', '24', '28', '32', '36', '40', '48']
   let lineHeights = ['0.2', '0.3', '0.4', '0.5', '0.6', '0.8', '1.0', '1.1', '1.2', '1.4', '1.5', '2.0', '3.0']
 
@@ -180,21 +180,22 @@ let gArrayFonts = ['Roboto'];
 
 
 <style type="text/css">
-  @font-face {
- font-family: 'Roboto';
- font-style: normal;
- font-weight: 400;
- src: local('Roboto'), local('Roboto-Regular'), url('../../../fonts/thsarabun//THSarabunNew001.ttf') format('woff2');
- unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
- }
+@font-face {
+  font-family: 'THSarabunIT๙';
+  src: url('../../../fonts/THSarabunIT๙/THSarabunIT๙.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thsarabun';
+  src: url('../../../fonts/thsarabun/THSarabunNew001.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
-  @font-face {
-    font-family: 'thsarabun';
-    src: url('../../../fonts/thsarabun-new/THSarabunNew001.ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
+
 
   .c50 {
     background-color: #ffffff;
@@ -335,6 +336,7 @@ let gArrayFonts = ['Roboto'];
   html,
   body {
     font-size: 16pt;
+    font-weight: 400;
     font-family: "thsarabun";
     line-height: 1.1;
   }
@@ -360,6 +362,13 @@ let gArrayFonts = ['Roboto'];
     font-family: "thsarabun";
     font-weight: bold;
   }
+
+  .font16bold {
+    font-size: 16pt;
+    font-family: "thsarabun";
+    font-weight: bold;
+  }
+
 
   .font_20 {
     font-size: 20pt;

@@ -129,13 +129,13 @@
       'lineHeights': lineHeights,
       dialogsInBody: true,
       toolbar: [
-        ['newParagraphThai', ['newParagraphThai']],
+        // ['newParagraphThai', ['newParagraphThai']],
         // [groupName, [list of button]]
         ['style', ['style', 'clear']],
         ['font', ['fontname', 'fontsize', 'fontsizeunit', 'height', 'bold', 'italic', 'forecolor', 'backcolor', 'underline', 'strikethrough', 'superscript', 'subscript']],
         ['misc', ['undo', 'redo']],
         ['color', ['color']],
-        ['para', ['ul', 'ol', 'paragraph']],
+        ['para', ['ul', 'ol', 'paragraph', 'newParagraphThai']],
         ['table', ['table']],
         // ['insert', ['link', 'picture', 'video', 'hr']],
         ['view', ['codeview', 'help']]
@@ -185,40 +185,6 @@
       //   }
       // },
 
-    //   buttons: {
-    //     newParagraphThai: function() {
-    //         var range = $.summernote.range();
-    //         console.log(range)
-
-    //         var dropdown = $('<div>', {
-    //             'class': 'dropdown-menu'
-    //         }).appendTo('body');
-
-    //         var sizes = [8, 10, 12, 14, 16, 18, 20, 24, 28, 32, 36, 40, 48, 56, 64, 72, 96];
-    //         $.each(sizes, function(idx, size) {
-    //             var link = $('<a>', {
-    //                 'href': '#',
-    //                 'class': 'dropdown-item',
-    //                 'text': size,
-    //                 'click': function(e) {
-    //                     e.preventDefault();
-    //                     document.execCommand('fontSize', false, size);
-    //                     dropdown.remove();
-    //                 }
-    //             }).appendTo(dropdown);
-    //         });
-
-    //         var button = $(this);
-    //         var offset = button.offset();
-    //         dropdown.css({
-    //             'top': offset.top + button.outerHeight(),
-    //             'left': offset.left
-    //         });
-    //         return button.render();
-    //     }
-    // },
-
-
 
       buttons: {
         newParagraphThai: function (context) {
@@ -231,22 +197,24 @@
             click: function () {
               // get current selection range
               // var range = context.invoke('editor.createRange');
-              var node = document.createElement('div');
-              let range = $.summernote.range;  // range utility
-              const ranges = range.createFromSelection(node)
-              ranges.select()
-         
-              console.log(ranges.select())
-              // if (range) {
-              //   // create new span element with custom styles
-              //   var newNode = document.createElement('span');
-              //   newNode.style.fontFamily = 'monospace';
-              //   newNode.style.fontWeight = 'bold';
 
-              //   // wrap selected content in new element
-              //   newNode.appendChild(range.extractContents());
-              //   range.insertNode(newNode);
-              // }
+              var range = $.summernote.range();
+
+console.log(range)
+
+
+
+              console.log(range)
+              if (range) {
+                // create new span element with custom styles
+                var newNode = document.createElement('span');
+                newNode.style.fontFamily = 'monospace';
+                newNode.style.fontWeight = 'bold';
+
+                // wrap selected content in new element
+                newNode.appendChild(range.extractContents());
+                range.insertNode(newNode);
+              }
             }
           });
 

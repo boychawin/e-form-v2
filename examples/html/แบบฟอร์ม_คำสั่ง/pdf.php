@@ -1,7 +1,6 @@
 <?php
 require_once '../../../vendor/autoload.php';
 include './pdf-form.php';
-$content = ob_get_clean();
 
 $mpdf = new \Mpdf\Mpdf();
 

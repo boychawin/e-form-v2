@@ -8,9 +8,10 @@ $data3 = $_POST['name3'];
 $data4 = $_POST['name4'];
 $data5 = $_POST['name5'];
 $data6 = $_POST['name6'];
-$data7 = isset($_POST['name7']) ? '('.$_POST['name7'].')' : '';
-$data8 = $_POST['name8'];
-$data9 = $_POST['name9'];
+$data7 = $_POST['name7'] ?? '';
+$data8 = isset($_POST['name8']) ? '('.$_POST['name8'].')' : '';
+$data9 = isset($_POST['name9']) ? $_POST['name9'] : '';
+$data10 = isset($_POST['name10']) ? $_POST['name10'] : '';
 
 $html = <<<EOD
 
@@ -62,6 +63,7 @@ $data2
 
 
 
+
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
 <tr >
   <td colspan="1" width="50%"> </td>
@@ -75,9 +77,9 @@ $data2
   <td colspan="1" width="50%"> </td>
 
   <td valign="top"  align="center"   colspan="2">
-    <p><span class="c16">$data7</span></p>
     <p><span class="c16">$data8</span></p>
     <p><span class="c16">$data9</span></p>
+    <p><span class="c16">$data10</span></p>
   </td>
 
 </tr>

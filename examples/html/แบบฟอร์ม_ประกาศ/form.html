@@ -13,7 +13,7 @@
   <form action="./pdf.php" method="POST">
     <div class="row">
       <div class="col-xs-6 text-left">
-        <button class="btn btn-sm btn-primary" type="submit" id="btn-reset">Export PDF</button>
+        <button class="btn btn-sm btn-primary" type="submit">Export PDF</button>
       </div>
     </div>
 
@@ -33,11 +33,11 @@
       </table>
       <p class="setMarginTop1"></p>
       <p class="center setMarginTop0 setMarginBottom0">
-        <span class="c4">ประกาศ&nbsp;&nbsp;<input required  name="name0" style="min-width: 300px;"
+        <span class="c4">ประกาศ&nbsp;&nbsp;<input required name="name0" style="min-width: 300px;"
             placeholder="สำนักงานสาธารณสุขอำเภอดำเนินสะดวก"> </span>
       </p>
       <p class="center setMarginTop0 setMarginBottom0">
-        <span class="c4">เรื่อง&nbsp;&nbsp;<input required  name="name1" style="min-width: 300px;"></span>
+        <span class="c4">เรื่อง&nbsp;&nbsp;<input required name="name1" style="min-width: 300px;"></span>
       </p>
       <p class="center setMarginTop0 setMarginBottom0">
         <span class="">---------------------------------------------------------</span>
@@ -47,98 +47,46 @@
       <div id="summernote"></div>
       <textarea hidden name="name2" id="editor"></textarea>
 
-
       <p class="indent25 setMarginTop1">
-        <span class="c8">ทั้งนี้&nbsp;&nbsp;ตั้งแต่&nbsp;<input required  name="name3"></span>
+        <span class="c8">ทั้งนี้&nbsp;&nbsp;ตั้งแต่&nbsp;<input required name="name3"></span>
       </p>
-
-
-
 
       <p class="setMarginTop2"></p>
 
       <p class="MsoNormal indent5 ">
-        <span class="c16">ประกาศ &nbsp;&nbsp;วันที่&nbsp;&nbsp;<input required  placeholder="วันที่ เดือน ปี"
+        <span class="c16">ประกาศ &nbsp;&nbsp;วันที่&nbsp;&nbsp;<input required placeholder="วันที่ เดือน ปี"
             name="name4">&nbsp;&nbsp;
         </span>
       </p>
 
       <p class="setMarginTop26pt"></p>
 
-      <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%">
-        <tr>
-          <td colspan="1" width="50%"> </td>
-          <td valign="top" style="text-align:left;" colspan="2">
-            <p><span class="c16"><select placeholder="ยศ" name="name6"><option selected value="นาย">นาย</option></select></span></p>
-          </td>
-          <td valign="top" style="text-align:left;" colspan="1" width="45%">
-            <p style="text-align:left;">
-              <span class="c16"><input required  name="name7" hidden value="xxxxxxxxxxxxxxxxx">&nbsp;&nbsp;&nbsp;&nbsp;ลายเซ็นต์</span>
-            <p><span class="c16"><input required  name="name8" placeholder="ชื่อเต็ม"></span></p>
-            <p><span class="c16"><input required  name="name9" placeholder="ตำแหน่ง"></span></p>
-            </p>
-        </tr>
-      </table> -->
-
-
-
-      <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%">
-        <tr>
-          <td colspan="1" width="50%"> </td>
-          <td valign="top" style="text-align:left;" colspan="2">
-            <p><span class="c16"><input required  type="text"  style="width: 120;" name="name6" placeholder="ยศ"></span></p>
-          </td>
-          <td valign="top" style="text-align:left;" colspan="1" width="44%">
-            <p>
-              <span class="c16"><input required  type="text"   name="name7" value="" placeholder="ลายเซ็นต์"></span>
-            <p><span class="c16"><input required  type="text"   name="name8" placeholder="ชื่อ-นามสกุล"></span></p>
-            <p><span class="c16"><input required  type="text"   name="name9" placeholder="ตำแหน่ง"></span></p>
-            <p><span class="c16"><input required  type="text"   name="name10" placeholder="อื่นๆ(ถ้ามี)"></span></p>
-            </p>
-        </tr>
-      </table> -->
-
-
       <table border="0" cellspacing="0" cellpadding="0" width="100%">
         <tr>
           <td colspan="1" width="50%"> </td>
           <td valign="top" style="text-align:left;" colspan="2">
-            <p><span class="c16"><input required  type="text" style="width: 120;" name="name6" placeholder="ยศ"></span></p>
+            <p><span class="c16"><input required type="text" style="width: 120;" name="name6" placeholder="ยศ"></span>
+            </p>
           </td>
           <td valign="top" style="text-align:left;" colspan="1" width="44%">
             <p>
-              <span class="c16"><input required  type="text" name="name7" value="" placeholder="ลายเซ็นต์"></span>
-            <p><span class="c16"><input required  type="text" name="name8" placeholder="ชื่อ-นามสกุล"></span></p>
-            <p><span class="c16"><input required  type="text" name="name9" placeholder="ตำแหน่ง"></span></p>
-            <p><span class="c16"><input   type="text" name="name10" placeholder="อื่นๆ(ถ้ามี)"></span></p>
+              <span class="c16"><input  type="text" name="name7" value="" placeholder="ลายเซ็นต์"></span>
+            <p><span class="c16"><input required type="text" name="name8" placeholder="ชื่อ-นามสกุล"></span></p>
+            <p><span class="c16"><input required type="text" name="name9" placeholder="ตำแหน่ง"></span></p>
+            <p><span class="c16"><input type="text" name="name10" placeholder="อื่นๆ(ถ้ามี)"></span></p>
             </p>
         </tr>
       </table>
 
-
-
-
-
-
-
-
-
     </div>
-
 
   </form>
 </body>
 
-
-
 <script src="../../editor/summernote.js"></script>
 <link href="../../editor/summernote.css" rel="stylesheet" />
 
-
-
 <style>
-
-
   .c50 {
     background-color: #ffffff;
     max-width: 621pt;

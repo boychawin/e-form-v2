@@ -3,7 +3,7 @@
 <?php
 $data1 = $_POST['name1'];
 $data2 = $_POST['name2'];
-$data3 = $_POST['name3'];
+$data3  = !empty($_POST['name3']) ? $_POST['name3'] : '' ;
 $data4 = $_POST['name4'];
 $data5 = $_POST['name5'];
 $data6 = $_POST['name6'];
@@ -45,8 +45,6 @@ $html = <<<EOD
 
 <p style="padding-top:64px" class="MsoNormal indent8" ><span  class="c16">&nbsp;$data4</span></p>
 <p class="MsoNormal indent10" ><span  class="c16">&nbsp;$data5</span></p>
-
-
 
     <p style="padding-top:64px" class="setMarginTop0"><span class="c6">$data6</span> </p>
     <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$data7</span></p>

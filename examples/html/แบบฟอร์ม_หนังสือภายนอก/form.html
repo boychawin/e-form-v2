@@ -15,7 +15,7 @@
 
     <div class="row">
       <div class="col-xs-6 text-left">
-        <button class="btn btn-sm btn-primary" type="submit" id="btn-reset">Export PDF</button>
+        <button class="btn btn-sm btn-primary" type="submit" >Export PDF</button>
       </div>
     </div>
     <hr>
@@ -66,14 +66,15 @@
 
       <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรื่อง&nbsp;&nbsp;<input required  name="name5"></p>
       <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรียน&nbsp;&nbsp;<input required  name="name6"></p>
-      <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">อ้างถึง&nbsp;&nbsp;<input required  name="name7"></p>
-      <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">สิ่งที่ส่งมาด้วย&nbsp;&nbsp;<textarea
-          style="min-width: 500px;" name="name8"></textarea></p>
+      <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">อ้างถึง&nbsp;&nbsp;<div id="summernote2"></div></p>
+      <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">สิ่งที่ส่งมาด้วย&nbsp;&nbsp;<div id="summernote3"></div></p>
 
 
       <div style="padding-top: 10px;"></div>
       <div id="summernote"></div>
       <textarea hidden name="name9" id="editor"></textarea>
+      <textarea hidden name="name7" id="editor2"></textarea>
+      <textarea hidden name="name8" id="editor3"></textarea>
 
       <p class="setMarginTop112pt "></p>
       <p class="MsoNormal indent8"><span class="c16">คำลงท้าย</span></p>
@@ -112,6 +113,44 @@
 
 <script src="../../editor/summernote.js"></script>
 <link href="../../editor/summernote.css" rel="stylesheet" />
+
+<script>
+  $("#summernote2").summernote({
+    // height: 250,
+    width: 591,
+    toolbar:false,
+    callbacks: {
+      onInit: function (e) {
+        $("#summernote2").summernote("code",sessionStorage.getItem("summernote2")
+        );
+      },
+      onChange: function (contents, $editable) {
+        var markup = $("#summernote2").summernote("code");
+        sessionStorage.setItem("summernote2",markup)
+        $("#editor2").val(markup);
+      },
+    },
+  });
+
+  $("#summernote3").summernote({
+    // height: 250,
+    width: 591,
+    toolbar:false,
+    callbacks: {
+      onInit: function (e) {
+        $("#summernote3").summernote("code",sessionStorage.getItem("summernote3")
+        );
+      },
+      onChange: function (contents, $editable) {
+        var markup = $("#summernote3").summernote("code");
+        sessionStorage.setItem("summernote3",markup)
+        $("#editor3").val(markup);
+      },
+    },
+  });
+
+</script>
+
 
 
 <style type="text/css">

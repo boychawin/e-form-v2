@@ -102,6 +102,11 @@ $html = <<<EOD
 
 <style type="text/css">
 
+.thai-istributed-class {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 
 html,body{
 

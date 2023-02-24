@@ -21,33 +21,44 @@ $namefile = $_POST['namefile'] ?? '../../../images/image31.png';
 
 $html = <<<EOD
 
+ 
+
+
+
+
     <table border="0" width="100%">
         <tr>
 
-        <td  style="text-align:left;padding-top:60px;" width="40%" colspan="1" rowspan="1">
-                <p ><span >เลขที่ &nbsp;$data1 </span></p>
+            <td  style="text-align:left;padding-top:70px;" width="250px" colspan="1" rowspan="1">
+                   
+                </td>
+
+                <td valign="top"   colspan="2" rowspan="2" style="text-align:center">
+                <p class="c9"><span class="span_image">
+                <img alt="logo" src="../../../images/image32.jpg" class="image_logo" > </span></p>
             </td>
-
-            <td  colspan="2" rowspan="1" style="text-align:center">
-            <p class="c9"><span class="span_image">
-            <img alt="logo" src="../../../images/image32.jpg" class="image_logo" > </span></p>
-        </td>
-
-<td colspan="1" width="15%" rowspan="1"></td>
-
-              <td valign="bottom"  style="text-align:right;padding-bottom:10px;"  width="25%" colspan="1" rowspan="1">
-              <p ><span >$data2</span></p>
+            <td valign="bottom"  style="text-align:right;padding-bottom:10px;"  width="125px" colspan="1" rowspan="1"></td>
+              <td valign="top"  style="text-align:left;padding-top:80px;"  width="125px" colspan="1" rowspan="1">
+             
              </td>
         </tr>
        
         <tr>
-        <td colspan="5" style="text-align:right;padding-top:-11px;"  rowspan="1">
-        <span >$data3</span>
-        </td>
-        </tr>
-
+        <td  valign="top"   colspan="1" rowspan="1">
+                <p ><span >เลขที่ &nbsp;$data1</span></p>
+            </td>
+        <td valign="top"  style="text-align:right;padding-bottom:10px;"  width="125px" colspan="1" rowspan="1"></td>
+          <td valign="top"  style="text-align:left;"  width="125px" colspan="1" rowspan="1">
+          <p ><span >$data2</span></p>
+         </td>
+    </tr>
+  
+    <tr>
+    <td colspan="5" style="text-align:right;padding-top:-11px;"  rowspan="1">
+    <span >$data3</span>
+    </td>
+    </tr>
     </table>
-
     <p style="margin-top:18px" class="setMarginTop1"></p>
 <p class="indent25 setMarginTop0"></p>
 $data4

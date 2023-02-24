@@ -29,34 +29,34 @@ $html = <<<EOD
         <tr>
 
             <td  style="text-align:left;padding-top:70px;" width="250px" colspan="1" rowspan="1">
-                    <p ><span >ที่ &nbsp;$data1</span></p>
+                   
                 </td>
 
-                <td  colspan="2" rowspan="1" style="text-align:center">
+                <td valign="top"   colspan="2" rowspan="2" style="text-align:center">
                 <p class="c9"><span class="span_image">
                 <img alt="logo" src="../../../images/image32.jpg" class="image_logo" > </span></p>
             </td>
-            <td valign="bottom"  style="text-align:right;padding-bottom:10px;"  width="125px" colspan="1" rowspan="1">
-             </td>
-              <td valign="bottom"  style="text-align:left;padding-bottom:7px;"  width="125px" colspan="1" rowspan="1">
-              <p ><span >$data2</span></p>
+            <td valign="bottom"  style="text-align:right;padding-bottom:10px;"  width="125px" colspan="1" rowspan="1"></td>
+              <td valign="top"  style="text-align:left;padding-top:80px;"  width="125px" colspan="1" rowspan="1">
+             
              </td>
         </tr>
        
         <tr>
-        <td colspan="4" rowspan="1">
-        </td>
-        <td colspan="1" style="text-align:left;padding-top:-10px" rowspan="1">
-        <span >$data3</span>
-        </td>
-        </tr>
-
-
+        <td  valign="top"   colspan="1" rowspan="1">
+                <p ><span >ที่ &nbsp;$data1</span></p>
+            </td>
+        <td valign="top"  style="text-align:right;padding-bottom:10px;"  width="125px" colspan="1" rowspan="1"></td>
+          <td valign="top"  style="text-align:left;"  width="125px" colspan="1" rowspan="1">
+          <p ><span >$data2</span></p>
+         </td>
+    </tr>
+  
         <tr >
-        <td  colspan="2" rowspan="1"></td>
-        <td  valign="bottom"  style="padding-left:40px;padding-top:6;" colspan="3" rowspan="1">
-        <p ><span >$data4</span></p>
-        </td>
+          <td  colspan="2" rowspan="1"></td>
+          <td  valign="bottom"  style="padding-left:40px;padding-top:6;" colspan="3" rowspan="1">
+          <p ><span >$data4</span></p>
+          </td>
         </tr>
     </table>
 

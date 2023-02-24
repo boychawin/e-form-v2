@@ -15,7 +15,7 @@
 
     <div class="row">
       <div class="col-xs-6 text-left">
-        <button class="btn btn-sm btn-primary" type="submit" >Export PDF</button>
+        <button class="btn btn-sm btn-primary" type="submit">Export PDF</button>
       </div>
     </div>
     <hr>
@@ -24,23 +24,16 @@
         <tr>
 
           <td style="text-align:left;padding-top:70px;" width="250px" colspan="1" rowspan="1">
-            <p><span>ที่ &nbsp;<input required  name="name1"></span></p>
+            <p><span>ที่ &nbsp;<input required name="name1"></span></p>
           </td>
-
           <td colspan="2" rowspan="1" style="text-align:center">
-            <p class="c9"><span class="span_image">
+            <p><span class="span_image">
                 <img alt="logo" src="../../../images/image32.jpg" class="image_logo"> </span></p>
           </td>
-
-
           <td valign="bottom" style="text-align:right;padding-bottom:10px;" width="125px" colspan="1" rowspan="1">
-
           </td>
-
-
-
-          <td valign="bottom" style="text-align:left;padding-bottom:7px;" width="125px" colspan="1" rowspan="1">
-            <p><span><input required  name="name2" placeholder="ส่วนราชการเจ้าของหนังสือ"></span></p>
+          <td valign="bottom" width="125px" colspan="1" rowspan="1">
+            <div id="summernote4"></div>
           </td>
         </tr>
 
@@ -48,33 +41,37 @@
           <td colspan="4" rowspan="1">
           </td>
           <td colspan="1" style="text-align:left;padding-top:-10px" rowspan="1">
-            <span><input required  name="name3" placeholder="ที่ตั้ง "></span>
+            <span>
+              <!-- <input required name="name3" placeholder="ที่ตั้ง "> -->
+            </span>
           </td>
         </tr>
-
 
         <tr>
           <td colspan="2" rowspan="1"></td>
           <td valign="bottom" style="padding-left:40px;padding-top:6;" colspan="3" rowspan="1">
-            <p><span><input required  name="name4" placeholder="เดือน ปี"></span></p>
+            <p><span><input required name="name4" placeholder="เดือน ปี"></span></p>
           </td>
         </tr>
       </table>
 
-
-
-
-      <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรื่อง&nbsp;&nbsp;<input required  name="name5"></p>
-      <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรียน&nbsp;&nbsp;<input required  name="name6"></p>
-      <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">อ้างถึง&nbsp;&nbsp;<div id="summernote2"></div></p>
-      <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">สิ่งที่ส่งมาด้วย&nbsp;&nbsp;<div id="summernote3"></div></p>
-
+      <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรื่อง&nbsp;&nbsp;<input required name="name5">
+      </p>
+      <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรียน&nbsp;&nbsp;<input required name="name6">
+      </p>
+      <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">อ้างถึง&nbsp;&nbsp;
+      <div id="summernote2"></div>
+      </p>
+      <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">สิ่งที่ส่งมาด้วย&nbsp;&nbsp;
+      <div id="summernote3"></div>
+      </p>
 
       <div style="padding-top: 10px;"></div>
       <div id="summernote"></div>
       <textarea hidden name="name9" id="editor"></textarea>
       <textarea hidden name="name7" id="editor2"></textarea>
       <textarea hidden name="name8" id="editor3"></textarea>
+      <textarea hidden name="name2" id="editor4"></textarea>
 
       <p class="setMarginTop112pt "></p>
       <p class="MsoNormal indent8"><span class="c16">คำลงท้าย</span></p>
@@ -84,32 +81,31 @@
         <tr>
           <td colspan="1" width="50%"> </td>
           <td valign="top" style="text-align:left;" colspan="2">
-            <p><span class="c16"><input required  type="text" style="width: 100px;" name="name12" placeholder="ยศ"></span></p>
+            <p><span class="c16"><input required type="text" style="width: 100px;" name="name12"
+                  placeholder="ยศ"></span></p>
           </td>
           <td valign="top" style="text-align:left;" colspan="1" width="44%">
             <p>
-              <span class="c16"><input required  type="text" name="name13" value="" placeholder="ลายเซ็นต์"></span>
-            <p><span class="c16"><input required  type="text" name="name14" placeholder="ชื่อ-นามสกุล"></span></p>
-            <p><span class="c16"><input required  type="text" name="name15" placeholder="ตำแหน่ง"></span></p>
+              <span class="c16"><input  type="text" name="name13" value="" placeholder="ลายเซ็นต์"></span>
+            <p><span class="c16"><input required type="text" name="name14" placeholder="ชื่อ-นามสกุล"></span></p>
+            <p><span class="c16"><input required type="text" name="name15" placeholder="ตำแหน่ง"></span></p>
             <p><span class="c16"><input type="text" name="name16" placeholder="อื่นๆ(ถ้ามี)"></span></p>
             </p>
         </tr>
       </table>
 
       <p class="setMarginTop16pt"></p>
-      <p class="setMarginTop0"><span class="c6"><input required  name="name17" placeholder="ส่วนราชการเจ้าของเรื่อง"></span> </p>
-      <p class="setMarginTop0"><span class="c6">โทร.&nbsp;<input required  name="name18"></span></p>
-      <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;<input required  name="name19"></span></p>
-      <p class="setMarginTop0"><span class="c6">โทร.&nbsp;<input required  name="name20"></span></p>
+      <p class="setMarginTop0"><span class="c6"><input  name="name17"
+            placeholder="ส่วนราชการเจ้าของเรื่อง"></span> </p>
+      <p class="setMarginTop0"><span class="c6">โทร.&nbsp;<input  name="name18"></span></p>
+      <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;<input  name="name19"></span></p>
+      <p class="setMarginTop0"><span class="c6">โทร.&nbsp;<input  name="name20"></span></p>
       <p class="setMarginTop16pt"></p>
-
 
     </div>
 
   </form>
 </body>
-
-
 
 <script src="../../editor/summernote.js"></script>
 <link href="../../editor/summernote.css" rel="stylesheet" />
@@ -118,36 +114,52 @@
   $("#summernote2").summernote({
     // height: 250,
     width: 591,
-    toolbar:false,
+    toolbar: false,
     callbacks: {
       onInit: function (e) {
-        $("#summernote2").summernote("code",sessionStorage.getItem("summernote2")
+        $("#summernote2").summernote("code", sessionStorage.getItem("summernote2")
         );
       },
       onChange: function (contents, $editable) {
         var markup = $("#summernote2").summernote("code");
-        sessionStorage.setItem("summernote2",markup)
+        sessionStorage.setItem("summernote2", markup)
         $("#editor2").val(markup);
       },
     },
   });
 
   $("#summernote3").summernote({
-    // height: 250,
     width: 591,
-    toolbar:false,
+    toolbar: false,
     callbacks: {
       onInit: function (e) {
-        $("#summernote3").summernote("code",sessionStorage.getItem("summernote3")
+        $("#summernote3").summernote("code", sessionStorage.getItem("summernote3")
         );
       },
       onChange: function (contents, $editable) {
         var markup = $("#summernote3").summernote("code");
-        sessionStorage.setItem("summernote3",markup)
+        sessionStorage.setItem("summernote3", markup)
         $("#editor3").val(markup);
       },
     },
   });
+
+  $("#summernote4").summernote({
+    width: 120,
+    toolbar: false,
+    callbacks: {
+      onInit: function (e) {
+        $("#summernote4").summernote("code", sessionStorage.getItem("summernote4")
+        );
+      },
+      onChange: function (contents, $editable) {
+        var markup = $("#summernote4").summernote("code");
+        sessionStorage.setItem("summernote4", markup)
+        $("#editor4").val(markup);
+      },
+    },
+  });
+
 
 </script>
 
@@ -180,16 +192,7 @@
     padding: 0
   }
 
-  .c9 {
-    margin-left: -154pt;
-    padding-top: 0pt;
-    padding-bottom: 0pt;
-    line-height: 1.0;
-    orphans: 2;
-    widows: 2;
-    text-align: center;
-    margin-right: -189.7pt
-  }
+
 
   .c8 {
     color: #000000;
@@ -369,27 +372,13 @@
 
 
   p.MsoNormal {
-    mso-style-unhide: no;
-    mso-style-qformat: yes;
-    mso-style-parent: "";
     margin-top: 0cm;
     margin-right: 0cm;
     margin-bottom: 10.0pt;
     margin-left: 0cm;
     line-height: 115%;
-    mso-pagination: widow-orphan;
     font-size: 16.0pt;
-    mso-bidi-font-size: 16.0pt;
     font-family: "THSarabun", sans-serif;
-    mso-ascii-font-family: 'THSarabun';
-    mso-ascii-theme-font: minor-latin;
-    mso-fareast-font-family: 'THSarabun';
-    mso-fareast-theme-font: minor-latin;
-    mso-hansi-font-family: 'THSarabun';
-    mso-hansi-theme-font: minor-latin;
-    mso-bidi-font-family: "THSarabun";
-    mso-bidi-theme-font: minor-bidi;
-    mso-ansi-language: EN-US;
   }
 
 
@@ -420,7 +409,6 @@
     margin-left: 0cm;
     text-indent: 5cm;
     line-height: 1.1;
-    tab-stops: center 339.05pt;
   }
 
   .span_image {

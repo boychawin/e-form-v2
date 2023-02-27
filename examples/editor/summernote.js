@@ -20,6 +20,7 @@ let $sumNote = $("#summernote")
     dialogsInBody: true,
     toolbar: [
       ['newParagraphThai', ['newParagraphThai']],
+      ['newParagraph', ['newParagraph']],
       // [groupName, [list of button]]
       ['style', ['style', 'clear']],
       ['font', ['fontname', 'fontsize', 'fontsizeunit', 'height', 'bold', 'italic', 'forecolor', 'backcolor', 'underline', 'strikethrough', 'superscript', 'subscript']],
@@ -40,14 +41,38 @@ let $sumNote = $("#summernote")
           tooltip: 'Bold Code',
           click: function (e) {
 
-
             var editor = $('#summernote');
             var range = $.summernote.range.create(editor[0]);
             range.select();
 
-            document.execCommand('styleWithCSS', false, true);
-            document.execCommand('justifyFull', false, 'distribute');
-            document.execCommand('justifyFull', false, 'justify');
+            document.execCommand('styleWithCSS', true, true);
+            document.execCommand('justifyFull', true, 'distribute');
+            document.execCommand('justifyFull', true, 'justify');
+
+          }
+        });
+
+        // add button to toolbar
+        return button.render();
+      },
+      newParagraph: function (context) {
+        var ui = $.summernote.ui;
+
+        // create button
+        var button = ui.button({
+          contents: '<i class="fa fa-bold"></i> New',
+          tooltip: 'New',
+          click: function (e) {
+
+            var editor = $('#summernote');
+            var range = $.summernote.range.create(editor[0]);
+            range.select();
+            document.addEventListener("keydown", function (event) {
+              if (event.code === "Space") {
+                event.preventDefault();
+                document.execCommand("insertText", false, "\u00a0");
+              }
+            });
 
           }
         });

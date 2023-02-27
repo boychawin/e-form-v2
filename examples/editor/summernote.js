@@ -41,15 +41,40 @@ let $sumNote = $("#summernote")
           tooltip: 'Thai Distributed',
           click: function (e) {
 
+
+
             var editor = $('#summernote');
             var range = $.summernote.range.create(editor[0]);
             range.select();
 
-            document.execCommand('styleWithCSS', true, true);
-            document.execCommand('justifyFull', true, 'distribute');
-            document.execCommand('justifyFull', true, 'justify');
-            document.execCommand('justifyDistribute', false, null);
+            var style = {
+              backgroundColor: 'yellow',
+              color: 'blue',
+              fontSize: '24px'
+            };
 
+            var styleNode = document.createElement('span');
+            styleNode.style.cssText = Object.keys(style).map(function (key) {
+              return key + ':' + style[key];
+            }).join(';');
+
+            // Update the style of the node
+            styleNode.style.backgroundColor = 'red';
+            styleNode.style.color = 'white';
+            styleNode.style.fontSize = '16px';
+
+
+
+
+            //select id
+            // var selected = $('.note-editable').find('.note-editable')
+
+
+            // document.execCommand('styleWithCSS', true, true);
+            // // document.execCommand('justifyFull', true, 'distribute');
+            // // document.execCommand('justifyFull', true, 'justify');
+            // // document.execCommand('justifyDistribute', false, null);
+            // document.execCommand('formatblock', false, 'p')
           }
         });
 
@@ -76,8 +101,6 @@ let $sumNote = $("#summernote")
         return button.render();
       }
     },
-
-
 
     callbacks: {
       onInit: function (e) {

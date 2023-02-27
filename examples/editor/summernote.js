@@ -37,8 +37,8 @@ let $sumNote = $("#summernote")
 
         // create button
         var button = ui.button({
-          contents: '<i class="fa fa-bold"></i> Thai',
-          tooltip: 'Bold Code',
+          contents: '<i class="fa fa-bold"></i> Thai Distributed   ',
+          tooltip: 'Thai Distributed',
           click: function (e) {
 
             var editor = $('#summernote');
@@ -48,6 +48,7 @@ let $sumNote = $("#summernote")
             document.execCommand('styleWithCSS', true, true);
             document.execCommand('justifyFull', true, 'distribute');
             document.execCommand('justifyFull', true, 'justify');
+            document.execCommand('justifyDistribute', false, null);
 
           }
         });
@@ -60,20 +61,14 @@ let $sumNote = $("#summernote")
 
         // create button
         var button = ui.button({
-          contents: '<i class="fa fa-bold"></i> New',
+          contents: '<i class="fa fa-bold"></i> New Paragraph',
           tooltip: 'New',
           click: function (e) {
 
             var editor = $('#summernote');
             var range = $.summernote.range.create(editor[0]);
             range.select();
-            document.addEventListener("keydown", function (event) {
-              if (event.code === "Space") {
-                event.preventDefault();
-                document.execCommand("insertText", false, "\u00a0");
-              }
-            });
-
+            document.execCommand("insertText", true, "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0");
           }
         });
 

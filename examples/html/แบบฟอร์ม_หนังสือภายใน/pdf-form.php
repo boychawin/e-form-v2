@@ -38,12 +38,7 @@ $html = <<<EOD
     <span class="font_size16">$data1&nbsp;&nbsp;โทร.&nbsp;$data2</span>
     
     </td>
-  
     </tr>
-
-
-
-
       <tr>
     <td class="exactly_1" colspan="1"rowspan="1"><span class="font20bold">ที่</span>&nbsp;&nbsp;<span class="font_size16">$data3</span></td>
    <td class="exactly_1" colspan="2" style="text-align:center;padding-left:-125px;" rowspan="1"><span class="font20bold">วันที่</span>&nbsp;&nbsp;<span class="font_size16">$data4</span></td>
@@ -61,14 +56,9 @@ $html = <<<EOD
 
 </table>
 
-
-
-
 <p style="margin-top:10px" class=" setMarginTop0 setMarginBottom0"><span class="c8">$data7</span></p>
 <p style="margin-top:10px" class=" setMarginTop0 setMarginBottom0"><span class="c8">$data8</span></p>
 <p style="margin-top:10px" class=" setMarginTop0 setMarginBottom0"><span class="c8">$data9</span></p>
-
-
 
 <p class="setMarginTop112pt "></p>
 

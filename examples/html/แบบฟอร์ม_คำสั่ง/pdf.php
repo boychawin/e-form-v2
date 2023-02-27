@@ -21,11 +21,11 @@ $mpdfConfig = array(
     'margin_footer' => 0,
     'orientation' => 'P',
     'fontDir' => array_merge($fontDirs, [
-        __DIR__ . '/../../../fonts/thsarabun',
+        __DIR__ . '/../../../fonts/THSarabunIT๙',
     ]),
     'fontdata' => $fontData + [
         'thsarabun' => [
-            'R' => 'THSarabunNew001.ttf',
+            'R' => 'THSarabunIT๙.ttf',
             //'I' => 'THSarabunNew Italic.ttf',
             //'B' => 'THSarabunNew Bold.ttf',
         ],

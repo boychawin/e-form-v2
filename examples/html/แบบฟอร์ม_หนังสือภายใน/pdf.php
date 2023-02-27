@@ -13,7 +13,7 @@ $fontData = $defaultFontConfig['fontdata'];
 $mpdfConfig = array(
     'mode' => 'utf-8',
     'format' => 'A4',
-    'default_font_size' => 16, 
+    'default_font_size' => 16,
     'margin_left' => 30,
     'margin_right' => 20,
     'margin_top' => 20,
@@ -22,13 +22,13 @@ $mpdfConfig = array(
     'margin_footer' => 0,
     // 'orientation' => 'P',
     'fontDir' => array_merge($fontDirs, [
-        __DIR__ . '/../../../fonts/thsarabun',
+        __DIR__ . '/../../../fonts/THSarabunIT๙',
     ]),
     'fontdata' => $fontData + [
         'thsarabun' => [
-            'R' => 'THSarabunNew001.ttf',
+            'R' => 'THSarabunIT๙.ttf',
             //'I' => 'THSarabunNew Italic.ttf',
-            'B' => 'THSarabunNewBold001.ttf',
+            'B' => 'THSarabunIT๙ Bold.ttf',
         ],
     ],
     'default_font' => 'thsarabun',

@@ -46,34 +46,8 @@ let $sumNote = $("#summernote")
             range.select();
 
             document.execCommand('styleWithCSS', false, true);
-document.execCommand('hiliteColor', false, '#ffcc00');
-
-            document.execCommand('bold',"color:aqua;", "color:aqua;");
-            document.execCommand('styleWithCSS', false, true);
-            document.execCommand('justifyCenter', false, true);
-            // document.execCommand('color', false, '#333');
-            // document.execCommand('textAlign', false, 'justify');
-            // document.execCommand('textJustify', false, 'inter-word');
-
-            // var selectedText = $('#summernote').summernote('getSelectedText');
-            // console.log(selectedText); 
-            // var range = $('#summernote').summernote('createRange');
-
-            // if (range) {
-            //   // create new span element with custom styles
-
-            //   var node = $('<div/>').addClass('thai-istributed-class').text(range)[0];
-            //   // range.insertNode(node);
-            //   $('#summernote').summernote('pasteHTML', node);
-            //   // range.deleteContents();
-
-
-
-            // }
-
-
-
-
+            document.execCommand('justifyFull', false, 'distribute');
+            document.execCommand('justifyFull', false, 'justify');
 
           }
         });

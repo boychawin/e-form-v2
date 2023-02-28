@@ -66,11 +66,9 @@ $data4
 
 <p  style="margin-top:26px" class="MsoNormal indent5 " >
   <span  class="c16"
-    >ให้ไว้&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ณ
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;$data5&nbsp;&nbsp;$data6
+    >ให้ไว้&nbsp;&nbsp;ณ
+    &nbsp;&nbsp;วันที่
+    &nbsp;&nbsp;$data5&nbsp;&nbsp;$data6
 </span>
 </p>
 

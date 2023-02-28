@@ -41,8 +41,6 @@ let $sumNote = $("#summernote")
           tooltip: 'Thai Distributed',
           click: function (e) {
 
-
-
             var editor = $('#summernote');
             var range = $.summernote.range.create(editor[0]);
             range.select();
@@ -63,12 +61,8 @@ let $sumNote = $("#summernote")
             styleNode.style.color = 'white';
             styleNode.style.fontSize = '16px';
 
-
-
-
             //select id
             // var selected = $('.note-editable').find('.note-editable')
-
 
             // document.execCommand('styleWithCSS', true, true);
             // // document.execCommand('justifyFull', true, 'distribute');

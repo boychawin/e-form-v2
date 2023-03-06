@@ -3,7 +3,7 @@ require_once '../../../vendor/autoload.php';
 include('./pdf-form.php');
 
 
-$footerNumber = $_POST['footerNumber'] ?? '';
+$footerNumber = $_POST['footerNumber'] ?? [];
 
 
 $mpdf = new \Mpdf\Mpdf();
@@ -13,9 +13,6 @@ $fontDirs = $defaultConfig['fontDir'];
 
 $defaultFontConfig = (new Mpdf\Config\FontVariables())->getDefaults();
 $fontData = $defaultFontConfig['fontdata'];
-
-
-
 
 
 $mpdfConfig = array(
@@ -53,7 +50,7 @@ $mpdfConfig = array(
         ],
     ],
     'default_font' => 'thsarabun',
-    
+
 );
 $mpdf = new \Mpdf\Mpdf($mpdfConfig);
 
@@ -61,12 +58,13 @@ $mpdf = new \Mpdf\Mpdf($mpdfConfig);
 
 $mpdf->SetHTMLHeader('
 <table width="100%">
-    <tr>
-        <td width="33%"></td>
-        <td width="33%" align="center">-{PAGENO}-</td>
-        <td width="33%" style="text-align: right;"></td>
-    </tr>
-</table>','');
+<tr>
+    <td width="33%"></td>
+    <td width="33%" align="center">-{PAGENO}-</td>
+    <td width="33%" style="text-align: right;"></td>
+</tr>
+</table>', '');
+
 
 
 $mpdf->SetHTMLFooter('
@@ -74,14 +72,20 @@ $mpdf->SetHTMLFooter('
     <tr>
         <td width="33%"></td>
         <td width="33%" align="center"></td>
-        <td width="33%" style="text-align: right;">'.$footerNumber[0].' </td>
+        <td width="33%" style="text-align: right;">2 </td>
     </tr>
-</table>','');
+</table>', '');
 
+
+
+
+
+
+
+ 
 
 
 $mpdf->WriteHTML($html);
 
 
 $mpdf->Output();
-

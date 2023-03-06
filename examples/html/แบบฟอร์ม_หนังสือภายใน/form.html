@@ -144,7 +144,18 @@
 
   </form>
 </body>
+<pageheader name="MyHeader1" content-right="My document"
+header-style="font-weight: bold; color: #000000;" line="on" />
+<pagefooter name="MyFooter1" content-left="{DATE j-m-Y}"
+content-center="{PAGENO}/{nbpg}" footer-style="font-size: 8pt;" />
+<pageheader name="MyHeader2" content-right="Chapter 2"
+header-style="font-weight: bold; color: #000000;" line="on" />
+<pagefooter name="MyFooter2" content-left="{DATE j-m-Y}"
+content-center="2: {PAGENO}" footer-style="font-size: 8pt;" />
 
+<div>Here is the text of the first chapter</div>
+<div class="chapter2">Text of Chapter 2</div>
+<div class="noheader">No-Header page</div>
 
 <script src="../../editor/summernote.js"></script>
 <link href="../../editor/summernote.css" rel="stylesheet" />

@@ -91,14 +91,13 @@ $html = <<<EOD
 
 
 
-<style type="text/css">
 
+<style type="text/css">
 
 
 .hidden {
   display: none;
   visibility: hidden;
-
 }
 
 html,body{

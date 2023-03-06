@@ -1,0 +1,79 @@
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+<!-- component -->
+<div class="py-12">
+  <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+      <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+          <div class="p-6 bg-white border-b border-gray-200">
+              <form method="POST" action="pdf.php">
+             
+
+                  <div class="mb-4">
+                      <label class="text-xl text-gray-600">Description</label></br>
+                      <input type="text" class="border-2 border-gray-300 p-2 w-full" name="description" id="description" placeholder="(Optional)">
+                  </div>
+
+                  <div class="mb-8">
+                      <label class="text-xl text-gray-600">Content <span class="text-red-500">*</span></label></br>
+                      <textarea name="name7" class="border-2 border-gray-500">
+                          
+                      </textarea>
+                  </div>
+
+                  <div class="flex p-1">
+                      <select class="border-2 border-gray-300 border-r p-2" name="action">
+                          <option>Save and Publish</option>
+                          <option>Save Draft</option>
+                      </select>
+                      <button role="submit" class="p-3 bg-blue-500 text-white hover:bg-blue-400" required>Submit</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+
+<script>
+
+CKEDITOR.replace('name7', {
+    // width: 617,
+    hight: 1217,
+    // font_names: 'FontName/Font Name;' + CKEDITOR.config.font_names
+});
+
+
+CKEDITOR.editorConfig = function(config) {
+    // Add custom font path to font_names property
+    config.font_names = 'THSarabun/THSarabun@url(../../fonts/THSarabunIT๙/THSarabunIT๙.ttf);' + config.font_names;
+
+    // Set the default font and font size
+    config.font_defaultLabel = 'THSarabun';
+    config.fontSize_defaultLabel = '36px';
+
+    // Add the "Font" dropdown menu to the toolbar
+    config.toolbar = [
+        { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
+        { name: 'colors', items: [ 'TextColor', 'BGColor' ] }
+    ];
+};
+
+var editor = CKEDITOR.instances.editor1;
+    editor.on('change', function() {
+        var content = editor.getData();
+        localStorage.setItem('editorContent', content);
+    });
+
+    // Retrieve content from localStorage when page loads
+    window.addEventListener('load', function() {
+        var content = localStorage.getItem('editorContent');
+        if (content) {
+            editor.setData(content);
+        }
+    });
+
+</script>
+
+

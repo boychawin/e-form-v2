@@ -25,6 +25,40 @@
     </div>
     <hr>
     <div style="margin-top: 10px;">
+
+
+
+
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Insert Content</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="myForm">
+                <div class="form-group">
+                  <label for="myInput">Content:</label>
+                  <input type="text" class="form-control" id="myInput">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" id="btn-submit-content" form="myForm" class="btn btn-primary">Insert</button>
+                </div>
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      
+
+      
+
+
       <table width="100%" border="0">
         <tr>
           <td class="" width="250" colspan="1" rowspan="1">
@@ -117,9 +151,15 @@
 
 <style type="text/css">
 
-.test{
-  color:aqua;
+.thai-istributed-class {
+  /* text-justify: inter-word; */
+  margin-bottom:0cm;
+  text-align:justify;
+  text-justify:inter-cluster;
+
+
 }
+
 
 
   .c50 {
@@ -446,14 +486,7 @@
     -webkit-transform: rotate(0rad) translateZ(0px);
   }
 
-  .indent25 {
-    text-indent: 2.5cm;
-    padding-bottom: 0pt;
-    text-align: justify;
-    orphans: 2;
-    widows: 2;
 
-  }
 </style>
 
 

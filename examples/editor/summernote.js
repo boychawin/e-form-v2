@@ -2,12 +2,13 @@
 let gArrayFonts = ['THSarabunIT๙', 'THSarabun'];
 let fontSizes = ['8', '9', '10', '11', '12', '13', '14', '15', '16', '18', '20', '21', '22', '24', '28', '32', '36', '40', '48']
 let lineHeights = ['0.2', '0.3', '0.4', '0.5', '0.6', '0.8', '1.0', '1.1', '1.2', '1.4', '1.5', '2.0', '3.0']
+let nb = '\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0';
 
 let $sumNote = $("#summernote")
   .summernote({
     styleTags: ['div', 'blockquote'],
-    height: 250,
-    width: 621,
+    height: 500,
+    // width: 617.15,
     placeholder: "ใส่เนื้อหาที่นี่",
     codemirror: {
       // codemirror options
@@ -19,8 +20,10 @@ let $sumNote = $("#summernote")
     'lineHeights': lineHeights,
     dialogsInBody: true,
     toolbar: [
-      ['newParagraphThai', ['newParagraphThai']],
+      // ['newParagraphThai', ['newParagraphThai']],
       ['newParagraph', ['newParagraph']],
+      ['addNewTopic', ['addNewTopic']],
+      ['AddNewParagraph', ['AddNewParagraph']],
       // [groupName, [list of button]]
       ['style', ['style', 'clear']],
       ['font', ['fontname', 'fontsize', 'fontsizeunit', 'height', 'bold', 'italic', 'forecolor', 'backcolor', 'underline', 'strikethrough', 'superscript', 'subscript']],
@@ -65,9 +68,9 @@ let $sumNote = $("#summernote")
             // var selected = $('.note-editable').find('.note-editable')
 
             // document.execCommand('styleWithCSS', true, true);
-            // // document.execCommand('justifyFull', true, 'distribute');
-            // // document.execCommand('justifyFull', true, 'justify');
-            // // document.execCommand('justifyDistribute', false, null);
+            // document.execCommand('justifyFull', true, 'distribute');
+            // document.execCommand('justifyFull', true, 'justify');
+            // document.execCommand('justifyDistribute', false, null);
             // document.execCommand('formatblock', false, 'p')
           }
         });
@@ -75,6 +78,47 @@ let $sumNote = $("#summernote")
         // add button to toolbar
         return button.render();
       },
+      addNewTopic: function (context) {
+        var ui = $.summernote.ui;
+
+        // create button
+        var button = ui.button({
+          contents: '<i class="fa fa-bold"></i> + เพิ่มหัวข้อใหม่',
+          tooltip: 'เพิ่มหัวข้อใหม่',
+          click: function (e) {
+
+            $('#myModal').modal('show');
+            // Insert content into editor on form submission
+           
+
+
+
+          }
+        });
+
+        // add button to toolbar
+        return button.render();
+      },
+      AddNewParagraph: function (context) {
+        var ui = $.summernote.ui;
+
+        // create button
+        var button = ui.button({
+          contents: '<i class="fa fa-bold"></i> + เพิ่มย่อหน้าใหม่',
+          tooltip: 'เพิ่มย่อหน้าใหม่',
+          click: function (e) {
+
+            var editor = $('#summernote');
+            var range = $.summernote.range.create(editor[0]);
+            range.select();
+            document.execCommand("insertText", true, "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0");
+          }
+        });
+
+        // add button to toolbar
+        return button.render();
+      },
+
       newParagraph: function (context) {
         var ui = $.summernote.ui;
 
@@ -122,13 +166,13 @@ let $sumNote = $("#summernote")
 //   $('.note-editable').css('line-height', 'Distributed');
 // })
 //get
-// $("#btn-get-content").on("click", function () {
-//   var y = $($sumNote.code());
+$("#btn-submit-content").on("click", function () {
+  var content = $('#myInput').val();
+  var html = '<p  class="MsoNormal" style="text-align:justify;text-justify:inter-cluster"> <span lang="TH"  class="thai-istributed-class">' + nb+content + '</span> </p>';
+  $('#summernote').summernote('pasteHTML', html);
+  $('#myModal').modal('hide');
 
-//   console.log(y[0]); console.log(y.find("p"));
-//   var x = y.find("<p>").remove();
-
-// });
+});
 
 //reset
 $("#btn-reset").on("click", function () {

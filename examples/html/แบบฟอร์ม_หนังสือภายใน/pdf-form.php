@@ -1,19 +1,20 @@
 <?php
 
-$data1 = $_POST['name1'];
-$data2 = $_POST['name2'];
-$data3 = $_POST['name3'];
-$data4 = $_POST['name4'];
-$data5 = $_POST['name5'];
-$data6 = $_POST['name6'];
-$data7 = $_POST['name7'];
-$data8 = $_POST['name8'];
-$data9 = $_POST['name9'];
-$data10 = $_POST['name10'];
-$data11 = $_POST['name11'];
-$data12 = isset($_POST['name12']) ? '('.$_POST['name12'].')' : '';
-$data13 = $_POST['name13'];
-$data14 = $_POST['name14'];
+$data1 = $_POST['name1'] ?? '';
+$data2 = $_POST['name2'] ?? '';
+$data3 = $_POST['name3'] ?? '';
+$data4 = $_POST['name4'] ?? '';
+$data5 = $_POST['name5'] ?? '';
+$data6 = $_POST['name6'] ?? '';
+$data7 = $_POST['name7'] ?? '';
+$data8 = $_POST['name8'] ?? '';
+$data9 = $_POST['name9'] ?? '';
+$data10 = $_POST['name10'] ?? '';
+$data11 = $_POST['name11'] ?? '';
+$data12 = isset($_POST['name12']) ? '(' . $_POST['name12'] . ')' : '';
+$data13 = $_POST['name13'] ?? '';
+$data14 = $_POST['name14'] ?? '';
+
 $html = <<<EOD
 
   <table width="100%" border="0">
@@ -56,6 +57,8 @@ $html = <<<EOD
 
 </table>
 
+
+
 <p style="margin-top:10px" class=" setMarginTop0 setMarginBottom0"><span class="c8">$data7</span></p>
 <p style="margin-top:10px" class=" setMarginTop0 setMarginBottom0"><span class="c8">$data8</span></p>
 <p style="margin-top:10px" class=" setMarginTop0 setMarginBottom0"><span class="c8">$data9</span></p>
@@ -92,10 +95,6 @@ $html = <<<EOD
 
 <style type="text/css">
 
-.thai-istributed-class {
-  text-align: justify;
-  text-justify: inter-word;
-}
 
 
 html,body{
@@ -368,21 +367,14 @@ html,body{
                     -webkit-transform: rotate(0rad) translateZ(0px);
   }
 
-  .indent25 {
-
-    padding-bottom: 0pt;
+ 
+  .thai-istributed-class {
     text-align:justify;
-    orphans: 2;
-    widows: 2;
-
+    text-justify:inter-cluster;
   }
-
+  
+  
 
 
 </style>
 EOD;
-
-
-
-?>
-

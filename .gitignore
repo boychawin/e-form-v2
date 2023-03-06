@@ -1,2 +1,4 @@
 ./vendor/
 /opt/homebrew/Cellar
+vendor/
+vendor

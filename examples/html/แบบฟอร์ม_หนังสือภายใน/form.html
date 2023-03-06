@@ -20,7 +20,7 @@
   <form action="./pdf.php" method="post">
     <div class="row">
       <div class="col-xs-6 text-left">
-        <button class="btn btn-sm btn-primary" type="submit" >Export PDF</button>
+        <button class="btn btn-sm btn-primary" type="submit">Export PDF</button>
       </div>
     </div>
     <hr>
@@ -50,13 +50,13 @@
                 </div>
               </form>
             </div>
-           
+
           </div>
         </div>
       </div>
-      
 
-      
+
+
 
 
       <table width="100%" border="0">
@@ -113,7 +113,7 @@
         <tr>
           <td colspan="1" width="50%"> </td>
           <td valign="top" style="text-align:left;" colspan="2">
-            <p><span class="c16"><input  type="text" style="width: 120;" name="name10" placeholder="ยศ"></span>
+            <p><span class="c16"><input type="text" style="width: 120;" name="name10" placeholder="ยศ"></span>
             </p>
           </td>
           <td valign="top" style="text-align:left;" colspan="1" width="44%">
@@ -128,7 +128,7 @@
 
 
     </div>
-<!-- 
+    <!-- 
     <div class="row">
 
       <div class="col-xs-6 text-left">
@@ -150,15 +150,31 @@
 <link href="../../editor/summernote.css" rel="stylesheet" />
 
 <style type="text/css">
+  .thai-istributed-class {
+    /* text-justify: inter-word; */
+    margin-bottom: 0cm;
+    text-align: justify;
+    text-justify: inter-cluster;
 
-.thai-istributed-class {
-  /* text-justify: inter-word; */
-  margin-bottom:0cm;
-  text-align:justify;
-  text-justify:inter-cluster;
+
+  }
+
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+
+  .text-container {
+    height: 210mm;
+    overflow: visible;
+    page-break-before: always;
+    border: 1px solid black;
+    border-color: red;
+    padding: 10px;
 
 
-}
+  }
+
 
 
 
@@ -485,8 +501,6 @@
     transform: rotate(0rad) translateZ(0px);
     -webkit-transform: rotate(0rad) translateZ(0px);
   }
-
-
 </style>
 
 

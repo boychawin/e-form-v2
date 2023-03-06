@@ -8,7 +8,7 @@ let $sumNote = $("#summernote")
   .summernote({
     styleTags: ['div', 'blockquote'],
     height: 500,
-    // width: 617.15,
+    width: 645,
     placeholder: "ใส่เนื้อหาที่นี่",
     codemirror: {
       // codemirror options
@@ -24,6 +24,7 @@ let $sumNote = $("#summernote")
       ['newParagraph', ['newParagraph']],
       ['addNewTopic', ['addNewTopic']],
       ['AddNewParagraph', ['AddNewParagraph']],
+      ['AddPage', ['AddPage']],
       // [groupName, [list of button]]
       ['style', ['style', 'clear']],
       ['font', ['fontname', 'fontsize', 'fontsizeunit', 'height', 'bold', 'italic', 'forecolor', 'backcolor', 'underline', 'strikethrough', 'superscript', 'subscript']],
@@ -107,7 +108,6 @@ let $sumNote = $("#summernote")
           contents: '<i class="fa fa-bold"></i> + เพิ่มย่อหน้าใหม่',
           tooltip: 'เพิ่มย่อหน้าใหม่',
           click: function (e) {
-
             var editor = $('#summernote');
             var range = $.summernote.range.create(editor[0]);
             range.select();
@@ -118,6 +118,28 @@ let $sumNote = $("#summernote")
         // add button to toolbar
         return button.render();
       },
+
+      AddPage: function (context) {
+        var ui = $.summernote.ui;
+
+        // create button
+        var button = ui.button({
+          contents: '<i class="fa fa-bold"></i> + Add Page',
+          tooltip: 'AddPage',
+          click: function (e) {
+            var editor = $('#summernote');
+            var range = $.summernote.range.create(editor[0]);
+            range.select();
+            html = '<div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div><div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div><div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div><div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div><div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div><div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div><div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div><div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div>';
+            document.execCommand("insertHTML", true, html);
+          }
+        });
+
+        // add button to toolbar
+        return button.render();
+      },
+
+
 
       newParagraph: function (context) {
         var ui = $.summernote.ui;
@@ -141,6 +163,12 @@ let $sumNote = $("#summernote")
     },
 
     callbacks: {
+      onAfterInsert: function(html) {
+        // Add a page break after every 10 elements
+        html = html.replace(/(<div>[^<]*<\/div>\s*){10}/g, '$&<div style="page-break-before: always; border: 1px solid black; border-color: red; padding: 10px;"></div>');
+        return html;
+    },
+
       onInit: function (e) {
         $("#summernote").summernote("code", sessionStorage.getItem("summernote")
         );

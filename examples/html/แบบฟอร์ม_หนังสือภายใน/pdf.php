@@ -34,19 +34,19 @@ $mpdfConfig = array(
             'R' => 'THSarabunIT๙.ttf', // Regular font
             'B' => 'THSarabunIT๙ Bold.ttf', // Bold font
             'I' => 'THSarabunIT๙ Italic.ttf', // Italic font
-            'BI' => 'THSarabunIT๙ Bold Italic.ttf', // Bold-Italic font
+            'BI' => 'THSarabunIT๙ BoldItalic.ttf', // Bold-Italic font
         ],
         'TH NiramitIT๙' => [
             'R' => 'THSarabunIT๙.ttf', // Regular font
             'B' => 'THSarabunIT๙ Bold.ttf', // Bold font
             'I' => 'THSarabunIT๙ Italic.ttf', // Italic font
-            'BI' => 'THSarabunIT๙ Bold Italic.ttf', // Bold-Italic font
+            'BI' => 'THSarabunIT๙ BoldItalic.ttf', // Bold-Italic font
         ],
         'TH SarabunIT๙' => [
             'R' => 'THSarabunIT๙.ttf', // Regular font
             'B' => 'THSarabunIT๙ Bold.ttf', // Bold font
             'I' => 'THSarabunIT๙ Italic.ttf', // Italic font
-            'BI' => 'THSarabunIT๙ Bold Italic.ttf', // Bold-Italic font
+            'BI' => 'THSarabunIT๙ BoldItalic.ttf', // Bold-Italic font
         ],
     ],
     'default_font' => 'thsarabun',
@@ -56,27 +56,25 @@ $mpdf = new \Mpdf\Mpdf($mpdfConfig);
 
 
 
-$mpdf->SetHTMLHeader('
-<table width="100%">
-<tr>
-    <td width="33%"></td>
-    <td width="33%" align="center">-{PAGENO}-</td>
-    <td width="33%" style="text-align: right;"></td>
-</tr>
-</table>', '');
+// $mpdf->SetHTMLHeader('
+// <table width="100%">
+// <tr>
+//     <td width="33%"></td>
+//     <td width="33%" align="center">-{PAGENO}-</td>
+//     <td width="33%" style="text-align: right;"></td>
+// </tr>
+// </table>', '');
 
 
 
-$mpdf->SetHTMLFooter('
-<table width="100%">
-    <tr>
-        <td width="33%"></td>
-        <td width="33%" align="center"></td>
-        <td width="33%" style="text-align: right;">2 </td>
-    </tr>
-</table>', '');
-
-
+// $mpdf->SetHTMLFooter('
+// <table width="100%">
+//     <tr>
+//         <td width="33%"></td>
+//         <td width="33%" align="center"></td>
+//         <td width="33%" style="text-align: right;">2 </td>
+//     </tr>
+// </table>', '');
 
 
 

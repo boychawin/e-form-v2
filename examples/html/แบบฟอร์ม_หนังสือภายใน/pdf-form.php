@@ -94,6 +94,11 @@ $html = <<<EOD
 
 <style type="text/css">
 
+.thai-istributed-class {
+  text-align:justify;
+  text-justify:inter-cluster
+
+}
 
 .hidden {
   display: none;
@@ -101,7 +106,7 @@ $html = <<<EOD
 }
 
 html,body{
-
+  font-size: 16pt;
   font-family: "thsarabun";
   line-height: 1.1;
 }
@@ -369,14 +374,6 @@ html,body{
                     transform: rotate(0rad) translateZ(0px);
                     -webkit-transform: rotate(0rad) translateZ(0px);
   }
-
- 
-  .thai-istributed-class {
-    text-align:justify;
-    text-justify:inter-cluster;
-  }
-  
-  
 
 
 </style>

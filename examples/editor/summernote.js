@@ -7,8 +7,8 @@ let nb = '\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00
 let $sumNote = $("#summernote")
   .summernote({
     styleTags: ['div', 'blockquote'],
-    height: 500,
-    width: 645,
+    // width: 1294.09,
+    // width: 645,
     placeholder: "ใส่เนื้อหาที่นี่",
     codemirror: {
       // codemirror options
@@ -20,7 +20,7 @@ let $sumNote = $("#summernote")
     'lineHeights': lineHeights,
     dialogsInBody: true,
     toolbar: [
-      // ['newParagraphThai', ['newParagraphThai']],
+      ['newParagraphThai', ['newParagraphThai']],
       ['newParagraph', ['newParagraph']],
       ['addNewTopic', ['addNewTopic']],
       ['AddNewParagraph', ['AddNewParagraph']],
@@ -49,30 +49,21 @@ let $sumNote = $("#summernote")
             var range = $.summernote.range.create(editor[0]);
             range.select();
 
-            var style = {
-              backgroundColor: 'yellow',
-              color: 'blue',
-              fontSize: '24px'
-            };
+ 
 
-            var styleNode = document.createElement('span');
-            styleNode.style.cssText = Object.keys(style).map(function (key) {
-              return key + ':' + style[key];
-            }).join(';');
+          if(!!range.ec.data){
+            var content = range.ec.data;
+   
+            var html = '<p  class="MsoNormal" class="thai-istributed-class"> <span lang="TH"  class="thai-istributed-class">' +  content + '</span> </p>';
+            document.execCommand("insertHTML", true, html);
 
-            // Update the style of the node
-            styleNode.style.backgroundColor = 'red';
-            styleNode.style.color = 'white';
-            styleNode.style.fontSize = '16px';
 
-            //select id
-            // var selected = $('.note-editable').find('.note-editable')
 
-            // document.execCommand('styleWithCSS', true, true);
-            // document.execCommand('justifyFull', true, 'distribute');
-            // document.execCommand('justifyFull', true, 'justify');
-            // document.execCommand('justifyDistribute', false, null);
-            // document.execCommand('formatblock', false, 'p')
+          }else{
+            alert('กรุณาเลือกข้อความก่อน')
+          }
+
+
           }
         });
 
@@ -89,10 +80,6 @@ let $sumNote = $("#summernote")
           click: function (e) {
 
             $('#myModal').modal('show');
-            // Insert content into editor on form submission
-           
-
-
 
           }
         });
@@ -108,10 +95,11 @@ let $sumNote = $("#summernote")
           contents: '<i class="fa fa-bold"></i> + เพิ่มย่อหน้าใหม่',
           tooltip: 'เพิ่มย่อหน้าใหม่',
           click: function (e) {
-            var editor = $('#summernote');
-            var range = $.summernote.range.create(editor[0]);
-            range.select();
-            document.execCommand("insertText", true, "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0");
+            $('#myModal').modal('show');
+            // var editor = $('#summernote');
+            // var range = $.summernote.range.create(editor[0]);
+            // range.select();
+            // document.execCommand("insertText", true, "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0");
           }
         });
 
@@ -130,7 +118,7 @@ let $sumNote = $("#summernote")
             var editor = $('#summernote');
             var range = $.summernote.range.create(editor[0]);
             range.select();
-            html = '<div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div><div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div><div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div><div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div><div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div><div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div><div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div><div class="text-container "><input type="text" name="footerNumber[]" class="footerNumber" id="footerNumber"></div>';
+            html = '<div class="text-container "></div>';
             document.execCommand("insertHTML", true, html);
           }
         });
@@ -163,11 +151,11 @@ let $sumNote = $("#summernote")
     },
 
     callbacks: {
-      onAfterInsert: function(html) {
+      onAfterInsert: function (html) {
         // Add a page break after every 10 elements
         html = html.replace(/(<div>[^<]*<\/div>\s*){10}/g, '$&<div style="page-break-before: always; border: 1px solid black; border-color: red; padding: 10px;"></div>');
         return html;
-    },
+      },
 
       onInit: function (e) {
         $("#summernote").summernote("code", sessionStorage.getItem("summernote")
@@ -196,11 +184,22 @@ let $sumNote = $("#summernote")
 //get
 $("#btn-submit-content").on("click", function () {
   var content = $('#myInput').val();
-  var html = '<p  class="MsoNormal" style="text-align:justify;text-justify:inter-cluster"> <span lang="TH"  class="thai-istributed-class">' + nb+content + '</span> </p>';
-  $('#summernote').summernote('pasteHTML', html);
-  $('#myModal').modal('hide');
+console.log(content)
+  if(!!content){
+    var html = '<p  class="MsoNormal" class="thai-istributed-class"> <span lang="TH"  class="thai-istributed-class">' + nb + content + '</span> </p>';
+    document.execCommand("insertHTML", false, html);
+    $('#myModal').modal('hide');
+  }else{
+    alert('content')
+  }
+
+
+
 
 });
+
+
+
 
 //reset
 $("#btn-reset").on("click", function () {

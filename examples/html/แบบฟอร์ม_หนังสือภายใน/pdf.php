@@ -1,10 +1,6 @@
 <?php
 require_once '../../../vendor/autoload.php';
-include('./pdf-form.php');
-
-
-$footerNumber = $_POST['footerNumber'] ?? [];
-
+include './pdf-form.php';
 
 $mpdf = new \Mpdf\Mpdf();
 
@@ -13,7 +9,6 @@ $fontDirs = $defaultConfig['fontDir'];
 
 $defaultFontConfig = (new Mpdf\Config\FontVariables())->getDefaults();
 $fontData = $defaultFontConfig['fontdata'];
-
 
 $mpdfConfig = array(
     'mode' => 'utf-8',
@@ -56,34 +51,41 @@ $mpdf = new \Mpdf\Mpdf($mpdfConfig);
 
 
 
-// $mpdf->SetHTMLHeader('
-// <table width="100%">
-// <tr>
-//     <td width="33%"></td>
-//     <td width="33%" align="center">-{PAGENO}-</td>
-//     <td width="33%" style="text-align: right;"></td>
-// </tr>
-// </table>', '');
+$footerNumber = ['11', '22', '33', '44', '55'];
 
+$num_pages = 5;
+// Loop through the number of pages to add
+for ($i = 0; $i < count($footerNumber); $i++) {
+    // Add a new page
+    $mpdf->AddPage();
 
+    // Set the header content for the current page
+    $header = '
+    <table width="100%">
+    <tr>
+        <td width="33%"></td>
+        <td width="33%" align="center">-{PAGENO}-</td>
+        <td width="33%" style="text-align: right;"></td>
+    </tr>
+    </table>';
+    $mpdf->SetHTMLHeader($header);
 
-// $mpdf->SetHTMLFooter('
-// <table width="100%">
-//     <tr>
-//         <td width="33%"></td>
-//         <td width="33%" align="center"></td>
-//         <td width="33%" style="text-align: right;">2 </td>
-//     </tr>
-// </table>', '');
+    // Set the footer content for the current page
+    $footer = '
+    <table width="100%">
+        <tr>
+            <td width="33%"></td>
+            <td width="33%" align="center"></td>
+            <td width="33%" style="text-align: right;"> '.$footerNumber[$i].' </td>
+        </tr>
+    </table>';
+    $mpdf->SetHTMLFooter($footer);
 
-
-
-
-
+    // Add some content to the new page
+    $mpdf->WriteHTML('<h1>Page ' . ($i + 1) . '</h1>');
  
+}
 
-
-$mpdf->WriteHTML($html);
-
+// $mpdf->WriteHTML($html);
 
 $mpdf->Output();

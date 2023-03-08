@@ -45,23 +45,39 @@ let $sumNote = $("#summernote")
           tooltip: 'Thai Distributed',
           click: function (e) {
 
+            // Get the Summernote editor element and create a range object from it
             var editor = $('#summernote');
             var range = $.summernote.range.create(editor[0]);
+
+            // Expand the range to include multiple tags, if necessary
+            if (!range.isCollapsed()) {
+              var nodes = range.nodes();
+              range = $.summernote.range.createFromNodeAfter(nodes[nodes.length - 1]);
+              range.setStart(range.ec.node, 0);
+              range.collapse(true);
+            }
+
+            // Select the range
             range.select();
 
- 
+            // Check if the range contains any data
+            if (!!range.ec.data) {
 
-          if(!!range.ec.data){
-            var content = range.ec.data;
-   
-            var html = '<p  class="MsoNormal" class="thai-istributed-class"> <span lang="TH"  class="thai-istributed-class">' +  content + '</span> </p>';
-            document.execCommand("insertHTML", true, html);
+              // If the range contains data, get the content and wrap it in HTML tags with appropriate classes and attributes
+              var content = range.ec.data;
+              var html = '<p class="MsoNormal thai-istributed-class"><span lang="TH" class="thai-istributed-class">' + content + '</span></p>';
+
+              // Insert the HTML into the editor using the insertHTML command
+              document.execCommand("insertHTML", false, html);
+
+            } else {
+
+              // If the range does not contain data, alert the user
+              alert('กรุณาเลือกข้อความก่อน');
+
+            }
 
 
-
-          }else{
-            alert('กรุณาเลือกข้อความก่อน')
-          }
 
 
           }
@@ -184,12 +200,12 @@ let $sumNote = $("#summernote")
 //get
 $("#btn-submit-content").on("click", function () {
   var content = $('#myInput').val();
-console.log(content)
-  if(!!content){
+  console.log(content)
+  if (!!content) {
     var html = '<p  class="MsoNormal" class="thai-istributed-class"> <span lang="TH"  class="thai-istributed-class">' + nb + content + '</span> </p>';
     document.execCommand("insertHTML", false, html);
     $('#myModal').modal('hide');
-  }else{
+  } else {
     alert('content')
   }
 

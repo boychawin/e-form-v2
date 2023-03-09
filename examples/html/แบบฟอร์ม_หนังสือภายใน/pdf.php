@@ -89,12 +89,12 @@ $mpdf = new \Mpdf\Mpdf($mpdfConfig);
  
 // }
 // }
-$mpdf->WriteHTML($html);
-
-if(empty($footerNumber)){
-    $mpdf->Output();
-}else{
-    // $mpdf->Output();
-    print_r($footerNumber);
-}
+// $mpdf->WriteHTML($html);
+print_r($footerNumber);
+// if(empty($footerNumber)){
+//     // $mpdf->Output();
+// }else{
+//     // $mpdf->Output();
+//     print_r($footerNumber);
+// }
 

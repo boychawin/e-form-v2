@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
@@ -14,135 +15,141 @@
     }
 
     body {
-    background: rgb(204, 204, 204);
-}
-div[size="A4"] {
-    width: 21cm;
-    height: 29.7cm;
-    position: relative;
-    overflow: hidden;
-}
+      background: rgb(204, 204, 204);
+    }
 
-pageMain[size="A4onlyWidth"] {
-    display: block;
-    margin: 0 auto;
-    width: 21cm;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 24px;
-}
+    div[size="A4"] {
+      width: 21cm;
+      height: 29.7cm;
+      position: relative;
+      overflow: hidden;
+    }
 
-page {
-    background: white;
-    display: block;
-    margin: 0 auto;
-    margin-top: 16px;
-}
+    pageMain[size="A4onlyWidth"] {
+      display: block;
+      margin: 0 auto;
+      width: 21cm;
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 24px;
+    }
 
-page[size="A4"] {
-    width: 21cm;
-    height: 29.7cm;
-    position: relative;
-    overflow: hidden;
-    font: 16pt/16pt 'THSarabunNewRegular', Arial, sans-serif;
-}
-
-page[size="A4"][layout="landscape"] {
-    width: 29.7cm;
-    height: 21cm;
-}
-
-page[size="A3"] {
-    width: 29.7cm;
-    height: 42cm;
-}
-
-page[size="A3"][layout="landscape"] {
-    width: 42cm;
-    height: 29.7cm;
-}
-
-page[size="A5"] {
-    width: 14.8cm;
-    height: 21cm;
-}
-
-page[size="A5"][layout="landscape"] {
-    width: 21cm;
-    height: 14.8cm;
-}
-
-@media print {
-    body,
     page {
+      background: white;
+      display: block;
+      margin: 0 auto;
+      margin-top: 16px;
+    }
+
+    page[size="A4"] {
+      width: 21cm;
+      height: 29.7cm;
+      position: relative;
+      overflow: hidden;
+      font: 16pt/16pt 'THSarabunNewRegular', Arial, sans-serif;
+    }
+
+    page[size="A4"][layout="landscape"] {
+      width: 29.7cm;
+      height: 21cm;
+    }
+
+    page[size="A3"] {
+      width: 29.7cm;
+      height: 42cm;
+    }
+
+    page[size="A3"][layout="landscape"] {
+      width: 42cm;
+      height: 29.7cm;
+    }
+
+    page[size="A5"] {
+      width: 14.8cm;
+      height: 21cm;
+    }
+
+    page[size="A5"][layout="landscape"] {
+      width: 21cm;
+      height: 14.8cm;
+    }
+
+    @media print {
+
+      body,
+      page {
         margin: 0;
         box-shadow: 0;
+      }
     }
-}
 
-.memo-form {
-    margin: 0;
-    padding: 1.5cm 2cm 2cm 3cm;
-}
-
-
-
-.memo-form .letter-head-memo{
-    margin: 0;
-    padding: 0;
-    font-size: 20pt;
-    line-height: 20pt;
-    font-weight: bold;
-}
-
-.memo-form img {
-    height: 1.5cm;
-}
+    .memo-form {
+      margin: 0;
+      padding: 1.5cm 2cm 2cm 3cm;
+    }
 
 
 
-.memo-form .text-29pt {
-    font-size: 29pt;
-    line-height: 35pt;
-    font-weight: bold;
-    letter-spacing: 0px;
-}
+    .memo-form .letter-head-memo {
+      margin: 0;
+      padding: 0;
+      font-size: 20pt;
+      line-height: 20pt;
+      font-weight: bold;
+    }
 
-.memo-form .memo-border-bottom {
-    border-bottom: 1px dotted #666;
-    padding-left: 8px;
-    font-size: 16pt;
-    line-height: 16pt;
-}
+    .memo-form img {
+      height: 1.5cm;
+    }
 
-.memo-form .p-8 {
-    padding: 8px 0 !important;
-}
 
-.footer-text {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-}
 
-.next-page {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 1cm;
-    width: 40px;
-    margin: 0 auto;
-    text-align: center;
-}
+    .memo-form .text-29pt {
+      font-size: 29pt;
+      line-height: 35pt;
+      font-weight: bold;
+      letter-spacing: 0px;
+    }
+
+    .memo-form .memo-border-bottom {
+      border-bottom: 1px dotted #666;
+      padding-left: 8px;
+      font-size: 16pt;
+      line-height: 16pt;
+    }
+
+    .memo-form .p-8 {
+      padding: 8px 0 !important;
+    }
+
+    .footer-text {
+      position: absolute;
+      bottom: 8px;
+      right: 16px;
+    }
+
+    .next-page {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 1cm;
+      width: 40px;
+      margin: 0 auto;
+      text-align: center;
+    }
   </style>
 </head>
 
-<body >
+<body>
 
   <div>
     <div>
       <div class="m-in " style="padding-top: 0px !important">
-        <form name="create_order" method="post" id="create_order" action="./pdf.php">
+        <form name="sent_form" method="post" id="sent_form" action="./pdf.php">
+          <div class=" justify-content-center text-center py-5 ">
+            <button href="javascript:;"
+            onclick="submitForm();" class="p-3 bg-blue-500 text-white hover:bg-blue-400" required>Export</button>
+        </div>
 
           <span id="block_tab_1" style="display: inline">
             <page size="A4" id="page1">
@@ -157,7 +164,7 @@ page[size="A5"][layout="landscape"] {
                               <td width="30%" align="left" valign="top">
                                 <img src="../../../images/memo.png" />
                               </td>
-                              <td width="40%" align="left" valign="top" >
+                              <td width="40%" align="left" valign="top">
                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                   <tbody>
                                     <tr>
@@ -197,14 +204,7 @@ page[size="A5"][layout="landscape"] {
                                                 </div>
                                               </td>
                                               <td width="85%" align="left" valign="bottom" class="memo-border-bottom">
-                                                <input type="text" class="required  error" name="government"
-                                                  value="" onblur="changeThaiNumberFormat(this)"
-                                                  autocomplete="off" /><label for="government" generated="true"
-                                                  class="error">
-                                                  <div style="color: #f00">
-                                                    กรุณากรอกข้อมูลให้ครบถ้วน
-                                                  </div>
-                                                </label>
+                                                <input type="text" class="w-full  py-2 border border-slate-300" name="government" value="" onblur="checkVal(this)" autocomplete="off" />
                                               </td>
                                             </tr>
                                           </tbody>
@@ -263,8 +263,8 @@ page[size="A5"][layout="landscape"] {
                                                 เรื่อง
                                               </td>
                                               <td width="92%" align="left" valign="bottom" class="memo-border-bottom">
-                                                <input type="text"  name="subject" value=""
-                                                  autocomplete="off" onblur="changeThaiNumberFormat(this)" />
+                                                <input class="w-full  py-2 border border-slate-300" type="text" name="subject" value="" autocomplete="off"
+                                                  onblur="checkVal(this)" />
                                               </td>
                                             </tr>
                                           </tbody>
@@ -290,8 +290,7 @@ page[size="A5"][layout="landscape"] {
                                               </td>
                                               <td width="92%" align="left" valign="bottom" class="memo-border-bottom"
                                                 style="border: none">
-                                                <input type="text"  name="order_save_to" value=""
-                                                  autocomplete="off" />
+                                                <input class="w-full  py-2 border border-slate-300" type="text" name="order_save_to" value="" autocomplete="off" />
                                               </td>
                                             </tr>
                                           </tbody>
@@ -322,41 +321,35 @@ page[size="A5"][layout="landscape"] {
               </div>
 
               <div class="footer-text">
-                <textarea autocomplete="off" name="footerText[0]" onblur="changeThaiNumberFormat(this)"
-                  style="height: 48px"></textarea>
+                <input class="w-full  py-2 border border-slate-300" autocomplete="off" name="footerText[0]" onblur="checkVal(this)" style="height: 48px" />
               </div>
 
             </page>
-            <div class=" row" style="
-                    line-height: 30px;
-                    line-height: 30px;
-                    text-align: center;
-                    padding-top: 32px;
-                    padding-bottom: 32px;
-                  " id="addPage">
+            <div class=" text-center py-20 " id="addPage">
               <div class="col-lg-12">
                 <a href="javascript:;" onclick="addPage();"><strong>+ เพิ่มหน้าใหม่</strong></a>
               </div>
             </div>
           </span>
           </span>
+
         </form>
       </div>
       <span style="display: none">
         <span id="container_clone">
-          <div >
+          <div>
             <a href="javascript:;" class="btn   py-2" onclick="$(this).parent().remove();">X</a>
-            <textarea oninput="auto_grow(this)" type="text" autocomplete="off" name="description[{i}][]"
-              onblur="changeThaiNumberFormat(this)" rows="50"
-              class="my-1 block w-full py-2 bg-white border border-slate-300  text-sm shadow-sm placeholder-slate-400"></textarea>
+            <textarea  type="text" autocomplete="off" name="description[{i}][]"
+              onblur="checkVal(this)" rows="5"
+              class="w-full  py-2 border border-slate-300" ></textarea>
           </div>
         </span>
         <span id="container_clone_topic">
-          <div >
+          <div>
             <a href="javascript:;" class="btn   py-2" onclick="$(this).parent().remove();">X</a>
             <input type="text"
-              class="my-1 block w-full  py-2 bg-white border border-slate-300  text-sm shadow-sm placeholder-slate-400"
-              name="description[{i}][]" onblur="changeThaiNumberFormat(this)" autocomplete="off" />
+            class="w-full  py-2 border border-slate-300"
+              name="description[{i}][]" onblur="checkVal(this)" autocomplete="off" />
           </div>
         </span>
       </span>
@@ -364,16 +357,19 @@ page[size="A5"][layout="landscape"] {
   </div>
 
   </div>
+
+
+
+
   <script type="text/javascript">
 
-$(function () {
-          $("#create_order").validate();
-        });
+
+
 
 
     function addParagraph(page) {
       var i = page - 1;
-      
+
       var blockClone = $("#container_clone").html();
       var tmp = blockClone.replaceAll("{i}", i).trim();
       $("#page" + page + " .memo_description").append(tmp);
@@ -381,7 +377,7 @@ $(function () {
 
     function addTopic(page) {
       var i = page - 1;
-      
+
       var blockClone = $("#container_clone_topic").html();
       var tmp = blockClone.replaceAll("{i}", i).trim();
       $("#block_tab_1 #page" + page + " .memo_description").append(
@@ -401,214 +397,26 @@ $(function () {
         ' <div class="next-page">-' +
         thaiPage +
         "-</div>" +
-        '<a href="javascript:;" class="btn  " onclick="$(this).parent().remove();">X</a><div class=" row " style="line-height: 30px;"><div class="col-lg-12">' +
+        '<a href="javascript:;" class="btn px-2 py-2" onclick="$(this).parent().remove();">X</a><div class=" row " style="line-height: 30px;"><div class="col-lg-12">' +
         '<div class="memo-form"><span class="memo_description"></span>' +
-        '    <a href="javascript:;" onclick="addTopic(' +
-        page +
-        ');"><strong>+ เพิ่มหัวข้อใหม่</strong></a><a href="javascript:;" onclick="addParagraph(' +
-        page +
-        ');"><strong>+ เพิ่มย่อหน้าใหม่</strong></a>' +
+        '   <div class=" row mt-5"> <div class="col-lg-12"><a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addTopic(' + page + ');"><strong>+ เพิ่มหัวข้อใหม่</strong></a> <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addParagraph(' + page + ');"><strong>+ เพิ่มย่อหน้าใหม่</strong></a> </div> </div>' +
         "</div>" +
         "</div></div>" +
-        '<div class="footer-text"><textarea autocomplete="off" name="footerText[' +
-        tmp_page +
-        ']" onblur="changeThaiNumberFormat(this)"></textarea></div>' +
-        '<div ><img src="images/logo_footer.png" /></div>' +
+        '<div class="footer-text"><input class="w-full  py-2 border border-slate-300" autocomplete="off" name="footerText[' +tmp_page +']" onblur="checkVal(this)" /></div>' +
+        '<div ></div>' +
         "</page>";
       $("#block_tab_1 #addPage").before(html);
     }
 
-    function auto_grow(element) {
-      element.style.height = "5px";
-      element.style.height = element.scrollHeight + "px";
-    }
-
-    function textareaAllHeight() {
-      $("textarea").each(function (index) {
-        auto_grow(this);
-      });
-    }
 
 
-
-    $(function () {
-      setTimeout(function () {
-        textareaAllHeight();
-      }, 1000);
-    });
-
-    function createForm(id) {
-      console.log(id);
-      var controller = "";
-      if (id == 15) {
-        controller = "order_save";
-      } else if (id == 2) {
-        controller = "order";
-      } else if (id == 4) {
-        controller = "order_command";
-      } else if (id == 5) {
-        controller = "order_publish";
-      } else if (id == 9) {
-        controller = "order_seal";
-      } else if (id == 3) {
-        controller = "order_secret";
-      } else if (id == 16) {
-        controller = "order_project";
-      } else if (id == 152) {
-        controller = "order_local";
-      } else if (id == 162) {
-        controller = "order_volunteer";
-      }
-
-      var url = "https://saraban.demo-cv.com/" + controller + "/createForm";
-      console.log(url);
-      var data = {};
-      $.post(url, data, function (rs) {
-        //console.log(rs);
-        $(".m-in").html(rs);
-        $(".m-in").attr("style", "padding-top: 0px !important;");
-      });
-    }
-
-    function editForm(id, order_id) {
-      var controller = "";
-      if (id == 15) {
-        controller = "order_save";
-      } else if (id == 2) {
-        controller = "order";
-      } else if (id == 4) {
-        controller = "order_command";
-      } else if (id == 5) {
-        controller = "order_publish";
-      } else if (id == 9) {
-        controller = "order_seal";
-      } else if (id == 3) {
-        controller = "order_secret";
-      } else if (id == 16) {
-        controller = "order_project";
-      } else if (id == 152) {
-        controller = "order_local";
-      } else if (id == 162) {
-        controller = "order_volunteer";
-      }
-
-      var url = "https://saraban.demo-cv.com/" + controller + "/editForm";
-      var data = {
-        order_id: order_id,
-      };
-      $.post(url, data, function (rs) {
-        $(".m-in").html(rs);
-        $(".m-in").attr("style", "padding-top: 0px !important;");
-      });
-    }
-
-    function pdfSignFrom(id) {
-      var controller = "";
-      if (id == 15) {
-        controller = "order_save";
-      } else if (id == 2) {
-        controller = "order";
-      } else if (id == 4) {
-        controller = "order_command";
-      } else if (id == 5) {
-        controller = "order_publish";
-      } else if (id == 9) {
-        controller = "order_seal";
-      } else if (id == 1) {
-        controller = "order_receiver_get";
-      } else if (id == 3) {
-        controller = "order_secret";
-      } else if (id == 16) {
-        controller = "order_project";
-      } else if (id == 152) {
-        controller = "order_local";
-      } else if (id == 162) {
-        controller = "order_volunteer";
-      }
-
-      var url = "https://saraban.demo-cv.com/" + controller + "/pdfSignFrom";
-      var data = {};
-      $.post(url, data, function (rs) {
-        $(".m-in").html(rs);
-        $(".m-in").attr("style", "padding-top: 0px !important;");
-      });
-    }
-
-    function pdfSignEditForm(id, order_id) {
-      var controller = "";
-      if (id == 15) {
-        controller = "order_save";
-      } else if (id == 2) {
-        controller = "order";
-      } else if (id == 4) {
-        controller = "order_command";
-      } else if (id == 5) {
-        controller = "order_publish";
-      } else if (id == 9) {
-        controller = "order_seal";
-      } else if (id == 1) {
-        controller = "order_receiver_get";
-      } else if (id == 3) {
-        controller = "order_secret";
-      } else if (id == 16) {
-        controller = "order_project";
-      } else if (id == 152) {
-        controller = "order_local";
-      } else if (id == 162) {
-        controller = "order_volunteer";
-      }
-
-      var url =
-        "https://saraban.demo-cv.com/" + controller + "/pdfSignEditForm";
-      var data = {
-        order_id: order_id,
-      };
-      $.post(url, data, function (rs) {
-        $(".m-in").html(rs);
-        $(".m-in").attr("style", "padding-top: 0px !important;");
-      });
-    }
-
-    function getFrom(tag) {
-      var url = "https://saraban.demo-cv.com/allpage/getFrom";
-      var data = {
-        tag: tag,
-        order_id: "",
-        cmd: "",
-      };
-      $.post(url, data, function (rs) {
-        $(".m-in").html(rs);
-        $(".m-in").attr("style", "padding-top: 0px !important;");
-      });
-    }
-
-    function toThaiStringNoPreg(obj) {
-      var str = $(obj).val();
-
-      var val = {
-        order_num: str,
-      };
-      if (str != "" || str != null) {
-        var url = "https://saraban.demo-cv.com/order/changeToThaiOrderShow";
-        console.log(url);
-        $.post(url, val, function (data) {
-          console.log(data);
-          $(obj).val(data);
-        });
-      }
-    }
-
-    function changeThaiNumberFormat(obj) {
+    function checkVal(obj) {
       var str = $(obj).val();
       var val = {
         order_num: str,
       };
-      if (str != "" || str != null) {
-        var url = "https://saraban.demo-cv.com/order/changeThaiNumberFormat";
-        $.post(url, val, function (data) {
-          $(obj).val(data);
-        });
-      }
+  
+      console.log(val)
     }
 
     function changeThaiNumber(num) {
@@ -631,75 +439,14 @@ $(function () {
       return str;
     }
 
-    function show_export(data) {
-      var div = "#show_export " + data;
-      $("#show_export" + data).toggle();
-      //$('.show_export').hide();
-      $("#start_export_date" + data).val("");
-      $("#end_export_date" + data).val("");
-      $("#export_operate" + data).val("");
-    }
 
-    function clear_input_export(data) {
-      $("#export_excel" + data).submit();
-      $("#show_export" + data).toggle();
-    }
+    function submitForm() {
 
-    function toThaiString(obj) {
-      var str = $(obj).val();
-      //str = str.replace(/[^0-9\.๐-๙ก-ฮ()]/g, '');
-
-      console.log("str : " + str);
-      $(obj).val(str);
-
-      var val = {
-        order_num: str,
-      };
-
-      if (str != "" || str != null) {
-        var url = "https://saraban.demo-cv.com/order/changeToThaiOrderShow";
-        console.log(url);
-        $.post(url, val, function (data) {
-          console.log(data);
-          $(obj).val(data);
-        });
-      }
-    }
-
-    function toThaiStringNoPreg(obj) {
-      var str = $(obj).val();
-
-      var val = {
-        order_num: str,
-      };
-      if (str != "" || str != null) {
-        var url = "https://saraban.demo-cv.com/order/changeToThaiOrderShow";
-        console.log(url);
-        $.post(url, val, function (data) {
-          console.log(data);
-          $(obj).val(data);
-        });
-      }
-    }
-
-
-
-    function submitAddOrder(uploadKey) {
-      //$("#addOrder").submit();
-      var isvalid = $("#addOrder").valid();
-      if (isvalid) {
-        $("#loading").show();
-        $("#addOrder").submit();
-      }
-    }
-
-    function submitCreateOrder() {
-      //$("#addOrder").submit();
-      var isvalid = $("#create_order").valid();
-      if (isvalid) {
-        $("#loading").show();
-        $("#create_order").submit();
-      }
+      // var isvalid = $("#sent_form").valid();
+      // if (isvalid) {
+      //   $("#loading").show();
+        $("#sent_form").submit();
+      // }
     }
   </script>
 

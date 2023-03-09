@@ -1,7 +1,7 @@
 <?php
 
-$footerNumber =  !empty($_POST['description'])  ? $_POST['description'][0][1] : '';
-$description = !empty($_POST['description']) ?  $footerNumber : '';
+$footerNumber =  !empty($_POST['description'])  ? $_POST['description'] : '';
+$description = !empty($_POST['description']) ?  $footerNumber[0][1] : '';
 
 $data1 = $_POST['name1'] ?? '';
 $data2 = $_POST['name2'] ?? '';

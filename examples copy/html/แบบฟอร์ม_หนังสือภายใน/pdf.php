@@ -94,7 +94,7 @@ $mpdf->WriteHTML($html);
 if(empty($footerNumber)){
     $mpdf->Output();
 }else{
-    // $mpdf->Output();
-    print_r($footerNumber);
+    $mpdf->Output();
+    // print_r($footerNumber);
 }
 

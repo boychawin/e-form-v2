@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.form-3 {
+    margin: 0;
+    padding: 1.5cm 2cm 2cm 3cm;
+}
+
+.form-3 .form-padding {
+    padding-right: 10px;
+}
+
+.form-3 .form-padding-2 {
+    padding: 5px;
+}
+
+.form-3 .letter-head {
+    margin: 0;
+    padding: 0;
+}
+
+.form-3 .letter-head img {
+    max-width: 30%;
+    height: auto;
+}
+
+.form-3 .background-grey {
+    padding: 5px 10px!important;
+    background: #bdbdbd;
+}
+
+.form-3 .letter-head-2 {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.form-3 img {
+    /* max-width: 50%; */
+    height: 3cm;
+}
+
+.form-3 .headertop-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.form-3 .headertop-text-2 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+.form-3 .form-text {
+    font-size: 22px;
+    line-height: 16px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+.form-3 .header-text {
+    font-weight: bold;
+    letter-spacing: 0px;
+    font: 18px/18px 'THSarabunNewRegular', Arial, sans-serif;
+}
+
+.form-3 .border-1 {
+    border: 1px solid #666;
+}
+
+.form-3 .border-bottom-1 {
+    border-bottom: 1px solid #666;
+}
+
+.form-3 .border-bottom-2 {
+    /*border-bottom: 1px dotted #666;*/
+}
+
+.form-3 .border-right-1 {
+    border-right: 1px solid #666;
+}
+
+.form-3 .pt-2 {
+    padding-top: 2px;
+}
+
+.form-3 input {
+    margin: 3px!important;
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+}
+
+.form-3 .pt-8 {
+    padding-top: 8px;
+}
+
+.form-3 .pt-40 {
+    padding-top: 40px;
+}
+
+.form-3 .pt-12 {
+    padding-top: 12px;
+}
+
+.form-3 .pl-8 {
+    padding-left: 8px;
+}
+
+.form-3 .pr-8 {
+    padding-right: 8px;
+}
+
+.form-3 .pboth-4 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.form-3 .pboth-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.form-3 .p-4 {
+    padding: 4px !important;
+}
+
+.form-3 .p-8 {
+    padding: 0px;
+}
+
+.form-3 .p-12 {
+    padding: 12px;
+}
+
+.form-3 .pb-8 {
+    padding-bottom: 8px;
+}
+
+.form-3 .pb-12 {
+    padding-bottom: 12px;
+}
+
+.form-3 .pt-15 {
+    padding-top: 15px;
+}
+
+.form-3 .pb-15 {
+    padding-bottom: 15px;
+}
+
+.form-3 .pt-20 {
+    padding-top: 20px;
+}
+
+.form-3 .pb-20 {
+    padding-bottom: 20px;
+}
+
+.form-3 .pt-40 {
+    padding-top: 40px;
+}
+
+.form-3 .mb-20 {
+    margin-bottom: 20px!important;
+}
+
+.form-3 .line-height-block {
+    line-height: 14px;
+}
+
+.form-3 .postscript {
+    font-size: 22px;
+    font-weight: bold!important;
+}
+
+.form-3 .border-bottom {
+    border-bottom: 1px dotted #d0d0d0;
+}
+
+.form-3 .border-bottom2 {
+    border: 1px solid #000;
+}
+
+.form-3 .text-medium {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.form-3 .bg-dot {
+    background: url(../images/dot.png) top left repeat;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 18px;
+    line-height: 17px;
+}
+
+.form-3 .font-24 {
+    font-size: 24px;
+    line-height: 24px;
+    text-decoration: underline;
+}
+
+.form-3 .memo {
+    padding-top: 20px;
+    background: url(../images/dot.png) bottom left repeat-x;
+}
+
+.form-3 .memo-2 {
+    line-height: 16pt;
+    text-align: justify;
+    text-indent: 2.5cm;
+    padding-top: 6pt;
+    font-size: 16pt;
+    word-break: break-all;
+}
+
+.form-3 .memo-topic {
+    line-height: 16pt;
+    text-align: justify;
+    padding-top: 6pt;
+    font-size: 16pt;
+    word-break: break-all;
+    font-weight: bold;
+}
+
+.footerText {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.nextPage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1cm;
+    width: 40px;
+    margin: 0 auto;
+    text-align: center;
+}

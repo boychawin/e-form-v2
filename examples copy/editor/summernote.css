@@ -41,23 +41,14 @@
 
 
   @font-face {
-    font-family: 'THSarabunNewRegular';
+    font-family: 'TH SarabunIT๙';
     src: url('../../fonts/THSarabunIT๙/THSarabunIT๙.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
-  @font-face {
-    font-family: 'thaisanslite';
-    src: url('../../fonts/THSarabunIT๙/THSarabunIT๙.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'th_niramit';
-    src: url('../../fonts/THSarabunIT๙/THSarabunIT๙.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+
+
+
 /* 
   @font-face {
     font-family: 'THSarabun';

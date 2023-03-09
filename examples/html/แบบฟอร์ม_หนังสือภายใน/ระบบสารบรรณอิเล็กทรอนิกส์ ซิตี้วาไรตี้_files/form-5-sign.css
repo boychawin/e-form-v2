@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.form-5 {
+    margin: 0;
+    padding: 1.5cm 2cm 2cm 3cm;
+    /* padding-left: 55px; */
+}
+
+.form-5 .form-padding {
+    padding-right: 10px;
+}
+
+.form-5 .form-padding-2 {
+    padding: 5px;
+}
+
+.form-5 .letter-head {
+    margin: 0;
+    padding: 0;
+}
+
+.form-5 .letter-head img {
+    max-width: 30%;
+    height: auto;
+}
+
+.form-5 .background-grey {
+    padding: 5px 10px!important;
+    background: #bdbdbd;
+}
+
+.form-5 .letter-head-2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20pt;
+    line-height: 20pt;
+    font-weight: bold;
+}
+
+.form-5 img {
+    /* max-width: 30%; */
+    height: 1.5cm;
+}
+
+.form-5 .headertop-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.form-5 .headertop-text-2 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+.form-5 .form-text {
+    font-size: 29pt;
+    line-height: 35pt;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+.form-5 .header-text {
+    font-weight: bold;
+    letter-spacing: 0px;
+    font: 18px/18px 'THSarabunNewRegular', Arial, sans-serif;
+}
+
+.form-5 .border-1 {
+    border: 1px solid #666;
+}
+
+.form-5 .border-bottom-1 {
+    border-bottom: 1px solid #666;
+}
+
+.form-5 .border-bottom-2 {
+    border-bottom: 1px dotted #666;
+    padding-left: 8px;
+    font-size: 16pt;
+    line-height: 16pt;
+}
+
+.form-5 .border-right-1 {
+    border-right: 1px solid #666;
+}
+
+.form-5 .pt-2 {
+    padding-top: 2px;
+}
+
+.form-5 input {
+    margin: 3px!important;
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+}
+
+.form-5 .pt-8 {
+    padding-top: 8px;
+}
+
+.form-5 .pt-40 {
+    padding-top: 40px;
+}
+
+.form-5 .pt-12 {
+    padding-top: 12px;
+}
+
+.form-5 .pl-8 {
+    padding-left: 8px;
+}
+
+.form-5 .pr-8 {
+    padding-right: 8px;
+}
+
+.form-5 .pboth-4 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.form-5 .pboth-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.form-5 .p-4 {
+    padding: 4px 0 !important;
+}
+
+.form-5 .p-8 {
+    padding: 8px 0 !important;
+}
+
+.form-5 .p-12 {
+    padding: 12px 0 !important;
+}
+
+.form-5 .pb-8 {
+    padding-bottom: 8px !important;
+}
+
+.form-5 .pb-12 {
+    padding-bottom: 12px !important;
+}
+
+.form-5 .pt-15 {
+    padding-top: 15px !important;
+}
+
+.form-5 .pb-15 {
+    padding-bottom: 15px !important;
+}
+
+.form-5 .pt-20 {
+    padding-top: 20px !important;
+}
+
+.form-5 .pb-20 {
+    padding-bottom: 20px !important;
+}
+
+.form-5 .pt-40 {
+    padding-top: 40px !important;
+}
+
+.form-5 .mb-20 {
+    margin-bottom: 20px!important;
+}
+
+.form-5 .line-height-block {
+    line-height: 14px;
+}
+
+.form-5 .postscript {
+    font-size: 22px;
+    font-weight: bold!important;
+}
+
+.form-5 .border-bottom {
+    border-bottom: 1px dotted #d0d0d0;
+}
+
+.form-5 .border-bottom2 {
+    border: 1px solid #000;
+}
+
+.form-5 .text-medium {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.form-5 .bg-dot {
+    background: url(../images/dot.png) top left repeat;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 18px;
+    line-height: 17px;
+}
+
+.form-5 .font-24 {
+    font-size: 24px;
+    line-height: 24px;
+    text-decoration: underline;
+}
+
+.form-5 .memo {
+    padding-top: 20px;
+    background: url(../images/dot.png) bottom left repeat-x;
+}
+
+.form-5 .memo-2 {
+    /*background: url(../images/dot.png) bottom left repeat;*/
+    line-height: 16pt;
+    text-align: justify;
+    text-indent: 64px;
+    font-size: 16pt;
+}
+
+.footerText {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.nextPage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1cm;
+    width: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.addPage {
+    line-height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}

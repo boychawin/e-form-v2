@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+.admin-new{
+    top:0px;
+    right:0px;
+    position:fixed;
+    height:42px;
+    z-index:9999;
+}
+.admin-new .search{
+    float:left;
+    display:none;
+}
+.admin-new .shortmenu{
+    float:left;
+    display:none;
+}
+.admin-new .admin-login{
+    float:left;
+}

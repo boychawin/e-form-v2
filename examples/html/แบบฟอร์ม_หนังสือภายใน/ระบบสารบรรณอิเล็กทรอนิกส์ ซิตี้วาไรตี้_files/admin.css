@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* CSS Document */
+
+.admin{
+    float: right;
+    margin-right: 6px;
+    height: 26px;
+    border:#e5e5e5 1px solid;
+    background:#fff;
+}
+.admin ul{
+
+    height:auto;
+    border:0;
+}
+.admin ul li{
+    float:left;	
+    height:auto;
+    background:url(../images/admin/line.png) top right no-repeat;
+    border:0;
+    /*border-right:#e5e5e5 1px solid;*/
+}
+.admin ul li:last-child{
+    /*border-right:none;*/
+    background:none;
+}
+.admin ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    line-height:25px;
+    font-size:13px;
+    color:#333;
+    border:0;
+    /*font:17px/40px 'supermarket', Arial, sans-serif;
+    color:#4f8345;*/
+
+}
+.admin ul li a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    line-height:25px;
+    font-size:13px;
+    color:#f55b0f;
+    border:0;
+    /*font:17px/40px 'supermarket', Arial, sans-serif;
+    color:#e2660c;*/
+}
+
+.admin ul li span.add{
+    float:left;
+    display:block;
+    padding-right:10px;
+    padding-left:36px;
+    height:37px;
+    border:0;
+    background:url(../images/admin/add.png) top left no-repeat;
+}
+
+.admin ul li span.delete{
+    float:left;
+    display:block;
+    padding-right:10px;
+    padding-left:36px;
+    height:37px;
+    border:0;
+    background:url(../images/admin/recycle.png) top left no-repeat;
+}
+.admin ul li span.approve-text{
+    float:left;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left:10px;
+    font-weight:bold;
+    line-height:25px;
+    font-size:13px;
+    color:#333;
+}
+.admin ul li span.approve{
+    float:left;
+    padding:2px;
+    background-color:#900;
+    font-size:13px;
+    color:#FFF;
+}
+.edit-webboard{
+    text-align:right;
+}
+.edit-webboard a{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#333;
+    cursor:pointer;
+    font-weight:bold;
+}
+.edit-webboard a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#e55d0c;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.edit-detail{
+    /*float:right;
+    padding:0px 5px;*/	
+    height:17px;
+    /*text-align:center;*/
+    position:relative;
+}
+.popup-edit{
+    display:none;
+    top: 12px;
+    right: -29px;
+    padding-left:10px;
+    padding-top:15px;
+    position:absolute;
+    width:85px;
+    height:77px;
+    text-align:left;
+    background:url(../images/admin/popup.png) top left no-repeat;
+    z-index:999;
+}
+.popup-edit1{
+    display:none;
+    top: 12px;
+    right: -29px;
+    padding-left:10px;
+    padding-top:15px;
+    position:absolute;
+    width:85px;
+    height:77px;
+    text-align:left;
+    background:url(../images/admin/popup1.png) top left no-repeat;
+    z-index:999;
+}
+
+.popup-edit-subject {
+    display: none;
+    top: 12px;
+    left: 25px;
+    padding-left: 10px;
+    padding-top: 15px;
+    position: absolute;
+    width: 85px;
+    height: 77px;
+    text-align: left;
+    background: url(../images/admin/popup.png) top left no-repeat;
+    z-index: 999;
+}
+.popup-edit-subject1 {
+    display: none;
+    top: 12px;
+    left: 25px;
+    padding-left: 10px;
+    padding-top: 15px;
+    position: absolute;
+    width: 85px;
+    height: 77px;
+    text-align: left;
+    background: url(../images/admin/popup1.png) top left no-repeat;
+    z-index: 999;
+}
+/*
+.edit-detail:hover .popup-edit{
+        top: 12px;
+    right: -18px;
+        display:block;
+        padding-left:10px;
+        padding-top:15px;
+        position:absolute;
+        width:77px;
+        height:77px;
+        text-align:left;
+        background:url(../images/admin/popp.png) top left no-repeat;
+        z-index:999;
+}*/
+.popup-add{
+    float:left;
+    width:85%;
+    padding:3px 0px 3px 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+    line-height:18px;
+    text-indent:0px;
+    color:#FFF;
+}
+.popup-add:hover{
+    float:left;
+    width:85%;
+    background:#c6131f;
+    color:#fff;
+    cursor:pointer;
+    font-size:13px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:18px;
+}
+.popup-add a{
+    font-size:13px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:18px;
+    color:#333;
+}
+.popup-add a:hover{
+    font-size:13px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:18px;
+    color:#fff;
+}
+.edit-menu{
+    position:absolute;
+    top:2px; right:8px;
+}
+
+
+.admin-sub{
+    float: left;
+    margin-right: 6px;
+    height: 26px;
+    border:#e5e5e5 1px solid;
+}
+.admin-sub ul{
+
+    height:auto;
+    border:0;
+}
+.admin-sub ul li{
+    float:left;	
+    height:auto;
+    background:url(../images/admin/line.png) top right no-repeat;
+    border:0;
+    /*border-right:#e5e5e5 1px solid;*/
+}
+.admin-sub ul li:last-child{
+    /*border-right:none;*/
+    background:none;
+}
+.admin-sub ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    line-height:25px;
+    font-size:13px;
+    color:#333;
+    border:0;
+    /*font:17px/40px 'supermarket', Arial, sans-serif;
+    color:#4f8345;*/
+
+}
+.admin-sub ul li a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    line-height:25px;
+    font-size:13px;
+    color:#f55b0f;
+    border:0;
+    /*font:17px/40px 'supermarket', Arial, sans-serif;
+    color:#e2660c;*/
+}
+
+.admin-sub ul li span.add{
+    float:left;
+    display:block;
+    padding-right:10px;
+    padding-left:36px;
+    height:37px;
+    border:0;
+    background:url(../images/admin/add.png) top left no-repeat;
+}
+
+.admin-sub ul li span.delete{
+    float:left;
+    display:block;
+    padding-right:10px;
+    padding-left:36px;
+    height:37px;
+    border:0;
+    background:url(../images/admin/recycle.png) top left no-repeat;
+}

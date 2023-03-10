@@ -8,364 +8,248 @@
 
   <script src="../../../lib/jquery/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="../../editor/summernote.css" rel="stylesheet" />
-  <style>
-    page {
-      box-shadow: 0 0 0.5cm rgb(0 0 0 / 50%);
-    }
-
-    body {
-      background: rgb(204, 204, 204);
-    }
-
-    div[size="A4"] {
-      width: 21cm;
-      height: 29.7cm;
-      position: relative;
-      overflow: hidden;
-    }
-
-    pageMain[size="A4onlyWidth"] {
-      display: block;
-      margin: 0 auto;
-      width: 21cm;
-      position: relative;
-      overflow: hidden;
-      padding-bottom: 24px;
-    }
-
-    page {
-      background: white;
-      display: block;
-      margin: 0 auto;
-      margin-top: 16px;
-    }
-
-    page[size="A4"] {
-      width: 21cm;
-      height: 29.7cm;
-      position: relative;
-      overflow: hidden;
-      font: 16pt/16pt 'THSarabunNewRegular', Arial, sans-serif;
-    }
-
-    page[size="A4"][layout="landscape"] {
-      width: 29.7cm;
-      height: 21cm;
-    }
-
-    page[size="A3"] {
-      width: 29.7cm;
-      height: 42cm;
-    }
-
-    page[size="A3"][layout="landscape"] {
-      width: 42cm;
-      height: 29.7cm;
-    }
-
-    page[size="A5"] {
-      width: 14.8cm;
-      height: 21cm;
-    }
-
-    page[size="A5"][layout="landscape"] {
-      width: 21cm;
-      height: 14.8cm;
-    }
-
-    @media print {
-
-      body,
-      page {
-        margin: 0;
-        box-shadow: 0;
-      }
-    }
-
-    .memo-form {
-      margin: 0;
-      padding: 1.5cm 2cm 2cm 3cm;
-    }
-
-
-
-    .memo-form .letter-head-memo {
-      margin: 0;
-      padding: 0;
-      font-size: 20pt;
-      line-height: 20pt;
-      font-weight: bold;
-    }
-
-    .memo-form img {
-      height: 1.5cm;
-    }
-
-
-
-    .memo-form .text-29pt {
-      font-size: 29pt;
-      line-height: 35pt;
-      font-weight: bold;
-      letter-spacing: 0px;
-    }
-
-    .memo-form .memo-border-bottom {
-      border-bottom: 1px dotted #666;
-      padding-left: 8px;
-      font-size: 16pt;
-      line-height: 16pt;
-    }
-
-    .memo-form .p-8 {
-      padding: 8px 0 !important;
-    }
-
-    .footer-text {
-      position: absolute;
-      bottom: 8px;
-      right: 16px;
-    }
-
-    .next-page {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 1cm;
-      width: 40px;
-      margin: 0 auto;
-      text-align: center;
-    }
-  </style>
+  <link href="../../editor/_.css" rel="stylesheet" />
+  <link href="../../editor/_.js" rel="stylesheet" />
 </head>
 
 <body>
 
+
   <div>
-    <div>
-      <div class="m-in " style="padding-top: 0px !important">
-        <form name="sent_form" method="post" id="sent_form" action="./pdf.php">
-          <div class=" justify-content-center text-center py-5 ">
-            <button href="javascript:;"
-            onclick="submitForm();" class="p-3 bg-blue-500 text-white hover:bg-blue-400" required>Export</button>
+    <div class="m-in " style="padding-top: 0px !important">
+      <form name="sent_form" method="post" id="sent_form" action="./pdf.php">
+        <div class=" justify-content-center text-center py-5 ">
+          <button href="javascript:;" onclick="submitForm();" class="p-3 bg-blue-500 text-white hover:bg-blue-400"
+            required>Export</button>
         </div>
+        <span id="block_tab_1" style="display: inline">
+          <page size="A4" id="page1">
+            <div class="memo-form">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td align="left" valign="top">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td width="30%" align="left" valign="top">
+                              <img src="../../../images/memo.png" />
+                            </td>
+                            <td width="40%" align="left" valign="top">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" valign="top">
+                                      <div class="text-29pt">
+                                        บันทึกข้อความ
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                            <td width="30%" align="center" valign="top">
+                              &nbsp;
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td align="left" valign="top" class="p-8">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td align="left" valign="bottom">
+                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                          <tr>
+                                            <td width="15%" align="left" valign="bottom">
+                                              <div class="letter-head-memo">
+                                                ส่วนราชการ
+                                              </div>
+                                            </td>
+                                            <td width="85%" align="left" valign="bottom" class="memo-border-bottom">
+                                              <input type="text" class="w-full  py-2 border border-slate-300"
+                                                name="government" value="" onblur="checkVal(this)" autocomplete="off" />
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="p-8">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td align="left" valign="bottom">
+                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                          <tr>
+                                            <td width="2%" align="left" valign="bottom">
+                                              <div class="letter-head-memo">
+                                                ที่
+                                              </div>
+                                            </td>
+                                            <td width="47%" align="center" valign="bottom" class="memo-border-bottom">
+                                              อัตโนมัติ
+                                            </td>
+                                            <td width="6%" align="center" valign="bottom">
+                                              <div class="letter-head-memo">
+                                                วันที่
+                                              </div>
+                                            </td>
+                                            <td width="45%" align="center" valign="bottom" class="memo-border-bottom"
+                                              style="padding-left: 20px">
+                                              อัตโนมัติ
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="p-8">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td align="left" valign="bottom">
+                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                          <tr>
+                                            <td width="8%" align="left" valign="bottom" class="letter-head-memo">
+                                              เรื่อง
+                                            </td>
+                                            <td width="92%" align="left" valign="bottom" class="memo-border-bottom">
+                                              <input class="w-full  py-2 border border-slate-300" type="text"
+                                                name="subject" value="" autocomplete="off" onblur="checkVal(this)" />
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="p-8">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td align="left" valign="bottom">
+                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                          <tr>
+                                            <td width="8%" align="left" valign="bottom" class="letter-head-memo"
+                                              style="font-size: 16pt">
+                                              เรียน
+                                            </td>
+                                            <td width="92%" align="left" valign="bottom" class="memo-border-bottom"
+                                              style="border: none">
+                                              <input class="w-full  py-2 border border-slate-300" type="text"
+                                                name="learn" value="" autocomplete="off" />
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
 
-          <span id="block_tab_1" style="display: inline">
-            <page size="A4" id="page1">
-              <div class="memo-form">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tbody>
-                    <tr>
-                      <td align="left" valign="top">
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                          <tbody>
-                            <tr>
-                              <td width="30%" align="left" valign="top">
-                                <img src="../../../images/memo.png" />
-                              </td>
-                              <td width="40%" align="left" valign="top">
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                  <tbody>
-                                    <tr>
-                                      <td align="center" valign="top">
-                                        <div class="text-29pt">
-                                          บันทึกข้อความ
-                                        </div>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                              <td width="30%" align="center" valign="top">
-                                &nbsp;
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" valign="top">
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                          <tbody>
-                            <tr>
-                              <td align="left" valign="top" class="p-8">
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                  <tbody>
-                                    <tr>
-                                      <td align="left" valign="bottom">
-                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                          <tbody>
-                                            <tr>
-                                              <td width="15%" align="left" valign="bottom">
-                                                <div class="letter-head-memo">
-                                                  ส่วนราชการ
-                                                </div>
-                                              </td>
-                                              <td width="85%" align="left" valign="bottom" class="memo-border-bottom">
-                                                <input type="text" class="w-full  py-2 border border-slate-300" name="government" value="" onblur="checkVal(this)" autocomplete="off" />
-                                              </td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td align="left" valign="top" class="p-8">
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                  <tbody>
-                                    <tr>
-                                      <td align="left" valign="bottom">
-                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                          <tbody>
-                                            <tr>
-                                              <td width="2%" align="left" valign="bottom">
-                                                <div class="letter-head-memo">
-                                                  ที่
-                                                </div>
-                                              </td>
-                                              <td width="47%" align="center" valign="bottom" class="memo-border-bottom">
-                                                อัตโนมัติ
-                                              </td>
-                                              <td width="6%" align="center" valign="bottom">
-                                                <div class="letter-head-memo">
-                                                  วันที่
-                                                </div>
-                                              </td>
-                                              <td width="45%" align="center" valign="bottom" class="memo-border-bottom"
-                                                style="padding-left: 20px">
-                                                อัตโนมัติ
-                                              </td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td align="left" valign="top" class="p-8">
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                  <tbody>
-                                    <tr>
-                                      <td align="left" valign="bottom">
-                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                          <tbody>
-                                            <tr>
-                                              <td width="8%" align="left" valign="bottom" class="letter-head-memo">
-                                                เรื่อง
-                                              </td>
-                                              <td width="92%" align="left" valign="bottom" class="memo-border-bottom">
-                                                <input class="w-full  py-2 border border-slate-300" type="text" name="subject" value="" autocomplete="off"
-                                                  onblur="checkVal(this)" />
-                                              </td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td align="left" valign="top" class="p-8">
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                  <tbody>
-                                    <tr>
-                                      <td align="left" valign="bottom">
-                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                          <tbody>
-                                            <tr>
-                                              <td width="8%" align="left" valign="bottom" class="letter-head-memo"
-                                                style="font-size: 16pt">
-                                                เรียน
-                                              </td>
-                                              <td width="92%" align="left" valign="bottom" class="memo-border-bottom"
-                                                style="border: none">
-                                                <input class="w-full  py-2 border border-slate-300" type="text" name="order_save_to" value="" autocomplete="off" />
-                                              </td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <span class="memo_description"> </span>
 
-                <span class="memo_description"> </span>
-
-                <div class=" row mt-5">
-                  <div class="col-lg-12">
-                    <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;"
-                      onclick="addTopic(1);"><strong>+ เพิ่มหัวข้อใหม่</strong></a>
-                    <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;"
-                      onclick="addParagraph(1);"><strong>+ เพิ่มย่อหน้าใหม่</strong></a>
-                  </div>
+              <div class=" row mt-5">
+                <div class="col-lg-12">
+                  <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;"
+                    onclick="addTopic(1);"><strong>+ เพิ่มหัวข้อใหม่</strong></a>
+                  <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;"
+                    onclick="addParagraph(1);"><strong>+ เพิ่มย่อหน้าใหม่</strong></a>
                 </div>
               </div>
-
-              <div class="footer-text">
-                <input class="w-full  py-2 border border-slate-300" autocomplete="off" name="footerText[0]" onblur="checkVal(this)" style="height: 48px" />
-              </div>
-
-            </page>
-            <div class=" text-center py-20 " id="addPage">
-              <div class="col-lg-12">
-                <a href="javascript:;" onclick="addPage();"><strong>+ เพิ่มหน้าใหม่</strong></a>
-              </div>
             </div>
-          </span>
-          </span>
 
-        </form>
-      </div>
-      <span style="display: none">
-        <span id="container_clone">
-          <div>
-            <a href="javascript:;" class="btn   py-2" onclick="$(this).parent().remove();">X</a>
-            <textarea  type="text" autocomplete="off" name="description[{i}][]"
-              onblur="checkVal(this)" rows="5"
-              class="w-full  py-2 border border-slate-300" ></textarea>
+            <div class="footer-text">
+              <input class="w-full  py-2 border border-slate-300" autocomplete="off" name="textfooter[0]" onblur="checkVal(this)" style="height: 48px" />
+            </div>
+
+          </page>
+          <div class=" text-center py-20 " id="addPage">
+         
+            <div class="col-lg-12">
+              <a href="javascript:;" onclick="addPage();"><strong>+ เพิ่มหน้าใหม่</strong></a>
+            </div>
           </div>
-        </span>
-        <span id="container_clone_topic">
-          <div>
-            <a href="javascript:;" class="btn   py-2" onclick="$(this).parent().remove();">X</a>
-            <input type="text"
-            class="w-full  py-2 border border-slate-300"
-              name="description[{i}][]" onblur="checkVal(this)" autocomplete="off" />
+
+
+          <div class="bg-white  py-5 ">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tr>
+                <td colspan="1" width="50%"> </td>
+                <td valign="top" style="text-align:left;" colspan="2">
+                  <p><span class="c16"><input type="text" class="w-full  py-2 border border-slate-300 text-center" name="rank" placeholder="ยศ"></span>
+                  </p>
+                </td>
+                <td valign="top" style="text-align:left;" colspan="1" width="44%">
+                  <p>
+                    <span class="c16"><input class="  py-2 border border-slate-300 text-center" required type="text" name="signature" value="" placeholder="ลายเซ็นต์"></span>
+                  <p><span class="c16"><input class="  py-2 border border-slate-300 text-center" required type="text" name="namesurname" placeholder="ชื่อ-นามสกุล"></span></p>
+                  <p><span class="c16"><input class="  py-2 border border-slate-300 text-center" required type="text" name="position" placeholder="ตำแหน่ง"></span></p>
+                  <p><span class="c16"><input class="py-2 border border-slate-300 text-center" type="text" name="other" placeholder="อื่นๆ(ถ้ามี)"></span></p>
+                  </p>
+              </tr>
+            </table>
           </div>
+
+
         </span>
-      </span>
+
+      </form>
     </div>
+    <span style="display: none">
+      <span id="container_clone">
+        <div>
+          <a href="javascript:;" class="btn   py-2" onclick="$(this).parent().remove();">X</a>
+          <textarea type="text" autocomplete="off" name="description[{i}][]" onblur="checkVal(this)" rows="5"
+            class="w-full  py-2 border border-slate-300"></textarea>
+        </div>
+      </span>
+      <span id="container_clone_topic">
+        <div>
+          <a href="javascript:;" class="btn   py-2" onclick="$(this).parent().remove();">X</a>
+          <input type="text" class="w-full  py-2 border border-slate-300" name="description[{i}][]"
+            onblur="checkVal(this)" autocomplete="off" />
+        </div>
+      </span>
+    </span>
   </div>
-
-  </div>
-
-
 
 
   <script type="text/javascript">
-
-
-
-
 
     function addParagraph(page) {
       var i = page - 1;
@@ -391,18 +275,14 @@
       var thaiPage = changeThaiNumber(page);
 
       var html =
-        '<page size="A4" id="page' +
-        page +
-        '">' +
-        ' <div class="next-page">-' +
-        thaiPage +
-        "-</div>" +
-        '<a href="javascript:;" class="btn px-2 py-2" onclick="$(this).parent().remove();">X</a><div class=" row " style="line-height: 30px;"><div class="col-lg-12">' +
+        '<page size="A4" id="page' +page +'">' +
+        ' <div class="next-page">-' +thaiPage +"-</div>" +
+        '<a href="javascript:;" class="btn px-2 py-2" onclick="$(this).parent().remove();">X</a><div class="row" style="line-height: 30px;"><div class="col-lg-12">' +
         '<div class="memo-form"><span class="memo_description"></span>' +
         '   <div class=" row mt-5"> <div class="col-lg-12"><a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addTopic(' + page + ');"><strong>+ เพิ่มหัวข้อใหม่</strong></a> <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addParagraph(' + page + ');"><strong>+ เพิ่มย่อหน้าใหม่</strong></a> </div> </div>' +
         "</div>" +
         "</div></div>" +
-        '<div class="footer-text"><input class="w-full  py-2 border border-slate-300" autocomplete="off" name="footerText[' +tmp_page +']" onblur="checkVal(this)" /></div>' +
+        '<div class="footer-text"><input class="w-full  py-2 border border-slate-300" autocomplete="off" name="textfooter[' + tmp_page + ']" onblur="checkVal(this)" /></div>' +
         '<div ></div>' +
         "</page>";
       $("#block_tab_1 #addPage").before(html);
@@ -415,7 +295,7 @@
       var val = {
         order_num: str,
       };
-  
+
       console.log(val)
     }
 
@@ -445,7 +325,7 @@
       // var isvalid = $("#sent_form").valid();
       // if (isvalid) {
       //   $("#loading").show();
-        $("#sent_form").submit();
+      $("#sent_form").submit();
       // }
     }
   </script>

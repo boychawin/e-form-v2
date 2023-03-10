@@ -51,50 +51,61 @@ $mpdf = new \Mpdf\Mpdf($mpdfConfig);
 
 
 
-// $footerNumber = $_POST['description'] ?? null;
+$description = $_POST['description'] ?? [];
+$government =  !empty($_POST['government'])  ? $_POST['government'] : '';
+$subject =  !empty($_POST['subject'])  ? $_POST['subject'] : '';
+$learn =  !empty($_POST['learn'])  ? $_POST['learn'] : '';
+$textfooter =  !empty($_POST['textfooter'])  ? $_POST['textfooter'] : '';
 
-// print_r($footerNumber);
+$date =  !empty($_POST['date'])  ? $_POST['date'] : 'อัตโนมัติ';
+$at =  !empty($_POST['at'])  ? $_POST['at'] : 'อัตโนมัติ';
 
-// $num_pages = 5;
-// // Loop through the number of pages to add
-// if(count($footerNumber) > 0){
-// for ($i = 0; $i < count($footerNumber); $i++) {
-//     // Add a new page
-//     $mpdf->AddPage();
+$rank =  !empty($_POST['rank'])  ? $_POST['rank'] : '';
+$signature =  !empty($_POST['signature'])  ? $_POST['signature'] : '';
+$namesurname =  !empty($_POST['namesurname'])  ? $_POST['namesurname'] : '';
+$position =  !empty($_POST['position'])  ? $_POST['position'] : '';
+$other =  !empty($_POST['other'])  ? $_POST['other'] : '';
 
-//     // Set the header content for the current page
-//     $header = '
-//     <table width="100%">
-//     <tr>
-//         <td width="33%"></td>
-//         <td width="33%" align="center">-{PAGENO}-</td>
-//         <td width="33%" style="text-align: right;"></td>
-//     </tr>
-//     </table>';
-//     $mpdf->SetHTMLHeader($header);
 
-//     // Set the footer content for the current page
-//     $footer = '
-//     <table width="100%">
-//         <tr>
-//             <td width="33%"></td>
-//             <td width="33%" align="center"></td>
-//             <td width="33%" style="text-align: right;"> '.$footerNumber[$i].' </td>
-//         </tr>
-//     </table>';
-//     $mpdf->SetHTMLFooter($footer);
+if(!empty($description)){
+    for ($i = 0; $i < count($description); $i++) {
+        $mpdf->AddPage();    
+    
+        $header = '
+        <table width="100%">
+        <tr>
+            <td width="33%"></td>
+            <td width="33%" align="center">-{PAGENO}-</td>
+            <td width="33%" style="text-align: right;"></td>
+        </tr>
+        </table>';
+        $mpdf->SetHTMLHeader($header);
+    
+        $footer = '
+        <table width="100%">
+            <tr>
+                <td width="33%"></td>
+                <td width="33%" align="center"></td>
+                <td width="33%" style="text-align: right;"> '.$textfooter[$i].' </td>
+            </tr>
+        </table>';
+        $mpdf->SetHTMLFooter($footer);
 
-//     // Add some content to the new page
-//     $mpdf->WriteHTML('<h1>Page ' . ($i + 1) . '</h1>');
- 
-// }
-// }
-// $mpdf->WriteHTML($html);
-print_r($footerNumber);
-// if(empty($footerNumber)){
-//     // $mpdf->Output();
-// }else{
-//     // $mpdf->Output();
-//     print_r($footerNumber);
-// }
+        if($i == 0){
+            $html = MemoPage(0,$government,$at,$date,$subject,$learn,$description[$i],'','','','');
+            $mpdf->WriteHTML($html);
+        }else{
+            $html = MemoPage(1,$government,$at,$date,$subject,$learn,$description[$i],$rank,$namesurname,$position,$other);
+            $mpdf->WriteHTML($html);
+        }
+
+    }
+}
+
+
+
+
+
+
+$mpdf->Output();
 

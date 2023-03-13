@@ -2,7 +2,7 @@
 require_once '../../../vendor/autoload.php';
 include './pdf-form.php';
 
-$mpdf = new \Mpdf\Mpdf();
+// $mpdf = new \Mpdf\Mpdf();
 
 $defaultConfig = (new Mpdf\Config\ConfigVariables())->getDefaults();
 $fontDirs = $defaultConfig['fontDir'];
@@ -47,65 +47,80 @@ $mpdfConfig = array(
     'default_font' => 'thsarabun',
 
 );
-$mpdf = new \Mpdf\Mpdf($mpdfConfig);
 
+memoPDF($mpdfConfig);
 
+function memoPDF($mpdfConfig)
+{
 
-$description = $_POST['description'] ?? [];
-$government =  !empty($_POST['government'])  ? $_POST['government'] : '';
-$subject =  !empty($_POST['subject'])  ? $_POST['subject'] : '';
-$learn =  !empty($_POST['learn'])  ? $_POST['learn'] : '';
-$textfooter =  !empty($_POST['textfooter'])  ? $_POST['textfooter'] : '';
+    $mpdf = new \Mpdf\Mpdf($mpdfConfig);
+    $request = $_POST;
+    $description = $request['description'] ?? [];
+    $government = !empty($request['government']) ? $request['government'] : '';
+    $subject = !empty($request['subject']) ? $request['subject'] : '';
+    $learn = !empty($request['learn']) ? $request['learn'] : '';
+    $textfooter = !empty($request['textfooter']) ? $request['textfooter'] : '';
+    $date = !empty($request['date']) ? $request['date'] : 'อัตโนมัติ';
+    $at = !empty($request['at']) ? $request['at'] : 'อัตโนมัติ';
+    $rank = !empty($request['rank']) ? $request['rank'] : '';
+    $signature = !empty($request['signature']) ? $request['signature'] : '';
+    $namesurname = !empty($request['namesurname']) ? $request['namesurname'] : '';
+    $position = !empty($request['position']) ? $request['position'] : '';
+    $other = !empty($request['other']) ? $request['other'] : '';
 
-$date =  !empty($_POST['date'])  ? $_POST['date'] : 'อัตโนมัติ';
-$at =  !empty($_POST['at'])  ? $_POST['at'] : 'อัตโนมัติ';
+    if (!empty($description)) {
+        for ($i = 0; $i < count($description); $i++) {
+            $mpdf->AddPage();
 
-$rank =  !empty($_POST['rank'])  ? $_POST['rank'] : '';
-$signature =  !empty($_POST['signature'])  ? $_POST['signature'] : '';
-$namesurname =  !empty($_POST['namesurname'])  ? $_POST['namesurname'] : '';
-$position =  !empty($_POST['position'])  ? $_POST['position'] : '';
-$other =  !empty($_POST['other'])  ? $_POST['other'] : '';
-
-
-if(!empty($description)){
-    for ($i = 0; $i < count($description); $i++) {
-        $mpdf->AddPage();    
-    
-        $header = '
-        <table width="100%">
-        <tr>
-            <td width="33%"></td>
-            <td width="33%" align="center">-{PAGENO}-</td>
-            <td width="33%" style="text-align: right;"></td>
-        </tr>
-        </table>';
-        $mpdf->SetHTMLHeader($header);
-    
-        $footer = '
-        <table width="100%">
+            $header = '
+            <table width="100%">
             <tr>
                 <td width="33%"></td>
-                <td width="33%" align="center"></td>
-                <td width="33%" style="text-align: right;"> '.$textfooter[$i].' </td>
+                <td width="33%" align="center">-{PAGENO}-</td>
+                <td width="33%" style="text-align: right;"></td>
             </tr>
-        </table>';
-        $mpdf->SetHTMLFooter($footer);
+            </table>';
+            $mpdf->SetHTMLHeader($header);
 
-        if($i == 0){
-            $html = MemoPage(0,$government,$at,$date,$subject,$learn,$description[$i],'','','','');
-            $mpdf->WriteHTML($html);
-        }else{
-            $html = MemoPage(1,$government,$at,$date,$subject,$learn,$description[$i],$rank,$namesurname,$position,$other);
+            $footer = '
+            <table width="100%">
+                <tr>
+                    <td width="33%"></td>
+                    <td width="33%" align="center"></td>
+                    <td width="33%" style="text-align: right;"> ' . $textfooter[$i] . ' </td>
+                </tr>
+            </table>';
+            $mpdf->SetHTMLFooter($footer);
+
+            if ($i == 0 && (count($description) > 1)) {
+                $html = MemoPage(0, $government, $at, $date, $subject, $learn, $description[$i], $rank, $signature, $namesurname, $position, $other);
+
+            } else if ($i == 0 && count($description) == 1) {
+                $html = MemoPage(2, $government, $at, $date, $subject, $learn, $description[$i], $rank, $signature, $namesurname, $position, $other);
+            } else {
+                $html = MemoPage(1, $government, $at, $date, $subject, $learn, $description[$i], $rank, $signature, $namesurname, $position, $other);
+
+            }
             $mpdf->WriteHTML($html);
         }
-
     }
+
+    if ($request['action'] == 'preview') {
+        return $mpdf->Output();
+    } else if ($request['action'] == 'respond') {
+        $sites = '';
+        $random = 'test';
+        $date_new = date('Y-m-d');
+        $year_new = date('Y');
+        $upload_location = './';
+        $name_gen_new = "_" . $date_new . "_";
+        $full_path = $upload_location . $name_gen_new . '.pdf';
+        $mpdf->Output($full_path, 'F');
+        return $full_path;
+    } else {
+        return "Error";
+    }
+
+    // $mpdf->Output();
+
 }
-
-
-
-
-
-
-$mpdf->Output();
-

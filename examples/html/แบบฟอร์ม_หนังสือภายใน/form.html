@@ -10,17 +10,97 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="../../editor/_.css" rel="stylesheet" />
   <link href="../../editor/_.js" rel="stylesheet" />
+
+  <style>
+		.animated {
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+		}
+
+		.animated.faster {
+			-webkit-animation-duration: 500ms;
+			animation-duration: 500ms;
+		}
+
+		.fadeIn {
+			-webkit-animation-name: fadeIn;
+			animation-name: fadeIn;
+		}
+
+		.fadeOut {
+			-webkit-animation-name: fadeOut;
+			animation-name: fadeOut;
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+
+		@keyframes fadeOut {
+			from {
+				opacity: 1;
+			}
+
+			to {
+				opacity: 0;
+			}
+		}
+	</style>
+
+
+
+
 </head>
 
 <body>
 
+	<div  class="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated fadeIn faster"
+		style="background: rgba(0,0,0,.7);">
+		<div
+			class="border border-teal-500 shadow-lg modal-container bg-white w-full md:max-w-4xl mx-auto rounded shadow-lg z-50 overflow-y-auto">
+			<div class="modal-content py-4 text-left px-6">
+				<!--Title-->
+				<div class="flex justify-between items-center pb-3">
+					<p class="text-2xl font-bold">ตัวอย่างเอกสาร</p>
+					<div class="modal-close cursor-pointer z-50">
+						<svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+							viewBox="0 0 18 18">
+							<path
+								d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+							</path>
+						</svg>
+					</div>
+				</div>
+				<!--Body-->
+				<div class="my-5">
+          <iframe id="e_formController_pdf_preview" frameborder="0" height="500px" width="100%">
+          </iframe>
+				</div>
+				<!--Footer-->
+				<div class="flex justify-end pt-2">
+					<button
+						class="focus:outline-none modal-close px-4 bg-gray-400 p-3 rounded-lg text-black hover:bg-gray-300">ปิด</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
   <div>
     <div class="m-in " style="padding-top: 0px !important">
-      <form name="sent_form" method="post" id="sent_form" action="./pdf.php">
+      <form name="sent_form" method="post" id="form" action="">
         <div class=" justify-content-center text-center py-5 ">
-          <button href="javascript:;" onclick="submitForm();" class="p-3 bg-blue-500 text-white hover:bg-blue-400"
-            required>Export</button>
+          <!-- <button type="submit"   class="p-3 bg-blue-500 text-white hover:bg-blue-400"
+            required>Export</button> -->
+            <input type="submit" class="p-3 bg-blue-500 text-white hover:bg-blue-400" value="Export">
+            <input type="text" hidden name="action" value="preview">
         </div>
         <span id="block_tab_1" style="display: inline">
           <page size="A4" id="page1">
@@ -76,7 +156,7 @@
                                             </td>
                                             <td width="85%" align="left" valign="bottom" class="memo-border-bottom">
                                               <input type="text" class="w-full  py-2 border border-slate-300"
-                                                name="government" value="" onblur="checkVal(this)" autocomplete="off" />
+                                                name="government" id="government" value="" onblur="checkVal(this)" autocomplete="off" />
                                             </td>
                                           </tr>
                                         </tbody>
@@ -136,7 +216,7 @@
                                             </td>
                                             <td width="92%" align="left" valign="bottom" class="memo-border-bottom">
                                               <input class="w-full  py-2 border border-slate-300" type="text"
-                                                name="subject" value="" autocomplete="off" onblur="checkVal(this)" />
+                                                name="subject" value="" id="subject"  autocomplete="off" onblur="checkVal(this)" />
                                             </td>
                                           </tr>
                                         </tbody>
@@ -162,8 +242,8 @@
                                             </td>
                                             <td width="92%" align="left" valign="bottom" class="memo-border-bottom"
                                               style="border: none">
-                                              <input class="w-full  py-2 border border-slate-300" type="text"
-                                                name="learn" value="" autocomplete="off" />
+                                              <input class="w-full  py-2 border border-slate-300" type="text" onblur="checkVal(this)"
+                                                name="learn" id="learn"  value="" autocomplete="off" />
                                             </td>
                                           </tr>
                                         </tbody>
@@ -181,7 +261,7 @@
                 </tbody>
               </table>
 
-              <span class="memo_description"> </span>
+              <span class="memo_description" > </span>
 
               <div class=" row mt-5">
                 <div class="col-lg-12">
@@ -194,17 +274,15 @@
             </div>
 
             <div class="footer-text">
-              <input class="w-full  py-2 border border-slate-300" autocomplete="off" name="textfooter[0]" onblur="checkVal(this)" style="height: 48px" />
+              <input class="w-full  py-2 border border-slate-300" autocomplete="off" name="textfooter[0]" id="textfooter"  onblur="checkVal(this)" style="height: 48px" />
             </div>
 
           </page>
           <div class=" text-center py-20 " id="addPage">
-         
             <div class="col-lg-12">
               <a href="javascript:;" onclick="addPage();"><strong>+ เพิ่มหน้าใหม่</strong></a>
             </div>
           </div>
-
 
           <div class="bg-white  py-5 ">
             <table border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -216,40 +294,134 @@
                 </td>
                 <td valign="top" style="text-align:left;" colspan="1" width="44%">
                   <p>
-                    <span class="c16"><input class="  py-2 border border-slate-300 text-center" required type="text" name="signature" value="" placeholder="ลายเซ็นต์"></span>
-                  <p><span class="c16"><input class="  py-2 border border-slate-300 text-center" required type="text" name="namesurname" placeholder="ชื่อ-นามสกุล"></span></p>
-                  <p><span class="c16"><input class="  py-2 border border-slate-300 text-center" required type="text" name="position" placeholder="ตำแหน่ง"></span></p>
-                  <p><span class="c16"><input class="py-2 border border-slate-300 text-center" type="text" name="other" placeholder="อื่นๆ(ถ้ามี)"></span></p>
+                    <span class="c16"><input class="  py-2 border border-slate-300 text-center"  type="text" name="signature" id="signature" value="" placeholder="ลายเซ็นต์"></span>
+                  <p><span class="c16"><input class="  py-2 border border-slate-300 text-center"  type="text" name="namesurname" id="namesurname" placeholder="ชื่อ-นามสกุล"></span></p>
+                  <p><span class="c16"><input class="  py-2 border border-slate-300 text-center"  type="text" name="position" id="position" placeholder="ตำแหน่ง"></span></p>
+                  <p><span class="c16"><input class="py-2 border border-slate-300 text-center" type="text" name="other" id="other" placeholder="อื่นๆ(ถ้ามี)"></span></p>
                   </p>
               </tr>
             </table>
           </div>
-
-
         </span>
 
       </form>
     </div>
+
+
     <span style="display: none">
       <span id="container_clone">
         <div>
           <a href="javascript:;" class="btn   py-2" onclick="$(this).parent().remove();">X</a>
-          <textarea type="text" autocomplete="off" name="description[{i}][]" onblur="checkVal(this)" rows="5"
-            class="w-full  py-2 border border-slate-300"></textarea>
+          <textarea type="text" autocomplete="off" name="description[{i}][]" id="description" onblur="checkVal(this)" rows="5"
+            class="w-full  py-2 border border-slate-300 text-indent-25"></textarea>
         </div>
       </span>
       <span id="container_clone_topic">
         <div>
           <a href="javascript:;" class="btn   py-2" onclick="$(this).parent().remove();">X</a>
-          <input type="text" class="w-full  py-2 border border-slate-300" name="description[{i}][]"
+          <input type="text" class="w-full text-indent-25 font-bold py-2 border border-slate-300" name="description[{i}][]" id="description2"
             onblur="checkVal(this)" autocomplete="off" />
         </div>
       </span>
     </span>
   </div>
 
+	<script>
+		const modal = document.querySelector('.main-modal');
+		const closeButton = document.querySelectorAll('.modal-close');
 
+		const modalClose = () => {
+			modal.classList.remove('fadeIn');
+			modal.classList.add('fadeOut');
+			setTimeout(() => {
+				modal.style.display = 'none';
+			}, 500);
+		}
+
+
+    document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+let description = document.getElementById("description").value;
+
+      if(!!description){
+
+        const formData = new FormData(this);
+    modal.classList.remove('fadeOut');
+        modal.classList.add('fadeIn');
+        modal.style.display = 'flex';
+    fetchPDF(formData)
+      }else{
+        alert('กรุณากรอกข้อมูลให้ครบถ้วน')
+      }
+  });
+
+
+
+
+const fetchPDF =(formData) =>{
+
+    fetch('./pdf.php', {
+            method: 'POST',
+            headers: {
+                // 'Accept': 'application/json',
+                // 'Content-Type': 'application/json',
+                // 'X-CSRF-TOKEN': _token
+            },
+            body: formData
+        })
+        .then(response => response.arrayBuffer())
+        .then(result => {
+
+            var blob = new Blob([result], { type: 'application/pdf' });
+            var fileURL = URL.createObjectURL(blob);
+
+            // const isMobile = navigator.userAgentData.mobile;
+            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+            var newWin = window.open(fileURL);
+                newWin.focus();
+                modalClose();
+            }else{
+                let input_cotton = document.querySelector("#e_formController_pdf_preview");
+                input_cotton.src = fileURL;
+
+            }
+            // document.getElementById("e_formController_bt_signature_0").disabled = false;
+            // document.getElementById("signatureController_path_pdf").value = fileURL;
+            
+        });
+
+
+}
+
+
+		for (let i = 0; i < closeButton.length; i++) {
+
+			const elements = closeButton[i];
+
+			elements.onclick = (e) => modalClose();
+
+			modal.style.display = 'none';
+
+			// window.onclick = function (event) {
+			// 	if (event.target == modal) modalClose();
+			// }
+		}
+	</script>
   <script type="text/javascript">
+
+showDataById();
+  function showDataById() {
+      let government = sessionStorage.getItem("government");
+      let subject = sessionStorage.getItem("subject");
+      let learn = sessionStorage.getItem("learn");
+
+      $("#government").val(government);
+      $("#subject").val(subject);
+      $("#learn").val(learn);
+
+    }
+
 
     function addParagraph(page) {
       var i = page - 1;
@@ -259,15 +431,17 @@
       $("#page" + page + " .memo_description").append(tmp);
     }
 
-    function addTopic(page) {
-      var i = page - 1;
 
-      var blockClone = $("#container_clone_topic").html();
-      var tmp = blockClone.replaceAll("{i}", i).trim();
-      $("#block_tab_1 #page" + page + " .memo_description").append(
-        tmp
-      );
-    }
+    function addTopic(page) {
+              var i = page - 1;
+              var blockClone = $("#container_clone_topic").html();
+              var tmp = blockClone.replaceAll("{i}", i).trim();
+              $("#block_tab_1 #page" + page + " .memo_description").append(
+                tmp
+              );
+            }
+
+
 
     function addPage() {
       var tmp_page = $("#block_tab_1 page").length;
@@ -282,7 +456,7 @@
         '   <div class=" row mt-5"> <div class="col-lg-12"><a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addTopic(' + page + ');"><strong>+ เพิ่มหัวข้อใหม่</strong></a> <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addParagraph(' + page + ');"><strong>+ เพิ่มย่อหน้าใหม่</strong></a> </div> </div>' +
         "</div>" +
         "</div></div>" +
-        '<div class="footer-text"><input class="w-full  py-2 border border-slate-300" autocomplete="off" name="textfooter[' + tmp_page + ']" onblur="checkVal(this)" /></div>' +
+        '<div class="footer-text"><input class="w-full  py-2 border border-slate-300" autocomplete="off" name="textfooter[' + tmp_page + ']"  id="textfooter[' + tmp_page + ']"  onblur="checkVal(this)" /></div>' +
         '<div ></div>' +
         "</page>";
       $("#block_tab_1 #addPage").before(html);
@@ -290,13 +464,29 @@
 
 
 
-    function checkVal(obj) {
-      var str = $(obj).val();
-      var val = {
-        order_num: str,
-      };
 
-      console.log(val)
+    function checkLength(value,number) {
+
+  if (value.length > number) {
+   alert(`ข้อความต้องน้อยกว่า ${number}`)
+  } else {
+
+  }
+
+    }
+
+    function checkVal(obj) {
+      var value = $(obj).val();
+      var nameValue = $(obj).attr("name");
+      var id = $(obj).attr("id");
+
+
+
+      if(id == "description2"){
+        checkLength(value,50)
+      }
+      sessionStorage.setItem(nameValue, value);
+
     }
 
     function changeThaiNumber(num) {
@@ -325,7 +515,8 @@
       // var isvalid = $("#sent_form").valid();
       // if (isvalid) {
       //   $("#loading").show();
-      $("#sent_form").submit();
+      // $("#sent_form").submit();
+      $('#myModal').modal('show');
       // }
     }
   </script>

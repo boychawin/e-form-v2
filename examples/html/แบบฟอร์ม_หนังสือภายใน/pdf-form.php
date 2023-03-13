@@ -1,9 +1,8 @@
 <?php
 
-// $description = !empty($footerNumber[0][1]) ?  $footerNumber[0][1] : '';
 function MemoCss()
 {
-  return ' <style type="text/css">
+    return ' <style type="text/css">
 
   .thai-istributed-class {
     text-align:justify;
@@ -294,7 +293,7 @@ function MemoCss()
 function MemoHeaderTemplate($government, $at, $subject, $learn, $date)
 {
 
-  return <<<EOD
+    return <<<EOD
   <table width="100%" border="0">
 
   <tr>
@@ -312,10 +311,10 @@ function MemoHeaderTemplate($government, $at, $subject, $learn, $date)
       <tr>
 
       <td style="padding-top:18px;" class="exactly_1" colspan="3" rowspan="1">
-      
+
       <span class="font20bold">ส่วนราชการ</span>&nbsp;&nbsp;
       <span class="font_size16">$government</span>
-      
+
       </td>
       </tr>
         <tr>
@@ -339,57 +338,63 @@ function MemoHeaderTemplate($government, $at, $subject, $learn, $date)
   EOD;
 }
 
-function MemoFooterTemplate($rank, $namesurname, $position, $other)
+function MemoFooterTemplate($rank,$signature, $namesurname, $position, $other)
 {
-  if(!empty($namesurname)){
-    return <<<EOD
+    if (!empty($namesurname)) {
+        return <<<EOD
     <p class="setMarginTop112pt "></p>
     <table border="0" cellspacing="0" cellpadding="0" width="100%">
     <tr >
       <td colspan="1" width="50%"> </td>
-  
+
       <td valign="top"  align="left"   colspan="2">
         <p ><span class="c16" >$rank</span></p>
       </td>
     </tr>
-  
+
     <tr >
       <td colspan="1" width="50%"> </td>
-  
+
       <td valign="top"  align="center"   colspan="2">
         <p><span class="c16">$namesurname</span></p>
         <p><span class="c16">$position</span></p>
         <p><span class="c16">$other</span></p>
       </td>
-  
     </tr>
     </table>
   EOD;
-  }
+    }
 
-  return '';
+    return '';
 
 }
 
-function MemoPage($type, $government, $at, $date, $subject, $learn, $description, $rank, $namesurname, $position, $other)
+function MemoPage($type, $government, $at, $date, $subject, $learn, $description, $rank,$signature, $namesurname, $position, $other)
 {
-  $header = "";
-  $footer = "";
-  $css = MemoCss($rank, $namesurname, $position, $other);
-  if ($type === 0) {
+    $header = "";
+    $footer = "";
+    $css = MemoCss();
+    if ($type === 0) {
+        $header = MemoHeaderTemplate($government, $at, $subject, $learn, $date);
+
+    } 
+    if ($type === 1) {
+      $footer = MemoFooterTemplate($rank,$signature, $namesurname, $position, $other);
+
+  }
+  
+  if ($type === 2) {
     $header = MemoHeaderTemplate($government, $at, $subject, $learn, $date);
-   
-  }else{
-    $footer = MemoFooterTemplate($rank, $namesurname, $position, $other);
-  }
+    $footer = MemoFooterTemplate($rank,$signature, $namesurname, $position, $other);
+}
 
 
-  $description_html = "";
-  foreach ($description as $item) {
-    $description_html .= '<p  class="MsoNormal thai-istributed-class" > <span lang="TH"  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' . $item . '</span> </p>';
-  }
+    $description_html = "";
+    foreach ($description as $item) {
+        $description_html .= '<p  class="MsoNormal thai-istributed-class" > <span lang="TH"  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' . count($item). '</span> </p>';
+    }
 
-  return $html = <<<EOD
+    return <<<EOD
   $header
 
   <p style="margin-top:10px " class=" setMarginTop0 setMarginBottom0"><span class="c8">$description_html</span></p>
@@ -397,5 +402,5 @@ function MemoPage($type, $government, $at, $date, $subject, $learn, $description
   $footer
   $css
 EOD;
-  return $html;
+
 }

@@ -169,3 +169,17 @@
     margin: 0 auto;
     text-align: center;
   }
+
+
+.text-indent-25 {
+    /* padding: 0; */
+    text-indent: 2.5cm;
+    
+    /* resize: none;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid #ddd;
+    text-align: justify;
+    font-weight: bold;
+    margin: 0 !important; */
+  }

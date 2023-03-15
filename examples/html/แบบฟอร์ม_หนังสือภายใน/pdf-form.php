@@ -2,11 +2,14 @@
 
 function MemoCss()
 {
-    return ' <style type="text/css">
+  return ' <style type="text/css">
 
   .thai-istributed-class {
+    margin-right: 0cm;
+    margin-left: 0cm;
+    text-justify: inter-cluster;
+    text-indent: 2.5cm;
     text-align:justify;
-    text-justify:inter-cluster
 
   }
 
@@ -293,7 +296,7 @@ function MemoCss()
 function MemoHeaderTemplate($government, $at, $subject, $learn, $date)
 {
 
-    return <<<EOD
+  return <<<EOD
   <table width="100%" border="0">
 
   <tr>
@@ -338,10 +341,10 @@ function MemoHeaderTemplate($government, $at, $subject, $learn, $date)
   EOD;
 }
 
-function MemoFooterTemplate($rank,$signature, $namesurname, $position, $other)
+function MemoFooterTemplate($rank, $signature, $namesurname, $position, $other)
 {
-    if (!empty($namesurname)) {
-        return <<<EOD
+  if (!empty($namesurname)) {
+    return <<<EOD
     <p class="setMarginTop112pt "></p>
     <table border="0" cellspacing="0" cellpadding="0" width="100%">
     <tr >
@@ -363,44 +366,49 @@ function MemoFooterTemplate($rank,$signature, $namesurname, $position, $other)
     </tr>
     </table>
   EOD;
-    }
+  }
 
-    return '';
-
+  return '';
 }
 
-function MemoPage($type, $government, $at, $date, $subject, $learn, $description, $rank,$signature, $namesurname, $position, $other)
+function MemoPage($type, $government, $at, $date, $subject, $learn, $description, $rank, $signature, $namesurname, $position, $other)
 {
-    $header = "";
-    $footer = "";
-    $css = MemoCss();
-    if ($type === 0) {
-        $header = MemoHeaderTemplate($government, $at, $subject, $learn, $date);
-
-    } 
-    if ($type === 1) {
-      $footer = MemoFooterTemplate($rank,$signature, $namesurname, $position, $other);
-
+  $header = "";
+  $footer = "";
+  $css = MemoCss();
+  if ($type === 0) {
+    $header = MemoHeaderTemplate($government, $at, $subject, $learn, $date);
   }
-  
+  if ($type === 1) {
+    $footer = MemoFooterTemplate($rank, $signature, $namesurname, $position, $other);
+  }
+
   if ($type === 2) {
     $header = MemoHeaderTemplate($government, $at, $subject, $learn, $date);
-    $footer = MemoFooterTemplate($rank,$signature, $namesurname, $position, $other);
-}
+    $footer = MemoFooterTemplate($rank, $signature, $namesurname, $position, $other);
+  }
 
 
-    $description_html = "";
-    foreach ($description as $item) {
-        $description_html .= '<p  class="MsoNormal thai-istributed-class" > <span lang="TH"  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' . count($item). '</span> </p>';
+  $description_html = "";
+  foreach ($description as $item) {
+    $string = $item;
+    $characters = str_split($string);
+    $characterCount = count($characters);
+    if ($characterCount < 50) {
+      $description_html .= '<p class="thai-istributed-class"  ><b>' . ($item) . '</b> </p>';
+    } else {
+      $description_html .= '<p class="thai-istributed-class"  >' . ($item) . ' </p>';
     }
+  }
 
-    return <<<EOD
+
+
+  return <<<EOD
   $header
 
-  <p style="margin-top:10px " class=" setMarginTop0 setMarginBottom0"><span class="c8">$description_html</span></p>
+  <p style="margin-top:10px " class=" setMarginTop0 setMarginBottom0"><span class="MsoNormal thai-istributed-class">$description_html</span></p>
 
   $footer
   $css
 EOD;
-
 }

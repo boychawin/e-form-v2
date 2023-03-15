@@ -47,14 +47,17 @@ $mpdfConfig = array(
     'default_font' => 'thsarabun',
 
 );
+$request = $_POST;
+// print_r($request['description']);
+memoPDF($mpdfConfig,$request);
 
-memoPDF($mpdfConfig);
 
-function memoPDF($mpdfConfig)
+
+function memoPDF($mpdfConfig,$request)
 {
 
     $mpdf = new \Mpdf\Mpdf($mpdfConfig);
-    $request = $_POST;
+
     $description = $request['description'] ?? [];
     $government = !empty($request['government']) ? $request['government'] : '';
     $subject = !empty($request['subject']) ? $request['subject'] : '';

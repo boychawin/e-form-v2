@@ -394,10 +394,10 @@ function MemoPage($type, $government, $at, $date, $subject, $learn, $description
     $string = $item;
     $characters = str_split($string);
     $characterCount = count($characters);
-    if ($characterCount < 50) {
-      $description_html .= '<p class="thai-istributed-class"  ><b>' . ($item) . '</b> </p>';
+    if ($characterCount <= 145) {
+      $description_html .= '<p class="thai-istributed-class" style="margin-bottom:10px " ><b>' . ($item) . '</b> </p>';
     } else {
-      $description_html .= '<p class="thai-istributed-class"  >' . ($item) . ' </p>';
+      $description_html .= '<p class="thai-istributed-class"  style="margin-bottom:10px " >' . ($item) . ' </p>';
     }
   }
 

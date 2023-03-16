@@ -100,9 +100,10 @@ function memoPDF($mpdfConfig,$request)
 
             } else if ($i == 0 && count($description) == 1) {
                 $html = MemoPage(2, $government, $at, $date, $subject, $learn, $description[$i], $rank, $signature, $namesurname, $position, $other);
-            } else {
+            } else if (count($description) == $i + 1){
                 $html = MemoPage(1, $government, $at, $date, $subject, $learn, $description[$i], $rank, $signature, $namesurname, $position, $other);
-
+            }else{
+                $html = MemoPage(3, $government, $at, $date, $subject, $learn, $description[$i], $rank, $signature, $namesurname, $position, $other);
             }
             $mpdf->WriteHTML($html);
         }

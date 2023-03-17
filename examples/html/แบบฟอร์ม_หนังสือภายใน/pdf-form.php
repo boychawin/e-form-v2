@@ -297,7 +297,7 @@ function MemoHeaderTemplate($government, $at, $subject, $learn, $date)
 {
 
   return <<<EOD
-  <table width="100%" border="0">
+  <table width="100%" border="1">
 
   <tr>
   <td class="exactly_1" width="250" colspan="1" rowspan="1">
@@ -395,7 +395,7 @@ function MemoPage($type, $government, $at, $date, $subject, $learn, $description
     $characters = str_split($string);
     $characterCount = count($characters);
     if ($characterCount <= 145) {
-      $description_html .= '<p class="thai-istributed-class" style="margin-bottom:10px " ><b>' . ($item) . '</b> </p>';
+      $description_html .= '<p class="thai-istributed-class"  ><b>' . ($item) . '</b> </p>';
     } else {
       $description_html .= '<p class="thai-istributed-class"  style="margin-bottom:10px " >' . ($item) . ' </p>';
     }

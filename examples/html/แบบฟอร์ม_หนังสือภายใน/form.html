@@ -55,9 +55,6 @@
     }
   </style>
 
-
-
-
 </head>
 
 <body>
@@ -82,7 +79,7 @@
         </div>
         <!--Body-->
         <div class="my-5">
-          <iframe id="e_formController_pdf_preview" frameborder="0" height="500px" width="100%">
+          <iframe id="e_formController_pdf_preview" frameborder="0" height="750" width="100%">
           </iframe>
         </div>
         <!--Footer-->
@@ -96,7 +93,7 @@
 
   <div>
     <div class="m-in " style="padding-top: 0px !important">
-      <form name="sent_form" method="post" id="form" action="./pdf.php">
+      <form name="sent_form" method="post" id="form" action="./pdf_test.php">
         <div class=" justify-content-center text-center py-5 ">
           <!-- <button type="submit"   class="p-3 bg-blue-500 text-white hover:bg-blue-400"
             required>Export1</button> -->
@@ -184,9 +181,8 @@
                                               </div>
                                             </td>
                                             <td width="47%" align="center" valign="bottom" class="memo-border-bottom">
-                                              <input type="text" class="w-full  py-2 border border-slate-300"
-                                                name="at" id="at" value="" onblur="checkVal(this)"
-                                                autocomplete="off" />
+                                              <input type="text" class="w-full  py-2 border border-slate-300" name="at"
+                                                id="at" value="" onblur="checkVal(this)" autocomplete="off" />
                                             </td>
                                             <td width="6%" align="center" valign="bottom">
                                               <div class="letter-head-memo">
@@ -196,8 +192,8 @@
                                             <td width="45%" align="center" valign="bottom" class="memo-border-bottom"
                                               style="padding-left: 20px">
                                               <input type="text" class="w-full  py-2 border border-slate-300"
-                                              name="date" id="date" value="" onblur="checkVal(this)"
-                                              autocomplete="off" />
+                                                name="date" id="date" value="" onblur="checkVal(this)"
+                                                autocomplete="off" />
                                             </td>
                                           </tr>
                                         </tbody>
@@ -277,7 +273,7 @@
                     onclick="addTopic(1);"><strong>+ เพิ่มหัวข้อใหม่</strong></a>
                   <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;"
                     onclick="addParagraph(1);"><strong>+ เพิ่มย่อหน้าใหม่</strong></a>
-                    <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;"
+                  <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;"
                     onclick="addNewMessage(1);"><strong>+ เพิ่มข้อความใหม่</strong></a>
                 </div>
               </div>
@@ -323,7 +319,6 @@
       </form>
     </div>
 
-
     <span style="display: none">
       <span id="container_clone">
         <div>
@@ -350,6 +345,9 @@
     </span>
   </div>
 
+
+
+
   <script>
     const modal = document.querySelector('.main-modal');
     const closeButton = document.querySelectorAll('.modal-close');
@@ -363,22 +361,23 @@
     }
 
 
-    document.querySelector('form').addEventListener('submit', function (e) {
-      e.preventDefault();
 
-      let description = document.getElementById("description").value;
+    // document.querySelector('form').addEventListener('submit', function (e) {
+    //   e.preventDefault();
 
-      if (!!description) {
+    //   let description = document.getElementById("description").value;
 
-        const formData = new FormData(this);
-        modal.classList.remove('fadeOut');
-        modal.classList.add('fadeIn');
-        modal.style.display = 'flex';
-        fetchPDF(formData)
-      } else {
-        alert('กรุณากรอกข้อมูลให้ครบถ้วน')
-      }
-    });
+    //   if (!!description) {
+
+    //     const formData = new FormData(this);
+    //     modal.classList.remove('fadeOut');
+    //     modal.classList.add('fadeIn');
+    //     modal.style.display = 'flex';
+    //     fetchPDF(formData)
+    //   } else {
+    //     alert('กรุณากรอกข้อมูลให้ครบถ้วน')
+    //   }
+    // });
 
 
 
@@ -446,13 +445,23 @@
 
     }
 
-
     function addParagraph(page) {
       var i = page - 1;
 
       var blockClone = $("#container_clone").html();
       var tmp = blockClone.replaceAll("{i}", i).trim();
+
       $("#page" + page + " .memo_description").append(tmp);
+
+      let description = sessionStorage.getItem('description');
+      if (!description) {
+        description = JSON.stringify([{ page: i }]);
+      }
+      let newItem = { topic: ['new item'] };
+      description = JSON.parse(description);
+      description.push(newItem);
+      sessionStorage.setItem('description', JSON.stringify(description));
+
     }
 
     function addNewMessage(page) {
@@ -526,14 +535,12 @@
         checkLength(value, 50)
       }
 
-
       if (id == "description") {
-        console.log(id)
         checkLengthMoreThan(value, 50)
       }
 
 
-      sessionStorage.setItem(nameValue, value);
+      // sessionStorage.setItem(nameValue, value);
 
     }
 
@@ -557,16 +564,6 @@
       return str;
     }
 
-
-    function submitForm() {
-
-      // var isvalid = $("#sent_form").valid();
-      // if (isvalid) {
-      //   $("#loading").show();
-      // $("#sent_form").submit();
-      $('#myModal').modal('show');
-      // }
-    }
   </script>
 
 </body>

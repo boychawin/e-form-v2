@@ -297,14 +297,15 @@ function MemoHeaderTemplate($government, $at, $subject, $learn, $date)
 {
 
   return <<<EOD
-  <table width="100%" border="1">
+  <table width="100%" border="0">
 
   <tr>
-  <td class="exactly_1" width="250" colspan="1" rowspan="1">
+  <td class="exactly_1" width="8%" colspan="1" rowspan="1">
     <img class="image_logo" src="../../../images/image1.png" alt="Logo" />
   </td>
-
-  <td  style="text-align:left;padding-bottom:-10px;padding-left:-15px;" colspan="2" rowspan="1" valign="bottom">
+  
+  <td class="exactly_1" width="250" colspan="1" rowspan="1"></td>
+  <td  style="text-align:left;padding-bottom:-10px;padding-left:-61px;" colspan="3" rowspan="1" valign="bottom">
     <span class="c29pt"> บันทึกข้อความ</span>
   </td>
 
@@ -313,7 +314,7 @@ function MemoHeaderTemplate($government, $at, $subject, $learn, $date)
 
       <tr>
 
-      <td style="padding-top:18px;" class="exactly_1" colspan="3" rowspan="1">
+      <td style="padding-top:18px;" class="exactly_1" colspan="4" rowspan="1">
 
       <span class="font20bold">ส่วนราชการ</span>&nbsp;&nbsp;
       <span class="font_size16">$government</span>
@@ -321,22 +322,26 @@ function MemoHeaderTemplate($government, $at, $subject, $learn, $date)
       </td>
       </tr>
         <tr>
-      <td class="exactly_1" colspan="1"rowspan="1"><span class="font20bold">ที่</span>&nbsp;&nbsp;<span class="font_size16">$at</span></td>
-    <td class="exactly_1" colspan="2" style="text-align:center;padding-left:-125px;" rowspan="1"><span class="font20bold">วันที่</span>&nbsp;&nbsp;<span class="font_size16">$date</span></td>
+      <td class="exactly_1" colspan="2" rowspan="1"><span class="font20bold">ที่</span>&nbsp;&nbsp;<span class="font_size16">$at</span></td>
+    <td class="exactly_1" colspan="2"  rowspan="1"><span class="font20bold">วันที่</span>&nbsp;&nbsp;<span class="font_size16">$date</span></td>
       </tr>
 
 
-      <tr>
-      <td class="" colspan="3" rowspan="1"><span class="font20bold">เรื่อง</span>&nbsp;&nbsp; <span class="">$subject</span> </td>
-      </tr>
 
-    <tr >
-      <td  colspan="3" rowspan="1"><span  class="">เรียน</span>&nbsp;&nbsp; <span class="">$learn</span> </td>
-      </tr>
+  <tr>
+      <td class=""  valign="top"  align="left" colspan="1" rowspan="1"><span class="font20bold">เรื่อง</span> </td>
+      <td class="" width="" colspan="3" rowspan="1"> <span > $subject </span> </td>
+  </tr>
+  
+
+  <tr>
+      <td class=""  valign="top"  align="left" colspan="1" rowspan="1"><span class="">เรียน</span> </td>
+      <td class="" width="" colspan="3" rowspan="1"> <span > $learn </span> </td>
+  </tr>
+
 
 
   </table>
-
 
   EOD;
 }
@@ -346,9 +351,9 @@ function MemoFooterTemplate($rank, $signature, $namesurname, $position, $other)
   if (!empty($namesurname)) {
     return <<<EOD
     <p class="setMarginTop112pt "></p>
-    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <table border="1" cellspacing="0" cellpadding="0" width="100%">
     <tr >
-      <td colspan="1" width="50%"> </td>
+      <td colspan="1" width="30%"> </td>
 
       <td valign="top"  align="left"   colspan="2">
         <p ><span class="c16" >$rank</span></p>
@@ -356,7 +361,7 @@ function MemoFooterTemplate($rank, $signature, $namesurname, $position, $other)
     </tr>
 
     <tr >
-      <td colspan="1" width="50%"> </td>
+      <td colspan="1" width="30%"> </td>
 
       <td valign="top"  align="center"   colspan="2">
         <p><span class="c16">$namesurname</span></p>

@@ -48,17 +48,17 @@ $mpdfConfig = array(
 
 );
 $request = $_POST;
-// print_r($request['description']);
-memoPDF($mpdfConfig,$request);
+// print_r($request);
+memoPDF($mpdfConfig, $request);
 
 
 
-function memoPDF($mpdfConfig,$request)
+function memoPDF($mpdfConfig, $request)
 {
 
     $mpdf = new \Mpdf\Mpdf($mpdfConfig);
 
-    $description = $request['description'] ?? [];
+    $description = $request['description2'] ?? [];
     $government = !empty($request['government']) ? $request['government'] : '';
     $subject = !empty($request['subject']) ? $request['subject'] : '';
     $learn = !empty($request['learn']) ? $request['learn'] : '';
@@ -71,9 +71,14 @@ function memoPDF($mpdfConfig,$request)
     $position = !empty($request['position']) ? $request['position'] : '';
     $other = !empty($request['other']) ? $request['other'] : '';
 
+    $data_array = json_decode($description, true);
     if (!empty($description)) {
-        for ($i = 0; $i < count($description); $i++) {
+        $page_count = count($data_array);
+
+        for ($i = 0; $i < $page_count; $i++) {
             $mpdf->AddPage();
+            $html = '';
+
 
             $header = '
             <table width="100%">
@@ -95,19 +100,37 @@ function memoPDF($mpdfConfig,$request)
             </table>';
             $mpdf->SetHTMLFooter($footer);
 
-            if ($i == 0 && (count($description) > 1)) {
-                $html = MemoPage(0, $government, $at, $date, $subject, $learn, $description[$i], $rank, $signature, $namesurname, $position, $other);
-
-            } else if ($i == 0 && count($description) == 1) {
-                $html = MemoPage(2, $government, $at, $date, $subject, $learn, $description[$i], $rank, $signature, $namesurname, $position, $other);
-            } else if (count($description) == $i + 1){
-                $html = MemoPage(1, $government, $at, $date, $subject, $learn, $description[$i], $rank, $signature, $namesurname, $position, $other);
-            }else{
-                $html = MemoPage(3, $government, $at, $date, $subject, $learn, $description[$i], $rank, $signature, $namesurname, $position, $other);
+            if ($i == 0 && (count($data_array) > 1)) {
+                $html = MemoPage(0, $government, $at, $date, $subject, $learn, $data_array[$i], $rank, $signature, $namesurname, $position, $other);
+            } else if ($i == 0 && count($data_array) == 1) {
+                $html = MemoPage(2, $government, $at, $date, $subject, $learn, $data_array[$i], $rank, $signature, $namesurname, $position, $other);
+            } else if (count($data_array) == $i + 1) {
+                $html = MemoPage(1, $government, $at, $date, $subject, $learn, $data_array[$i], $rank, $signature, $namesurname, $position, $other);
+            } else {
+                $html = MemoPage(3, $government, $at, $date, $subject, $learn, $data_array[$i], $rank, $signature, $namesurname, $position, $other);
             }
             $mpdf->WriteHTML($html);
         }
     }
+
+
+
+    // $data_array = json_decode($description, true);
+    // $page_count = count($data_array);
+
+    // for ($i = 0; $i < $page_count; $i++) {
+    //     $mpdf->AddPage();
+    //     // Do something with each page
+    //     echo "Page " . ($i + 1) . ":\n";
+        // foreach ($data_array[$i]['data'] as $item) {
+        //     echo $item['message'] . "\n";
+        // }
+
+    //     $mpdf->WriteHTML($i + 1);
+    // }
+
+
+
 
     if ($request['action'] == 'preview') {
         return $mpdf->Output();

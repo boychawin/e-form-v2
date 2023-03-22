@@ -8,9 +8,12 @@ function MemoCss()
     margin-right: 0cm;
     margin-left: 0cm;
     text-justify: inter-cluster;
-    text-indent: 2.5cm;
     text-align:justify;
 
+  }
+
+  .textindent{
+    text-indent: 2.5cm;
   }
 
   .hidden {
@@ -351,7 +354,7 @@ function MemoFooterTemplate($rank, $signature, $namesurname, $position, $other)
   if (!empty($namesurname)) {
     return <<<EOD
     <p class="setMarginTop112pt "></p>
-    <table border="1" cellspacing="0" cellpadding="0" width="100%">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
     <tr >
       <td colspan="1" width="30%"> </td>
 
@@ -395,14 +398,20 @@ function MemoPage($type, $government, $at, $date, $subject, $learn, $description
 
 
   $description_html = "";
-  foreach ($description as $item) {
-    $string = $item;
-    $characters = str_split($string);
-    $characterCount = count($characters);
-    if ($characterCount <= 145) {
-      $description_html .= '<p class="thai-istributed-class"  ><b>' . ($item) . '</b> </p>';
+
+
+
+  foreach ($description['data'] as $item) {
+    // $string = $item;
+
+    // $characters = str_split($string);
+    // $characterCount = count($characters);
+    if ($item['type'] == "topic") {
+      $description_html .= '<p class="thai-istributed-class textindent"  ><b>' . ($item['message']) . '</b> </p>';
+    } else if ($item['type'] == "paragraph") {
+      $description_html .= '<p class="thai-istributed-class textindent"  style="margin-bottom:10px " >' . ($item['message']) . ' </p>';
     } else {
-      $description_html .= '<p class="thai-istributed-class"  style="margin-bottom:10px " >' . ($item) . ' </p>';
+      $description_html .= '<p class="thai-istributed-class"   >' . ($item['message']) . ' </p>';
     }
   }
 

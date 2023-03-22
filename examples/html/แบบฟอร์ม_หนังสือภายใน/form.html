@@ -100,7 +100,7 @@
                     <input type="text" hidden name="action" value="preview">
                 </div>
                 <span id="block_tab_1" style="display: inline">
-                    <page size="A4" id="page1">
+                    <page size="A4" id="page0">
                         <div class="memo-form">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -336,7 +336,7 @@
                     </page>
                     <div class=" text-center py-20 " id="addPage">
                         <div class="col-lg-12">
-                            <a href="javascript:;" onclick="addPage();"><strong>+ เพิ่มหน้าใหม่</strong></a>
+                            <a href="javascript:;"  onclick="addPage();"><strong>+ เพิ่มหน้าใหม่</strong></a>
                         </div>
                     </div>
 
@@ -423,6 +423,25 @@
 
 
         }
+
+
+
+        function deletePageAndUpdateSessionStorage(currentPage) {
+            // Get the description array from sessionStorage
+            const description = JSON.parse(sessionStorage.getItem('description'));
+
+            // Check if the description array exists and has more than one page
+            if (description && description.length > 1) {
+                // Delete the second page from the description array
+                description.splice(1, 1);
+
+                // Set the updated description array in sessionStorage
+                sessionStorage.setItem('description', JSON.stringify(description));
+            }
+        }
+
+
+
 
         function manipulateSessionStorage(pages, id, type = 'p', name = "description") {
             // add an item to sessionStorage
@@ -550,10 +569,10 @@
             if (!description) {
                 sessionStorage.setItem(name, JSON.stringify([{ page: 0, data: [] }]));
             } else {
-                if(type == 1){
+                if (type == 1) {
                     sessionStorage.removeItem(name)
                 }
-               
+
             }
         }
 
@@ -565,7 +584,7 @@
             checksessionStorage();
 
             // var blockClone = $("#container_clone").html();
-            var selector = $("#page" + page + " .memo_description")
+            var selector = $("#page" + pages + " .memo_description")
 
             var textareaClone = '<span id="container_clone">' +
                 '<div id="' + id + '">' +
@@ -590,7 +609,7 @@
             let id = `${type}-id-${random}`;
 
             // var blockClone = $("#container_clone").html();
-            var selector = $("#page" + page + " .memo_description")
+            var selector = $("#page" + pages + " .memo_description")
 
             var textareaClone = '<span id="container_clone">' +
                 '<div id="' + id + '">' +
@@ -616,7 +635,7 @@
             let id = `${type}-id-${random}`;
 
             // var blockClone = $("#container_clone").html();
-            var selector = $("#page" + page + " .memo_description")
+            var selector = $("#page" + pages + " .memo_description")
 
             var textareaClone = '<span id="container_clone">' +
                 '<div id="' + id + '">' +
@@ -639,11 +658,13 @@
             var tmp_page = $("#block_tab_1 page").length;
             var page = $("#block_tab_1 page").length + 1;
             var thaiPage = changeThaiNumber(page);
-
-            var html =
-                '<page size="A4" id="page' + page + '">' +
+            let name = 'description'
+            let description = sessionStorage.getItem(name);
+            if (!!description) {
+                var html =
+                '<page size="A4" id="page' + tmp_page + '">' +
                 ' <div class="next-page">-' + thaiPage + "-</div>" +
-                '<a href="javascript:;" class="btn px-2 py-2" onclick="$(this).parent().remove();">X</a><div class="row" style="line-height: 30px;"><div class="col-lg-12">' +
+                '<a href="javascript:;" class="btn px-2 py-2" onclick="deleteValuePage(this)"  data-page="' + tmp_page + '">X</a><div class="row" style="line-height: 30px;"><div class="col-lg-12">' +
                 '<div class="memo-form"><span class="memo_description"></span>' +
                 '<div class=" row mt-5"> <div class="col-lg-12"><a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addTopic(' + page + ');"><strong>+ เพิ่มหัวข้อใหม่</strong></a> <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addParagraph(' + page + ');"><strong>+ เพิ่มย่อหน้าใหม่</strong></a> <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addNewMessage(' + page + ');"><strong>+ เพิ่มข้อความใหม่</strong></a></div> </div>' +
                 "</div>" +
@@ -653,6 +674,10 @@
                 "</page>";
             $("#block_tab_1 #addPage").before(html);
             addPages(tmp_page);
+            }else{
+                alert('กรุณาเพิ่มเนื้อหาก่อน')
+            }
+  
 
 
         }
@@ -686,6 +711,22 @@
             $('#' + id).parent().remove();
             deleteObject(page, id)
         }
+
+
+
+        function deleteValuePage(obj) {
+
+            // var message = $(obj).val();
+            // var nameValue = $(obj).attr("name");
+            var page = $(obj).attr("data-page");
+            // // var id = $(obj).attr("data-id");
+
+            $('#page' + page).remove();
+            deletePageAndUpdateSessionStorage(page)
+            // console.log(page)
+        }
+
+
 
         function checkVal(obj) {
             var message = $(obj).val();

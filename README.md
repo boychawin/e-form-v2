@@ -5,4 +5,5 @@
 ### https://wkhtmltopdf.org/downloads.html
 
 
-# ไม่อนุญาตให้เผยแพร่
+# INSTALLATION
+### 1. run command line 'composer update' 

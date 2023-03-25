@@ -332,8 +332,8 @@ function MemoHeaderTemplate($government, $at, $subject, $learn, $date)
 
 
   <tr>
-      <td   valign="top"  align="left" colspan="1" rowspan="1" style="padding-top:-5.5px;"><span  class="font20bold">เรื่อง</span> </td>
-      <td valign="bottom" colspan="4" rowspan="1"><span class="font_size16">$subject</span> </td>
+      <td   valign="top"  align="left" colspan="1" rowspan="1" ><span  class="font20bold">เรื่อง</span> </td>
+      <td valign="bottom" colspan="4" rowspan="1" style="padding-top:5px;"><span class="font_size16">$subject</span> </td>
   </tr>
   
 

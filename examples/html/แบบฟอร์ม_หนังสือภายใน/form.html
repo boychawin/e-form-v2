@@ -35,7 +35,7 @@
                 </div>
                 <!--Body-->
                 <div class="my-5">
-                    <iframe id="e_formController_pdf_preview" frameborder="0" height="750" width="100%">
+                    <iframe id="e_formController_pdf_preview" frameborder="0" height="550" width="100%">
                     </iframe>
                 </div>
                 <!--Footer-->
@@ -371,12 +371,7 @@
                 // Set the updated data back to sessionStorage
                 sessionStorage.setItem(name, JSON.stringify(data));
             }
-
-
-
         }
-
-
 
         function deletePageAndUpdateSessionStorage(currentPage) {
             // Get the description array from sessionStorage
@@ -466,19 +461,15 @@
                     }
 
                 });
-
-
         }
 
 
         for (let i = 0; i < closeButton.length; i++) {
-
             const elements = closeButton[i];
-
             elements.onclick = (e) => modalClose();
-
             modal.style.display = 'none';
         }
+        
     </script>
     <script type="text/javascript">
 
@@ -522,7 +513,6 @@
 
             // var blockClone = $("#container_clone").html();
             var selector = $("#page" + pages + " .memo_description")
-
             var textareaClone = '<span id="container_clone">' +
                 '<div id="' + id + '">' +
                 '<a href="javascript:;" class="btn   py-2" onclick="deleteVal(this)" data-id="' + id + '" data-page="' + pages + '">X</a>' +
@@ -532,7 +522,6 @@
                 '</span>';
 
             selector.append(textareaClone);
-
             manipulateSessionStorage(pages, id, type)
 
 
@@ -610,9 +599,6 @@
             } else {
                 alert('กรุณาเพิ่มเนื้อหาก่อน')
             }
-
-
-
         }
 
 

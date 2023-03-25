@@ -308,7 +308,7 @@ function MemoHeaderTemplate($government, $at, $subject, $learn, $date)
   </td>
   
   <td class="exactly_1" width="250" colspan="1" rowspan="1"></td>
-  <td  style="text-align:left;padding-bottom:-10px;padding-left:-61px;" colspan="3" rowspan="1" valign="bottom">
+  <td  style="text-align:left;padding-bottom:-10px;padding-left:-71px;" colspan="3" rowspan="1" valign="bottom">
     <span class="c29pt"> บันทึกข้อความ</span>
   </td>
 
@@ -317,7 +317,7 @@ function MemoHeaderTemplate($government, $at, $subject, $learn, $date)
 
       <tr>
 
-      <td style="padding-top:18px;" class="exactly_1" colspan="4" rowspan="1">
+      <td style="padding-top:18px;" class="exactly_1" colspan="5" rowspan="1">
 
       <span class="font20bold">ส่วนราชการ</span>&nbsp;&nbsp;
       <span class="font_size16">$government</span>
@@ -326,20 +326,20 @@ function MemoHeaderTemplate($government, $at, $subject, $learn, $date)
       </tr>
         <tr>
       <td class="exactly_1" colspan="2" rowspan="1"><span class="font20bold">ที่</span>&nbsp;&nbsp;<span class="font_size16">$at</span></td>
-    <td class="exactly_1" colspan="2"  rowspan="1"><span class="font20bold">วันที่</span>&nbsp;&nbsp;<span class="font_size16">$date</span></td>
+    <td class="exactly_1 " colspan="3"  rowspan="1"><span class="font20bold ">วันที่</span>&nbsp;&nbsp;<span class="font_size16">$date</span></td>
       </tr>
 
 
 
   <tr>
-      <td class=""  valign="top"  align="left" colspan="1" rowspan="1"><span class="font20bold">เรื่อง</span> </td>
-      <td class="" width="" colspan="3" rowspan="1"> <span > $subject </span> </td>
+      <td   valign="top"  align="left" colspan="1" rowspan="1" style="padding-top:-5.5px;"><span  class="font20bold">เรื่อง</span> </td>
+      <td valign="bottom" colspan="4" rowspan="1"><span class="font_size16">$subject</span> </td>
   </tr>
   
 
   <tr>
       <td class=""  valign="top"  align="left" colspan="1" rowspan="1"><span class="">เรียน</span> </td>
-      <td class="" width="" colspan="3" rowspan="1"> <span > $learn </span> </td>
+      <td class="" width="" colspan="4" rowspan="1"> <span > $learn </span> </td>
   </tr>
 
 

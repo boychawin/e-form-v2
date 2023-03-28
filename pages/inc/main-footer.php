@@ -1,4 +1,7 @@
-<div class=" text-center py-20 " id="addPage">
+<?php 
+
+function MainFooter(){
+    return '<div class=" text-center py-20 " id="addPage">
     <div class="col-lg-12">
         <a href="javascript:;" onclick="addPage();"><strong>+ เพิ่มหน้าใหม่</strong></a>
     </div>
@@ -23,7 +26,7 @@
                 </p>
         </tr>
     </table>
-</div>
+</div>';
+}
 
-<script src="./_.js"></script>
-<script src="../utils/global.js"></script>
+?>

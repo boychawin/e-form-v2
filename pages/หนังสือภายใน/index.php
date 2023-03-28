@@ -7,17 +7,19 @@
     <title>E-form</title>
     <?php include('../inc/main-head.php'); ?>
     <?php include('../inc/main-page.php'); ?>
+    <?php include('../inc/main-header.php'); ?>
+    <?php include('../inc/main-footer.php'); ?>
+    <?php include('../inc/main-modal.php'); ?>
 </head>
 
 <body>
-    <?php include('../inc/main-modal.php'); ?>
+<?php echo MainModal(); ?>
     <div>
         <div class="m-in " style="padding-top: 0px !important">
             <form name="sent_form" method="post" id="form">
-                <?php include('../inc/main-header.php'); ?>
-
+               
+                <?php echo MainHeader(); ?>
                 <span id="block_tab_1" style="display: inline">
-
                     <?php echo  PageForm('
                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
                         <tbody>
@@ -167,40 +169,31 @@
                                 </td>
                             </tr>
                         </tbody>
-                    </table>
-                    <span class="memo_description"> </span>
-                    <div class=" row mt-5">
-                        <div class="col-lg-12">
-                            <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addTopic(1);"><strong>+
-                                    เพิ่มหัวข้อใหม่</strong></a>
-                            <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addParagraph(1);"><strong>+
-                                    เพิ่มย่อหน้าใหม่</strong></a>
-                            <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addNewMessage(1);"><strong>+
-                                    เพิ่มข้อความใหม่</strong></a>
+                        </table>
+                        <span class="memo_description"> </span>
+                        <div class=" row mt-5">
+                            <div class="col-lg-12">
+                                <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addTopic(1);"><strong>+
+                                        เพิ่มหัวข้อใหม่</strong></a>
+                                <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addParagraph(1);"><strong>+
+                                        เพิ่มย่อหน้าใหม่</strong></a>
+                                <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addNewMessage(1);"><strong>+
+                                        เพิ่มข้อความใหม่</strong></a>
+                            </div>
                         </div>
-                    </div>
-                    
-                    ');
+                        
+                        ');
 
 
                     ?>
+                    <?php echo MainFooter(); ?>
+                </span>
 
+            </form>
         </div>
-
-        <div class="footer-text">
-            <input class="w-full  py-2 border border-slate-300" autocomplete="off" name="textfooter[0]" id="textfooter" onblur="checkVal(this)" style="height: 48px" />
-        </div>
-
-        </page>
-
-        <?php include('../inc/main-footer.php'); ?>
-        </span>
-
-        </form>
     </div>
-    </div>
-
-    <?php include('../inc/main-footer.php'); ?>
+    <script src="./_.js"></script>
+    <script src="../utils/global.js"></script>
     <script>
         showDataById();
 

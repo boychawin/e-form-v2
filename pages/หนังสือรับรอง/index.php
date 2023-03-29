@@ -32,10 +32,221 @@
       font-style: normal;
     }
 
+    table td,
+    table th {
+      padding: 0
+    }
+
+    .c9 {
+      margin-left: -154pt;
+      padding-top: 0pt;
+      padding-bottom: 0pt;
+      line-height: 1.0;
+      orphans: 2;
+      widows: 2;
+      text-align: center;
+      margin-right: -189.7pt
+    }
+
+    .c8 {
+      color: #000000;
+      font-weight: 400;
+      text-decoration: none;
+      vertical-align: baseline;
+      font-size: 16pt;
+      font-family: "THSarabun";
+      font-style: normal;
+    }
+
+
+
+
+    .c10 {
+      color: #000000;
+      font-weight: 700;
+      text-decoration: none;
+      vertical-align: baseline;
+      font-size: 16pt;
+      font-family: "THSarabun";
+      font-style: normal
+    }
+
+
+
+
+    .c6 {
+      color: #000000;
+      font-weight: 400;
+      text-decoration: none;
+      vertical-align: baseline;
+      font-size: 15pt;
+      font-family: "THSarabun";
+      font-style: normal
+    }
+
+
+    .c24 {
+      padding-top: 0pt;
+      padding-bottom: 0pt;
+      line-height: 1.0;
+      orphans: 2;
+      widows: 2;
+      text-align: right
+    }
+
+
+    .c7_text_left {
+      padding-top: 0pt;
+      padding-bottom: 100pt;
+      line-height: 1.1;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }
+
+
+    .c1 {
+      padding-top: 0pt;
+      padding-bottom: 10pt;
+      line-height: 1.0;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }
+
+    .c11 {
+      padding-top: 0pt;
+      padding-bottom: 0pt;
+      line-height: 1.0;
+      orphans: 2;
+      widows: 2;
+      text-align: center
+    }
+
+
+
+    .c22 {
+      font-size: 16pt;
+      font-family: "THSarabun";
+      font-weight: 400
+    }
+
+
+
+    .c5 {
+      height: 11pt
+    }
+
+
+    html,
+    body {
+      font-size: 16pt;
+      font-family: "THSarabun";
+      line-height: 1.1;
+    }
+
+    .center {
+      text-align: center;
+    }
+
     .c16 {
       font-size: 16pt;
       font-family: "THSarabun";
       font-weight: 400;
+    }
+
+    p {
+      padding-top: 0pt;
+      padding-bottom: 0pt;
+      margin-bottom: 0pt;
+    }
+
+    span {
+      padding-top: 0pt;
+      padding-bottom: 0pt;
+      margin-bottom: 0pt;
+      margin-top: 0pt;
+
+    }
+
+    .setMarginTop0 {
+      margin-top: 0pt;
+    }
+
+    .setMarginBottom0 {
+      margin-bottom: 0pt;
+      padding-bottom: 0pt;
+
+    }
+
+    .setMarginTop1 {
+      line-height: 1.1;
+      font-size: 16pt;
+
+    }
+
+
+    .setMarginTop2 {
+      line-height: 2.2;
+      font-size: 16pt;
+      margin-bottom: 0pt;
+    }
+
+    .setMarginTop26pt {
+      line-height: 2.8pt;
+      font-size: 16pt;
+      margin-bottom: 0pt;
+    }
+
+    .setMarginTop16pt {
+      line-height: 1.8pt;
+      font-size: 16pt;
+      margin-bottom: 0pt;
+    }
+
+
+
+
+    p.MsoNormal {
+      margin-top: 0cm;
+      margin-right: 0cm;
+      margin-bottom: 10.0pt;
+      margin-left: 0cm;
+      line-height: 115%;
+      font-size: 16.0pt;
+      font-family: "THSarabun", sans-serif;
+
+    }
+
+
+
+    .indent1 {
+      margin-top: 0cm;
+      margin-right: 0cm;
+      margin-bottom: 0cm;
+      margin-left: 0cm;
+      text-indent: 1cm;
+      line-height: 1.1;
+    }
+
+
+    .indent8 {
+      margin-top: 0cm;
+      margin-right: 54.4pt;
+      margin-bottom: 0cm;
+      margin-left: 0cm;
+      text-indent: 8cm;
+      line-height: 1.1;
+    }
+
+
+    .indent5 {
+      margin-top: 16pt;
+      margin-right: 0cm;
+      margin-bottom: 0cm;
+      margin-left: 0cm;
+      text-indent: 5cm;
+      line-height: 1.1;
     }
 
     .span_image {
@@ -45,6 +256,7 @@
       border: 0px solid #000000;
       transform: rotate(0rad) translateZ(0px);
       -webkit-transform: rotate(0rad) translateZ(0px);
+
     }
 
     .image_logo {
@@ -54,73 +266,15 @@
       margin-top: -0px;
       transform: rotate(0rad) translateZ(0px);
       -webkit-transform: rotate(0rad) translateZ(0px);
-
     }
 
+    .indent25 {
+      text-indent: 2.5cm;
+      padding-bottom: 0pt;
+      text-align: justify;
+      orphans: 2;
+      widows: 2;
 
-    p.MsoNormal,
-    li.MsoNormal,
-    div.MsoNormal {
-      mso-style-unhide: no;
-      mso-style-qformat: yes;
-      mso-style-parent: "";
-      margin-top: 0cm;
-      margin-right: 0cm;
-      margin-bottom: 10.0pt;
-      margin-left: 0cm;
-      line-height: 115%;
-      mso-pagination: widow-orphan;
-      font-size: 16.0pt;
-      mso-bidi-font-size: 16.0pt;
-      font-family: "THSarabun", sans-serif;
-      mso-ascii-font-family: 'THSarabun';
-      mso-ascii-theme-font: minor-latin;
-      mso-fareast-font-family: 'THSarabun';
-      mso-fareast-theme-font: minor-latin;
-      mso-hansi-font-family: 'THSarabun';
-      mso-hansi-theme-font: minor-latin;
-      mso-bidi-font-family: "THSarabun";
-      mso-bidi-theme-font: minor-bidi;
-      mso-ansi-language: EN-US;
-    }
-
-
-
-    .indent8 {
-      margin-top: 0cm;
-      margin-right: 54.4pt;
-      margin-bottom: 0cm;
-      margin-left: 0cm;
-      text-indent: 8cm;
-      line-height: normal;
-    }
-
-    .indent5 {
-      margin-top: 16pt;
-      margin-right: 0cm;
-      margin-bottom: 0cm;
-      margin-left: 0cm;
-      text-indent: 5cm;
-      line-height: normal;
-      tab-stops: center 339.05pt;
-    }
-
-    .setMarginTop2 {
-      line-height: 2.2;
-      font-size: 16pt;
-      margin-bottom: 0pt;
-    }
-
-    .setMarginTop26pt {
-      line-height: 2.8;
-      font-size: 16pt;
-    }
-
-
-
-    .setMarginTop1 {
-      line-height: 1.1;
-      font-size: 16pt;
     }
   </style>
 
@@ -137,36 +291,39 @@
 
           <page size="A4" id="page0">
             <div class="memo-form">
-              <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+
+
+              <table border="0" width="100%">
                 <tr>
-                  <td colspan="2"></td>
-                  <td colspan="2" style="text-align:center">
-                    <span class="span_image">
-                      <img src="../../images/image1.jpg" class="image_logo" title="ตราครุฑ" />
+
+                  <td style="text-align:left;padding-top:70px;" width="250px" colspan="1" rowspan="1">
+                    <p><span>เลขที่ &nbsp;</span>
+                    <input placeholder="" type="text" class="py-0 border border-slate-300 " name="number" id="number" value="" onblur="checkVal(this)" autocomplete="off" />
+                  </p>
+                  </td>
+                  <td colspan="2" rowspan="1" style="text-align:center">
+                    <p><span class="span_image">
+                        <img alt="logo" src="../../images/image32.jpg" class="image_logo"> </span></p>
+                  </td>
+                  <td valign="bottom" style="text-align:right;padding-bottom:10px;" width="125px" colspan="1" rowspan="1">
+                  </td>
+                  <td valign="bottom" width="125px" colspan="1" rowspan="1">
+                  <textarea placeholder="" type="text" class="py-0 border border-slate-300 w-20" name="address" id="address" value="" onblur="checkVal(this)" autocomplete="off" ></textarea>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="4" rowspan="1">
+                  </td>
+                  <td colspan="1" style="text-align:left;padding-top:-10px" rowspan="1">
+                    <span>
+                      <!-- <input required name="name3" placeholder="ที่ตั้ง "> -->
                     </span>
                   </td>
-                  <td colspan="2"></td>
                 </tr>
               </table>
 
-              <p class="mt-2" style="margin-bottom: 0cm; text-align: center; line-height: normal">
-                <span class="c16"></span>
-                <span class="c16 font-bold">ประกาศ&nbsp;&nbsp;
-                </span>
-                <input placeholder="" type="text" class="py-0 border border-slate-300 w-60" name="announce" id="announce" value="" onblur="checkVal(this)" autocomplete="off" />
-              </p>
-
-
-              <p class="MsoNormal" align="center" style="margin-bottom: 0cm; text-align: center; line-height: normal">
-                <span class="c16 font-bold">เรื่อง&nbsp;&nbsp;
-
-                </span>
-                <input placeholder="" type="text" class="py-0 border border-slate-300 w-80" name="subject" id="subject" value="" onblur="checkVal(this)" autocomplete="off" />
-              </p>
-
-              <p class="MsoNormal" align="center" style="margin-bottom: 0cm; text-align: center; line-height: normal">
-                <span class="c16">---------------------------------------------------------</span>
-              </p>
 
 
               <span class="memo_description"> </span>
@@ -181,27 +338,14 @@
                 </div>
               </div>
 
-
-
               <div id="orderFooter" class="mt-5">
-                <p class="MsoNormal" style="
-                  margin-right: 0cm;
-                  margin-left: 0cm;
-                  text-justify: inter-cluster;
-                  text-indent: 2.5cm;
-                ">
-                  <span class="c16">ทั้งนี้&nbsp;&nbsp;ตั้งแต่&nbsp;
-                    <input placeholder="" type="text" class="py-0 border border-slate-300 w-80" name="since" id="since" value="" onblur="checkVal(this)" autocomplete="off" />
-                  </span>
-                </p>
-
                 <p class="setMarginTop2"></p>
-
                 <p class="MsoNormal indent5 ">
-                  <span class="c16">ประกาศ&nbsp;&nbsp;วันที่&nbsp;&nbsp;
-                    <input placeholder="" type="text" class="py-0 border border-slate-300 w-60" name="announcedate" id="announcedate" value="" onblur="checkVal(this)" autocomplete="off" />&nbsp;&nbsp;
+                  <span class="c16">ให้ไว้&nbsp;&nbsp;วันที่&nbsp;&nbsp;
+                  <input placeholder="วันที่ เดือน ปี" type="text" class="py-0 border border-slate-300 " name="certificatedate" id="certificatedate" value="" onblur="checkVal(this)" autocomplete="off" />&nbsp;&nbsp;
                   </span>
                 </p>
+                <p class="setMarginTop26pt"></p>
               </div>
 
             </div>

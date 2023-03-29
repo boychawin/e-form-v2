@@ -45,10 +45,10 @@ $mpdfConfig = array(
 
 );
 $request = $_POST;
-OderPDF($mpdfConfig, $request);
+announcePDF($mpdfConfig, $request);
 
 
-function OderPDF($mpdfConfig, $request)
+function announcePDF($mpdfConfig, $request)
 {
 
     $mpdf = new \Mpdf\Mpdf($mpdfConfig);

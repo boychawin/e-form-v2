@@ -280,3 +280,38 @@ function changeThaiNumber(num) {
     return str;
 }
 
+
+function addPageOrder() {
+    var tmp_page = $("#block_tab_1 page").length;
+    var page = $("#block_tab_1 page").length + 1;
+    var thaiPage = changeThaiNumber(page);
+    let name = 'description'
+    let description = sessionStorage.getItem(name);
+    if (!!description) {
+
+      const elementToRemove = document.getElementById("orderFooter");
+
+      console.log(elementToRemove)
+
+      var html =
+        '<page size="A4" id="page' + tmp_page + '">' +
+        ' <div class="next-page">-' + thaiPage + "-</div>" +
+        '<a href="javascript:;" class="btn px-2 py-2" onclick="deleteValuePage(this)"  data-page="' + tmp_page + '">X</a><div class="row" style="line-height: 30px;"><div class="col-lg-12">' +
+        '<div class="memo-form"><span class="memo_description"></span>' +
+        '<div class=" row mt-5"> <div class="col-lg-12"><a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addTopic(' + page + ');"><strong>+ เพิ่มหัวข้อใหม่</strong></a> <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addParagraph(' + page + ');"><strong>+ เพิ่มย่อหน้าใหม่</strong></a> <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addNewMessage(' + page + ');"><strong>+ เพิ่มข้อความใหม่</strong></a></div> </div>' +
+        elementToRemove.outerHTML +
+        "</div>" +
+        "</div></div>" +
+        '<div class="footer-text"><input class="w-full  py-2 border border-slate-300" autocomplete="off" name="textfooter[' + tmp_page + ']"  id="textfooter[' + tmp_page + ']"  onblur="checkVal(this)" /></div>' +
+        '<div ></div>' +
+       
+        "</page>";
+      $("#block_tab_1 #addPage").before(html);
+
+      elementToRemove.remove();
+      addPages(tmp_page);
+    } else {
+      alert('กรุณาเพิ่มเนื้อหาก่อน')
+    }
+  }
+

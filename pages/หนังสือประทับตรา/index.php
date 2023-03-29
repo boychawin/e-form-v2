@@ -9,8 +9,6 @@
   <?php include('../inc/main-header.php'); ?>
   <?php include('../inc/main-footer.php'); ?>
   <?php include('../inc/main-modal.php'); ?>
-
-
   <style>
     .c50 {
       background-color: #ffffff;
@@ -23,6 +21,7 @@
       width: '100%';
       height: 20;
       margin: 0%;
+
       color: #000000;
       font-weight: 400;
       text-decoration: none;
@@ -72,7 +71,15 @@
     }
 
 
-
+    .c3 {
+      color: #000000;
+      font-weight: 400;
+      text-decoration: none;
+      vertical-align: baseline;
+      font-size: 16pt;
+      font-family: "THSarabun";
+      font-style: normal
+    }
 
     .c6 {
       color: #000000;
@@ -97,8 +104,8 @@
 
     .c7_text_left {
       padding-top: 0pt;
-      padding-bottom: 100pt;
-      line-height: 1.1;
+      padding-bottom: 0pt;
+      line-height: 1.0;
       orphans: 2;
       widows: 2;
       text-align: left
@@ -106,6 +113,8 @@
 
 
     .c1 {
+      font-size: 16pt;
+      font-family: "THSarabun";
       padding-top: 0pt;
       padding-bottom: 10pt;
       line-height: 1.0;
@@ -131,6 +140,10 @@
       font-weight: 400
     }
 
+    .c4 {
+      height: 0pt
+    }
+
 
 
     .c5 {
@@ -154,6 +167,13 @@
       font-family: "THSarabun";
       font-weight: 400;
     }
+
+    .c29pt {
+      font-size: 29pt;
+      font-family: "THSarabun";
+      font-weight: 400;
+    }
+
 
     p {
       padding-top: 0pt;
@@ -182,7 +202,6 @@
     .setMarginTop1 {
       line-height: 1.1;
       font-size: 16pt;
-
     }
 
 
@@ -192,6 +211,13 @@
       margin-bottom: 0pt;
     }
 
+    .setMarginTop4 {
+      line-height: 4.4;
+      font-size: 16pt;
+      margin-bottom: 0pt;
+    }
+
+
     .setMarginTop26pt {
       line-height: 2.8pt;
       font-size: 16pt;
@@ -200,6 +226,12 @@
 
     .setMarginTop16pt {
       line-height: 1.8pt;
+      font-size: 16pt;
+      margin-bottom: 0pt;
+    }
+
+    .setMarginTop112pt {
+      line-height: 2.3pt;
       font-size: 16pt;
       margin-bottom: 0pt;
     }
@@ -217,7 +249,6 @@
       font-family: "THSarabun", sans-serif;
 
     }
-
 
 
     .indent1 {
@@ -239,6 +270,14 @@
       line-height: 1.1;
     }
 
+    .indent10 {
+      margin-top: 0cm;
+      margin-right: 54.4pt;
+      margin-bottom: 0cm;
+      margin-left: 0cm;
+      text-indent: 10cm;
+      line-height: 1.1;
+    }
 
     .indent5 {
       margin-top: 16pt;
@@ -260,7 +299,6 @@
     }
 
     .image_logo {
-
       height: 113.38586666666666px;
       margin-left: -0px;
       margin-top: -0px;
@@ -293,38 +331,30 @@
             <div class="memo-form">
 
 
-
               <table border="0" width="100%">
                 <tr>
-
-                  <td style="text-align:left;padding-top:70px;" width="250px" colspan="1" rowspan="1">
-                    <p><span>เลขที่ &nbsp;</span>
-                    <input placeholder="" type="text" class="py-0 border border-slate-300 " name="number" id="number" value="" onblur="checkVal(this)" autocomplete="off" />
-                  </p>
-                  </td>
-                  <td colspan="2" rowspan="1" style="text-align:center">
-                    <p><span class="span_image">
-                        <img alt="logo" src="../../images/image32.jpg" class="image_logo"> </span></p>
-                  </td>
-                  <td valign="bottom" style="text-align:right;padding-bottom:10px;" width="125px" colspan="1" rowspan="1">
-                  </td>
-                  <td valign="bottom" width="125px" colspan="1" rowspan="1">
-                  <textarea placeholder="" type="text" class="py-0 border border-slate-300 w-20" name="address" id="address" value="" onblur="checkVal(this)" autocomplete="off" ></textarea>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td colspan="4" rowspan="1">
-                  </td>
-                  <td colspan="1" style="text-align:left;padding-top:-10px" rowspan="1">
-                    <span>
-                      <!-- <input required name="name3" placeholder="ที่ตั้ง "> -->
+                  <td width="250" style="padding-bottom:10px;" colspan="1" rowspan="1" valign="bottom"> <span class="c1">
+                      ที่&nbsp;<input placeholder="" type="text" class="py-0 border border-slate-300 " name="at" id="at" value="" onblur="checkVal(this)" autocomplete="off" />
+                    </span> </td>
+                  <td colspan="1" rowspan="2" style="text-align:center">
+                    <span class="span_image">
+                      <img alt="logo" src="../../images/image32.jpg" class="image_logo">
                     </span>
                   </td>
+                  <td width="250" colspan="1" rowspan="1"></td>
                 </tr>
               </table>
 
 
+              <p class="MsoNormal setMarginBottom0">
+                <span class="c1">ถึง&nbsp;
+                  <input placeholder="" type="text" class="py-0 border border-slate-300 " name="to" id="to" value="" onblur="checkVal(this)" autocomplete="off" />
+                </span>
+              </p>
+
+              <p class="setMarginTop1"></p>
+
+              <div style="padding-top: 10px;"></div>
 
               <span class="memo_description"> </span>
               <div class=" row mt-5">
@@ -338,14 +368,43 @@
                 </div>
               </div>
 
-              <div id="orderFooter" class="mt-5">
-                <p class="setMarginTop2"></p>
-                <p class="MsoNormal indent5 ">
-                  <span class="c16">ให้ไว้&nbsp;&nbsp;วันที่&nbsp;&nbsp;
-                  <input placeholder="วันที่ เดือน ปี" type="text" class="py-0 border border-slate-300 " name="certificatedate" id="certificatedate" value="" onblur="checkVal(this)" autocomplete="off" />&nbsp;&nbsp;
+              <div id="orderFooter">
+
+                <p class="setMarginTop1"></p>
+                <p class="setMarginTop1"></p>
+                <p class="setMarginTop1"></p>
+                <p class="setMarginTop1"></p>
+
+                <p style="padding-top:64px" class="MsoNormal indent8"><span class="c16">&nbsp;
+                    <input placeholder="ส่วนราชการที่ส่งหนังสือออก" type="text" class="py-0 border border-slate-300 " name="agencies" id="agencies" value="" onblur="checkVal(this)" autocomplete="off" />
                   </span>
                 </p>
-                <p class="setMarginTop26pt"></p>
+                <p class="MsoNormal indent10"><span class="c16">&nbsp;
+                    <input placeholder="เดือน ปี" type="text" class="py-0 border border-slate-300 " name="monthyear" id="monthyear" value="" onblur="checkVal(this)" autocomplete="off" />
+                  </span></p>
+                
+                <p class="setMarginTop1"></p>
+                <p class="setMarginTop1"></p>
+                <p class="setMarginTop1"></p>
+                <p class="setMarginTop1"></p>
+
+                <p class="setMarginTop0">
+                  <span class="c6">
+                    <input placeholder="ส่วนราชการเจ้าของเรื่อง" type="text" class="py-0 border border-slate-300 " name="storyowner" id="storyowner" value="" onblur="checkVal(this)" autocomplete="off" />
+                  </span>
+                </p>
+                <p class="setMarginTop0"><span class="c6">โทร.&nbsp;
+                    <input placeholder="" type="text" class="py-0 border border-slate-300 " name="phone" id="phone" value="" onblur="checkVal(this)" autocomplete="off" />
+                  </span></p>
+                <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;
+                    <input placeholder="" type="text" class="py-0 border border-slate-300 " name="fax" id="fax" value="" onblur="checkVal(this)" autocomplete="off" />
+                  </span>
+                </p>
+
+
+
+
+
               </div>
 
             </div>
@@ -409,6 +468,9 @@
       checksessionStorage(1);
 
     }
+
+
+
 
 
 

@@ -135,17 +135,17 @@ function MemoHeaderTemplate($government, $at, $subject, $learn, $date)
   return <<<EOD
     <table width="100%" border="0">
 
-    <tr>
-    <td class="exactly_1" width="8%" colspan="1" rowspan="1">
-      <img class="image_logo" src="../../images/image1.png" alt="Logo" />
-    </td>
-    
-    <td class="exactly_1" width="250" colspan="1" rowspan="1"></td>
-    <td  style="text-align:left;padding-bottom:-10px;padding-left:-71px;" colspan="3" rowspan="1" valign="bottom">
-      <span class="c29pt"> บันทึกข้อความ</span>
-    </td>
+        <tr>
+        <td class="exactly_1" width="8%" colspan="1" rowspan="1">
+          <img class="image_logo" src="../../images/image1.png" alt="Logo" />
+        </td>
+        
+        <td class="exactly_1" width="250" colspan="1" rowspan="1"></td>
+        <td  style="text-align:left;padding-bottom:-10px;padding-left:-71px;" colspan="3" rowspan="1" valign="bottom">
+          <span class="c29pt"> บันทึกข้อความ</span>
+        </td>
 
-    </tr>
+        </tr>
 
 
         <tr>
@@ -164,16 +164,16 @@ function MemoHeaderTemplate($government, $at, $subject, $learn, $date)
 
 
 
-    <tr>
-        <td   valign="top"  align="left" colspan="1" rowspan="1" ><span  class="font20bold">เรื่อง</span> </td>
-        <td valign="bottom" colspan="4" rowspan="1" style="padding-top:5px;"><span class="font_size16">$subject</span> </td>
-    </tr>
-    
+      <tr>
+          <td   valign="top"  align="left" colspan="1" rowspan="1" ><span  class="font20bold">เรื่อง</span> </td>
+          <td valign="bottom" colspan="4" rowspan="1" style="padding-top:5px;"><span class="font_size16">$subject</span> </td>
+      </tr>
+      
 
-    <tr>
-        <td class=""  valign="top"  align="left" colspan="1" rowspan="1"><span class="">เรียน</span> </td>
-        <td class="" width="" colspan="4" rowspan="1"> <span > $learn </span> </td>
-    </tr>
+      <tr>
+          <td class=""  valign="top"  align="left" colspan="1" rowspan="1"><span class="">เรียน</span> </td>
+          <td class="" width="" colspan="4" rowspan="1"> <span > $learn </span> </td>
+      </tr>
 
 
 

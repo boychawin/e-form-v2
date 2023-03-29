@@ -55,10 +55,14 @@ function outsideBookPDF($mpdfConfig, $request)
 
     $description = $request['description2'] ?? [];
     $at = !empty($request['at']) ? $request['at'] : '';
-    $to = !empty($request['to']) ? $request['to'] : '';
-    $agencies = !empty($request['agencies']) ? $request['agencies'] : '';
+    $location = !empty($request['location']) ? $request['location'] : '';
     $monthyear = !empty($request['monthyear']) ? $request['monthyear'] : '';
-    $storyowner = !empty($request['storyowner']) ? $request['storyowner'] : '';
+    $subject = !empty($request['subject']) ? $request['subject'] : '';
+    $learn = !empty($request['learn']) ? $request['learn'] : '';
+    $quote = !empty($request['quote']) ? $request['quote'] : '';
+    $enclosure = !empty($request['enclosure']) ? $request['enclosure'] : '';
+
+    $owner = !empty($request['owner']) ? $request['owner'] : '';
     $phone = !empty($request['phone']) ? $request['phone'] : '';
     $fax = !empty($request['fax']) ? $request['fax'] : '';
 
@@ -100,13 +104,13 @@ function outsideBookPDF($mpdfConfig, $request)
             $mpdf->SetHTMLFooter($footer);
 
             if ($i == 0 && (count($data_array) > 1)) {
-                $html = outsideBookPage(0, $at, $to, $agencies, $monthyear, $storyowner, $phone, $fax, $data_array[$i], $rank, $signature, $namesurname, $position, $other);
+                $html = outsideBookPage(0, $at,$location,$monthyear,$subject,$learn,$quote,$enclosure,$owner,$phone,$fax, $data_array[$i], $rank, $signature, $namesurname, $position, $other);
             } else if ($i == 0 && count($data_array) == 1) {
-                $html = outsideBookPage(2, $at, $to, $agencies, $monthyear, $storyowner, $phone, $fax, $data_array[$i], $rank, $signature, $namesurname, $position, $other);
+                $html = outsideBookPage(2, $at,$location,$monthyear,$subject,$learn,$quote,$enclosure,$owner,$phone,$fax, $data_array[$i], $rank, $signature, $namesurname, $position, $other);
             } else if (count($data_array) == $i + 1) {
-                $html = outsideBookPage(1, $at, $to, $agencies, $monthyear, $storyowner, $phone, $fax, $data_array[$i], $rank, $signature, $namesurname, $position, $other);
+                $html = outsideBookPage(1, $at,$location,$monthyear,$subject,$learn,$quote,$enclosure,$owner,$phone,$fax, $data_array[$i], $rank, $signature, $namesurname, $position, $other);
             } else {
-                $html = outsideBookPage(3, $at, $to, $agencies, $monthyear, $storyowner, $phone, $fax, $data_array[$i], $rank, $signature, $namesurname, $position, $other);
+                $html = outsideBookPage(3, $at,$location,$monthyear,$subject,$learn,$quote,$enclosure,$owner,$phone,$fax, $data_array[$i], $rank, $signature, $namesurname, $position, $other);
             }
             $mpdf->WriteHTML($html);
         }
@@ -130,51 +134,80 @@ function outsideBookPDF($mpdfConfig, $request)
 }
 
 
-function outsideBookHeaderTemplate($at, $to)
+function outsideBookHeaderTemplate($at, $location,$monthyear,$subject,$learn,$quote,$enclosure)
 {
 
     return <<<EOD
    
+
     <table border="0" width="100%">
-    <tr>
-    <td width="250" style="padding-bottom:10px;" colspan="1" rowspan="1" valign="bottom" >   <span class="c1">ที่&nbsp;$at</span> </td>
+            <tr>
+
+                <td  style="text-align:left;padding-top:70px;" width="240px" colspan="1" rowspan="1"></td>
+                <td valign="top"  colspan="2" rowspan="2" style="text-align:center"><p class="c9"><span class="span_image"><img alt="logo" src="../../images/image32.jpg" class="image_logo" > </span></p></td>
+                <td valign="bottom"  style="text-align:right;padding-bottom:10px;"  width="120px" colspan="1" rowspan="1"></td>
+                <td valign="top"  style="text-align:left;padding-top:80px;"  width="120px" colspan="1" rowspan="1"></td>
+
+            </tr>
+          
+        <tr>
+            <td  valign="top" style="text-align:left;padding-top:-9px;"  colspan="2" rowspan="1"><p ><span >ที่ &nbsp;$at</span></p></td>
+            <td valign="top"  style="text-align:right;padding-bottom:10px;"  colspan="1" rowspan="1"></td>
+            <td valign="top"   style="text-align:left;padding-top:-9px;"   colspan="2" rowspan="1"><p ><span >$location</span></p></td>
+        </tr>
+
+        
   
-        <td  colspan="1" rowspan="2" style="text-align:center">
-          <span
-                class="span_image">
-                <img alt="logo"
-                        src="../../images/image32.jpg"
-                        class="image_logo" >
-                        </span>
-        </td>
-        <td width="250" colspan="1" rowspan="1"></td>
-    </tr>
-  
-  
-  </table>
-  
-  
-  
-  <p class="MsoNormal setMarginBottom0" >
-    <span class="c1">ถึง&nbsp;$to</span>
-  </p>
-  
-  
+        <tr >
+          <td  colspan="2" rowspan="1"></td>
+          <td  valign="bottom"  style="padding-left:40px;padding-top:6;" colspan="3" rowspan="1"><p ><span >$monthyear</span></p></td>
+        </tr>
+    </table>
+
+    <table width="100%" border="0">
+
+                <tr>
+                    <td class="" width="8%"  valign="top"  align="left" colspan="1" rowspan="1"><span class="">เรื่อง&nbsp;&nbsp;</span> </td>
+                    <td class="" width="" colspan="5" rowspan="1"> <span > $subject </span> </td>
+                </tr>
+                
+                <tr>
+                    <td class="" style="margin-top:10px" valign="top"  align="left" colspan="1" rowspan="1"><span class="">เรียน&nbsp;&nbsp;</span> </td>
+                    <td class="" width="" colspan="5" rowspan="1"> <span > $learn </span> </td>
+                </tr>
+
+                <tr>
+                    <td class="" style="margin-top:10px" valign="top"  align="left" colspan="1" rowspan="1"><span class="">อ้างถึง&nbsp;&nbsp;</span> </td>
+                    <td class="" width="" colspan="5" rowspan="1"> <span > $quote </span> </td>
+                </tr>
+        
+
+    </table>
+
+    <table width="100%" border="0">
+        <tr>
+                <td class="" width="15%"   valign="top"  align="left" colspan="1" rowspan="1"><span class="">สิ่งที่ส่งมาด้วย</span> </td>
+                <td class="" width="" colspan="5" rowspan="1"> <span > &nbsp;&nbsp;$enclosure </span> </td>
+        </tr>
+    </table>
+
+  <p style="margin-top:10px" ></p>
 
   EOD;
 }
 
 
-function outsideBookFooterTemplate($agencies, $monthyear, $storyowner, $phone, $fax)
+function outsideBookFooterTemplate($owner,$phone,$fax)
 {
-    if (!empty($agencies)) {
+    if (!empty($owner)) {
         return <<<EOD
-        <p style="padding-top:64px" class="MsoNormal indent8" ><span  class="c16">&nbsp;$agencies</span></p>
-        <p class="MsoNormal indent10" ><span  class="c16">&nbsp;$monthyear</span></p>
-        
-            <p style="padding-top:64px" class="setMarginTop0"><span class="c6">$storyowner</span> </p>
-            <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$phone</span></p>
-            <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;$fax</span></p>
+    
+        <p class="setMarginTop16pt"></p>
+        <p class="setMarginTop0"><span class="c6">$owner</span> </p>
+        <p class="setMarginTop0"><span class="c6">โทร.&nbsp;$phone</span></p>
+        <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;$fax</span></p>
+        <p class="setMarginTop16pt"></p>
+
         
   EOD;
     }
@@ -186,26 +219,12 @@ function outsideBookCss()
 {
     return '
 
-  <style>
-
-  .thai-istributed-class {
-    margin-right: 0cm;
-    margin-left: 0cm;
-    text-justify: inter-cluster;
-    text-align:justify;
-
-  }
-
-  .textindent{
-    text-indent: 2.5cm;
-  }
-
-
-        p {
-          padding: 0pt;
-          margin:0;
+    <style type="text/css">
+    p {
+      padding: 0pt;
+      margin:0;
   
-        }
+    }
   
         table td,
         table th {
@@ -289,8 +308,6 @@ function outsideBookCss()
   
   
         .c1 {
-          font-size: 16pt;
-          font-family: "thsarabun";
             padding-top: 0pt;
             padding-bottom: 10pt;
             line-height: 1.0;
@@ -337,132 +354,110 @@ function outsideBookCss()
             text-align: center;
           }
   
-        .c16 {
+    .c16 {
         font-size: 16pt;
         font-family: "thsarabun";
         font-weight: 400;
-        }
-        .c29pt {
-        font-size: 29pt;
+      }
+      p{
+        font-size: 16pt;
         font-family: "thsarabun";
-        font-weight: 400;
-        }
+        line-height: 1.1;
   
+      }
+      span{
+        font-size: 16pt;
+            font-family: "thsarabun";
+            line-height: 1.1;
   
-        p{
-        padding-top: 0pt;
-        padding-bottom: 0pt;
-        margin-bottom: 0pt;
-        }
-        span{
-        padding-top: 0pt;
-        padding-bottom: 0pt;
-        margin-bottom: 0pt;
+      }
+      .setMarginTop0{
         margin-top: 0pt;
+      }
   
-        }
-        .setMarginTop0{
-        margin-top: 0pt;
-        }
-  
-        .setMarginBottom0{
+      .setMarginBottom0{
         margin-bottom: 0pt;
         padding-bottom: 0pt;
   
-        }
+      }
   
-        .setMarginTop1{
-          line-height: 1.1;
-          font-size: 16pt;
-          }
-  
-  
-        .setMarginTop2{
+      .setMarginTop2{
         line-height: 2.2;
         font-size: 16pt;
         margin-bottom: 0pt;
-        }
-  
-        .setMarginTop4{
-          line-height: 4.4;
-          font-size: 16pt;
-          margin-bottom: 0pt;
-          }
-  
-  
-        .setMarginTop26pt{
+      }
+      .setMarginTop26pt{
         line-height: 2.8pt;
         font-size: 16pt;
         margin-bottom: 0pt;
-        }
+      }
   
-        .setMarginTop16pt{
+      .setMarginTop16pt{
         line-height: 1.8pt;
         font-size: 16pt;
-        margin-bottom: 0pt;
-        }
-        .setMarginTop112pt{
+      
+      }
+  
+      .setMarginBottom6pt{
+        line-height: 6pt;
+        font-size: 16pt;
+      
+      }
+  
+  
+      .setMarginTop112pt{
         line-height: 2.3pt;
         font-size: 16pt;
         margin-bottom: 0pt;
-        }
+      }
   
   
   
   
-        p.MsoNormal{mso-style-unhide:no;
-        mso-style-qformat:yes;
-        mso-style-parent:"";
-        margin-top:0cm;
-        margin-right:0cm;
-        margin-bottom:10.0pt;
-        margin-left:0cm;
-        line-height:115%;
-        mso-pagination:widow-orphan;
-        font-size:16.0pt;
-        mso-bidi-font-size:16.0pt;
-        font-family:"thsarabun",sans-serif;
-        mso-ascii-font-family:thsarabun;
-        mso-ascii-theme-font:minor-latin;
-        mso-fareast-font-family:thsarabun;
-        mso-fareast-theme-font:minor-latin;
-        mso-hansi-font-family:thsarabun;
-        mso-hansi-theme-font:minor-latin;
-        mso-bidi-font-family:"thsarabun";
-        mso-bidi-theme-font:minor-bidi;
-        mso-ansi-language:EN-US;}
+      p.MsoNormal{mso-style-unhide:no;
+      mso-style-qformat:yes;
+      mso-style-parent:"";
+      margin-top:0cm;
+      margin-right:0cm;
+      margin-bottom:10.0pt;
+      margin-left:0cm;
+      line-height:115%;
+      mso-pagination:widow-orphan;
+      font-size:16.0pt;
+      mso-bidi-font-size:16.0pt;
+      font-family:"thsarabun",sans-serif;
+      mso-ascii-font-family:thsarabun;
+      mso-ascii-theme-font:minor-latin;
+      mso-fareast-font-family:thsarabun;
+      mso-fareast-theme-font:minor-latin;
+      mso-hansi-font-family:thsarabun;
+      mso-hansi-theme-font:minor-latin;
+      mso-bidi-font-family:"thsarabun";
+      mso-bidi-theme-font:minor-bidi;
+      mso-ansi-language:EN-US;}
   
   
-        .indent1{
+      .indent1{
         margin-top: 0cm;
         margin-right: 0cm;
         margin-bottom: 0cm;
         margin-left: 0cm;
         text-indent: 1cm;
         line-height: 1.1;
-        }
+      }
   
   
-        .indent8{
+      .indent8{
         margin-top: 0cm;
         margin-right: 54.4pt;
         margin-bottom: 0cm;
         margin-left: 0cm;
         text-indent: 8cm;
         line-height: 1.1;
-        }
-  
-        .indent10{
-          margin-top: 0cm;
-          margin-right: 54.4pt;
-          margin-bottom: 0cm;
-          margin-left: 0cm;
-          text-indent: 10cm;
-          line-height: 1.1;
-          }
+      }
   
   
-        .indent5{
+      .indent5{
         margin-top: 16pt;
         margin-right: 0cm;
         margin-bottom: 0cm;
@@ -470,9 +465,9 @@ function outsideBookCss()
         text-indent: 5cm;
         line-height: 1.1;
         tab-stops: center 339.05pt;
-        }
+      }
   
-        .span_image{
+      .span_image{
         overflow: hidden;
         display: inline-block;
         margin: 0px 0px;
@@ -480,31 +475,43 @@ function outsideBookCss()
         transform: rotate(0rad) translateZ(0px);
         -webkit-transform: rotate(0rad) translateZ(0px);
   
-        }
-        .image_logo{
-          height: 113.38586666666666px;
-        margin-left: -0px;
-        margin-top: -0px;
-        transform: rotate(0rad) translateZ(0px);
+      }
+      .image_logo{
+    height: 113.38586666666666px;
+                        margin-left: -0px;
+                        margin-top: -0px;
+                        transform: rotate(0rad) translateZ(0px);
                         -webkit-transform: rotate(0rad) translateZ(0px);
-        }
+      }
   
-        .indent25 {
+      .indent25 {
         text-indent: 2.5cm;
-        padding-bottom: 0pt;
         text-align: justify;
         orphans: 2;
         widows: 2;
   
-        }
+      }
   
+  
+      .thai-istributed-class {
+        margin-right: 0cm;
+        margin-left: 0cm;
+        text-justify: inter-cluster;
+        text-align:justify;
+
+    }
+
+    .textindent{
+        text-indent: 2.5cm;
+    }
   
   </style>
+
 ';
 }
 
 
-function outsideBookPage($type, $at, $to, $agencies, $monthyear, $storyowner, $phone, $fax, $description, $rank, $signature, $namesurname, $position, $other)
+function outsideBookPage($type, $at,$location,$monthyear,$subject,$learn,$quote,$enclosure,$owner,$phone,$fax, $description, $rank, $signature, $namesurname, $position, $other)
 {
     $header = "";
     $footer = "";
@@ -512,16 +519,16 @@ function outsideBookPage($type, $at, $to, $agencies, $monthyear, $storyowner, $p
 
     $css = outsideBookCss();
     if ($type === 0) {
-        $header = outsideBookHeaderTemplate($at, $to);
+        $header = outsideBookHeaderTemplate($at, $location,$monthyear,$subject,$learn,$quote,$enclosure);
     }
     if ($type === 1) {
-        $outsideBookfooter = outsideBookFooterTemplate($agencies, $monthyear, $storyowner, $phone, $fax);
+        $outsideBookfooter = outsideBookFooterTemplate($owner,$phone,$fax);
         $footer = MemoFooterTemplate($rank, $signature, $namesurname, $position, $other);
     }
 
     if ($type === 2) {
-        $header = outsideBookHeaderTemplate($at, $to);
-        $outsideBookfooter = outsideBookFooterTemplate($agencies, $monthyear, $storyowner, $phone, $fax);
+        $header = outsideBookHeaderTemplate($at, $location,$monthyear,$subject,$learn,$quote,$enclosure);
+        $outsideBookfooter = outsideBookFooterTemplate($owner,$phone,$fax);
         $footer = MemoFooterTemplate($rank, $signature, $namesurname, $position, $other);
     }
 
@@ -549,8 +556,9 @@ function outsideBookPage($type, $at, $to, $agencies, $monthyear, $storyowner, $p
   <p class="indent25 setMarginTop0">
       <span class="c8">$description_html</span>
   </p>
-  $outsideBookfooter
   $footer
+  $outsideBookfooter
+
   $css
 EOD;
 }

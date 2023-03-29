@@ -303,7 +303,7 @@
 
                   <td style="text-align:left;padding-top:70px;" width="250px" colspan="1" rowspan="1">
                     <p><span>ที่ &nbsp;
-                        <input class="py-0 border border-slate-300" autocomplete="off" name="textfooter" id="textfooter" onblur="checkVal(this)" />
+                        <input class="py-0 border border-slate-300" autocomplete="off" name="at" id="at" onblur="checkVal(this)" />
                       </span>
                     </p>
                   </td>
@@ -314,7 +314,7 @@
                   <td valign="bottom" style="text-align:right;padding-bottom:10px;" width="125px" colspan="1" rowspan="1">
                   </td>
                   <td valign="bottom" width="125px" colspan="1" rowspan="1">
-                    <textarea placeholder="ที่ตั้ง" class="w-20 py-0 border border-slate-300" autocomplete="off" name="textfooter" id="textfooter" onblur="checkVal(this)"></textarea>
+                    <textarea placeholder="ที่ตั้ง" class="w-20 py-0 border border-slate-300" autocomplete="off" name="location" id="location" onblur="checkVal(this)"></textarea>
                   </td>
                 </tr>
 
@@ -333,23 +333,23 @@
                   <td colspan="2" rowspan="1"></td>
                   <td valign="bottom" style="padding-left:40px;padding-top:6;" colspan="3" rowspan="1">
                     <p><span>
-                        <input placeholder="เดือน ปี" class="w-20 py-0 border border-slate-300" autocomplete="off" name="textfooter" id="textfooter" onblur="checkVal(this)" />
+                        <input placeholder="เดือน ปี" class="w-20 py-0 border border-slate-300" autocomplete="off" name="monthyear" id="monthyear" onblur="checkVal(this)" />
                       </span></p>
                   </td>
                 </tr>
               </table>
 
               <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรื่อง&nbsp;&nbsp;
-                <input placeholder="" class="w-80 py-0 border border-slate-300" autocomplete="off" name="textfooter" id="textfooter" onblur="checkVal(this)" />
+                <input placeholder="" class="w-80 py-0 border border-slate-300" autocomplete="off" name="subject" id="subject" onblur="checkVal(this)" />
               </p>
               <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">เรียน&nbsp;&nbsp;
-                <input placeholder="" class="w-80 py-0 border border-slate-300" autocomplete="off" name="textfooter" id="textfooter" onblur="checkVal(this)" />
+                <input placeholder="" class="w-80 py-0 border border-slate-300" autocomplete="off" name="learn" id="learn" onblur="checkVal(this)" />
               </p>
               <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">อ้างถึง&nbsp;&nbsp;
-                <input placeholder="" class="w-80 py-0 border border-slate-300" autocomplete="off" name="textfooter" id="textfooter" onblur="checkVal(this)" />
+                <input placeholder="" class="w-80 py-0 border border-slate-300" autocomplete="off" name="quote" id="quote" onblur="checkVal(this)" />
               </p>
               <p style="margin-top:10px" class="setMarginTop0 setMarginBottom0">สิ่งที่ส่งมาด้วย&nbsp;&nbsp;
-                <input placeholder="" class="w-80 py-0 border border-slate-300" autocomplete="off" name="textfooter" id="textfooter" onblur="checkVal(this)" />
+                <input placeholder="" class="w-80 py-0 border border-slate-300" autocomplete="off" name="enclosure" id="enclosure" onblur="checkVal(this)" />
               </p>
 
               <div style="padding-top: 10px;"></div>
@@ -370,44 +370,37 @@
               <div id="orderFooter" class="mt-5">
 
                 <p class="setMarginTop112pt "></p>
-                <p class="MsoNormal indent8"><span class="c16">ขอแสดงความนับถือ</span></p>
+                <p class="MsoNormal indent8"><span class="c16"></span></p>
                 <p class="setMarginTop26pt "></p>
 
                 <table border="0" cellspacing="0" cellpadding="0" width="100%">
-                  <tr>
-                    <td colspan="1" width="50%"> </td>
-                    <td valign="top" style="text-align:left;" colspan="2">
-                      <p><span class="c16">
-                        <input placeholder="ยศ" class="w-20 py-0 border border-slate-300" autocomplete="off" name="textfooter" id="textfooter" onblur="checkVal(this)" />
-                      </span></p>
-                    </td>
-                    <td valign="top" style="text-align:left;" colspan="1" width="44%">
-                      <p>
-                        <span class="c16">
-                          <input placeholder="" class=" py-0 border border-slate-300" autocomplete="off" name="textfooter" id="textfooter" onblur="checkVal(this)" />
-                        </span>
-                      <p><span class="c16">
-                        <input placeholder="ชื่อ-นามสกุล" class=" py-0 border border-slate-300" autocomplete="off" name="textfooter" id="textfooter" onblur="checkVal(this)" />
-                      </span></p>
-                      <p><span class="c16">
-                        <input placeholder="ตำแหน่ง" class=" py-0 border border-slate-300" autocomplete="off" name="textfooter" id="textfooter" onblur="checkVal(this)" />
-                      </span></p>
-                      <p><span class="c16">
-                        <input placeholder="อื่นๆ(ถ้ามี)" class=" py-0 border border-slate-300" autocomplete="off" name="textfooter" id="textfooter" onblur="checkVal(this)" />
-                      </span></p>
-                      </p>
-                  </tr>
-                </table>
+                    <tr>
+                      <td colspan="1" width="50%"> </td>
+                      <td valign="top" style="text-align:left;" colspan="2">
+                        <p><span class="c16"><input type="text" class="w-full  py-0 border border-slate-300 text-center" name="rank" placeholder="ยศ"></span>
+                        </p>
+                      </td>
+                      <td valign="top" style="text-align:left;" colspan="1" width="44%">
+                        <p>
+                          <span class="c16"><input class="  py-0 border border-slate-300 text-center" type="text" name="signature" id="signature" value="" placeholder="ลายเซ็นต์"></span>
+                        <p><span class="c16"><input class="  py-0 border border-slate-300 text-center" type="text" name="namesurname" id="namesurname" placeholder="ชื่อ-นามสกุล"></span></p>
+                        <p><span class="c16"><input class="  py-0 border border-slate-300 text-center" type="text" name="position" id="position" placeholder="ตำแหน่ง"></span>
+                        </p>
+                        <p><span class="c16"><input class="py-0 border border-slate-300 text-center" type="text" name="other" id="other" placeholder="อื่นๆ(ถ้ามี)"></span>
+                        </p>
+                        </p>
+                    </tr>
+                  </table>
 
                 <p class="setMarginTop16pt"></p>
                 <p class="setMarginTop0"><span class="c6">
-                    <input placeholder="ส่วนราชการเจ้าของเรื่อง" class=" py-0 border border-slate-300" autocomplete="off" name="textfooter" id="textfooter" onblur="checkVal(this)" />
+                    <input placeholder="ส่วนราชการเจ้าของเรื่อง" class=" py-0 border border-slate-300" autocomplete="off" name="owner" id="owner" onblur="checkVal(this)" />
                   </span> </p>
                 <p class="setMarginTop0"><span class="c6">โทร.&nbsp;
-                <input placeholder="ส่วนราชการเจ้าของเรื่อง" class=" py-0 border border-slate-300" autocomplete="off" name="textfooter" id="textfooter" onblur="checkVal(this)" />
+                <input placeholder="" class=" py-0 border border-slate-300" autocomplete="off" name="phone" id="phone" onblur="checkVal(this)" />
                 </span></p>
                 <p class="setMarginTop0"><span class="c6">โทรสาร&nbsp;
-                <input placeholder="ส่วนราชการเจ้าของเรื่อง" class=" py-0 border border-slate-300" autocomplete="off" name="textfooter" id="textfooter" onblur="checkVal(this)" />
+                <input placeholder="" class=" py-0 border border-slate-300" autocomplete="off" name="fax" id="fax" onblur="checkVal(this)" />
                 </span></p>
                
                 <p class="setMarginTop16pt"></p>
@@ -427,7 +420,7 @@
           </div>
 
 
-          <?php echo MainFooter(); ?>
+          <?php //echo MainFooter(); ?>
 
 
         </span>

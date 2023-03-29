@@ -10,7 +10,7 @@ $fontData = $defaultFontConfig['fontdata'];
 $mpdfConfig = array(
     'mode' => 'utf-8',
     'format' => 'A4',
-    // 'default_font_size' => 16,
+    'default_font_size' => 16,
     'margin_left' => 30,
     'margin_right' => 20,
     'margin_top' => 15,
@@ -214,6 +214,119 @@ function OderFooterTemplate($since, $orderdate)
   return '';
 }
 
+function OrderCss()
+{
+  return ' <style type="text/css">
+  p {
+    padding: 0pt;
+    margin:0;
+  
+  }
+  
+  .c16 {
+    font-size: 16pt;
+    font-family: "thsarabun";
+    font-weight: 400;
+  }
+  
+  .span_image{
+    overflow: hidden;
+    display: inline-block;
+    margin: 0px 0px;
+    border: 0px solid #000000;
+    transform: rotate(0rad) translateZ(0px);
+    -webkit-transform: rotate(0rad) translateZ(0px);
+  }
+  .image_logo{
+  
+    height: 113.38586666666666px;
+    margin-left: -0px;
+    margin-top: -0px;
+    transform: rotate(0rad) translateZ(0px);
+    -webkit-transform: rotate(0rad) translateZ(0px);
+  
+  }
+  
+  
+  p.MsoNormal, li.MsoNormal, div.MsoNormal
+   {mso-style-unhide:no;
+   mso-style-qformat:yes;
+   mso-style-parent:"";
+   margin-top:0cm;
+   margin-right:0cm;
+   margin-bottom:10.0pt;
+   margin-left:0cm;
+   line-height:115%;
+   mso-pagination:widow-orphan;
+   font-size:16.0pt;
+   mso-bidi-font-size:16.0pt;
+   font-family:"thsarabun",sans-serif;
+   mso-ascii-font-family:thsarabun;
+   mso-ascii-theme-font:minor-latin;
+   mso-fareast-font-family:thsarabun;
+   mso-fareast-theme-font:minor-latin;
+   mso-hansi-font-family:thsarabun;
+   mso-hansi-theme-font:minor-latin;
+   mso-bidi-font-family:"thsarabun";
+   mso-bidi-theme-font:minor-bidi;
+   mso-ansi-language:EN-US;}
+  
+   .center {
+    text-align: center;
+  }
+  
+   .indent8{
+    margin-top: 0cm;
+    margin-right: 54.4pt;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 8cm;
+    
+   }
+  
+   .indent5{
+    margin-top: 16pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    text-indent: 5cm;
+    
+    tab-stops: center 339.05pt;
+   }
+  
+   .setMarginTop2{
+    line-height: 2.2;
+    font-size: 16pt;
+    margin-bottom: 0pt;
+  }
+  
+  .setMarginTop26pt{
+    line-height: 2.8;
+    font-size: 16pt;
+  }
+  
+  
+  
+  .setMarginTop1{
+    line-height: 1.1;
+    font-size: 16pt;
+    }
+    .thai-istributed-class {
+        margin-right: 0cm;
+        margin-left: 0cm;
+        text-justify: inter-cluster;
+        text-align:justify;
+    
+      }
+
+      .textindent{
+        text-indent: 2.5cm;
+      }
+  </style>';
+}
+
+
+
 
 
 function OderPage($type, $order, $at, $since, $subject, $orderdate, $description, $rank, $signature, $namesurname, $position, $other)
@@ -222,7 +335,7 @@ function OderPage($type, $order, $at, $since, $subject, $orderdate, $description
     $footer = "";
     $oderfooter = "";
 
-    $css = MemoCss();
+    $css = OrderCss();
     if ($type === 0) {
         $header = OderHeaderTemplate($order, $at, $subject);
     }
@@ -257,7 +370,7 @@ function OderPage($type, $order, $at, $since, $subject, $orderdate, $description
     return <<<EOD
   $header
 
-  <p style="margin-top:10px " class=" setMarginTop0 setMarginBottom0"><span class="MsoNormal thai-istributed-class">$description_html</span></p>
+ $description_html
   $oderfooter
   $footer
   $css

@@ -152,14 +152,11 @@
 
               <p class="mt-2" style="margin-bottom: 0cm; text-align: center; line-height: normal">
                 <span class="c16"></span>
-                <span class="c16 font-bold">คำสั่ง&nbsp;&nbsp;
+                <span class="c16 font-bold">ประกาศ&nbsp;&nbsp;
                 </span>
-                <input placeholder="" type="text" class="py-0 border border-slate-300 w-60" name="order" id="order" value="" onblur="checkVal(this)" autocomplete="off" />
+                <input placeholder="" type="text" class="py-0 border border-slate-300 w-60" name="announce" id="announce" value="" onblur="checkVal(this)" autocomplete="off" />
               </p>
 
-              <p class="MsoNormal py-2" align="center" style="margin-bottom: 0cm; text-align: center; line-height: normal">
-                <span class="c16 font-bold">ที่&nbsp;</span><input placeholder="" type="text" class="py-0  border border-slate-300 " name="at" id="at" value="" onblur="checkVal(this)" autocomplete="off" />
-              </p>
 
               <p class="MsoNormal" align="center" style="margin-bottom: 0cm; text-align: center; line-height: normal">
                 <span class="c16 font-bold">เรื่อง&nbsp;&nbsp;
@@ -202,8 +199,8 @@
                 <p class="setMarginTop2"></p>
 
                 <p class="MsoNormal indent5 ">
-                  <span class="c16">สั่ง&nbsp;&nbsp;วันที่&nbsp;&nbsp;
-                    <input placeholder="" type="text" class="py-0 border border-slate-300 w-60" name="orderdate" id="orderdate" value="" onblur="checkVal(this)" autocomplete="off" />&nbsp;&nbsp;
+                  <span class="c16">ประกาศ&nbsp;&nbsp;วันที่&nbsp;&nbsp;
+                    <input placeholder="" type="text" class="py-0 border border-slate-300 w-60" name="announcedate" id="announcedate" value="" onblur="checkVal(this)" autocomplete="off" />&nbsp;&nbsp;
                   </span>
                 </p>
               </div>

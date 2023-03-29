@@ -16,86 +16,9 @@ $data11 = $_POST['name11'];
 $data12 = $_POST['name12'];
 
 $html = <<<EOD
-<table border="0" cellspacing="0" cellpadding="0" width="100%" >
-  <tr >
-    <td colspan="2" ></td>
-    <td colspan="2" style="text-align:center">
-      <span class="span_image">
-          <img  src="../../../images/image1.jpg" class="image_logo" title="ตราครุฑ" />
-    </span>
-  </td>
-  <td colspan="2" ></td>
-  </tr>
 
-</table>
-
-
-
-<p class="setMarginTop2" style="margin-top:24px;margin-bottom: 0cm; text-align: center; line-height: normal">
-<span class="c16" ></span>
-  <span class="c16" >$data0</span>
-</p>
-
-
-
-<p  class="MsoNormal"
-align="center"
-style="margin-bottom: 0cm; text-align: center; line-height: normal" >
-<span class="c16" >ที่&nbsp;$data1</span>
-</p>
-
-
-<p  class="MsoNormal"
-align="center"
-style="margin-bottom: 0cm; text-align: center; line-height: normal" >
-<span class="c16" >เรื่อง&nbsp;$data2</span>
-</p>
-
-<p
-  class="MsoNormal"
-  align="center"
-  style="margin-bottom: 0cm; text-align: center; line-height: normal"
->
-  <span class="c16" >---------------------------------------------------------</span>
-</p>
-
-
-<p style="margin-top:16px" ></p>
 
 $data3
-
-
-
-<p
-  class="MsoNormal"
-  style="
-  margin-top: 6pt;
-  margin-right: 0cm;
-  
-  margin-left: 0cm;
-  text-justify: inter-cluster;
-  text-indent: 2.5cm;
-  
-  "
->
-  <span  class="c16" >ทั้งนี้&nbsp;ตั้งแต่&nbsp;$data5</span>
-</p>
-
-
-
-<p style="margin-top:26px" ></p>
-
-<p  class="MsoNormal indent5 " >
-  <span  class="c16"
-    >สั่ง&nbsp;&nbsp;ณ
-    &nbsp;&nbsp;วันที่
-    &nbsp;&nbsp;$data6
-</span>
-</p>
-
-<p style="margin-top:26px" class="setMarginTop26pt"></p>
-
-
 
 
 

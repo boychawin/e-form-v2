@@ -1,11 +1,7 @@
 <?php 
 
 function MainFooter(){
-    return '<div class=" text-center py-20 " id="addPage">
-    <div class="col-lg-12">
-        <a href="javascript:;" onclick="addPage();"><strong>+ เพิ่มหน้าใหม่</strong></a>
-    </div>
-</div>
+    return '
 
 <div class=" text-center bg-white w-full   py-5" style="min-width:794px">
     <table border="0" cellspacing="0" cellpadding="0" width="100%">

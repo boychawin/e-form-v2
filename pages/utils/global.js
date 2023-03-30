@@ -166,7 +166,7 @@ function addNewMessage(page) {
     let type = 'message';
     let random = Math.floor((Math.random() * 1000) + 1);
     let id = `${type}-id-${random}`;
-
+    checksessionStorage();
     // var blockClone = $("#container_clone").html();
     var selector = $("#page" + pages + " .memo_description")
 
@@ -179,9 +179,7 @@ function addNewMessage(page) {
         '</span>';
 
     selector.append(textareaClone);
-
     manipulateSessionStorage(pages, id, type)
-
 
 }
 
@@ -191,7 +189,7 @@ function addTopic(page) {
     let type = 'topic';
     let random = Math.floor((Math.random() * 1000) + 1);
     let id = `${type}-id-${random}`;
-
+    checksessionStorage();
     // var blockClone = $("#container_clone").html();
     var selector = $("#page" + pages + " .memo_description")
 

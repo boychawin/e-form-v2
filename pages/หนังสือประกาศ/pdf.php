@@ -319,10 +319,6 @@ function announceCss()
   </style>';
 }
 
-
-
-
-
 function OderPage($type, $announce, $since, $subject, $announcedate, $description, $rank, $signature, $namesurname, $position, $other)
 {
     $header = "";

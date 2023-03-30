@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <title>E-form</title>
     <?php include('../inc/main-head.php'); ?>
-
     <?php include('../inc/main-header.php'); ?>
     <?php include('../inc/main-footer.php'); ?>
     <?php include('../inc/main-modal.php'); ?>

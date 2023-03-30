@@ -10,75 +10,9 @@
   <?php include('../inc/main-footer.php'); ?>
   <?php include('../inc/main-modal.php'); ?>
   <style>
-    .c50 {
-      background-color: #ffffff;
-      max-width: 621pt;
-      padding: 42.5pt 56.7pt 56.7pt 85pt;
-    }
-
-    input {
-      padding: 0;
-      width: '100%';
-      height: 20;
-      margin: 0%;
-
-      color: #000000;
-      font-weight: 400;
-      text-decoration: none;
-      vertical-align: baseline;
-      font-size: 14px;
-      font-family: "THSarabun";
-      font-style: normal;
-    }
-
     table td,
     table th {
       padding: 0
-    }
-
-    .c9 {
-      margin-left: -154pt;
-      padding-top: 0pt;
-      padding-bottom: 0pt;
-      line-height: 1.0;
-      orphans: 2;
-      widows: 2;
-      text-align: center;
-      margin-right: -189.7pt
-    }
-
-    .c8 {
-      color: #000000;
-      font-weight: 400;
-      text-decoration: none;
-      vertical-align: baseline;
-      font-size: 16pt;
-      font-family: "THSarabun";
-      font-style: normal;
-    }
-
-
-
-
-    .c10 {
-      color: #000000;
-      font-weight: 700;
-      text-decoration: none;
-      vertical-align: baseline;
-      font-size: 16pt;
-      font-family: "THSarabun";
-      font-style: normal
-    }
-
-
-    .c3 {
-      color: #000000;
-      font-weight: 400;
-      text-decoration: none;
-      vertical-align: baseline;
-      font-size: 16pt;
-      font-family: "THSarabun";
-      font-style: normal
     }
 
     .c6 {
@@ -91,27 +25,6 @@
       font-style: normal
     }
 
-
-    .c24 {
-      padding-top: 0pt;
-      padding-bottom: 0pt;
-      line-height: 1.0;
-      orphans: 2;
-      widows: 2;
-      text-align: right
-    }
-
-
-    .c7_text_left {
-      padding-top: 0pt;
-      padding-bottom: 0pt;
-      line-height: 1.0;
-      orphans: 2;
-      widows: 2;
-      text-align: left
-    }
-
-
     .c1 {
       font-size: 16pt;
       font-family: "THSarabun";
@@ -122,34 +35,6 @@
       widows: 2;
       text-align: left
     }
-
-    .c11 {
-      padding-top: 0pt;
-      padding-bottom: 0pt;
-      line-height: 1.0;
-      orphans: 2;
-      widows: 2;
-      text-align: center
-    }
-
-
-
-    .c22 {
-      font-size: 16pt;
-      font-family: "THSarabun";
-      font-weight: 400
-    }
-
-    .c4 {
-      height: 0pt
-    }
-
-
-
-    .c5 {
-      height: 11pt
-    }
-
 
     html,
     body {
@@ -167,13 +52,6 @@
       font-family: "THSarabun";
       font-weight: 400;
     }
-
-    .c29pt {
-      font-size: 29pt;
-      font-family: "THSarabun";
-      font-weight: 400;
-    }
-
 
     p {
       padding-top: 0pt;
@@ -210,33 +88,6 @@
       font-size: 16pt;
       margin-bottom: 0pt;
     }
-
-    .setMarginTop4 {
-      line-height: 4.4;
-      font-size: 16pt;
-      margin-bottom: 0pt;
-    }
-
-
-    .setMarginTop26pt {
-      line-height: 2.8pt;
-      font-size: 16pt;
-      margin-bottom: 0pt;
-    }
-
-    .setMarginTop16pt {
-      line-height: 1.8pt;
-      font-size: 16pt;
-      margin-bottom: 0pt;
-    }
-
-    .setMarginTop112pt {
-      line-height: 2.3pt;
-      font-size: 16pt;
-      margin-bottom: 0pt;
-    }
-
-
 
 
     p.MsoNormal {
@@ -279,15 +130,6 @@
       line-height: 1.1;
     }
 
-    .indent5 {
-      margin-top: 16pt;
-      margin-right: 0cm;
-      margin-bottom: 0cm;
-      margin-left: 0cm;
-      text-indent: 5cm;
-      line-height: 1.1;
-    }
-
     .span_image {
       overflow: hidden;
       display: inline-block;
@@ -304,15 +146,6 @@
       margin-top: -0px;
       transform: rotate(0rad) translateZ(0px);
       -webkit-transform: rotate(0rad) translateZ(0px);
-    }
-
-    .indent25 {
-      text-indent: 2.5cm;
-      padding-bottom: 0pt;
-      text-align: justify;
-      orphans: 2;
-      widows: 2;
-
     }
   </style>
 
@@ -382,7 +215,7 @@
                 <p class="MsoNormal indent10"><span class="c16">&nbsp;
                     <input placeholder="เดือน ปี" type="text" class="py-0 border border-slate-300 " name="monthyear" id="monthyear" value="" onblur="checkVal(this)" autocomplete="off" />
                   </span></p>
-                
+
                 <p class="setMarginTop1"></p>
                 <p class="setMarginTop1"></p>
                 <p class="setMarginTop1"></p>
@@ -433,8 +266,6 @@
   <script src="./_.js"></script>
   <script src="../utils/global.js"></script>
   <script>
-    showDataById();
-
 
     document.querySelector('form').addEventListener('submit', function(e) {
       e.preventDefault();
@@ -453,26 +284,6 @@
         alert('กรุณากรอกข้อมูลให้ครบถ้วน')
       }
     });
-
-
-
-    function showDataById() {
-      let government = sessionStorage.getItem("government");
-      let subject = sessionStorage.getItem("subject");
-      let learn = sessionStorage.getItem("learn");
-
-      $("#government").val(government);
-      $("#subject").val(subject);
-      $("#learn").val(learn);
-
-      checksessionStorage(1);
-
-    }
-
-
-
-
-
 
   </script>
 </body>

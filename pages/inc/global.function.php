@@ -297,7 +297,6 @@ function MemoCss()
   </style>';
 }
 
-
 function MemoFooterTemplate($rank, $signature, $namesurname, $position, $other)
 {
   if (!empty($namesurname)) {
@@ -327,9 +326,5 @@ function MemoFooterTemplate($rank, $signature, $namesurname, $position, $other)
 
   return '';
 }
-
-
-
-
 
 ?>

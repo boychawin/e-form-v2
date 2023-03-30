@@ -12,98 +12,11 @@
 
 
   <style>
-    .c50 {
-      background-color: #ffffff;
-      max-width: 621pt;
-      padding: 42.5pt 56.7pt 56.7pt 85pt;
-    }
-
-    input {
-      padding: 0;
-      width: '100%';
-      height: 20;
-      margin: 0%;
-      color: #000000;
-      font-weight: 400;
-      text-decoration: none;
-      vertical-align: baseline;
-      font-size: 14px;
-      font-family: "THSarabun";
-      font-style: normal;
-    }
 
     table td,
     table th {
       padding: 0
     }
-
-    .c9 {
-      margin-left: -154pt;
-      padding-top: 0pt;
-      padding-bottom: 0pt;
-      line-height: 1.0;
-      orphans: 2;
-      widows: 2;
-      text-align: center;
-      margin-right: -189.7pt
-    }
-
-    .c8 {
-      color: #000000;
-      font-weight: 400;
-      text-decoration: none;
-      vertical-align: baseline;
-      font-size: 16pt;
-      font-family: "THSarabun";
-      font-style: normal;
-    }
-
-
-
-
-    .c10 {
-      color: #000000;
-      font-weight: 700;
-      text-decoration: none;
-      vertical-align: baseline;
-      font-size: 16pt;
-      font-family: "THSarabun";
-      font-style: normal
-    }
-
-
-
-
-    .c6 {
-      color: #000000;
-      font-weight: 400;
-      text-decoration: none;
-      vertical-align: baseline;
-      font-size: 15pt;
-      font-family: "THSarabun";
-      font-style: normal
-    }
-
-
-    .c24 {
-      padding-top: 0pt;
-      padding-bottom: 0pt;
-      line-height: 1.0;
-      orphans: 2;
-      widows: 2;
-      text-align: right
-    }
-
-
-    .c7_text_left {
-      padding-top: 0pt;
-      padding-bottom: 100pt;
-      line-height: 1.1;
-      orphans: 2;
-      widows: 2;
-      text-align: left
-    }
-
 
     .c1 {
       padding-top: 0pt;
@@ -113,30 +26,6 @@
       widows: 2;
       text-align: left
     }
-
-    .c11 {
-      padding-top: 0pt;
-      padding-bottom: 0pt;
-      line-height: 1.0;
-      orphans: 2;
-      widows: 2;
-      text-align: center
-    }
-
-
-
-    .c22 {
-      font-size: 16pt;
-      font-family: "THSarabun";
-      font-weight: 400
-    }
-
-
-
-    .c5 {
-      height: 11pt
-    }
-
 
     html,
     body {
@@ -169,16 +58,6 @@
 
     }
 
-    .setMarginTop0 {
-      margin-top: 0pt;
-    }
-
-    .setMarginBottom0 {
-      margin-bottom: 0pt;
-      padding-bottom: 0pt;
-
-    }
-
     .setMarginTop1 {
       line-height: 1.1;
       font-size: 16pt;
@@ -198,14 +77,6 @@
       margin-bottom: 0pt;
     }
 
-    .setMarginTop16pt {
-      line-height: 1.8pt;
-      font-size: 16pt;
-      margin-bottom: 0pt;
-    }
-
-
-
 
     p.MsoNormal {
       margin-top: 0cm;
@@ -216,27 +87,6 @@
       font-size: 16.0pt;
       font-family: "THSarabun", sans-serif;
 
-    }
-
-
-
-    .indent1 {
-      margin-top: 0cm;
-      margin-right: 0cm;
-      margin-bottom: 0cm;
-      margin-left: 0cm;
-      text-indent: 1cm;
-      line-height: 1.1;
-    }
-
-
-    .indent8 {
-      margin-top: 0cm;
-      margin-right: 54.4pt;
-      margin-bottom: 0cm;
-      margin-left: 0cm;
-      text-indent: 8cm;
-      line-height: 1.1;
     }
 
 
@@ -268,14 +118,6 @@
       -webkit-transform: rotate(0rad) translateZ(0px);
     }
 
-    .indent25 {
-      text-indent: 2.5cm;
-      padding-bottom: 0pt;
-      text-align: justify;
-      orphans: 2;
-      widows: 2;
-
-    }
   </style>
 
 </head>
@@ -374,8 +216,6 @@
   <script src="./_.js"></script>
   <script src="../utils/global.js"></script>
   <script>
-    showDataById();
-
 
     document.querySelector('form').addEventListener('submit', function(e) {
       e.preventDefault();
@@ -394,23 +234,6 @@
         alert('กรุณากรอกข้อมูลให้ครบถ้วน')
       }
     });
-
-
-
-    function showDataById() {
-      let government = sessionStorage.getItem("government");
-      let subject = sessionStorage.getItem("subject");
-      let learn = sessionStorage.getItem("learn");
-
-      $("#government").val(government);
-      $("#subject").val(subject);
-      $("#learn").val(learn);
-
-      checksessionStorage(1);
-
-    }
-
-
 
   </script>
 </body>

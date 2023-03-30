@@ -1,227 +1,230 @@
 .note-btn-group button[data-event="underline"] {
-    font-weight: normal;
-    text-decoration: underline;
-  }
+  font-weight: normal;
+  text-decoration: underline;
+}
 
-  .thai-paragraph {
-    font-family: 'TH Sarabun New', sans-serif; /* specify a Thai font */
-    text-align: justify; /* justify the text */
-    text-justify: distribute; /* distribute the text */
-  }
-
-
-
-
-  .thai-istributed-class {
-    text-align: justify;
-    text-justify: inter-word;
-  }
-
-  @font-face {
-    font-family: 'THSarabunIT๙';
-    src: url('../../fonts/THSarabunIT๙/THSarabunIT๙.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'THSarabun';
-    src: url('../../fonts/THSarabunIT๙/THSarabunIT๙.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'TH NiramitIT๙';
-    src: url('../../fonts/THSarabunIT๙/THSarabunIT๙.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+.thai-paragraph {
+  font-family: 'TH Sarabun New', sans-serif;
+  /* specify a Thai font */
+  text-align: justify;
+  /* justify the text */
+  text-justify: distribute;
+  /* distribute the text */
+}
 
 
+
+
+.thai-istributed-class {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@font-face {
+  font-family: 'THSarabunIT๙';
+  src: url('../../fonts/THSarabunIT๙/THSarabunIT๙.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'THSarabun';
+  src: url('../../fonts/THSarabunIT๙/THSarabunIT๙.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TH NiramitIT๙';
+  src: url('../../fonts/THSarabunIT๙/THSarabunIT๙.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+page {
+  /* box-shadow: 0 0 0.5cm rgb(0 0 0 / 50%); */
+}
+
+body {
+  background: rgb(204, 204, 204);
+  font: 16pt/16pt 'TH NiramitIT๙', sans-serif;
+}
+
+div[size="A4"] {
+  width: 21cm;
+  height: 29.7cm;
+  position: relative;
+  overflow: hidden;
+}
+
+pageMain[size="A4onlyWidth"] {
+  display: block;
+  margin: 0 auto;
+  width: 21cm;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 24px;
+}
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+page[size="A4"] {
+  width: 21cm;
+  height: 29.7cm;
+  position: relative;
+  overflow: hidden;
+  font: 16pt/16pt 'TH NiramitIT๙', sans-serif;
+}
+
+page[size="A4"][layout="landscape"] {
+  width: 29.7cm;
+  height: 21cm;
+}
+
+page[size="A3"] {
+  width: 29.7cm;
+  height: 42cm;
+}
+
+page[size="A3"][layout="landscape"] {
+  width: 42cm;
+  height: 29.7cm;
+}
+
+page[size="A5"] {
+  width: 14.8cm;
+  height: 21cm;
+}
+
+page[size="A5"][layout="landscape"] {
+  width: 21cm;
+  height: 14.8cm;
+}
+
+@media print {
+
+  body,
   page {
-    /* box-shadow: 0 0 0.5cm rgb(0 0 0 / 50%); */
-  }
-
-  body {
-    background: rgb(204, 204, 204);
-    font: 16pt/16pt 'TH NiramitIT๙', sans-serif;
-  }
-
-  div[size="A4"] {
-    width: 21cm;
-    height: 29.7cm;
-    position: relative;
-    overflow: hidden;
-  }
-
-  pageMain[size="A4onlyWidth"] {
-    display: block;
-    margin: 0 auto;
-    width: 21cm;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 24px;
-  }
-
-  page {
-    background: white;
-    display: block;
-    margin: 0 auto;
-    margin-top: 16px;
-  }
-
-  page[size="A4"] {
-    width: 21cm;
-    height: 29.7cm;
-    position: relative;
-    overflow: hidden;
-    font: 16pt/16pt 'TH NiramitIT๙', sans-serif;
-  }
-
-  page[size="A4"][layout="landscape"] {
-    width: 29.7cm;
-    height: 21cm;
-  }
-
-  page[size="A3"] {
-    width: 29.7cm;
-    height: 42cm;
-  }
-
-  page[size="A3"][layout="landscape"] {
-    width: 42cm;
-    height: 29.7cm;
-  }
-
-  page[size="A5"] {
-    width: 14.8cm;
-    height: 21cm;
-  }
-
-  page[size="A5"][layout="landscape"] {
-    width: 21cm;
-    height: 14.8cm;
-  }
-
-  @media print {
-
-    body,
-    page {
-      margin: 0;
-      box-shadow: 0;
-    }
-  }
-
-  /* Form memo */
-
-  .memo-form {
     margin: 0;
-    padding: 1.5cm 2cm 2cm 3cm;
+    box-shadow: 0;
   }
+}
+
+/* Form memo */
+
+.memo-form {
+  margin: 0;
+  padding: 1.5cm 2cm 2cm 3cm;
+}
 
 
 
-  .memo-form .letter-head-memo {
-    margin: 0;
-    padding: 0;
-    font-size: 20pt;
-    line-height: 20pt;
-    font-weight: bold;
-  }
+.memo-form .letter-head-memo {
+  margin: 0;
+  padding: 0;
+  font-size: 20pt;
+  line-height: 20pt;
+  font-weight: bold;
+}
 
-  .imagelogo {
-    height: 1.5cm;
-  }
+.imagelogo {
+  height: 1.5cm;
+}
 
 
 
-  .memo-form .text-29pt {
-    font-size: 29pt;
-    line-height: 35pt;
-    font-weight: bold;
-    letter-spacing: 0px;
-  }
+.memo-form .text-29pt {
+  font-size: 29pt;
+  line-height: 35pt;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
 
-  .memo-form .memo-border-bottom {
-    border-bottom: 1px dotted #666;
-    padding-left: 8px;
-    font-size: 16pt;
-    line-height: 16pt;
-  }
+.memo-form .memo-border-bottom {
+  border-bottom: 1px dotted #666;
+  padding-left: 8px;
+  font-size: 16pt;
+  line-height: 16pt;
+}
 
-  .memo-form .p-8 {
-    padding: 8px 0 !important;
-  }
+.memo-form .p-8 {
+  padding: 8px 0 !important;
+}
 
-  .footer-text {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-  }
+.footer-text {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
 
-  .next-page {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 1cm;
-    width: 40px;
-    margin: 0 auto;
-    text-align: center;
-  }
+.next-page {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1cm;
+  width: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 
 .text-indent-25 {
-    /* padding: 0; */
-    text-indent: 2.5cm;
-    
-    /* resize: none;
+  /* padding: 0; */
+  text-indent: 2.5cm;
+
+  /* resize: none;
     overflow: hidden;
     width: 100%;
     border: 1px solid #ddd;
     text-align: justify;
     font-weight: bold;
     margin: 0 !important; */
-  }
+}
 
-  .animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .animated.faster {
-    -webkit-animation-duration: 500ms;
-    animation-duration: 500ms;
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
 }
 
 .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 
 .fadeOut {
-    -webkit-animation-name: fadeOut;
-    animation-name: fadeOut;
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        opacity: 0;
-    }
+  to {
+    opacity: 0;
+  }
 }

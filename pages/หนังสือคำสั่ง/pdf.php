@@ -325,10 +325,6 @@ function OrderCss()
   </style>';
 }
 
-
-
-
-
 function OderPage($type, $order, $at, $since, $subject, $orderdate, $description, $rank, $signature, $namesurname, $position, $other)
 {
     $header = "";

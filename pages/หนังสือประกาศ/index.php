@@ -12,25 +12,6 @@
 
 
   <style>
-    .c50 {
-      background-color: #ffffff;
-      max-width: 621pt;
-      padding: 42.5pt 56.7pt 56.7pt 85pt;
-    }
-
-    input {
-      padding: 0;
-      width: '100%';
-      height: 20;
-      margin: 0%;
-      color: #000000;
-      font-weight: 400;
-      text-decoration: none;
-      vertical-align: baseline;
-      font-size: 14px;
-      font-family: "THSarabun";
-      font-style: normal;
-    }
 
     .c16 {
       font-size: 16pt;
@@ -85,16 +66,6 @@
     }
 
 
-
-    .indent8 {
-      margin-top: 0cm;
-      margin-right: 54.4pt;
-      margin-bottom: 0cm;
-      margin-left: 0cm;
-      text-indent: 8cm;
-      line-height: normal;
-    }
-
     .indent5 {
       margin-top: 16pt;
       margin-right: 0cm;
@@ -111,17 +82,6 @@
       margin-bottom: 0pt;
     }
 
-    .setMarginTop26pt {
-      line-height: 2.8;
-      font-size: 16pt;
-    }
-
-
-
-    .setMarginTop1 {
-      line-height: 1.1;
-      font-size: 16pt;
-    }
   </style>
 
 </head>
@@ -230,8 +190,6 @@
   <script src="./_.js"></script>
   <script src="../utils/global.js"></script>
   <script>
-    showDataById();
-
 
     document.querySelector('form').addEventListener('submit', function(e) {
       e.preventDefault();
@@ -250,23 +208,6 @@
         alert('กรุณากรอกข้อมูลให้ครบถ้วน')
       }
     });
-
-
-
-    function showDataById() {
-      let government = sessionStorage.getItem("government");
-      let subject = sessionStorage.getItem("subject");
-      let learn = sessionStorage.getItem("learn");
-
-      $("#government").val(government);
-      $("#subject").val(subject);
-      $("#learn").val(learn);
-
-      checksessionStorage(1);
-
-    }
-
-
 
   </script>
 </body>

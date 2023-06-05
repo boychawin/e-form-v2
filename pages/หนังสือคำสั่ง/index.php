@@ -190,7 +190,7 @@
       </form>
     </div>
   </div>
-  <script src="./_.js"></script>
+  <!-- <script src="./_.js"></script> -->
   <script src="../utils/global.js"></script>
   <script>
     document.querySelector('form').addEventListener('submit', function(e) {

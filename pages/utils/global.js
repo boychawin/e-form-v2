@@ -23,16 +23,24 @@ function addPages(page, name = "description") {
     }
 }
 
+
 function updateMessages(page, id, message, name = "description") {
-    // Retrieve the data from sessionStorage
     const sessionData = sessionStorage.getItem(name);
     const data = JSON.parse(sessionData);
-    const item = data[page].data.find(item => item.id === id);
-    if (item) {
-        item.message = message;
-        sessionStorage.setItem(name, JSON.stringify(data));
+
+    if (data && data[page] && data[page].data) {
+        const item = data[page].data.find(item => item.id === id);
+        if (item) {
+            item.message = message;
+            sessionStorage.setItem(name, JSON.stringify(data));
+        }
+    } else {
+        console.error("Invalid data or page value:", data, page);
     }
 }
+
+
+
 
 
 function deleteObject(page, id, name = "description") {
@@ -235,8 +243,8 @@ function addPage() {
 
 
 function deleteVal(obj) {
-    var message = $(obj).val();
-    var nameValue = $(obj).attr("name");
+    // var message = $(obj).val();
+    // var nameValue = $(obj).attr("name");
     var page = $(obj).attr("data-page");
     var id = $(obj).attr("data-id");
     $('#' + id).parent().remove();
@@ -251,7 +259,7 @@ function deleteValuePage(obj) {
 
 function checkVal(obj) {
     var message = $(obj).val();
-    var nameValue = $(obj).attr("name");
+    // var nameValue = $(obj).attr("name");
     var page = $(obj).attr("data-page");
     var id = $(obj).attr("id");
     updateMessages(page, id, message);
@@ -289,24 +297,29 @@ function addPageOrder() {
 
       const elementToRemove = document.getElementById("orderFooter");
 
-      console.log(elementToRemove)
-
-      var html =
+      if (elementToRemove) {
+        var html =
         '<page size="A4" id="page' + tmp_page + '">' +
         ' <div class="next-page">-' + thaiPage + "-</div>" +
         '<a href="javascript:;" class="btn px-2 py-2" onclick="deleteValuePage(this)"  data-page="' + tmp_page + '">X</a><div class="row" style="line-height: 30px;"><div class="col-lg-12">' +
         '<div class="memo-form"><span class="memo_description"></span>' +
-        '<div class=" row mt-5"> <div class="col-lg-12"><a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addTopic(' + page + ');"><strong>+ เพิ่มหัวข้อใหม่</strong></a> <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addParagraph(' + page + ');"><strong>+ เพิ่มย่อหน้าใหม่</strong></a> <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addNewMessage(' + page + ');"><strong>+ เพิ่มข้อความใหม่</strong></a></div> </div>' +
+        '<div class="row mt-5"> <div class="col-lg-12"><a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addTopic(' + page + ');"><strong>+ เพิ่มหัวข้อใหม่</strong></a> <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addParagraph(' + page + ');"><strong>+ เพิ่มย่อหน้าใหม่</strong></a> <a class="ring-1 ring-slate-900/5 space-y-3 hover:bg-sky-500 hover:ring-sky-500" href="javascript:;" onclick="addNewMessage(' + page + ');"><strong>+ เพิ่มข้อความใหม่</strong></a></div> </div>' +
         elementToRemove.outerHTML +
         "</div>" +
-        "</div></div>" +
+        "</div>1111</div>" +
         '<div class="footer-text"><input class="w-full  py-2 border border-slate-300" autocomplete="off" name="textfooter[' + tmp_page + ']"  id="textfooter[' + tmp_page + ']"  onblur="checkVal(this)" /></div>' +
         '<div ></div>' +
        
         "</page>";
-      $("#block_tab_1 #addPage").before(html);
+        $("#block_tab_1 #addPage").before(html);
 
-      elementToRemove.remove();
+        // elementToRemove.remove();
+      } else {
+        console.error("Element with ID 'orderFooter' not found.");
+      }
+
+     
+    
       addPages(tmp_page);
     } else {
       alert('กรุณาเพิ่มเนื้อหาก่อน')

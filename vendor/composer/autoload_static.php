@@ -34,12 +34,9 @@ class ComposerStaticInit6ba640a5fb849b087ae84ffeca68c581
         ),
         'M' => 
         array (
+            'Mpdf\\PsrLogAwareTrait\\' => 22,
             'Mpdf\\' => 5,
             'Masterminds\\' => 12,
-        ),
-        'H' => 
-        array (
-            'Http\\Message\\' => 13,
         ),
         'F' => 
         array (
@@ -89,6 +86,10 @@ class ComposerStaticInit6ba640a5fb849b087ae84ffeca68c581
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
+        'Mpdf\\PsrLogAwareTrait\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mpdf/psr-log-aware-trait/src',
+        ),
         'Mpdf\\' => 
         array (
             0 => __DIR__ . '/..' . '/mpdf/mpdf/src',
@@ -96,10 +97,6 @@ class ComposerStaticInit6ba640a5fb849b087ae84ffeca68c581
         'Masterminds\\' => 
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
-        ),
-        'Http\\Message\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/php-http/message-factory/src',
         ),
         'FontLib\\' => 
         array (

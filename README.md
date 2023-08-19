@@ -1,9 +1,11 @@
-## add font
-### php  vendor/tecnickcom/tcpdf/tools/tcpdf_addfont.php -b -t TrueTypeUnicode -f 32 -i fonts/thsarabun-new/THSarabunNew001.ttf,fonts/thsarabun-new/THSarabunNewBold001.ttf
+# Add Font
 
+## <https://wkhtmltopdf.org/downloads.html>
 
-### https://wkhtmltopdf.org/downloads.html
+### INSTALLATION
 
+` php version 7.4
 
-# INSTALLATION
-### 1. run command line 'composer update' 
+1. run command line 'composer update'
+
+`

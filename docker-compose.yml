@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  php-apache-environment:
+    container_name: php-apache
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/var/www/html/
+    ports:
+      - "8080:80"  # Map host port 8080 to container port 80
+
+
+volumes:
+  db_data:
